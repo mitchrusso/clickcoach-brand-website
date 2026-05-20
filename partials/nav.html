@@ -1,0 +1,41 @@
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__brand" aria-label="ClickCoach home">
+      <span class="nav__logo" aria-hidden="true">C</span>
+      ClickCoach
+    </a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="/features/">Features</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/for-coaches/">For Coaches</a>
+      <a href="/about/">About</a>
+      <a href="/testimonials/">Testimonials</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">🌗</button>
+      <a class="btn btn-secondary btn-sm" href="https://app.clickcoach.io/login">Log in</a>
+      <a class="btn btn-accent btn-sm" href="https://app.clickcoach.io/signup">Start free trial</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">☰</button>
+    </div>
+  </div>
+</header>
+<script>
+(function(){
+  const root = document.documentElement;
+  const saved = localStorage.getItem('cc-theme');
+  if (saved) root.setAttribute('data-theme', saved);
+  const t = document.getElementById('theme-toggle');
+  if (t) t.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('cc-theme', next);
+  });
+  const navEl = document.getElementById('site-nav');
+  const togg = document.getElementById('nav-toggle');
+  if (togg) togg.addEventListener('click', () => {
+    const open = navEl.classList.toggle('nav--open');
+    togg.setAttribute('aria-expanded', String(open));
+  });
+})();
+</script>

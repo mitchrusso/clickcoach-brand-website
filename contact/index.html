@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0F172A" />
+<title>Contact — ClickCoach</title>
+<meta name="description" content="Get in touch with ClickCoach — sales, support, affiliate program, coach-directory inclusion, partner/white-label inquiries. We answer fast." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232463EB'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' fill='white' font-family='Montserrat' font-size='20' font-weight='800'%3EC%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__brand"><span class="nav__logo" aria-hidden="true">C</span>ClickCoach</a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="/features/">Features</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/for-coaches/">For Coaches</a>
+      <a href="/about/">About</a>
+      <a href="/testimonials/">Testimonials</a>
+      <a href="/contact/" class="is-active">Contact</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">🌗</button>
+      <a class="btn btn-secondary btn-sm" href="https://app.clickcoach.io/login">Log in</a>
+      <a class="btn btn-accent btn-sm" href="https://app.clickcoach.io/signup">Start free trial</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" style="padding-bottom:48px">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <span class="chip">Real humans. Fast replies.</span>
+      <h1 style="margin-top:18px">Tell us what you need. <mark>We'll route it.</mark></h1>
+      <p class="hero__lede">Sales question, support ticket, affiliate application, partner inquiry, or a coach-directory profile — one form, the right human on the other end.</p>
+    </div>
+    <div class="hero__visual">
+      <img src="/assets/images/contact-hero.jpg" alt="Clean workspace with a laptop and coffee" width="940" height="650" loading="eager" decoding="async" />
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px">
+  <div class="container">
+    <div class="grid grid-2" style="gap:48px;align-items:start">
+      <div class="card">
+        <h3 style="margin-top:0">Send us a note</h3>
+        <form action="#" method="post" onsubmit="event.preventDefault(); alert('Thanks — we\'ll be in touch within one business day.');">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" />
+          </div>
+          <div class="field">
+            <label for="topic">What's this about?</label>
+            <select id="topic" name="topic">
+              <option>Sales / pre-purchase question</option>
+              <option>Support / I'm already a customer</option>
+              <option>Affiliate program</option>
+              <option>Partner / white-label / certification network</option>
+              <option>Coach directory inclusion</option>
+              <option>Press / media</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Tell us a bit more</label>
+            <textarea id="message" name="message" placeholder="The more specific, the faster we can help." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Send message</button>
+        </form>
+      </div>
+
+      <div class="stack-lg">
+        <div class="card" id="support">
+          <span class="icon-wrap">🛟</span>
+          <h3>Support</h3>
+          <p class="muted">Already a customer and something's broken? Email <a href="mailto:support@clickcoach.io">support@clickcoach.io</a> or use the in-app AI assistant from any screen.</p>
+        </div>
+        <div class="card" id="affiliates">
+          <span class="icon-wrap--lime icon-wrap">🤝</span>
+          <h3>Affiliate program</h3>
+          <p class="muted">Recurring commissions on every account you refer, transparent reporting, and timely payouts. Built for coaches, coach trainers, certification bodies, and genuine advocates — not spam promotion.</p>
+          <p class="muted"><a href="mailto:affiliates@clickcoach.io">affiliates@clickcoach.io</a></p>
+        </div>
+        <div class="card" id="directory">
+          <span class="icon-wrap">📇</span>
+          <h3>Public coach directory</h3>
+          <p class="muted">If you run on ClickCoach and want inbound leads, opt into the directory from your coach profile. Rich profiles, tags, testimonials, and a directory toggle live in-app.</p>
+        </div>
+        <div class="card" id="api">
+          <span class="icon-wrap">🔌</span>
+          <h3>API &amp; integrations</h3>
+          <p class="muted">Webhooks for session-complete, client-created, invoice-paid, assignment-added, invoice-sent. API keys on request. Native endpoints for GoHighLevel + Groove.cm.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="container" style="max-width:780px">
+    <p class="eyebrow center">Fine print, friendly version</p>
+    <h2 class="center" style="max-width:32ch;margin:0 auto 24px">What you should know before you sign up.</h2>
+    <details class="faq" id="privacy">
+      <summary>Privacy &amp; data ownership</summary>
+      <p>Your client data is yours. We don't sell it. We don't share it. You can export everything in one click any time, and your clients can do the same with their own portal data. The platform is designed to be left as easily as it is joined.</p>
+    </details>
+    <details class="faq" id="terms">
+      <summary>Terms of service</summary>
+      <p>Annual subscription, billed up front, cancel any time before renewal. No long-term contracts, no setup fees, no surprise upcharges. Full terms available on request — we believe a fair business doesn't hide them.</p>
+    </details>
+    <details class="faq">
+      <summary>How fast do you respond?</summary>
+      <p>Sales inquiries: within one business day, usually same-day. Support tickets: within four business hours during US business hours, with the in-app AI assistant available 24/7 for setup questions.</p>
+    </details>
+    <details class="faq">
+      <summary>Will Mitch personally talk to me?</summary>
+      <p>For partner, white-label, and certification-network inquiries — yes. For solo-coach sales calls, our team handles it (we built a product so you wouldn't have to wait on one person). If you want hands-on 1:1 work with Mitch directly, visit <a href="https://mitchrusso.com">MitchRusso.com</a>.</p>
+    </details>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-strip">
+      <div>
+        <h2>Or skip the form. Just try it.</h2>
+        <p>Start the free trial in under 60 seconds. We'll be here if you need us.</p>
+      </div>
+      <div class="row">
+        <a class="btn btn-accent btn-lg" href="https://app.clickcoach.io/signup">Start free trial</a>
+        <a class="btn btn-ghost btn-lg" style="color:white" href="/pricing/">See pricing →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="nav__brand" style="color:white;margin-bottom:14px;"><span class="nav__logo" aria-hidden="true">C</span>ClickCoach</a>
+        <p>The coaching operating system. One login, one mental model, and the proof your coaching has been producing all along — finally visible.</p>
+      </div>
+      <div><h4>Product</h4><a href="/features/">Features</a><a href="/pricing/">Pricing</a><a href="/for-coaches/">For Coaches</a><a href="https://app.clickcoach.io/signup">Start free trial</a></div>
+      <div><h4>Company</h4><a href="/about/">About Mitch</a><a href="/testimonials/">Testimonials</a><a href="/contact/">Contact</a><a href="/contact/#affiliates">Affiliate program</a></div>
+      <div><h4>Resources</h4><a href="/contact/#directory">Public coach directory</a><a href="https://help.clickcoach.io">Help center</a><a href="/contact/#support">Support</a><a href="/contact/#api">API &amp; integrations</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ClickCoach.io. Built by coaches, for coaches.</span>
+      <span><a href="/contact/#privacy">Privacy</a> · <a href="/contact/#terms">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const root = document.documentElement;
+  const saved = localStorage.getItem('cc-theme');
+  if (saved) root.setAttribute('data-theme', saved);
+  const t = document.getElementById('theme-toggle');
+  if (t) t.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('cc-theme', next);
+  });
+  const navEl = document.getElementById('site-nav');
+  const togg = document.getElementById('nav-toggle');
+  if (togg) togg.addEventListener('click', () => {
+    const open = navEl.classList.toggle('nav--open');
+    togg.setAttribute('aria-expanded', String(open));
+  });
+})();
+</script>
+</body>
+</html>

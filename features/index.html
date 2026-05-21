@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="/styles.css?v=invoices-shot" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232463EB'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' fill='white' font-family='Montserrat' font-size='20' font-weight='800'%3EC%3C/text%3E%3C/svg%3E" />
 </head>
 <body class="eo-page">
@@ -40,79 +40,215 @@
   <div class="container hero__grid">
     <div class="hero__copy">
       <span class="chip">Every tool you'd otherwise duct-tape together</span>
-      <h1 style="margin-top:18px">The whole coaching workflow. <mark>One product.</mark></h1>
-      <p class="hero__lede">Most platforms cover scheduling + payments + a barely-used portal. ClickCoach is the full operating system — accountability, stats, courses, broadcasts, e-signature, multi-coach companies, AI baked into the session itself.</p>
+      <h1 class="hero__title--tight" style="margin-top:18px">Stop running your coaching practice across<br><mark>nine browser tabs</mark>.</h1>
       <div class="hero__row">
-        <a class="btn btn-primary btn-lg" href="/join/">Get Started</a>
-        <a class="btn btn-secondary btn-lg" href="/pricing/">See pricing</a>
+        <a class="btn btn-primary btn-lg" href="/join/">Get Started Risk Free Trial</a>
+        <a class="btn btn-secondary btn-lg" href="/pricing/">Watch 3-Min Walkthrough</a>
       </div>
     </div>
     <div class="hero__visual">
       <img src="/images/Client%20Progress%20Report.png" alt="ClickCoach client progress report with metric charts" width="1025" height="922" loading="eager" decoding="async" />
     </div>
+    <p class="hero__lede hero__lede--below">One login. Sessions, accountability, client progress, courses, billing, broadcasts, and AI — finally in the same place. Built by a coach who ran 50+ coaches for Tony Robbins and Chet Holmes.<br><br>Everything below replaces a tool you're already paying for. Most coaches who switch cancel 3–5 subscriptions in their first month.</p>
   </div>
 </section>
 
-<section class="section">
+<section class="section week-inside" id="week-inside">
   <div class="container">
-    <div class="center" style="max-width:62ch;margin:0 auto 40px">
-      <p class="eyebrow">14 capability buckets · one login</p>
-      <h2>Features grouped the way coaches actually work.</h2>
-      <p class="muted">Not by screen name — by business outcome. Every block below replaces a tool you probably already pay for.</p>
+    <div class="section-intro week-inside__intro">
+      <h2>A week inside ClickCoach</h2>
+      <p>Most software demos hand you a feature list and ask you to imagine the workflow. We'd rather show you the workflow and let you find the features inside it.</p>
+      <p>Here's what a normal week looks like for a coach running their practice on ClickCoach.</p>
+    </div>
+    <figure class="week-inside__figure">
+      <img
+        src="/images/A%20Week%20Inside%20ClickCoach%20Workflow.svg?v=transparent"
+        alt="Monday through Friday coaching workflow inside ClickCoach: triage, sessions, admin, cohort broadcasts, and renewal with outcomes below"
+        width="680"
+        height="540"
+        loading="lazy"
+        decoding="async"
+      />
+    </figure>
+
+    <div class="week-timeline" aria-label="A week inside ClickCoach, day by day">
+      <details class="week-day" data-day="monday">
+        <summary>Monday morning — you open one tab, not nine.</summary>
+        <div class="week-day__body">
+          <p>You log in once. The dashboard tells you which clients submitted last week's homework, who logged their stats over the weekend, and who's gone quiet. Three new prospects came in through your contact form — they're already in your pipeline with the source tagged.</p>
+          <p>You spend twelve minutes triaging. The thing that used to eat your whole Monday morning is done before your second coffee.</p>
+        </div>
+      </details>
+      <details class="week-day" data-day="tuesday">
+        <summary>Tuesday — your 10am session.</summary>
+        <div class="week-day__body">
+          <p>You open the live session workspace one minute before the call. The screen already shows last week's summary, this week's homework status, the client's stats charts trending up and to the right, and the three accountability questions you flagged on Friday. Everything you need is in front of you. You don't open another tab.</p>
+          <p>The session runs. You type a few lines of notes as the client talks. A breakthrough happens at minute 22 — you mark it, attach it to next week's focus.</p>
+          <p>When you hang up, you click one button. AI cleans up your shorthand, drafts next week's homework, and emails it from your branded template. The client gets it before they've left their desk.</p>
+        </div>
+      </details>
+      <details class="week-day" data-day="wednesday">
+        <summary>Wednesday afternoon — the admin disappears.</summary>
+        <div class="week-day__body">
+          <p>You send next week's homework to four other clients with one click each. AI suggested the focus for each one based on this week's notes. The new client who signed last Friday got her welcome package automatically — onboarding steps, intake assessment, payment terms, signed agreement, all done while you were sleeping.</p>
+          <p>An invoice paid itself overnight. The receipt is already attached to that client's record. You did not touch your inbox.</p>
+        </div>
+      </details>
+      <details class="week-day" data-day="thursday">
+        <summary>Thursday — your group cohort runs itself.</summary>
+        <div class="week-day__body">
+          <p>You broadcast a Loom recap to all twelve clients in your group program. The two new members who joined this week were auto-enrolled in the course module everyone else watched last month — they're caught up without you lifting a finger. The aggregated stats report for the cohort lands in your inbox. You actually read it because it took you eight seconds to open.</p>
+        </div>
+      </details>
+      <details class="week-day" data-day="friday">
+        <summary>Friday — the renewal conversation that sells itself.</summary>
+        <div class="week-day__body">
+          <p>Sarah's three-month engagement is up. Five months ago you would have walked into that call hoping she'd say yes.</p>
+          <p>This time you open her progress page first. Revenue line up 34%. Energy score steady at 8 out of 10. Sales calls booked tripled. The chart is sitting there. You don't have to sell the renewal. The chart did.</p>
+          <p>She signs for another six months before you finish the slide.</p>
+        </div>
+      </details>
     </div>
 
-    <div class="grid grid-2" style="gap:24px">
-      <div class="card feature-card">
-        <span class="icon-wrap">🗓️</span>
-        <h3>Sessions &amp; accountability</h3>
-        <p class="muted">Live session workspace with rich-text notes, homework, timer, file attachments, recording links. Reusable accountability question library, organized by category. AI generates new questions from your notes — and cleans up your prose before homework goes out.</p>
-        <ul class="checklist">
-          <li>Pre-session brief: last summary, homework status, stats, Q&amp;A in one panel</li>
-          <li>"This week's focus" — AI surfaces priorities for next session</li>
-          <li>Session history with edit + resend homework email</li>
-          <li>Branded homework email templates with merge tags</li>
-        </ul>
-      </div>
+    <aside class="week-close" aria-label="Week summary">
+      <p>By Friday at 5pm, you'll have run a real week of coaching with one login, one mental model, and a paper trail of every promise made and kept.</p>
+      <p>The hours you used to lose to admin?</p>
+      <p>They're either back in your pocket — or they're billable.</p>
+    </aside>
+  </div>
+</section>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">👥</span>
-        <h3>Clients, prospects &amp; CRM</h3>
-        <p class="muted">A searchable client roster with full profiles, plus a real prospects pipeline (follow-ups, outreach history, source tracking, convert-to-client flow). CSV import. Groups for cohorts. Archive without losing history.</p>
+<section class="section switch-four" id="why-switch">
+  <div class="container">
+    <header class="section-intro switch-four__header">
+      <p class="eyebrow">The four things that make coaches switch</p>
+      <h2>Four reasons coaches switch to ClickCoach.</h2>
+      <p>Every other feature in the platform supports these four. Get these right, and the rest is just a matter of convenience.</p>
+    </header>
+
+    <article class="switch-row" data-switch="1">
+      <div class="switch-row__content">
+        <span class="switch-row__num" aria-hidden="true">01</span>
+        <h3>Sessions that practically run themselves.</h3>
+        <p class="switch-row__lede">The live session workspace is the room where your coaching actually happens. Everything you need is already there before the call starts — and AI does the cleanup after.</p>
+        <details class="switch-points">
+          <summary>What you get in every session</summary>
+          <ul class="checklist">
+            <li>Pre-session brief loads automatically: last summary, homework status, client's current stats, and the questions you flagged for this call</li>
+            <li>Rich-text notes with a timer, file attachments, and recording link — all in one panel</li>
+            <li>AI cleans up your notes before homework goes out, generates next week's accountability questions, and tells you what to focus on next time</li>
+            <li>Reusable accountability question library organized by category — never type "so how did this week go" again</li>
+          </ul>
+        </details>
+      </div>
+      <figure class="switch-row__media">
+        <button type="button" class="screenshot-expand switch-shot" data-screenshot-expand aria-label="Expand live session workspace screenshot">
+          <img src="/images/ClickCoach%20Dashboard.png" alt="ClickCoach live session workspace with client stats visible alongside session notes" width="1463" height="821" loading="lazy" decoding="async" />
+        </button>
+        <figcaption>Everything in one screen. Zero tab-hopping.</figcaption>
+      </figure>
+    </article>
+
+    <article class="switch-row switch-row--flip" data-switch="2">
+      <div class="switch-row__content">
+        <span class="switch-row__num" aria-hidden="true">02</span>
+        <h3>Progress your clients can actually see.</h3>
+        <p class="switch-row__lede">Define what "progress" means for your coaching — revenue, energy, hours slept, sales calls booked, weight, whatever. Your client logs it from their phone. The chart shows up beside your session notes.</p>
+        <p class="switch-row__hook">Renewal conversations get a lot easier when the line is going up.</p>
+        <details class="switch-points">
+          <summary>How progress stays visible</summary>
+          <ul class="checklist">
+            <li>Up to 10 custom metrics per client — you name them, you color them</li>
+            <li>Clients log values from their mobile portal in 15 seconds</li>
+            <li>Stacked mini-charts appear inside your live session view, not buried in a report</li>
+            <li>Monthly stats report compares every client over time — see who's actually moving</li>
+          </ul>
+        </details>
+      </div>
+      <figure class="switch-row__media">
+        <button type="button" class="screenshot-expand switch-shot" data-screenshot-expand aria-label="Expand client progress charts screenshot">
+          <img src="/images/Client%20Progress%20Report.png" alt="ClickCoach client progress report with metric charts and trends" width="1025" height="922" loading="lazy" decoding="async" />
+        </button>
+        <figcaption>The chart is your testimonial. Clients can see exactly what changed.</figcaption>
+      </figure>
+    </article>
+
+    <article class="switch-row" data-switch="3">
+      <div class="switch-row__content">
+        <span class="switch-row__num" aria-hidden="true">03</span>
+        <h3>A client portal they'll actually open.</h3>
+        <p class="switch-row__lede">Most "client portals" get logged into twice and forgotten. ClickCoach's portal is a mobile-first PWA — your clients install it like a native app on their home screen.</p>
+        <details class="switch-points">
+          <summary>Why clients keep coming back</summary>
+          <ul class="checklist">
+            <li>Branded with your logo, colors, and themes — looks like your software, not ours</li>
+            <li>Homework, stats entry, courses, invoices, and quick-access buttons in one tap</li>
+            <li>Prospects get a limited-access version before they convert — keeps them warm</li>
+            <li>Pay invoices via Stripe directly in the portal, no email round-trip</li>
+          </ul>
+        </details>
+      </div>
+      <figure class="switch-row__media switch-row__media--portal">
+        <button type="button" class="screenshot-expand switch-shot" data-screenshot-expand aria-label="Expand client portal dashboard screenshot">
+          <img src="/images/Client%20Portal%20Welcome.png?v=1" alt="ClickCoach client portal showing Welcome back Jane, recent sessions, assignments, and stats" width="1400" height="900" loading="lazy" decoding="async" />
+        </button>
+        <figcaption>Installed on their home screen. Opened every week.</figcaption>
+      </figure>
+    </article>
+
+    <article class="switch-row switch-row--flip" data-switch="4">
+      <div class="switch-row__content">
+        <span class="switch-row__num" aria-hidden="true">04</span>
+        <h3>Get paid without the awkward conversation.</h3>
+        <p class="switch-row__lede">Stripe-backed invoicing, subscriptions, and e-signature contracts — all sitting next to the client they belong to. No more chasing receipts in your inbox.</p>
+        <details class="switch-points">
+          <summary>Billing built into the client record</summary>
+          <ul class="checklist">
+            <li>One-time invoices and recurring subscription plans, line-item billed with branded email templates</li>
+            <li>E-sign coaching agreements with sample contracts pre-loaded — done in one session</li>
+            <li>Hosted invoice fallback for clients who can't open the portal</li>
+            <li>Payment history attached to every client record automatically</li>
+          </ul>
+        </details>
+      </div>
+      <figure class="switch-row__media switch-row__media--portal">
+        <button type="button" class="screenshot-expand switch-shot" data-screenshot-expand aria-label="Expand invoices and payments screenshot">
+          <img src="/images/Invoices%20and%20Payments.png?v=1" alt="ClickCoach client invoices and payments screen showing outstanding balance and pay now actions" width="1400" height="900" loading="lazy" decoding="async" />
+        </button>
+        <figcaption>Invoices, subscriptions, and signed agreements — next to the client they belong to.</figcaption>
+      </figure>
+    </article>
+  </div>
+</section>
+
+<section class="section section--alt switch-more">
+  <div class="container">
+    <header class="section-intro switch-more__header">
+      <p class="eyebrow">Everything else, still included</p>
+      <h2>Ten more capabilities behind the four reasons.</h2>
+      <p class="muted">Open any row for specifics. None of these are upsells — they're part of the same login.</p>
+    </header>
+
+    <div class="switch-more-grid">
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">👥</span>
+          <span class="switch-more-card__title">Clients, prospects &amp; CRM</span>
+        </summary>
+        <p class="muted">A searchable client roster with full profiles, plus a real prospects pipeline (follow-ups, outreach history, source tracking, convert-to-client flow).</p>
         <ul class="checklist">
           <li>Built-in prospects pipeline — kill your separate CRM</li>
           <li>Source-attribution reporting on every prospect</li>
           <li>Groups for cohort programs, broadcasts, group-level reports</li>
           <li>Multi-coach company accounts with permissions</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">📱</span>
-        <h3>Client portal (PWA)</h3>
-        <p class="muted">Each client gets a branded mobile-first portal with homework, stats entry, courses, invoices, and quick-access buttons. Multiple themes. Safe-area support. Installable like a native app.</p>
-        <ul class="checklist">
-          <li>Clients log goals + 10 custom metrics from their phone</li>
-          <li>Pay invoices via Stripe in-portal</li>
-          <li>Up to six configurable quick-access buttons per coach</li>
-          <li>Prospect-limited portal access before they convert</li>
-        </ul>
-      </div>
-
-      <div class="card feature-card">
-        <span class="icon-wrap">📈</span>
-        <h3>Stats, goals &amp; progress</h3>
-        <p class="muted">Up to 10 custom metrics, named and colored by you. Clients enter values. You see stacked mini-charts beside your live session notes. Monthly stats report compares all clients over time.</p>
-        <ul class="checklist">
-          <li>2D / 3D chart styles, configurable per metric</li>
-          <li>Min/max/range visible during live sessions</li>
-          <li>Dedicated stats &amp; goals page for deeper analysis</li>
-          <li>The chart is your testimonial — clients can see what changed</li>
-        </ul>
-      </div>
-
-      <div class="card feature-card">
-        <span class="icon-wrap">🎓</span>
-        <h3>Learning (courses)</h3>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">🎓</span>
+          <span class="switch-more-card__title">Learning (courses)</span>
+        </summary>
         <p class="muted">Hierarchical course builder — courses → modules → lessons — with rich text and embedded video. Enroll individuals or entire groups. Auto-enroll new group members. Progress shows on the dashboard.</p>
         <ul class="checklist">
           <li>Unlimited courses, modules, lessons, quizzes</li>
@@ -120,115 +256,119 @@
           <li>Native portal learning area</li>
           <li>Stop trading time for money — your wisdom keeps working offline</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">💳</span>
-        <h3>Billing, payments &amp; contracts</h3>
-        <p class="muted">Stripe-backed invoices and subscriptions. Line-item billing with branded email templates. E-signature contracts with sample agreements pre-loaded. Payment history per client. Predictable income, fewer awkward money conversations.</p>
-        <ul class="checklist">
-          <li>One-time + recurring subscription plans</li>
-          <li>Hosted invoice fallback for clients</li>
-          <li>E-sign coaching agreements built in</li>
-          <li>Receipts attached to client records, not your inbox</li>
-        </ul>
-      </div>
-
-      <div class="card feature-card">
-        <span class="icon-wrap">📣</span>
-        <h3>Communication &amp; broadcast</h3>
-        <p class="muted">Branded broadcast email to active clients, archived clients, or prospects — filterable by group. Attach files from coach storage or Google Drive picker. Postmark-backed delivery. No separate email tool.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">📣</span>
+          <span class="switch-more-card__title">Communication &amp; broadcast</span>
+        </summary>
+        <p class="muted">Branded broadcast email to active clients, archived clients, or prospects — filterable by group. Postmark-backed delivery. No separate email tool.</p>
         <ul class="checklist">
           <li>Group-filtered broadcasts</li>
           <li>Email preview before sending</li>
           <li>Prospect outreach log on every lead</li>
           <li>Branded headers, colors, alignment</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">📊</span>
-        <h3>Reports &amp; analytics</h3>
-        <p class="muted">Monthly stats. Coach/client productivity. Attendance + missing sessions reports. Onboarding completion. Feedback. Prospect-source &amp; pipeline reports. Custom report builder with CSV export.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">📊</span>
+          <span class="switch-more-card__title">Reports &amp; analytics</span>
+        </summary>
+        <p class="muted">Monthly stats, productivity, attendance, onboarding completion, feedback, and prospect-source reports — plus CSV export.</p>
         <ul class="checklist">
           <li>Operational dashboard for multi-coach companies</li>
           <li>Aggregated calendar view across the team</li>
           <li>Per-source ROI on prospect channels</li>
           <li>The numbers you used to fake-confidence on calls — now real</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap--lime icon-wrap">🤖</span>
-        <h3>AI in the session</h3>
-        <p class="muted">Gemini-powered. Not a chatbot — woven into the workflow. Ask AI How To answers feature questions inside the app. Notes &amp; homework clean-up. Auto-generated accountability questions. Session focus suggestions.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap--lime icon-wrap">🤖</span>
+          <span class="switch-more-card__title">AI in the session</span>
+        </summary>
+        <p class="muted">Gemini-powered — woven into the workflow, not bolted on as a chatbot.</p>
         <ul class="checklist">
           <li>"This week's focus" suggestion before each call</li>
           <li>One-click rewrite for clarity and tone</li>
           <li>Question generation from session content</li>
           <li>In-app AI assistant trained on the product</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">🧾</span>
-        <h3>Assessments &amp; evaluations</h3>
-        <p class="muted">A real assessment system, not just session Q&amp;A. Performance &amp; evaluation library of templates. Custom assessments. Assign to clients. View responses in admin. Rename labels to match your terminology.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">🧾</span>
+          <span class="switch-more-card__title">Assessments &amp; evaluations</span>
+        </summary>
+        <p class="muted">Performance &amp; evaluation library, custom assessments, and client responses in admin.</p>
         <ul class="checklist">
           <li>Ready-made evaluation templates</li>
           <li>Starter assessments for new accounts</li>
           <li>Custom terminology across coach + portal</li>
           <li>Intake, mid-engagement, and outcome measurement</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">🏷️</span>
-        <h3>Branding &amp; white-label</h3>
-        <p class="muted">Logo, header colors, alignment across emails and portal. Multi-coach teams under one company. Per-coach permissions for billing, reports, courses. Delegated admin. Optional public coach directory. Custom SMTP.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">🏷️</span>
+          <span class="switch-more-card__title">Branding &amp; white-label</span>
+        </summary>
+        <p class="muted">Logo, colors, multi-coach teams, delegated admin, and optional public coach directory.</p>
         <ul class="checklist">
           <li>Partner-specific URLs for multi-tenant deployments</li>
           <li>Rich coach profiles with tags, testimonials</li>
           <li>Granular section access for delegates</li>
           <li>Coach directory drives inbound leads</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">🔌</span>
-        <h3>Integrations &amp; automation</h3>
-        <p class="muted">Google Calendar + Outlook 365 two-way sync. Outbound webhooks on session complete, client created, invoice paid, assignment added. API keys for custom integrations. Built-in endpoints for GoHighLevel and Groove.cm.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">🔌</span>
+          <span class="switch-more-card__title">Integrations &amp; automation</span>
+        </summary>
+        <p class="muted">Calendar sync, webhooks, API keys, and built-in endpoints for GoHighLevel and Groove.cm.</p>
         <ul class="checklist">
           <li>Stripe for payments &amp; Connect-style coach billing</li>
           <li>Google Drive picker for broadcast attachments</li>
           <li>Per-client Zoom links on profiles</li>
           <li>Webhook + API access included, not upsold</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">📂</span>
-        <h3>File storage &amp; resources</h3>
-        <p class="muted">Central document library for PDFs, Office docs, images, lesson plans. Files associate with clients. Open lesson plans directly inside live sessions. Sample contracts pre-loaded.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">📂</span>
+          <span class="switch-more-card__title">File storage &amp; resources</span>
+        </summary>
+        <p class="muted">Central library for PDFs, Office docs, lesson plans — opened inside live sessions.</p>
         <ul class="checklist">
           <li>Mark files as lesson plans for fast session access</li>
           <li>Share files with specific clients via portal</li>
           <li>Quota-based storage included</li>
           <li>Files live next to the conversation, not in Dropbox</li>
         </ul>
-      </div>
+      </details>
 
-      <div class="card feature-card">
-        <span class="icon-wrap">🎁</span>
-        <h3>Onboarding &amp; extras</h3>
-        <p class="muted">Multi-step onboarding packages with rich text + attachments. Convert-prospect flow with customizable welcome email. Comments on homework. Two-way comment workflows. Role-based access. In-app help center.</p>
+      <details class="switch-more-card">
+        <summary>
+          <span class="icon-wrap">🎁</span>
+          <span class="switch-more-card__title">Onboarding &amp; extras</span>
+        </summary>
+        <p class="muted">Onboarding packages, convert-prospect flow, homework comments, and in-app help center.</p>
         <ul class="checklist">
           <li>Send onboarding packages on import</li>
           <li>Token-based comment threads on assignments</li>
           <li>Standard auth + role-based access</li>
           <li>Help center mirrors the product, in-app</li>
         </ul>
-      </div>
+      </details>
     </div>
   </div>
 </section>
@@ -276,6 +416,13 @@
 
 </main>
 
+<dialog id="screenshot-lightbox" class="screenshot-lightbox" aria-label="Expanded screenshot">
+  <form method="dialog">
+    <button type="submit" class="screenshot-lightbox__close" aria-label="Close expanded screenshot">×</button>
+  </form>
+  <img class="screenshot-lightbox__img" src="" alt="" />
+</dialog>
+
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
@@ -319,5 +466,6 @@
   });
 })();
 </script>
+<script src="/js/screenshot-lightbox.js"></script>
 </body>
 </html>

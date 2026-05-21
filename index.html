@@ -57,7 +57,9 @@
       <div class="coach-orbit" aria-hidden="true">
         <span></span><span></span><span></span><span></span>
       </div>
-      <img class="eo-hero-photo" src="/images/ClickCoach%20Dashboard.png" alt="ClickCoach dashboard showing client and coaching business metrics" width="1463" height="821" loading="eager" decoding="async" />
+      <button type="button" class="screenshot-expand eo-hero-photo-btn" data-screenshot-expand aria-label="Expand ClickCoach dashboard screenshot">
+        <img class="eo-hero-photo" src="/images/ClickCoach%20Dashboard.png" alt="ClickCoach dashboard showing client and coaching business metrics" width="1463" height="821" loading="eager" decoding="async" />
+      </button>
       <div class="session-card">
         <div class="session-card__top">
           <span>Live coaching session</span>
@@ -96,7 +98,7 @@
     <div class="eo-focus__grid">
       <div class="eo-focus__copy">
         <h2>Coaching software. Nothing else.</h2>
-        <p>ClickCoach is focused on the work coaches repeat every week: calls, notes, assignments, progress, proof, courses, and getting paid.</p>
+        <p>ClickCoach was built for the complete coaching lifecycle: from prospecting and closing, to coaching delivery, accountability, progress tracking, and authority building that attracts higher-quality clients willing to pay premium rates.</p>
         <div class="feature-switcher" data-feature-switcher>
           <button class="feature-row is-active" type="button" data-feature="notes" aria-pressed="true">
             <span class="feature-row__burst"></span>
@@ -169,8 +171,8 @@
   <div class="container">
     <div class="proof-grid">
       <div class="proof-tile proof-tile--lime"><strong>20 -> 5</strong><span>minutes of session admin</span></div>
-      <div class="proof-tile proof-tile--pink"><strong>1</strong><span>home for every client touchpoint</span></div>
-      <div class="proof-tile proof-tile--mint"><strong>6</strong><span>client progress dimensions</span></div>
+      <div class="proof-tile proof-tile--pink"><strong>1</strong><span>System for your entire coaching business</span></div>
+      <div class="proof-tile proof-tile--mint"><strong>Proof-Based Coaching</strong><span>track goals, habits, wins, and progress.</span></div>
     </div>
   </div>
 </section>
@@ -178,22 +180,28 @@
 <section class="eo-templates">
   <div class="container">
     <div class="section-intro">
-      <h2>Everything your coaching practice keeps reaching for</h2>
-      <p>Each piece feels small and obvious on its own. Together, it replaces the scattered stack.</p>
+      <h2>Run your entire coaching business from one platform</h2>
+      <p>Prospecting, billing, coaching, accountability, courses, progress tracking, and client results — all connected in one place, for more profits, less admin and happier clients!</p>
     </div>
     <div class="soft-card-grid">
       <article class="soft-card">
-        <img class="soft-card__image" src="/images/Client%20Portal.png" alt="ClickCoach client portal dashboard" width="1532" height="920" loading="lazy" decoding="async" />
+        <button type="button" class="screenshot-expand soft-card__expand" data-screenshot-expand aria-label="Expand client portal screenshot">
+          <img class="soft-card__image" src="/images/Client%20Portal.png" alt="ClickCoach client portal dashboard" width="1532" height="920" loading="lazy" decoding="async" />
+        </button>
         <h3>Sessions</h3>
         <p>Briefs, notes, recordings, homework, and recap emails stay connected.</p>
       </article>
       <article class="soft-card">
-        <img class="soft-card__image soft-card__image--portrait" src="/images/Mobile%20App.png" alt="ClickCoach mobile app preview" width="750" height="686" loading="lazy" decoding="async" />
+        <button type="button" class="screenshot-expand soft-card__expand" data-screenshot-expand aria-label="Expand mobile app screenshot">
+          <img class="soft-card__image soft-card__image--portrait" src="/images/Mobile%20App.png" alt="ClickCoach mobile app preview" width="750" height="686" loading="lazy" decoding="async" />
+        </button>
         <h3>Client portal</h3>
         <p>Homework, goals, files, and reminders stay close enough for clients to actually use.</p>
       </article>
       <article class="soft-card">
-        <img class="soft-card__image" src="/images/Courses.png" alt="ClickCoach courses screen" width="1460" height="617" loading="lazy" decoding="async" />
+        <button type="button" class="screenshot-expand soft-card__expand" data-screenshot-expand aria-label="Expand courses screenshot">
+          <img class="soft-card__image" src="/images/Courses.png" alt="ClickCoach courses screen" width="1460" height="617" loading="lazy" decoding="async" />
+        </button>
         <h3>Courses</h3>
         <p>Modules, lessons, quizzes, and group cohorts live beside 1:1 coaching.</p>
       </article>
@@ -225,6 +233,13 @@
 </section>
 
 </main>
+
+<dialog id="screenshot-lightbox" class="screenshot-lightbox" aria-label="Expanded screenshot">
+  <form method="dialog">
+    <button type="submit" class="screenshot-lightbox__close" aria-label="Close expanded screenshot">×</button>
+  </form>
+  <img class="screenshot-lightbox__img" src="" alt="" />
+</dialog>
 
 <footer class="footer">
   <div class="container">
@@ -292,5 +307,6 @@
   });
 })();
 </script>
+<script src="/js/screenshot-lightbox.js"></script>
 </body>
 </html>

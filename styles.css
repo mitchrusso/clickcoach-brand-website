@@ -468,9 +468,9 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
    ===================================================================== */
 
 .eo-home {
-  --primary: #6E54D7;
-  --primary-700: #2B0642;
-  --primary-50: #EEE4FF;
+  --primary: #2463EB;
+  --primary-700: #1D52C7;
+  --primary-50: #EEF3FE;
   --secondary: #2B0642;
   --accent: #E1F99D;
   --accent-700: #C8EF6F;
@@ -604,8 +604,10 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .eo-hero__actions {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 30px;
 }
@@ -711,7 +713,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   right: 82px;
   bottom: 30px;
   border-radius: 999px;
-  background: #6E54D7;
+  background: #2463EB;
 }
 
 .coach-orbit span {
@@ -719,7 +721,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   width: 74px;
   height: 18px;
   border-radius: 999px;
-  background: #6E54D7;
+  background: #2463EB;
   transform-origin: 18px center;
 }
 
@@ -815,7 +817,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   display: block;
   font-size: 2.1rem;
   line-height: 1;
-  color: #1542DE;
+  color: #2463EB;
 }
 
 .portal-pop {
@@ -915,7 +917,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .feature-row[data-feature="accountability"].is-active .feature-row__burst { background: #E1F99D; }
-.feature-row[data-feature="proof"].is-active .feature-row__burst { background: #1542DE; }
+.feature-row[data-feature="proof"].is-active .feature-row__burst { background: #2463EB; }
 .feature-row[data-feature="portal"].is-active .feature-row__burst { background: #C5FAE8; }
 
 .feature-visual {
@@ -1007,7 +1009,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .mini-pill--pink { background: #FD9DE7; }
-.mini-pill--blue { background: #1542DE; color: #fff; }
+.mini-pill--blue { background: #2463EB; color: #fff; }
 
 .task-flow {
   position: relative;
@@ -1051,11 +1053,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   height: 160px;
   border-radius: 26px;
   background:
-    linear-gradient(135deg, transparent 44%, #6E54D7 45%, #6E54D7 48%, transparent 49%),
-    radial-gradient(circle at 18% 78%, #6E54D7 0 6px, transparent 7px),
-    radial-gradient(circle at 42% 46%, #6E54D7 0 6px, transparent 7px),
-    radial-gradient(circle at 66% 58%, #6E54D7 0 6px, transparent 7px),
-    radial-gradient(circle at 86% 26%, #6E54D7 0 6px, transparent 7px),
+    linear-gradient(135deg, transparent 44%, #2463EB 45%, #2463EB 48%, transparent 49%),
+    radial-gradient(circle at 18% 78%, #2463EB 0 6px, transparent 7px),
+    radial-gradient(circle at 42% 46%, #2463EB 0 6px, transparent 7px),
+    radial-gradient(circle at 66% 58%, #2463EB 0 6px, transparent 7px),
+    radial-gradient(circle at 86% 26%, #2463EB 0 6px, transparent 7px),
     #FAF7FF;
 }
 
@@ -1080,7 +1082,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   height: 140px;
   margin-top: 20px;
   border-radius: 50%;
-  background: conic-gradient(#1542DE 0 74%, #CAD5F3 74% 100%);
+  background: conic-gradient(#2463EB 0 74%, #CAD5F3 74% 100%);
   color: #0C0C0D;
 }
 
@@ -1225,7 +1227,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 .soft-card__art--two {
   background:
-    linear-gradient(74deg, #1542DE 0 18%, transparent 19%),
+    linear-gradient(74deg, #2463EB 0 18%, transparent 19%),
     linear-gradient(103deg, transparent 0 35%, #fff 36% 44%, transparent 45%),
     #C5FAE8;
 }
@@ -1310,6 +1312,13 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   max-width: 650px;
 }
 
+.eo-cta__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .eo-cta__panel > span {
   color: #8377AF;
   font-weight: 800;
@@ -1380,7 +1389,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   .eo-hero__copy p,
   .eo-hero__actions {
     margin-left: 0;
-    justify-items: start;
+    justify-content: flex-start;
   }
 
   .eo-hero__stage {

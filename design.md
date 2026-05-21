@@ -3,12 +3,12 @@ name: ClickCoach Soft Operating System
 inspiration: EmailOctopus homepage visual DNA, translated for ClickCoach
 colors:
   ink: '#0C0C0D'
-  purple: '#6E54D7'
+  primary-blue: '#2463EB'
+  support-purple: '#6E54D7'
   deep-purple: '#2B0642'
   lavender-bg: '#FAF7FF'
   lavender-panel: '#EEE4FF'
   lavender-strong: '#E6D6FE'
-  coach-blue: '#1542DE'
   coach-pink: '#FD9DE7'
   coach-lime: '#E1F99D'
   coach-mint: '#C5FAE8'
@@ -30,7 +30,7 @@ The EmailOctopus DNA to capture is:
 - big black display type on a pale lavender canvas
 - short, plainspoken copy with strong product confidence
 - generous empty space, not dense dashboards everywhere
-- purple pill CTAs, no heavy gradients, no busy shadows
+- blue pill CTAs, no heavy gradients, no busy shadows
 - playful pastel shape bursts that act like brand punctuation
 - interactive feature rows where the visual on the right changes when the user clicks a benefit
 - product concepts shown as friendly mini interfaces, not only photography
@@ -54,11 +54,12 @@ Use a pale lavender page background as the default canvas:
 - `#FAF7FF` for the body background.
 - `#FFFFFF` for nav and floating product surfaces.
 - `#0C0C0D` for headings and primary body text.
-- `#6E54D7` for primary brand actions, active controls, and logo accents.
+- `#2463EB` for primary brand actions, active controls, logo accents, and proof elements.
+- `#6E54D7` only as a supporting EmailOctopus-inspired accent for decorative depth.
 - `#2B0642` for deep contrast sections, footer, and pressed CTA states.
-- `#FD9DE7`, `#E1F99D`, `#C5FAE8`, `#FF8378`, and `#1542DE` for decorative bursts and active feature markers.
+- `#FD9DE7`, `#E1F99D`, `#C5FAE8`, `#FF8378`, and `#6E54D7` for decorative bursts and secondary atmosphere.
 
-Use blue as a supporting ClickCoach trust/proof color, not the dominant brand color. The old Azure Stream palette should recede.
+Use ClickCoach blue as the dominant brand color. The EmailOctopus purple should influence the atmosphere, not own the identity.
 
 ## Typography
 Headlines should feel round, heavy, and friendly. Use Nohemi if available; otherwise use Montserrat at 800/900 weight with normal letter spacing.
@@ -74,7 +75,7 @@ Do not use tight negative tracking. The type should feel chunky and legible, not
 ## Layout DNA
 The homepage should breathe. Use fewer cards and more composed sections.
 
-- Header: white or very pale lavender strip, centered nav, logo left, login and purple sign-up pill right.
+- Header: white or very pale lavender strip, centered nav, logo left, login and blue sign-up pill right.
 - Hero: centered message first, with one primary CTA. Add 2-3 large playful product/brand shapes around the hero, not a boxed dashboard.
 - First proof/product section: two-column composition. Left side is a big statement and interactive feature rows. Right side is a large illustrative product panel that changes by selected row.
 - Lower sections: use oversized rounded panels, staggered product cards, testimonial bubbles, and proof stats.
@@ -123,7 +124,7 @@ Use friendly abstract shape bursts as brand punctuation:
 Keep shapes flat and pastel. Avoid gradient orbs, glassmorphism, and stock decorative blobs.
 
 ## Components
-- Primary CTA: purple pill, white text, 44-56px height, bold uppercase or compact title case.
+- Primary CTA: ClickCoach blue pill, white text, 44-56px height, bold uppercase or compact title case.
 - Secondary CTA: deep-purple text or outline pill. Use sparingly.
 - Feature rows: full-width text buttons with 1px black divider lines.
 - Product panels: pale lavender, mint, or white cards with 28-36px radius.

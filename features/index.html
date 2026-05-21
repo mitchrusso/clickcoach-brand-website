@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=invoices-shot" />
+<link rel="stylesheet" href="/styles.css?v=stack-replace" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232463EB'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' fill='white' font-family='Montserrat' font-size='20' font-weight='800'%3EC%3C/text%3E%3C/svg%3E" />
 </head>
 <body class="eo-page">
@@ -61,14 +61,16 @@
       <p>Here's what a normal week looks like for a coach running their practice on ClickCoach.</p>
     </div>
     <figure class="week-inside__figure">
-      <img
-        src="/images/A%20Week%20Inside%20ClickCoach%20Workflow.svg?v=transparent"
-        alt="Monday through Friday coaching workflow inside ClickCoach: triage, sessions, admin, cohort broadcasts, and renewal with outcomes below"
-        width="680"
-        height="540"
-        loading="lazy"
-        decoding="async"
-      />
+      <button type="button" class="screenshot-expand week-inside__expand" data-screenshot-expand aria-label="Expand week inside ClickCoach workflow graphic">
+        <img
+          src="/images/A%20Week%20Inside%20ClickCoach%20Workflow.svg?v=transparent"
+          alt="Monday through Friday coaching workflow inside ClickCoach: triage, sessions, admin, cohort broadcasts, and renewal with outcomes below"
+          width="680"
+          height="540"
+          loading="lazy"
+          decoding="async"
+        />
+      </button>
     </figure>
 
     <div class="week-timeline" aria-label="A week inside ClickCoach, day by day">
@@ -369,6 +371,72 @@
           <li>Help center mirrors the product, in-app</li>
         </ul>
       </details>
+    </div>
+  </div>
+</section>
+
+<section class="section stack-replace" id="what-we-replace">
+  <div class="container">
+    <p class="eyebrow">Section 5 · What ClickCoach replaces</p>
+    <header class="section-intro stack-replace__header">
+      <h2>Cancel these. Keep your money.</h2>
+      <p>The average coach we onboard was spending <strong>$280–$420 per month</strong> across the stack below. ClickCoach replaces all of it for <strong>less than half of that</strong>.</p>
+    </header>
+
+    <div class="stack-replace__board">
+      <p class="stack-replace__board-title">Tools you're probably paying for — replaced by ClickCoach</p>
+      <ul class="stack-replace__list">
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Calendly / Acuity</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Calendar workspace + Google/Outlook two-way sync</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Paperbell / HoneyBook / invoice apps</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Native Stripe billing + subscriptions + e-sign contracts</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Notion / Google Docs / shared folders</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Session workspace + central file storage tied to each client</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">ConvertKit / Mailchimp</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Branded broadcast email, filtered by group</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Typeform / Google Forms / JotForm</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Native assessments + intake forms</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Teachable / Thinkific / Kajabi courses</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Built-in LMS with group auto-enroll and quizzes</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Separate CRM (HubSpot / Pipedrive)</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Prospects pipeline with source attribution and convert-flow</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">Dropbox / Google Drive for client files</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Files attached to clients, openable inside live sessions</span>
+        </li>
+        <li class="stack-replace__row">
+          <span class="stack-replace__from">DocuSign / HelloSign</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">E-signature with pre-loaded sample agreements</span>
+        </li>
+        <li class="stack-replace__row stack-replace__row--highlight">
+          <span class="stack-replace__from">ChatGPT tabs you keep switching to</span>
+          <span class="stack-replace__arrow" aria-hidden="true"></span>
+          <span class="stack-replace__to">Gemini-powered AI inside the session — not a side window, fully integrated</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

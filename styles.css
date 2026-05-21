@@ -789,19 +789,6 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .groove-widget *,
 .join-page groovesell-embed,
 .join-page groovesell-embed * {
-  font-family: var(--f-body) !important;
-}
-
-.groove-widget h1,
-.groove-widget h2,
-.groove-widget h3,
-.groove-widget button,
-.groove-widget [type="button"],
-.groove-widget [type="submit"],
-.join-page groovesell-embed h1,
-.join-page groovesell-embed h2,
-.join-page groovesell-embed h3,
-.join-page groovesell-embed button {
   font-family: var(--f-heading) !important;
 }
 

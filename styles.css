@@ -471,15 +471,15 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   --primary: #2463EB;
   --primary-700: #1D52C7;
   --primary-50: #EEF3FE;
-  --secondary: #2B0642;
+  --secondary: #0F172A;
   --accent: #E1F99D;
   --accent-700: #C8EF6F;
-  --bg: #FAF7FF;
-  --surface: #F5EFFF;
-  --surface-subtle: #EEE4FF;
+  --bg: #F7FAFF;
+  --surface: #EEF5FF;
+  --surface-subtle: #EAF2FF;
   --surface-elevated: #FFFFFF;
   --text-main: #0C0C0D;
-  --text-muted: #52447F;
+  --text-muted: #51627A;
   --outline: rgba(12, 12, 13, .2);
   --outline-strong: #0C0C0D;
   --success: #5EDDAF;
@@ -534,7 +534,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   height: 13px;
   border-radius: 999px;
   background: #FD9DE7;
-  border-color: #FAF7FF;
+  border-color: #F7FAFF;
 }
 
 .eo-home .nav__brand {
@@ -579,7 +579,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   background:
     radial-gradient(70% 60% at 0% 35%, rgba(225, 249, 157, .24), transparent 62%),
     radial-gradient(54% 52% at 100% 20%, rgba(230, 214, 254, .82), transparent 68%),
-    #FAF7FF;
+    #F7FAFF;
 }
 
 .eo-hero__inner {
@@ -613,7 +613,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .eo-hero__actions span {
-  color: #8377AF;
+  color: #6B7A90;
   font-weight: 700;
   font-size: .95rem;
 }
@@ -701,7 +701,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   left: 0;
   bottom: 82px;
   border-radius: 999px;
-  background: #E6D6FE;
+  background: #DCEBFF;
 }
 
 .eo-cloud--two::before { width: 68px; height: 68px; left: 18px; bottom: 12px; }
@@ -752,7 +752,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .metric-pop span,
 .portal-pop small,
 .session-card small {
-  color: #8377AF;
+  color: #6B7A90;
   font-size: .82rem;
   font-weight: 800;
 }
@@ -773,7 +773,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   min-height: 132px;
   border-radius: 22px;
   padding: 18px;
-  background: #F5EFFF;
+  background: #EEF5FF;
 }
 
 .session-card p {
@@ -792,7 +792,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .session-card__footer button {
   border: 0;
   border-radius: 999px;
-  background: #2B0642;
+  background: #0F172A;
   color: #fff;
   padding: 8px 15px;
   cursor: pointer;
@@ -840,7 +840,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 .eo-focus {
   padding: 70px 0 110px;
-  background: linear-gradient(180deg, #FAF7FF, #F5EFFF);
+  background: linear-gradient(180deg, #F7FAFF, #EEF5FF);
 }
 
 .eo-focus__grid {
@@ -966,17 +966,17 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   width: 12px;
   height: 12px;
   border-radius: 999px;
-  background: #E6D6FE;
+  background: #DCEBFF;
 }
 
 .mock-window__bar span:nth-child(2) { background: #FD9DE7; }
 .mock-window__bar span:nth-child(3) { background: #E1F99D; }
-.mock-window__bar strong { margin-left: auto; color: #8377AF; font-size: .85rem; }
+.mock-window__bar strong { margin-left: auto; color: #6B7A90; font-size: .85rem; }
 
 .mock-note {
   border-radius: 26px;
   padding: 24px;
-  background: #EEE4FF;
+  background: #EAF2FF;
 }
 
 .mock-note p {
@@ -1020,7 +1020,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .task-flow .line {
   position: absolute;
   inset: 64px 70px 50px 70px;
-  border: 3px solid #2B0642;
+  border: 3px solid #0F172A;
   border-left: 0;
   border-bottom: 0;
   border-radius: 0 120px 0 0;
@@ -1045,7 +1045,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .proof-card {
   min-height: 410px;
   padding: 34px;
-  background: #EEE4FF;
+  background: #EAF2FF;
 }
 
 .chart-line {
@@ -1058,7 +1058,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
     radial-gradient(circle at 42% 46%, #2463EB 0 6px, transparent 7px),
     radial-gradient(circle at 66% 58%, #2463EB 0 6px, transparent 7px),
     radial-gradient(circle at 86% 26%, #2463EB 0 6px, transparent 7px),
-    #FAF7FF;
+    #F7FAFF;
 }
 
 .proof-card__stats {
@@ -1092,7 +1092,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   width: 92px;
   height: 92px;
   border-radius: 50%;
-  background: #FAF7FF;
+  background: #F7FAFF;
 }
 
 .ring-stat strong,
@@ -1104,7 +1104,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .ring-stat span {
   margin-top: -42px;
   font-weight: 800;
-  color: #8377AF;
+  color: #6B7A90;
   text-transform: uppercase;
   font-size: .72rem;
 }
@@ -1113,14 +1113,14 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   width: min(310px, 90%);
   min-height: 480px;
   padding: 28px 22px;
-  border: 10px solid #2B0642;
+  border: 10px solid #0F172A;
 }
 
 .phone-mock__top {
   width: 76px;
   height: 8px;
   border-radius: 999px;
-  background: #2B0642;
+  background: #0F172A;
   margin: 0 auto 28px;
 }
 
@@ -1129,7 +1129,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .phone-item {
   margin-top: 14px;
   border-radius: 18px;
-  background: #EEE4FF;
+  background: #EAF2FF;
   padding: 16px;
   font-weight: 800;
 }
@@ -1151,7 +1151,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .eo-testimonial,
 .eo-cta {
   padding: 88px 0;
-  background: #FAF7FF;
+  background: #F7FAFF;
 }
 
 .proof-grid {
@@ -1192,7 +1192,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .section-intro p {
-  color: #52447F;
+  color: #51627A;
 }
 
 .soft-card-grid {
@@ -1215,7 +1215,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   background:
     radial-gradient(circle at 24% 30%, #fff 0 36px, transparent 37px),
     radial-gradient(circle at 68% 66%, rgba(255,255,255,.8) 0 54px, transparent 55px),
-    #EEE4FF;
+    #EAF2FF;
 }
 
 .soft-card__art--one {
@@ -1240,7 +1240,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .soft-card p {
-  color: #52447F;
+  color: #51627A;
   font-size: 1rem;
 }
 
@@ -1255,7 +1255,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   max-width: 850px;
   margin: 0 auto;
   border-radius: 42px;
-  background: #2B0642;
+  background: #0F172A;
   color: #fff;
   padding: clamp(34px, 6vw, 72px);
   text-align: center;
@@ -1305,7 +1305,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   background:
     radial-gradient(circle at 8% 18%, #E1F99D 0 80px, transparent 81px),
     radial-gradient(circle at 92% 78%, #FD9DE7 0 105px, transparent 106px),
-    #EEE4FF;
+    #EAF2FF;
 }
 
 .eo-cta__panel p {
@@ -1320,12 +1320,12 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .eo-cta__panel > span {
-  color: #8377AF;
+  color: #6B7A90;
   font-weight: 800;
 }
 
 .eo-home .footer {
-  background: #2B0642;
+  background: #0F172A;
 }
 
 .eo-home .footer__bottom a {

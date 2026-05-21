@@ -5,10 +5,10 @@ colors:
   ink: '#0C0C0D'
   primary-blue: '#2463EB'
   support-purple: '#6E54D7'
-  deep-purple: '#2B0642'
-  lavender-bg: '#FAF7FF'
-  lavender-panel: '#EEE4FF'
-  lavender-strong: '#E6D6FE'
+  deep-navy: '#0F172A'
+  powder-blue-bg: '#F7FAFF'
+  powder-blue-panel: '#EAF2FF'
+  powder-blue-strong: '#DCEBFF'
   coach-pink: '#FD9DE7'
   coach-lime: '#E1F99D'
   coach-mint: '#C5FAE8'
@@ -27,7 +27,7 @@ spacing:
 ClickCoach should feel like the coaching operating system made simple: serious enough for high-ticket coaches, but warmer, more memorable, and less enterprise than the current blue SaaS treatment.
 
 The EmailOctopus DNA to capture is:
-- big black display type on a pale lavender canvas
+- big black display type on a pale powder-blue canvas
 - short, plainspoken copy with strong product confidence
 - generous empty space, not dense dashboards everywhere
 - blue pill CTAs, no heavy gradients, no busy shadows
@@ -49,17 +49,17 @@ The page should read as "coaching business, nothing else." Keep the posture focu
 The tone is simple, direct, slightly playful, and confident. Avoid corporate SaaS filler like "streamline your workflows" unless it is grounded in a concrete coaching action.
 
 ## Color System
-Use a pale lavender page background as the default canvas:
+Use a pale baby-blue page background as the default canvas:
 
-- `#FAF7FF` for the body background.
+- `#F7FAFF` for the body background.
 - `#FFFFFF` for nav and floating product surfaces.
 - `#0C0C0D` for headings and primary body text.
 - `#2463EB` for primary brand actions, active controls, logo accents, and proof elements.
 - `#6E54D7` only as a supporting EmailOctopus-inspired accent for decorative depth.
-- `#2B0642` for deep contrast sections, footer, and pressed CTA states.
+- `#0F172A` for deep contrast sections, footer, and pressed CTA states.
 - `#FD9DE7`, `#E1F99D`, `#C5FAE8`, `#FF8378`, and `#6E54D7` for decorative bursts and secondary atmosphere.
 
-Use ClickCoach blue as the dominant brand color. The EmailOctopus purple should influence the atmosphere, not own the identity.
+Use ClickCoach blue as the dominant brand color. EmailOctopus should influence the composition and playfulness, not own the palette.
 
 ## Typography
 Headlines should feel round, heavy, and friendly. Use Nohemi if available; otherwise use Montserrat at 800/900 weight with normal letter spacing.
@@ -75,7 +75,7 @@ Do not use tight negative tracking. The type should feel chunky and legible, not
 ## Layout DNA
 The homepage should breathe. Use fewer cards and more composed sections.
 
-- Header: white or very pale lavender strip, centered nav, logo left, login and blue sign-up pill right.
+- Header: white or very pale powder-blue strip, centered nav, logo left, login and blue sign-up pill right.
 - Hero: centered message first, with one primary CTA. Add 2-3 large playful product/brand shapes around the hero, not a boxed dashboard.
 - First proof/product section: two-column composition. Left side is a big statement and interactive feature rows. Right side is a large illustrative product panel that changes by selected row.
 - Lower sections: use oversized rounded panels, staggered product cards, testimonial bubbles, and proof stats.
@@ -125,12 +125,12 @@ Keep shapes flat and pastel. Avoid gradient orbs, glassmorphism, and stock decor
 
 ## Components
 - Primary CTA: ClickCoach blue pill, white text, 44-56px height, bold uppercase or compact title case.
-- Secondary CTA: deep-purple text or outline pill. Use sparingly.
+- Secondary CTA: blue outline pill. Use sparingly.
 - Feature rows: full-width text buttons with 1px black divider lines.
-- Product panels: pale lavender, mint, or white cards with 28-36px radius.
+- Product panels: pale powder-blue, mint, or white cards with 28-36px radius.
 - Inputs/forms: white pill fields inside a tinted panel when used as illustrations.
 - Stats: small floating white or pastel pills, not heavy dashboard cards.
-- Help/chat button: round purple floating button is acceptable if needed.
+- Help/chat button: round blue floating button is acceptable if needed.
 
 ## Imagery
 For the homepage, rely less on generic coach photography and more on custom product-story visuals:

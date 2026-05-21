@@ -780,59 +780,9 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   box-shadow: 0 30px 80px -48px rgba(15, 23, 42, .65);
 }
 
-.checkout-card__top {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 24px;
-  background: var(--join-blue);
-  color: #fff;
-}
-
-.checkout-logo {
-  width: 58px;
-  height: 58px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  background: rgba(255,255,255,.22);
-  font-family: var(--f-heading);
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-
-.checkout-card__top h2,
-.checkout-card__top p {
-  margin: 0;
-  color: #fff;
-}
-
 .groove-widget {
-  padding: 22px;
+  padding: 22px 22px 10px;
   background: #fff;
-}
-
-.checkout-summary {
-  margin: 0 22px 14px;
-  border: 1.5px solid var(--join-blue);
-  border-radius: 14px;
-  padding: 16px;
-}
-
-.checkout-summary--muted {
-  border-color: var(--join-line);
-  opacity: .78;
-}
-
-.checkout-summary div {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  font-weight: 900;
-}
-
-.checkout-summary small {
-  color: #51627A;
 }
 
 .checkout-trust {

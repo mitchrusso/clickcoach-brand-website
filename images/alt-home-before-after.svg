@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="baTitle baDesc">
+  <title id="baTitle">Before and after: coach tools cobbled together vs ClickCoach one login</title>
+  <desc id="baDesc">Left shows disconnected coaching apps in chaos; right shows ClickCoach login with sessions, homework, progress, and billing connected. Metrics: 20 to 5 minute wrap-up, 12 plus hours saved per month, ROI in 30 days.</desc>
+  <defs>
+    <filter id="baShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="baPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F7FAFF"/>
+    </linearGradient>
+    <linearGradient id="baAfterBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAF2FF"/>
+      <stop offset="55%" stop-color="#F7FAFF"/>
+      <stop offset="100%" stop-color="#E1F99D" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="baBeforeBg" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD6E2" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#F7FAFF" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="baOrbitRing" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2463EB"/>
+      <stop offset="50%" stop-color="#6E54D7"/>
+      <stop offset="100%" stop-color="#BEF264"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="560" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="960" height="560" fill="#F7FAFF" opacity="0.5"/>
+
+  <!-- brand atmosphere -->
+  <ellipse cx="180" cy="120" rx="200" ry="140" fill="#FFD6E2" opacity="0.35"/>
+  <ellipse cx="780" cy="200" rx="220" ry="160" fill="#E1F99D" opacity="0.28"/>
+  <ellipse cx="720" cy="480" rx="260" ry="100" fill="#EAF2FF" opacity="0.55"/>
+
+  <g stroke="#2463EB" stroke-opacity="0.1" fill="none" stroke-width="1">
+    <path d="M20 40h80v40M20 40v80M860 500h80v-40M940 500v-80"/>
+    <circle cx="60" cy="60" r="4" fill="#2463EB" fill-opacity="0.2"/><circle cx="900" cy="500" r="4" fill="#BEF264" fill-opacity="0.35"/>
+  </g>
+
+  <text x="480" y="42" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="22" font-weight="800" fill="#0C0C0D" letter-spacing="-0.02em">One login. <tspan fill="#2463EB">Everything connected.</tspan></text>
+
+  <line x1="480" y1="68" x2="480" y2="400" stroke="#2463EB" stroke-opacity="0.2" stroke-width="2"/>
+
+  <!-- side panels -->
+  <rect x="24" y="92" width="432" height="318" rx="28" fill="url(#baBeforeBg)"/>
+  <rect x="504" y="92" width="432" height="318" rx="28" fill="url(#baAfterBg)"/>
+
+  <text x="240" y="118" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" font-weight="800" fill="#64748B" letter-spacing="0.06em">BEFORE</text>
+
+  <!-- scribble mass -->
+  <path d="M80 200 C120 140, 200 120, 260 160 S360 220, 400 180 S320 280, 240 300 S140 320, 100 260 S60 240, 80 200 Z" fill="none" stroke="#FD9DE7" stroke-opacity="0.35" stroke-width="26" stroke-linecap="round"/>
+  <path d="M120 220 Q200 160 280 200 T380 240 Q340 300 250 290 T130 250" fill="none" stroke="#6E54D7" stroke-opacity="0.2" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- coach app chips -->
+  <g font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" fill="#0C0C0D">
+    <g transform="translate(72 130) rotate(-8)"><rect width="72" height="36" rx="10" fill="#EAF2FF" stroke="#2463EB" stroke-opacity="0.4"/><text x="36" y="23" text-anchor="middle">Calendly</text></g>
+    <g transform="translate(168 118) rotate(6)"><rect width="68" height="36" rx="10" fill="#FFD6E2" stroke="#FD9DE7" stroke-opacity="0.5"/><text x="34" y="23" text-anchor="middle">Notion</text></g>
+    <g transform="translate(300 128) rotate(-5)"><rect width="64" height="36" rx="10" fill="#2463EB"/><text x="32" y="23" text-anchor="middle" fill="#fff">Stripe</text></g>
+    <g transform="translate(88 210) rotate(12)"><rect width="78" height="36" rx="10" fill="#C5FAE8" stroke="#10B981" stroke-opacity="0.35"/><text x="39" y="23" text-anchor="middle">ConvertKit</text></g>
+    <g transform="translate(200 200) rotate(-10)"><rect width="70" height="36" rx="10" fill="#EEEDFE" stroke="#6E54D7" stroke-opacity="0.4"/><text x="35" y="23" text-anchor="middle">Typeform</text></g>
+    <g transform="translate(320 210) rotate(8)"><rect width="68" height="36" rx="10" fill="#E1F99D" stroke="#BEF264"/><text x="34" y="23" text-anchor="middle">Dropbox</text></g>
+    <g transform="translate(130 290) rotate(-6)"><rect width="72" height="36" rx="10" fill="#FAEEDA" stroke="#F59E0B" stroke-opacity="0.35"/><text x="36" y="23" text-anchor="middle">DocuSign</text></g>
+    <g transform="translate(248 278) rotate(5)"><rect width="58" height="36" rx="10" fill="#2463EB"/><text x="29" y="23" text-anchor="middle" fill="#fff">Zoom</text></g>
+    <g transform="translate(60 300) rotate(4)"><rect width="76" height="36" rx="10" fill="#EAF2FF" stroke="#2463EB" stroke-opacity="0.4"/><text x="38" y="23" text-anchor="middle">Sheets</text></g>
+    <g transform="translate(340 290) rotate(-12)"><rect width="76" height="36" rx="10" fill="#FFD6E2" stroke="#FD9DE7" stroke-opacity="0.45"/><text x="38" y="23" text-anchor="middle">ChatGPT</text></g>
+    <g transform="translate(210 330) rotate(7)"><rect width="80" height="36" rx="10" fill="#fff" stroke="#CBD5E1"/><text x="40" y="23" text-anchor="middle">Mailchimp</text></g>
+  </g>
+
+  <!-- sticky notes -->
+  <g font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="600" fill="#92400E">
+    <g transform="translate(48 168) rotate(-6)"><rect width="64" height="40" rx="4" fill="#FEF3C7" stroke="#FCD34D"/><text x="32" y="18" text-anchor="middle">Wrong client?</text><text x="32" y="30" text-anchor="middle">Which tab?</text></g>
+    <g transform="translate(360 170) rotate(8)"><rect width="70" height="36" rx="4" fill="#FFD6E2" stroke="#FD9DE7"/><text x="35" y="22" text-anchor="middle" fill="#831843">Double entry</text></g>
+    <g transform="translate(100 350) rotate(-4)"><rect width="72" height="36" rx="4" fill="#FEF3C7" stroke="#FCD34D"/><text x="36" y="22" text-anchor="middle">Sold on feel</text></g>
+    <g transform="translate(330 340) rotate(5)"><rect width="78" height="40" rx="4" fill="#E1F99D" stroke="#BEF264"/><text x="39" y="18" text-anchor="middle" fill="#3F6212">Homework</text><text x="39" y="30" text-anchor="middle" fill="#3F6212">lost again</text></g>
+  </g>
+
+  <g fill="#EF4444" fill-opacity="0.9">
+    <path d="M155 155 L165 175 L145 175 Z"/><text x="155" y="170" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">!</text>
+    <path d="M285 320 L295 340 L275 340 Z"/><text x="285" y="335" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">!</text>
+  </g>
+
+  <!-- AFTER orbit -->
+  <circle cx="720" cy="258" r="118" fill="none" stroke="url(#baOrbitRing)" stroke-opacity="0.55" stroke-width="2.5"/>
+  <circle cx="720" cy="258" r="148" fill="none" stroke="#2463EB" stroke-opacity="0.08" stroke-width="1"/>
+
+  <!-- orbit connectors -->
+  <g stroke="#2463EB" stroke-opacity="0.2" stroke-width="1.5">
+    <line x1="720" y1="258" x2="720" y2="144"/>
+    <line x1="720" y1="258" x2="848" y2="258"/>
+    <line x1="720" y1="258" x2="720" y2="372"/>
+    <line x1="720" y1="258" x2="592" y2="258"/>
+  </g>
+
+  <!-- orbit nodes (brand colors) -->
+  <g font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="700" fill="#0C0C0D">
+    <g transform="translate(720 108)">
+      <circle cx="0" cy="0" r="36" fill="#E1F99D" filter="url(#baShadow)"/>
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#BEF264" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle">Sessions</text>
+    </g>
+    <g transform="translate(848 258)">
+      <circle cx="0" cy="0" r="36" fill="#EEEDFE" filter="url(#baShadow)"/>
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#6E54D7" stroke-opacity="0.35" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle">Homework</text>
+    </g>
+    <g transform="translate(720 408)">
+      <circle cx="0" cy="0" r="36" fill="#FFD6E2" filter="url(#baShadow)"/>
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#FD9DE7" stroke-opacity="0.5" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle">Progress</text>
+    </g>
+    <g transform="translate(592 258)">
+      <circle cx="0" cy="0" r="36" fill="#C5FAE8" filter="url(#baShadow)"/>
+      <circle cx="0" cy="0" r="36" fill="none" stroke="#10B981" stroke-opacity="0.35" stroke-width="1.5"/>
+      <text x="0" y="5" text-anchor="middle">Billing</text>
+    </g>
+  </g>
+
+  <g fill="#2463EB" stroke="#2463EB" stroke-width="1.2">
+    <g transform="translate(720 108)"><rect x="-12" y="-18" width="24" height="16" rx="3" fill="#fff" fill-opacity="0.7"/></g>
+    <g transform="translate(848 258)"><rect x="-9" y="-20" width="18" height="22" rx="2" fill="#fff" fill-opacity="0.7"/></g>
+    <g transform="translate(720 408)"><path d="M-12 -8 L4 -24 L20 -8 L4 8 Z" fill="#fff" fill-opacity="0.7" stroke="#2463EB" stroke-width="1.2"/></g>
+    <g transform="translate(592 258)"><rect x="-11" y="-16" width="22" height="14" rx="2" fill="#fff" fill-opacity="0.7"/></g>
+  </g>
+
+  <!-- AFTER label above Sessions -->
+  <text x="720" y="58" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" font-weight="800" fill="#2463EB" letter-spacing="0.08em">AFTER</text>
+
+  <!-- ClickCoach login -->
+  <g filter="url(#baShadow)">
+    <rect x="638" y="188" width="164" height="168" rx="16" fill="url(#baPanel)" stroke="#2463EB" stroke-opacity="0.25" stroke-width="1.5"/>
+    <circle cx="668" cy="208" r="16" fill="#2463EB"/>
+    <text x="668" y="214" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="14" font-weight="800" fill="#fff">C</text>
+    <text x="720" y="214" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="15" font-weight="800" fill="#2463EB">ClickCoach</text>
+    <rect x="656" y="232" width="128" height="28" rx="8" fill="#fff" stroke="#CBD5E1"/>
+    <text x="668" y="250" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#94A3B8">Email</text>
+    <rect x="656" y="268" width="128" height="28" rx="8" fill="#fff" stroke="#CBD5E1"/>
+    <text x="668" y="286" font-family="Plus Jakarta Sans, sans-serif" font-size="10" fill="#94A3B8">Password</text>
+    <rect x="656" y="304" width="128" height="32" rx="10" fill="#2463EB"/>
+    <text x="720" y="325" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="12" font-weight="800" fill="#fff">Log In</text>
+  </g>
+
+  <!-- bottom metrics -->
+  <g filter="url(#baShadow)">
+    <rect x="40" y="430" width="272" height="96" rx="18" fill="#E1F99D" stroke="#BEF264" stroke-opacity="0.6"/>
+    <rect x="344" y="430" width="272" height="96" rx="18" fill="#EAF2FF" stroke="#2463EB" stroke-opacity="0.2"/>
+    <rect x="648" y="430" width="272" height="96" rx="18" fill="#C5FAE8" stroke="#10B981" stroke-opacity="0.25"/>
+  </g>
+
+  <circle cx="88" cy="478" r="22" fill="#fff" fill-opacity="0.85"/>
+  <circle cx="88" cy="478" r="14" fill="none" stroke="#2463EB" stroke-width="2"/>
+  <path d="M88 470v10l6 4" stroke="#2463EB" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <text x="200" y="472" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="18" font-weight="800" fill="#0C0C0D">20 &#8594; 5 min</text>
+  <text x="200" y="498" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#51627A">wrap-up</text>
+
+  <circle cx="392" cy="478" r="22" fill="#fff" fill-opacity="0.85"/>
+  <circle cx="382" cy="474" r="5" fill="#2463EB"/><circle cx="402" cy="474" r="5" fill="#2463EB"/><circle cx="392" cy="488" r="5" fill="#6E54D7"/>
+  <text x="504" y="472" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="18" font-weight="800" fill="#0C0C0D">12+ hrs saved</text>
+  <text x="504" y="498" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#51627A">per month</text>
+
+  <rect x="676" y="462" width="36" height="32" rx="6" fill="#fff" fill-opacity="0.85"/>
+  <rect x="682" y="482" width="8" height="12" rx="2" fill="#2463EB"/>
+  <rect x="694" y="474" width="8" height="20" rx="2" fill="#10B981"/>
+  <rect x="706" y="466" width="8" height="28" rx="2" fill="#6E54D7"/>
+  <text x="796" y="472" text-anchor="middle" font-family="Montserrat, sans-serif" font-size="18" font-weight="800" fill="#0C0C0D">ROI in 30 days</text>
+  <text x="796" y="498" text-anchor="middle" font-family="Plus Jakarta Sans, sans-serif" font-size="13" font-weight="600" fill="#51627A">not months of guesswork</text>
+</svg>

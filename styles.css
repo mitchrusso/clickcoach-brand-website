@@ -4134,15 +4134,56 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   font-size: clamp(1.6rem, 2.6vw, 2.15rem);
 }
 
-.alt-home__creds {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  max-width: 900px;
-  margin: 28px auto 12px;
+.alt-home__creds-band {
   width: 100%;
+  max-width: 1040px;
+  margin: clamp(8px, 2vw, 16px) auto 0;
+  justify-self: center;
+  text-align: center;
+}
+
+.alt-home__creds {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(10px, 1.6vw, 14px);
+  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+}
+
+.alt-home__creds .alt-about__cred {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  min-height: 118px;
+  padding: clamp(14px, 2vw, 18px) clamp(12px, 2vw, 16px);
+}
+
+.alt-home__creds .alt-about__cred-value {
+  font-size: clamp(1.35rem, 2vw, 1.85rem);
+}
+
+.alt-home__creds .alt-about__cred-value--text {
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  max-width: 11ch;
+}
+
+.alt-home__creds .alt-about__cred:nth-child(4) .alt-about__cred-value--text {
+  max-width: 13ch;
+}
+
+.alt-home__creds .alt-about__cred-label {
+  margin-top: auto;
+  padding-top: 10px;
+  max-width: 22ch;
+  font-size: clamp(.72rem, 1.1vw, .78rem);
+  line-height: 1.4;
 }
 
 .alt-home__founder-line {
-  margin: 16px 0 0;
+  margin: clamp(14px, 2.2vw, 18px) 0 0;
   font-size: .95rem;
   color: #6B7A90;
   font-weight: 600;
@@ -4700,9 +4741,67 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
     transform: none;
   }
 
+}
+
+@media (min-width: 1024px) {
   .alt-home__creds {
-    grid-template-columns: 1fr;
-    max-width: 360px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .alt-home__creds-band {
+    max-width: 1120px;
+  }
+
+  .alt-home__creds .alt-about__cred {
+    min-height: 124px;
+  }
+
+  .alt-home__creds .alt-about__cred-value--text {
+    max-width: none;
+  }
+
+  .alt-home__creds .alt-about__cred-label {
+    max-width: 24ch;
+  }
+}
+
+@media (max-width: 899px) {
+  .alt-home__creds-band {
+    max-width: 560px;
+  }
+
+  .alt-home__creds .alt-about__cred-label {
+    max-width: 19ch;
+  }
+}
+
+@media (max-width: 520px) {
+  .alt-home__creds-band {
+    max-width: 100%;
+  }
+
+  .alt-home__creds {
+    gap: 10px;
+  }
+
+  .alt-home__creds .alt-about__cred {
+    min-height: 108px;
+    padding: 12px 10px;
+  }
+
+  .alt-home__creds .alt-about__cred-value {
+    font-size: 1.3rem;
+  }
+
+  .alt-home__creds .alt-about__cred-value--text {
+    font-size: .95rem;
+    max-width: 12ch;
+  }
+
+  .alt-home__creds .alt-about__cred-label {
+    max-width: none;
+    font-size: .7rem;
+    padding-top: 8px;
   }
 }
 

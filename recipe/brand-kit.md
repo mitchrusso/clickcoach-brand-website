@@ -2,7 +2,7 @@
 
 ## Identity
 - **Brand name:** ClickCoach (ClickCoach.io)
-- **Founder:** Mitch Russo — sold software company for $10M+, ex-CEO of Tony Robbins / Chet Holmes coaching division (50+ coaches), 10+ years coaching founders & execs.
+- **Founder:** Mitch Russo — sold software company for $10M+, ex-CEO of Tony Robbins / Chet Holmes coaching division (50+ coaches), 25 years coaching founders & execs.
 - **Positioning:** The coaching operating system. Doesn't help you "run a coaching business" — helps you stop carrying the business in your head.
 - **Tagline candidates:** "Run your entire coaching practice on one login." / "Stop carrying your coaching business in your head." / "The coaching OS."
 

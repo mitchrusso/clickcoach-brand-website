@@ -1407,5 +1407,3 @@ Competitors to ClickCoach
 [[https://www.honeybook.com/software-for-online-coaching]{.underline}](https://www.honeybook.com/software-for-online-coaching)
 
 [[https://www.coachvantage.com/]{.underline}](https://www.coachvantage.com/)
-
-

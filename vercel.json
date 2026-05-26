@@ -9,6 +9,16 @@
       "source": "/alt-about/",
       "destination": "/about/",
       "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions.html",
+      "destination": "/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions",
+      "destination": "/terms/",
+      "permanent": true
     }
   ]
 }

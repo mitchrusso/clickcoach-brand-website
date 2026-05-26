@@ -4810,3 +4810,155 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
     flex-direction: column;
   }
 }
+
+/* Legal pages (privacy, terms) */
+.legal-page .legal-doc {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.legal-page .legal-hero {
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+.legal-page .legal-doc h1 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.legal-meta {
+  margin: 0 0 20px;
+  font-size: .95rem;
+}
+
+.legal-intro {
+  font-size: 1.05rem;
+}
+
+.legal-toc {
+  margin: 32px 0 40px;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.legal-toc__title {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.legal-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  columns: 2;
+  column-gap: 32px;
+}
+
+.legal-toc li {
+  margin: 6px 0;
+  break-inside: avoid;
+}
+
+.legal-toc a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.legal-toc a:hover {
+  text-decoration: underline;
+}
+
+.legal-section {
+  margin-top: 40px;
+  padding-top: 8px;
+}
+
+.legal-section h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.legal-section h3 {
+  margin-top: 24px;
+  font-size: 1.05rem;
+}
+
+.legal-section p,
+.legal-section li {
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.legal-section ul {
+  margin: 12px 0;
+  padding-left: 1.35rem;
+}
+
+.legal-section li + li {
+  margin-top: 8px;
+}
+
+.legal-section code {
+  font-size: .82rem;
+  word-break: break-all;
+}
+
+.legal-address {
+  margin: 16px 0;
+  font-style: normal;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.legal-table-wrap {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.legal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .92rem;
+}
+
+.legal-table th,
+.legal-table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--border);
+}
+
+.legal-table th {
+  background: var(--surface);
+  font-family: var(--f-heading);
+  font-weight: 700;
+  color: var(--text);
+}
+
+.legal-table td {
+  color: var(--text-muted);
+}
+
+.legal-copyright {
+  margin-top: 24px;
+  font-size: .9rem;
+}
+
+@media (max-width: 640px) {
+  .legal-toc ol {
+    columns: 1;
+  }
+
+  .legal-table {
+    font-size: .85rem;
+  }
+
+  .legal-table th,
+  .legal-table td {
+    padding: 10px;
+  }
+}

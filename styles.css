@@ -1274,6 +1274,17 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   font-size: .95rem;
 }
 
+.eo-hero__stack-note {
+  max-width: 420px;
+  margin: 14px auto 0;
+  text-align: center;
+  font-family: var(--f-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: #51627A;
+}
+
 .eo-hero__stage {
   position: relative;
   width: 100%;
@@ -4363,9 +4374,8 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   border-radius: 28px;
   box-shadow: 0 22px 48px -32px rgba(36, 99, 235, .35);
   aspect-ratio: 1;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  filter: saturate(0.88) brightness(1.03) contrast(0.98);
 }
 
 .alt-home__honest-cards {

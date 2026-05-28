@@ -1,6 +1,26 @@
 {
   "redirects": [
     {
+      "source": "/alt-home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/alt-home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index-legacy",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index-legacy/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/alt-about",
       "destination": "/about/",
       "permanent": true

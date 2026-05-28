@@ -587,6 +587,34 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .eo-home .field select {
   border-radius: var(--r-md);
 }
+.contact-form-card { position: relative; }
+.contact-form-status {
+  padding: 14px 18px;
+  border-radius: var(--r-md);
+  margin-bottom: 20px;
+  font-size: .95rem;
+  line-height: 1.5;
+}
+.contact-form-status--success {
+  background: rgba(217, 249, 157, .35);
+  border: 1px solid var(--accent, #d9f99d);
+  color: var(--text-main);
+}
+.contact-form-status--error {
+  background: rgba(239, 68, 68, .08);
+  border: 1px solid rgba(239, 68, 68, .35);
+  color: var(--text-main);
+}
+.contact-form-status[hidden] { display: none !important; }
+.contact-form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
 .field input:focus, .field textarea:focus, .field select:focus {
   outline: none; border-color: var(--primary);
   box-shadow: 0 0 0 4px rgba(36, 99, 235, .15);
@@ -770,13 +798,23 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   font-size: 1.25rem;
 }
 
+.join-plans {
+  display: grid;
+  gap: 20px;
+  margin-top: 34px;
+}
+
 .join-offer-card {
   position: relative;
-  margin-top: 34px;
-  border: 2px solid var(--join-blue);
+  border: 1px solid var(--join-line);
   border-radius: 22px;
   background: #fff;
   padding: 28px;
+  box-shadow: 0 16px 48px -40px rgba(15, 23, 42, .35);
+}
+
+.join-offer-card--featured {
+  border: 2px solid var(--join-blue);
   box-shadow: 0 24px 60px -44px rgba(15, 23, 42, .5);
 }
 
@@ -905,15 +943,21 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 .bonus-list div {
   display: grid;
-  grid-template-columns: 96px 1fr auto;
+  grid-template-columns: 1fr auto;
   gap: 16px;
   align-items: center;
   border-top: 1px solid var(--join-line);
   padding-top: 14px;
 }
 
-.bonus-list strong {
-  color: var(--join-blue);
+.bonus-list span {
+  font-weight: 700;
+  color: var(--join-navy);
+}
+
+.checkout-plan-note {
+  font-size: .92rem;
+  line-height: 1.45;
 }
 
 .bonus-list em {
@@ -974,6 +1018,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .groove-widget {
   padding: 22px 22px 10px;
   background: #fff;
+  min-height: 520px;
 }
 
 .groove-widget,
@@ -999,11 +1044,55 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   font-size: .78rem;
 }
 
+.checkout-legal {
+  margin: 0;
+  padding: 4px 22px 22px;
+  text-align: center;
+  font-size: .88rem;
+  line-height: 1.5;
+  color: #51627A;
+}
+
+.checkout-legal a {
+  color: var(--join-blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.checkout-legal a:hover {
+  color: var(--primary);
+}
+
 .join-footer {
   padding: 28px 0;
   color: #51627A;
-  text-align: center;
   border-top: 1px solid var(--join-line);
+}
+
+.join-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: .9rem;
+}
+
+.join-footer a {
+  color: var(--join-blue);
+  font-weight: 600;
+}
+
+.join-footer a:hover {
+  color: var(--primary);
+}
+
+@media (min-width: 1100px) {
+  .join-plans {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
 }
 
 @media (max-width: 980px) {
@@ -4109,7 +4198,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   }
 }
 
-/* —— Alt Home (/alt-home/) —— */
+/* —— Home (eo-home.alt-home) —— */
 .eo-home.alt-home h1 {
   font-size: clamp(2rem, 4.5vw, 3.5rem);
   line-height: 1.1;

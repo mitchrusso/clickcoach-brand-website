@@ -4680,6 +4680,17 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   margin: 0;
 }
 
+.alt-home__replace .text-link {
+  font-family: var(--f-heading);
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.alt-home__replace .text-link:hover {
+  text-decoration: underline;
+}
+
 /* What Coaches Are Saying — from clickcoach.io home */
 .cc-coaches-saying {
   padding: clamp(72px, 8vw, 96px) 0;

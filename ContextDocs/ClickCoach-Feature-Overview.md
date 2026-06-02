@@ -131,6 +131,11 @@ Schedule coaching sessions and see them alongside external calendars.
 - **Dashboard → calendar flow ---** Empty-state scheduling routes
   coaches to the calendar with the schedule dialog open.
 
+- **Session appointment reminders ---** Automated emails to coach and
+  client ~2 days, 24 hours, and 1 hour before each Calendar scheduled
+  session (green appointment). Toggle per coach in Settings →
+  Notifications (default on).
+
 # 5. Client portal
 
 Branded, secure login for clients to see progress, homework, stats,
@@ -271,6 +276,14 @@ Stay in touch between sessions without a separate email marketing tool.
 
 - **Branded emails ---** Company logo, header colors, and alignment on
   outbound messages.
+
+- **Session appointment reminders ---** Before Calendar sessions: coach +
+  client emails at ~48h, 24h, and 1h; per-coach toggle in Settings →
+  Notifications.
+
+- **Follow-up reminders ---** Optional homework, accountability, and
+  stats reminders N days after a session---custom message and delay per
+  type.
 
 # 11. File storage & resources
 

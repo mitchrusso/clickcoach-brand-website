@@ -1259,6 +1259,24 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   color: #17131B;
 }
 
+.eo-hero__brand-line {
+  margin: 0 0 12px;
+  font-family: var(--f-heading);
+  font-weight: 800;
+  font-size: clamp(.95rem, 1.6vw, 1.1rem);
+  letter-spacing: .02em;
+  color: var(--primary);
+  text-transform: none;
+}
+
+.eo-hero__purpose {
+  max-width: 680px;
+  margin: 18px auto 0;
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.55;
+  color: #51627A;
+}
+
 .eo-hero__actions {
   display: flex;
   justify-content: center;
@@ -1272,6 +1290,58 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   color: #6B7A90;
   font-weight: 700;
   font-size: .95rem;
+}
+
+.demo-video-modal {
+  position: relative;
+  margin: auto;
+  padding: clamp(16px, 3.5vw, 28px);
+  padding-top: 52px;
+  border: none;
+  border-radius: var(--r-xl);
+  background: #fff;
+  width: min(96vw, 1100px);
+  box-shadow: var(--shadow-hover);
+}
+
+.demo-video-modal::backdrop {
+  background: rgba(12, 12, 13, 0.78);
+}
+
+.demo-video-modal__frame {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #0B1220;
+}
+
+.demo-video-modal__frame iframe,
+.demo-video-modal__frame mux-player {
+  display: block;
+  width: 100%;
+}
+
+.demo-video-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: var(--r-full);
+  background: var(--surface-muted, #f1f5f9);
+  color: var(--text-main);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.demo-video-modal__close:hover {
+  background: var(--outline);
+}
+
+.demo-video-modal__close:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .eo-hero__stack-note {
@@ -4783,15 +4853,6 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   line-height: 1.65;
   font-style: italic;
   color: #51627A;
-}
-
-.cc-coaches-saying__stars {
-  display: flex;
-  gap: 4px;
-  margin-top: 24px;
-  color: #EAB308;
-  font-size: 1rem;
-  line-height: 1;
 }
 
 .alt-home__testimonials-more {

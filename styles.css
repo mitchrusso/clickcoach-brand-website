@@ -856,7 +856,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   font-size: .82rem;
 }
 
-.join-content h1 {
+.join-intro {
+  margin-bottom: clamp(40px, 6vw, 64px);
+}
+
+.join-intro h1 {
   max-width: 760px;
   margin: 22px 0 18px;
   font-size: clamp(2.9rem, 5.5vw, 5.35rem);

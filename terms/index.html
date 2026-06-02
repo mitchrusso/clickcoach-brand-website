@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=legal-1" />
+<link rel="stylesheet" href="/styles.css?v=nav-login-dd-1" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png" />
 <script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
 </head>
@@ -48,8 +48,21 @@
       <details class="nav__login">
         <summary class="btn btn-secondary btn-sm nav__login-trigger">Log in <span class="nav__login-caret" aria-hidden="true">▾</span></summary>
         <div class="nav__login-menu" role="menu">
-          <a role="menuitem" href="https://new.clickcoach.io/login">ClickCoach 2.0 <span class="nav__login-badge">New</span></a>
-          <a role="menuitem" href="http://app.clickcoach.io/secure-login">ClickCoach Legacy</a>
+          <span class="nav__login-eyebrow">Choose your login</span>
+          <a class="nav__login-item" role="menuitem" href="https://new.clickcoach.io/login">
+            <span class="nav__login-item-body">
+              <span class="nav__login-item-title">ClickCoach 2.0 <span class="nav__login-badge">New</span></span>
+              <span class="nav__login-item-sub">The all-new coaching platform</span>
+            </span>
+            <span class="nav__login-item-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="nav__login-item" role="menuitem" href="http://app.clickcoach.io/secure-login">
+            <span class="nav__login-item-body">
+              <span class="nav__login-item-title">ClickCoach Legacy</span>
+              <span class="nav__login-item-sub">Sign in to the classic dashboard</span>
+            </span>
+            <span class="nav__login-item-arrow" aria-hidden="true">→</span>
+          </a>
         </div>
       </details>
       <a class="btn btn-primary btn-sm" href="/join/">Get Started</a>

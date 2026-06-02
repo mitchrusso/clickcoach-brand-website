@@ -2904,7 +2904,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
     padding-block: 14px;
   }
 
-  .eo-home .nav__cta .btn-primary {
+  .nav__cta .btn-primary {
     display: none;
   }
 

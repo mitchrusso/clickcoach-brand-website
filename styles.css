@@ -856,22 +856,60 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   font-size: .82rem;
 }
 
-.join-intro {
-  margin-bottom: clamp(40px, 6vw, 64px);
-  text-align: center;
+.join-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 470px);
+  gap: clamp(32px, 5vw, 64px);
+  align-items: start;
+  margin-bottom: clamp(48px, 7vw, 88px);
 }
 
-.join-intro h1 {
-  max-width: 760px;
-  margin: 22px auto 18px;
-  font-size: clamp(2.9rem, 5.5vw, 5.35rem);
-  line-height: .98;
+.join-hero__copy {
+  align-self: center;
+}
+
+.join-hero__copy h1 {
+  max-width: 640px;
+  margin: 20px 0 18px;
+  font-size: clamp(2.7rem, 4.6vw, 4.6rem);
+  line-height: 1;
   font-weight: 900;
 }
 
-.join-intro .join-lede {
-  margin-left: auto;
-  margin-right: auto;
+.join-hero__copy .join-lede {
+  max-width: 540px;
+}
+
+.join-trust {
+  list-style: none;
+  margin: 30px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.join-trust li {
+  position: relative;
+  padding-left: 34px;
+  font-weight: 800;
+  color: var(--join-navy);
+}
+
+.join-trust li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #DCFCE7;
+  color: #0E7A39;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: .85rem;
 }
 
 .join-lede {
@@ -892,8 +930,8 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
-  margin-bottom: clamp(36px, 5vw, 56px);
+  gap: 26px;
+  margin-bottom: 0;
 }
 
 .plan-switcher__radio {
@@ -1195,6 +1233,25 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   box-shadow: 0 30px 80px -48px rgba(15, 23, 42, .65);
 }
 
+.checkout-heading {
+  padding: 26px 24px 2px;
+  text-align: center;
+  border-bottom: 1px solid var(--join-line);
+}
+
+.checkout-heading h2 {
+  margin: 0 0 6px;
+  color: var(--join-navy);
+  font-size: clamp(1.35rem, 2.4vw, 1.6rem);
+}
+
+.checkout-heading p {
+  margin: 0 0 18px;
+  color: #51627A;
+  font-weight: 700;
+  font-size: .9rem;
+}
+
 .groove-widget {
   padding: 22px 22px 10px;
   background: #fff;
@@ -1278,9 +1335,25 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 @media (max-width: 980px) {
   .join-header__inner,
   .join-grid,
+  .join-hero,
   .join-feature-grid,
   .join-quote-grid {
     grid-template-columns: 1fr;
+  }
+
+  .join-hero__copy {
+    text-align: center;
+  }
+
+  .join-hero__copy h1,
+  .join-hero__copy .join-lede {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .join-trust {
+    width: fit-content;
+    margin-inline: auto;
   }
 
   .join-timer,

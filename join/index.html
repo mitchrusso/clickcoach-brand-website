@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=join-headline-top-1" />
+<link rel="stylesheet" href="/styles.css?v=plan-switcher-1" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png" />
 <script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
 </head>
@@ -55,7 +55,26 @@
     <p class="join-lede">ClickCoach.io gives you every tool you need to deliver structured, branded, high-value coaching—without the overwhelm.</p>
   </div>
 
-  <div class="container join-plans" aria-label="Choose your plan">
+  <div class="container plan-switcher" aria-label="Choose your plan">
+    <input type="radio" name="plan-tab" id="tab-annual" class="plan-switcher__radio" checked />
+    <input type="radio" name="plan-tab" id="tab-monthly" class="plan-switcher__radio" />
+    <input type="radio" name="plan-tab" id="tab-enterprise" class="plan-switcher__radio" />
+
+    <div class="plan-switcher__tabs" role="tablist" aria-label="Billing options">
+      <label for="tab-annual" class="plan-switcher__tab">
+        <span class="plan-switcher__tab-label">Annual</span>
+        <span class="plan-switcher__tab-badge">Save 58%</span>
+      </label>
+      <label for="tab-monthly" class="plan-switcher__tab">
+        <span class="plan-switcher__tab-label">Monthly</span>
+      </label>
+      <label for="tab-enterprise" class="plan-switcher__tab">
+        <span class="plan-switcher__tab-label">Enterprise</span>
+      </label>
+    </div>
+
+    <div class="plan-switcher__panels">
+      <div class="plan-panel plan-panel--annual">
         <article class="join-offer-card join-offer-card--featured">
           <span class="join-ribbon">Most Popular</span>
           <div>
@@ -66,14 +85,17 @@
             <strong>$497.00</strong>
             <span>/ year</span>
           </div>
-          <p class="join-save">Save significantly with annual billing</p>
+          <p class="join-save join-save--accent">You save $691/year — that's 58% off versus paying monthly.</p>
+          <p class="join-save join-save--compare">Just $41.42/mo, billed annually · vs $99/mo monthly ($1,188/yr).</p>
           <ul class="join-checks">
             <li>Full Platform Access</li>
             <li>Unlimited Clients</li>
             <li>All Bonus Courses Included</li>
           </ul>
         </article>
+      </div>
 
+      <div class="plan-panel plan-panel--monthly">
         <article class="join-offer-card">
           <div>
             <h2>ClickCoach Monthly</h2>
@@ -83,14 +105,17 @@
             <strong>$99.00</strong>
             <span>/ month</span>
           </div>
-          <p class="join-save">Cancel any time · 30-day money-back guarantee</p>
+          <p class="join-save">Cancel any time · 30-day money-back guarantee.</p>
+          <p class="join-save join-save--compare">That's $1,188/year — switch to annual and save $691.</p>
           <ul class="join-checks">
             <li>Full Platform Access</li>
             <li>Unlimited Clients</li>
             <li>All Bonus Courses Included</li>
           </ul>
         </article>
+      </div>
 
+      <div class="plan-panel plan-panel--enterprise">
         <article class="join-offer-card">
           <div>
             <h2>ClickCoach Teams</h2>
@@ -100,13 +125,15 @@
             <strong>$299.00</strong>
             <span>/ month</span>
           </div>
-          <p class="join-save">Multi-coach company account · per team subscription</p>
+          <p class="join-save">Multi-coach company account · per team subscription.</p>
           <ul class="join-checks">
             <li>Up to 10 named coach seats</li>
             <li>Shared branding &amp; delegated admin</li>
             <li>Full platform for every coach on the team</li>
           </ul>
         </article>
+      </div>
+    </div>
   </div>
 
   <div class="container join-grid">

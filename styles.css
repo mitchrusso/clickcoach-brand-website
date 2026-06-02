@@ -887,6 +887,104 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   margin-bottom: clamp(36px, 5vw, 56px);
 }
 
+/* Plan switcher — tabbed pricing (annual / monthly / enterprise) */
+.plan-switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: clamp(36px, 5vw, 56px);
+}
+
+.plan-switcher__radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.plan-switcher__tabs {
+  display: inline-flex;
+  gap: 4px;
+  padding: 6px;
+  background: var(--join-soft);
+  border: 1px solid var(--join-line);
+  border-radius: 999px;
+}
+
+.plan-switcher__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--f-heading);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #51627A;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background .18s ease, color .18s ease, box-shadow .18s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .plan-switcher__tab:hover { color: var(--join-blue); }
+}
+
+.plan-switcher__tab-badge {
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .03em;
+  color: #0E7A39;
+  background: #DCFCE7;
+  padding: 3px 9px;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+#tab-annual:checked ~ .plan-switcher__tabs label[for="tab-annual"],
+#tab-monthly:checked ~ .plan-switcher__tabs label[for="tab-monthly"],
+#tab-enterprise:checked ~ .plan-switcher__tabs label[for="tab-enterprise"] {
+  background: #fff;
+  color: var(--join-blue);
+  box-shadow: 0 8px 22px -10px rgba(15, 23, 42, .4);
+}
+
+.plan-switcher__radio:focus-visible ~ .plan-switcher__tabs {
+  outline: 2px solid var(--join-blue);
+  outline-offset: 3px;
+}
+
+.plan-switcher__panels {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.plan-panel {
+  display: none;
+  width: 100%;
+  max-width: 460px;
+}
+
+#tab-annual:checked ~ .plan-switcher__panels .plan-panel--annual,
+#tab-monthly:checked ~ .plan-switcher__panels .plan-panel--monthly,
+#tab-enterprise:checked ~ .plan-switcher__panels .plan-panel--enterprise {
+  display: block;
+}
+
+.join-offer-card .join-save--accent {
+  color: #0E7A39;
+  font-weight: 800;
+}
+
+.join-offer-card .join-save--compare {
+  font-weight: 600;
+  font-size: .92rem;
+  margin-top: 6px;
+}
+
 .join-offer-card {
   position: relative;
   border: 1px solid var(--join-line);

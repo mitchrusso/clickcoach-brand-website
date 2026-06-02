@@ -247,8 +247,39 @@ p { margin: 0 0 1em; color: var(--text-main); }
   .theme-toggle:hover { background: var(--surface-subtle); }
 }
 
+/* Login dropdown */
+.nav__login { position: relative; }
+.nav__login-trigger { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none; }
+.nav__login-trigger::-webkit-details-marker { display: none; }
+.nav__login-caret { font-size: .65em; line-height: 1; transition: transform .15s ease; }
+.nav__login[open] .nav__login-caret { transform: rotate(180deg); }
+.nav__login-menu {
+  position: absolute; top: calc(100% + 8px); right: 0;
+  min-width: 220px;
+  background: var(--bg); border: 1px solid var(--outline);
+  border-radius: var(--r); box-shadow: var(--shadow-hover);
+  padding: 6px; display: none; flex-direction: column; gap: 2px; z-index: 60;
+}
+.nav__login[open] .nav__login-menu { display: flex; }
+@media (hover: hover) and (pointer: fine) {
+  .nav__login:hover .nav__login-menu { display: flex; }
+}
+.nav__login-menu a {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 10px 12px; border-radius: calc(var(--r) - 3px);
+  color: var(--text-main); font-weight: 500; font-size: .92rem; white-space: nowrap;
+}
+@media (hover: hover) and (pointer: fine) {
+  .nav__login-menu a:hover { background: var(--surface-subtle); text-decoration: none; }
+}
+.nav__login-badge {
+  font-size: .6rem; font-weight: 700; letter-spacing: .04em;
+  color: #fff; background: var(--primary); border-radius: var(--r-full);
+  padding: 2px 7px; text-transform: uppercase;
+}
+
 @media (max-width: 900px) {
-  .nav__menu, .nav__cta .btn-secondary { display: none; }
+  .nav__menu, .nav__cta .btn-secondary, .nav__cta .nav__login { display: none; }
   .nav__toggle { display: inline-flex; }
   .nav--open .nav__menu {
     display: flex; flex-direction: column; gap: 0;

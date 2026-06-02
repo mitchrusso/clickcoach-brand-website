@@ -12,10 +12,16 @@
       <a href="/contact/">Contact</a>
     </nav>
     <div class="nav__cta">
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">🌗</button>
-      <a class="btn btn-secondary btn-sm" href="https://app.clickcoach.io/login">Log in</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">ð</button>
+      <details class="nav__login">
+        <summary class="btn btn-secondary btn-sm nav__login-trigger">Log in <span class="nav__login-caret" aria-hidden="true">▾</span></summary>
+        <div class="nav__login-menu" role="menu">
+          <a role="menuitem" href="https://new.clickcoach.io/login">ClickCoach 2.0 <span class="nav__login-badge">New</span></a>
+          <a role="menuitem" href="http://app.clickcoach.io/secure-login">ClickCoach Legacy</a>
+        </div>
+      </details>
       <a class="btn btn-primary btn-sm" href="/join/">Get Started</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">☰</button>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">â°</button>
     </div>
   </div>
 </header>

@@ -1075,8 +1075,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .checkout-panel {
-  position: sticky;
-  top: 112px;
+  position: static;
 }
 
 .checkout-card {

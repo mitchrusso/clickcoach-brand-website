@@ -4,6 +4,7 @@ Product Feature Overview
 
 *For sales website & marketing • May 2026*
 
+
 ClickCoach is an all-in-one coaching business platform built for
 professional coaches and coaching companies. It combines client
 management, live and scheduled sessions, accountability workflows,

@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://clickcoach.io/sitemap.xml
+LLMS: https://clickcoach.io/llms.txt

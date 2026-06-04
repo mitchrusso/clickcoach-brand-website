@@ -1,0 +1,38 @@
+# ClickCoach
+
+> ClickCoach is a web-based coaching operating system for professional coaches, solo practices, multi-coach firms, and certification programs.
+
+ClickCoach helps coaches run sessions, assign homework, track client progress, manage a client portal, handle billing, offer courses, send broadcasts, use AI summaries, and produce proof of coaching outcomes from one login.
+
+Primary website: https://clickcoach.io/
+
+Key pages:
+- Product overview: https://clickcoach.io/
+- Features: https://clickcoach.io/features/
+- Pricing: https://clickcoach.io/pricing/
+- For coaches, teams, and certification programs: https://clickcoach.io/for-coaches/
+- Founder story: https://clickcoach.io/about/
+- Testimonials and proof: https://clickcoach.io/testimonials/
+- Contact, support, affiliates, and API inquiries: https://clickcoach.io/contact/
+- Join / checkout: https://clickcoach.io/join/
+- Privacy policy: https://clickcoach.io/privacy/
+- Terms of service: https://clickcoach.io/terms/
+
+Core offer:
+- ClickCoach Access is $497 per coach per year.
+- Includes full platform access, unlimited clients, and a 30-day money-back guarantee.
+- Teams plans are available for coaching companies and certification programs.
+
+Primary audience:
+- Professional coaches who want fewer disconnected tools.
+- Coaches who need proof of client progress and transformation.
+- Solo coaches who want an operating system for sessions, homework, billing, notes, and client accountability.
+- Multi-coach practices and certification programs that need consistent delivery across coaches.
+
+Founder:
+- ClickCoach was built by Mitch Russo after 25 years coaching founders and executives.
+- Mitch Russo previously founded, scaled, and sold a software company, managed 50+ coaches for Tony Robbins and Chet Holmes, and has published six books on coaching, certification, and licensing.
+
+Support:
+- Email: support@clickcoach.io
+

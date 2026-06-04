@@ -1,5 +1,6 @@
 ---
 name: Azure Stream
+
 colors:
   surface: '#f7f9fb'
   surface-dim: '#d8dadc'

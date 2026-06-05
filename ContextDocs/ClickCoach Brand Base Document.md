@@ -1,5 +1,6 @@
 # ClickCoach Brand Base Document
 
+
 _Combined from ContextDocs Markdown sources. Excludes DESIGN-ClikcCoach.md._
 
 

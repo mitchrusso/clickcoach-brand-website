@@ -1,5 +1,6 @@
 **ClickCoach**
 
+
 Product Feature Overview
 
 *For sales website & marketing • May 2026*

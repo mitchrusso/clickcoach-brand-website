@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="376" height="190" viewBox="0 0 376 190" role="img" aria-labelledby="title desc">
+  <title id="title">SlipMeter mini timer</title>
+  <desc id="desc">Compact SlipMeter timer showing a client selector, activity selector, running timer, and pause button.</desc>
+  <defs>
+    <filter id="shadow" x="-12%" y="-18%" width="124%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0F172A" flood-opacity=".18"/>
+    </filter>
+    <linearGradient id="pause" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D9F99D"/>
+      <stop offset="1" stop-color="#FACC15"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A7C7FF"/>
+      <stop offset=".52" stop-color="#C9A7FF"/>
+      <stop offset="1" stop-color="#D9F99D"/>
+    </linearGradient>
+  </defs>
+  <rect x="22" y="18" width="332" height="154" rx="14" fill="#fff" stroke="#CBD5E1" filter="url(#shadow)"/>
+  <rect x="30" y="27" width="316" height="134" rx="16" fill="#fff" stroke="#EBDDFD"/>
+  <path d="M46 142c48 0 88 12 126 12h152c8 0 14-6 14-14v-2H46z" fill="#EEF2FF"/>
+  <rect x="48" y="58" width="280" height="100" rx="22" fill="none" stroke="url(#ring)" stroke-width="4"/>
+  <rect x="60" y="72" width="126" height="28" rx="9" fill="#fff" stroke="#E2E8F0"/>
+  <text x="74" y="91" fill="#0F172A" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="800">Bob's</text>
+  <path d="M174 82l5 5 5-5" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="194" y="72" width="126" height="28" rx="9" fill="#fff" stroke="#E2E8F0"/>
+  <text x="208" y="91" fill="#0F172A" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="800">Business Dev</text>
+  <path d="M304 82l5 5 5-5" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="63" cy="113" r="6" fill="#67E8F9"/>
+  <text x="76" y="117" fill="#5B6F92" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="10" font-weight="900" letter-spacing=".05em">RUNNING</text>
+  <rect x="60" y="123" width="258" height="20" rx="10" fill="#fff" stroke="#E2E8F0"/>
+  <text x="150" y="139" fill="#5B5A8B" font-family="Menlo, Consolas, monospace" font-size="16" font-weight="900">18:17:32</text>
+  <circle cx="248" cy="133" r="11" fill="#86EFAC"/>
+  <text x="248" y="138" fill="#0F172A" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="middle">+</text>
+  <circle cx="275" cy="133" r="11" fill="#FFF1F2" stroke="#FDA4AF"/>
+  <text x="275" y="137" fill="#E11D48" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="14" font-weight="900" text-anchor="middle">−</text>
+  <circle cx="302" cy="133" r="11" fill="#FFF1F2" stroke="#FDA4AF"/>
+  <text x="302" y="137" fill="#E11D48" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="900" text-anchor="middle">×</text>
+  <rect x="60" y="153" width="258" height="24" rx="12" fill="url(#pause)"/>
+  <text x="169" y="169" fill="#0C0C0D" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="900">Pause</text>
+  <g transform="translate(132 36)">
+    <rect width="112" height="24" rx="12" fill="#FFF7FB" stroke="#FBCFE8"/>
+    <text x="39" y="16" fill="#BE185D" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="900">⏱</text>
+    <text x="54" y="16" fill="#BE185D" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="900" text-anchor="middle">SlipMeter</text>
+  </g>
+</svg>

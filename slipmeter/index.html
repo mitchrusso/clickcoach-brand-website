@@ -42,6 +42,7 @@
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "macOS",
       "url": "https://clickcoach.io/slipmeter/",
+      "downloadUrl": "https://clickcoach.io/downloads/SlipMeter-0.1.80-arm64.dmg",
       "description": "SlipMeter tracks client-related time from a small Mac timer and can connect to ClickCoach for subscriber client and activity data.",
       "publisher": {
         "@id": "https://clickcoach.io/#organization"
@@ -52,6 +53,52 @@
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://clickcoach.io/slipmeter/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I use SlipMeter if I am not a ClickCoach subscriber?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. SlipMeter can run as a standalone Mac app. You can add your own clients, activities, rounding preferences, and local time records without needing a ClickCoach subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of coaching work should I track with SlipMeter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SlipMeter is designed for the work that happens around coaching sessions, including prep, follow-up, client support, homework review, admin, research, program design, and billable or non-billable client work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does SlipMeter cost for standalone users?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standalone users can start with a 30-day trial. After the trial, SlipMeter is planned at $29.99 per year."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does SlipMeter replace my coaching platform or CRM?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. SlipMeter is a lightweight timer and reporting tool for coach-client work. It is meant to help you capture time clearly, not replace your scheduling, CRM, billing, or full coaching platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I separate billable, non-billable, and included time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. SlipMeter is built around slips that can be marked as billable, non-billable, internal/admin, or included at no charge so you can see where your time is actually going."
+          }
+        }
+      ]
     }
   ]
 }
@@ -144,7 +191,10 @@
         <p class="eyebrow">The hidden leak</p>
         <h2>Most coaching work never makes it into the record.</h2>
       </div>
-      <p>Client prep, quick research, proposal follow-up, reviewing homework, internal admin, and support messages all take time. SlipMeter gives that work a simple place to land, without forcing you back into a full dashboard every time you do five minutes of client work.</p>
+      <div class="sm-proof-media">
+        <img src="/images/slipmeter-mini-timer.svg" alt="Compact SlipMeter mini timer for tracking coaching work" width="376" height="190" loading="lazy" decoding="async" />
+        <p>Client prep, quick research, proposal follow-up, reviewing homework, internal admin, and support messages all take time. SlipMeter gives that work a simple place to land, without forcing you back into a full dashboard every time you do five minutes of client work.</p>
+      </div>
     </div>
   </section>
 
@@ -180,7 +230,7 @@
     </div>
   </section>
 
-  <section class="section section--alt">
+  <section class="section section--alt" id="checkout">
     <div class="container sm-split">
       <div>
         <p class="eyebrow">For ClickCoach subscribers</p>
@@ -193,6 +243,43 @@
           <li>Included free for active ClickCoach subscribers during beta</li>
         </ul>
       </div>
+      <aside class="sm-download-card" aria-label="Download SlipMeter">
+        <div class="sm-checkout-card__head">
+          <img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="42" height="42" decoding="async" />
+          <div>
+            <strong>SlipMeter Beta</strong>
+            <span>Mac time tracking for coaches</span>
+          </div>
+        </div>
+        <p class="muted">Enter your details and download the Mac beta installer.</p>
+        <form id="slipmeter-download-form" class="sm-download-form" action="https://formspree.io/f/mvzylaqk" method="POST">
+          <input type="hidden" name="_subject" value="SlipMeter download request" />
+          <input type="hidden" name="download" value="SlipMeter-0.1.80-arm64.dmg" />
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="contact-form-honeypot" aria-hidden="true" />
+          <div class="sm-form-row">
+            <div class="field">
+              <label for="slipmeter-first-name">First Name</label>
+              <input id="slipmeter-first-name" type="text" name="first_name" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <label for="slipmeter-last-name">Last Name</label>
+              <input id="slipmeter-last-name" type="text" name="last_name" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="slipmeter-email">Email</label>
+            <input id="slipmeter-email" type="email" name="email" autocomplete="email" required />
+          </div>
+          <button class="btn btn-primary btn-lg u-full-width" type="submit">Download SlipMeter</button>
+          <p id="slipmeter-download-status" class="sm-download-status" role="status" aria-live="polite"></p>
+        </form>
+        <p class="sm-checkout-note">Standalone users can start with a 30-day trial. Active ClickCoach subscribers receive SlipMeter at no additional charge during beta.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="faqs">
+    <div class="container sm-download-grid">
       <div class="sm-info-panel">
         <span class="chip chip--mint">Standalone friendly</span>
         <h3>Not a ClickCoach subscriber?</h3>
@@ -202,45 +289,30 @@
           <span>/ year after the trial</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section" id="checkout">
-    <div class="container sm-checkout-grid">
-      <div>
-        <p class="eyebrow">Beta access</p>
-        <h2>Choose the path that fits how you coach.</h2>
-        <p class="muted">SlipMeter is opening first as a Mac beta for coaches who want a simple way to track the work that happens outside live sessions.</p>
-        <ul class="checklist">
-          <li>Active ClickCoach subscribers: free access</li>
-          <li>Standalone users: 30-day trial</li>
-          <li>After trial: $29.99/year</li>
-          <li>Mac installer and account setup instructions</li>
-        </ul>
+      <div class="sm-faq-panel">
+        <p class="eyebrow">Frequently asked questions</p>
+        <h2>Top questions from coaches using SlipMeter without ClickCoach.</h2>
+        <details class="faq" open>
+          <summary>Can I use SlipMeter if I am not a ClickCoach subscriber?</summary>
+          <p>Yes. SlipMeter can run as a standalone Mac app. You can add your own clients, activities, rounding preferences, and local time records without needing a ClickCoach subscription.</p>
+        </details>
+        <details class="faq">
+          <summary>What kind of coaching work should I track with SlipMeter?</summary>
+          <p>SlipMeter is designed for the work that happens around coaching sessions, including prep, follow-up, client support, homework review, admin, research, program design, and billable or non-billable client work.</p>
+        </details>
+        <details class="faq">
+          <summary>How much does SlipMeter cost for standalone users?</summary>
+          <p>Standalone users can start with a 30-day trial. After the trial, SlipMeter is planned at $29.99 per year.</p>
+        </details>
+        <details class="faq">
+          <summary>Does SlipMeter replace my coaching platform or CRM?</summary>
+          <p>No. SlipMeter is a lightweight timer and reporting tool for coach-client work. It is meant to help you capture time clearly, not replace your scheduling, CRM, billing, or full coaching platform.</p>
+        </details>
+        <details class="faq">
+          <summary>Can I separate billable, non-billable, and included time?</summary>
+          <p>Yes. SlipMeter is built around slips that can be marked as billable, non-billable, internal/admin, or included at no charge so you can see where your time is actually going.</p>
+        </details>
       </div>
-      <aside class="sm-checkout-card" aria-label="SlipMeter checkout preview">
-        <div class="sm-checkout-card__head">
-          <img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="42" height="42" decoding="async" />
-          <div>
-            <strong>SlipMeter Beta</strong>
-            <span>Mac time tracking for coaches</span>
-          </div>
-        </div>
-        <div class="sm-checkout-row">
-          <span>ClickCoach subscribers</span>
-          <strong>Free</strong>
-        </div>
-        <div class="sm-checkout-row">
-          <span>Standalone trial</span>
-          <strong>30 days</strong>
-        </div>
-        <div class="sm-checkout-row">
-          <span>Annual plan after trial</span>
-          <strong>$29.99</strong>
-        </div>
-        <button class="btn btn-primary btn-lg u-full-width" type="button" disabled>Checkout coming soon</button>
-        <p class="sm-checkout-note">Active ClickCoach subscribers will receive SlipMeter at no additional charge during beta.</p>
-      </aside>
     </div>
   </section>
 </main>
@@ -272,6 +344,60 @@
   if (togg) togg.addEventListener('click', () => {
     const open = navEl.classList.toggle('nav--open');
     togg.setAttribute('aria-expanded', String(open));
+  });
+})();
+
+(function(){
+  const form = document.getElementById('slipmeter-download-form');
+  if (!form) return;
+
+  const button = form.querySelector('button[type="submit"]');
+  const status = document.getElementById('slipmeter-download-status');
+  const downloadUrl = '/downloads/SlipMeter-0.1.80-arm64.dmg';
+
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (button) {
+      button.disabled = true;
+      button.textContent = 'Preparing download...';
+    }
+    if (status) {
+      status.textContent = '';
+      status.className = 'sm-download-status';
+    }
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (!response.ok) throw new Error('Form submission failed');
+
+      if (status) {
+        status.textContent = 'Thanks. Your download is starting now.';
+        status.className = 'sm-download-status sm-download-status--success';
+      }
+
+      const downloadLink = document.createElement('a');
+      downloadLink.href = downloadUrl;
+      downloadLink.download = 'SlipMeter-0.1.80-arm64.dmg';
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      downloadLink.remove();
+      form.reset();
+    } catch (error) {
+      if (status) {
+        status.textContent = 'Something went wrong. Please check your details and try again.';
+        status.className = 'sm-download-status sm-download-status--error';
+      }
+    } finally {
+      if (button) {
+        button.disabled = false;
+        button.textContent = 'Download SlipMeter';
+      }
+    }
   });
 })();
 </script>

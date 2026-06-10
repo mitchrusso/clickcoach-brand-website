@@ -270,6 +270,11 @@
             <label for="slipmeter-email">Email</label>
             <input id="slipmeter-email" type="email" name="email" autocomplete="email" required />
           </div>
+          <div class="field">
+            <label for="slipmeter-coupon">Coupon Code <span class="optional-label">optional</span></label>
+            <input id="slipmeter-coupon" type="text" name="coupon_code" autocomplete="off" placeholder="Enter code if you have one" />
+            <p id="slipmeter-coupon-status" class="sm-coupon-status" role="status" aria-live="polite"></p>
+          </div>
           <button class="btn btn-primary btn-lg u-full-width" type="submit">Download SlipMeter</button>
           <p id="slipmeter-download-status" class="sm-download-status" role="status" aria-live="polite"></p>
         </form>
@@ -353,10 +358,14 @@
 
   const button = form.querySelector('button[type="submit"]');
   const status = document.getElementById('slipmeter-download-status');
+  const couponStatus = document.getElementById('slipmeter-coupon-status');
   const downloadUrl = '/downloads/SlipMeter-0.1.80-arm64.dmg';
+  const couponEndpoint = 'https://new.clickcoach.io/api/slipmeter/coupons/redeem';
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
+    const formData = new FormData(form);
+    const couponCode = String(formData.get('coupon_code') || '').trim();
     if (button) {
       button.disabled = true;
       button.textContent = 'Preparing download...';
@@ -365,11 +374,37 @@
       status.textContent = '';
       status.className = 'sm-download-status';
     }
+    if (couponStatus) {
+      couponStatus.textContent = '';
+      couponStatus.className = 'sm-coupon-status';
+    }
 
     try {
+      if (couponCode) {
+        const couponResponse = await fetch(couponEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            code: couponCode,
+            firstName: formData.get('first_name'),
+            lastName: formData.get('last_name'),
+            email: formData.get('email'),
+            source: 'slipmeter-webpage'
+          })
+        });
+        const couponResult = await couponResponse.json().catch(() => ({}));
+        if (!couponResponse.ok || couponResult.ok === false) {
+          throw new Error(couponResult.message || 'That coupon code could not be applied.');
+        }
+        if (couponStatus) {
+          couponStatus.textContent = couponResult.message || 'Coupon applied.';
+          couponStatus.className = 'sm-coupon-status sm-coupon-status--success';
+        }
+      }
+
       const response = await fetch(form.action, {
         method: 'POST',
-        body: new FormData(form),
+        body: formData,
         headers: { 'Accept': 'application/json' }
       });
 
@@ -389,7 +424,7 @@
       form.reset();
     } catch (error) {
       if (status) {
-        status.textContent = 'Something went wrong. Please check your details and try again.';
+        status.textContent = error && error.message ? error.message : 'Something went wrong. Please check your details and try again.';
         status.className = 'sm-download-status sm-download-status--error';
       }
     } finally {

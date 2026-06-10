@@ -5846,6 +5846,13 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   min-width: 0;
 }
 
+.optional-label {
+  color: var(--text-muted);
+  font-size: .78em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .sm-form-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5876,6 +5883,18 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 .sm-download-status--error {
   color: #b91c1c;
+}
+
+.sm-coupon-status {
+  min-height: 1.25em;
+  margin: 7px 0 0;
+  color: var(--text-muted);
+  font-size: .82rem;
+  line-height: 1.35;
+}
+
+.sm-coupon-status--success {
+  color: #047857;
 }
 
 .sm-faq-panel h2 {

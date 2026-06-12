@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">SlipMeter email header</title>
+  <desc id="desc">SlipMeter logo and name for email header use.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7FAFF"/>
+      <stop offset=".55" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF3FE"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="150" y1="66" x2="260" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF7FB"/>
+      <stop offset=".45" stop-color="#FFD8E8"/>
+      <stop offset="1" stop-color="#E84F98"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="130" y1="70" x2="250" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".45" stop-color="#FFDDEA"/>
+      <stop offset="1" stop-color="#D73D88"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#0F172A" flood-opacity=".16"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="300" rx="42" fill="url(#bg)"/>
+  <circle cx="1012" cy="-58" r="190" fill="#D9F99D" opacity=".28"/>
+  <circle cx="950" cy="356" r="210" fill="#C5D7FF" opacity=".24"/>
+  <g filter="url(#softShadow)">
+    <rect x="72" y="46" width="1056" height="208" rx="36" fill="#FFFFFF" stroke="#D5E3FF"/>
+  </g>
+  <g transform="translate(312 68)">
+    <path d="M74 0h28c5 0 9 4 9 9v14H65V9c0-5 4-9 9-9Z" fill="url(#pink)"/>
+    <path d="M61 19h54c6 0 10 4 10 10v7H51v-7c0-6 4-10 10-10Z" fill="#E84F98"/>
+    <path d="M18 53 5 40c-4-4-4-11 0-15l9-9c4-4 11-4 15 0l14 14Z" fill="url(#pink)"/>
+    <path d="M158 53 171 40c4-4 4-11 0-15l-9-9c-4-4-11-4-15 0l-14 14Z" fill="url(#pink)"/>
+    <circle cx="88" cy="110" r="82" fill="url(#pink)"/>
+    <circle cx="88" cy="110" r="66" fill="url(#rim)"/>
+    <circle cx="88" cy="110" r="54" fill="#FFF7FB"/>
+    <g fill="#D73D88">
+      <circle cx="88" cy="110" r="5"/>
+      <rect x="85" y="58" width="6" height="14" rx="3"/>
+      <rect x="85" y="148" width="6" height="14" rx="3"/>
+      <rect x="126" y="107" width="14" height="6" rx="3"/>
+      <rect x="36" y="107" width="14" height="6" rx="3"/>
+    </g>
+    <g stroke="#1F2A37" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M88 110V78"/>
+      <path d="M88 110l25 22"/>
+    </g>
+    <path d="M50 70c11-11 25-17 40-17" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity=".76"/>
+  </g>
+  <g transform="translate(526 82)">
+    <text x="0" y="60" fill="#0C0C0D" font-family="Montserrat, Arial, sans-serif" font-size="66" font-weight="800">SlipMeter</text>
+    <text x="4" y="112" fill="#475569" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="28" font-weight="600">Mac time tracking for coaches</text>
+  </g>
+</svg>

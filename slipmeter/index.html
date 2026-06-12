@@ -252,9 +252,18 @@
           </div>
         </div>
         <p class="muted">Enter your details and download the Mac beta installer.</p>
-        <form id="slipmeter-download-form" class="sm-download-form" action="https://formspree.io/f/mvzylaqk" method="POST">
+        <div class="field sm-coupon-field">
+          <label for="slipmeter-coupon">Coupon Code <span class="optional-label">optional</span></label>
+          <input id="slipmeter-coupon" type="text" name="coupon_code" autocomplete="off" placeholder="Enter code if you have one" />
+          <p class="sm-coupon-status">Have a code? Enter it here before submitting the beta form.</p>
+        </div>
+        <div class="sm-tinyemail-embed">
+          <script src="https://app.tinyemail.com/static/js/TinyFormRenderer.js" data-ia1="e4ea2f69-5822-4136-a02b-d0045cabb18f" data-if2="4a38044d-1fc0-454c-8e1d-b146e3466812"></script>
+        </div>
+        <form id="slipmeter-download-fallback" class="sm-download-form" action="https://formspree.io/f/mvzylaqk" method="POST" hidden>
           <input type="hidden" name="_subject" value="SlipMeter download request" />
           <input type="hidden" name="download" value="SlipMeter-0.1.80-arm64.dmg" />
+          <input type="hidden" name="coupon_code" value="" />
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="contact-form-honeypot" aria-hidden="true" />
           <div class="sm-form-row">
             <div class="field">
@@ -269,11 +278,6 @@
           <div class="field">
             <label for="slipmeter-email">Email</label>
             <input id="slipmeter-email" type="email" name="email" autocomplete="email" required />
-          </div>
-          <div class="field">
-            <label for="slipmeter-coupon">Coupon Code <span class="optional-label">optional</span></label>
-            <input id="slipmeter-coupon" type="text" name="coupon_code" autocomplete="off" placeholder="Enter code if you have one" />
-            <p id="slipmeter-coupon-status" class="sm-coupon-status" role="status" aria-live="polite"></p>
           </div>
           <button class="btn btn-primary btn-lg u-full-width" type="submit">Download SlipMeter</button>
           <p id="slipmeter-download-status" class="sm-download-status" role="status" aria-live="polite"></p>
@@ -353,19 +357,58 @@
 })();
 
 (function(){
-  const form = document.getElementById('slipmeter-download-form');
+  const coupon = document.getElementById('slipmeter-coupon');
+  const embed = document.querySelector('.sm-tinyemail-embed');
+  const fallback = document.getElementById('slipmeter-download-fallback');
+  if (!coupon || !embed) return;
+
+  const syncCouponField = () => {
+    const form = embed.querySelector('form') || fallback;
+    if (!form) return false;
+    let hiddenCoupon = form.querySelector('input[name="coupon_code"]');
+    if (!hiddenCoupon) {
+      hiddenCoupon = document.createElement('input');
+      hiddenCoupon.type = 'hidden';
+      hiddenCoupon.name = 'coupon_code';
+      form.appendChild(hiddenCoupon);
+    }
+    hiddenCoupon.value = coupon.value.trim();
+    return true;
+  };
+
+  const showFallbackIfNeeded = () => {
+    const tinyEmailRendered = !!embed.querySelector('form, iframe, [data-reactroot]');
+    if (!tinyEmailRendered && fallback) {
+      fallback.hidden = false;
+      syncCouponField();
+    }
+  };
+
+  coupon.addEventListener('input', syncCouponField);
+  const observer = new MutationObserver(() => {
+    if (embed.querySelector('form, iframe, [data-reactroot]')) {
+      if (fallback) fallback.hidden = true;
+      syncCouponField();
+      observer.disconnect();
+    }
+  });
+  observer.observe(embed, { childList: true, subtree: true });
+  syncCouponField();
+  window.setTimeout(showFallbackIfNeeded, 2500);
+})();
+
+(function(){
+  const form = document.getElementById('slipmeter-download-fallback');
   if (!form) return;
 
   const button = form.querySelector('button[type="submit"]');
   const status = document.getElementById('slipmeter-download-status');
-  const couponStatus = document.getElementById('slipmeter-coupon-status');
-  const downloadUrl = '/downloads/SlipMeter-0.1.80-arm64.dmg';
-  const couponEndpoint = 'https://new.clickcoach.io/api/slipmeter/coupons/redeem';
+  const coupon = document.getElementById('slipmeter-coupon');
 
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
-    const formData = new FormData(form);
-    const couponCode = String(formData.get('coupon_code') || '').trim();
+    const hiddenCoupon = form.querySelector('input[name="coupon_code"]');
+    if (hiddenCoupon && coupon) hiddenCoupon.value = coupon.value.trim();
     if (button) {
       button.disabled = true;
       button.textContent = 'Preparing download...';
@@ -374,57 +417,26 @@
       status.textContent = '';
       status.className = 'sm-download-status';
     }
-    if (couponStatus) {
-      couponStatus.textContent = '';
-      couponStatus.className = 'sm-coupon-status';
-    }
 
     try {
-      if (couponCode) {
-        const couponResponse = await fetch(couponEndpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            code: couponCode,
-            firstName: formData.get('first_name'),
-            lastName: formData.get('last_name'),
-            email: formData.get('email'),
-            source: 'slipmeter-webpage'
-          })
-        });
-        const couponResult = await couponResponse.json().catch(() => ({}));
-        if (!couponResponse.ok || couponResult.ok === false) {
-          throw new Error(couponResult.message || 'That coupon code could not be applied.');
-        }
-        if (couponStatus) {
-          couponStatus.textContent = couponResult.message || 'Coupon applied.';
-          couponStatus.className = 'sm-coupon-status sm-coupon-status--success';
-        }
-      }
-
       const response = await fetch(form.action, {
         method: 'POST',
-        body: formData,
+        body: new FormData(form),
         headers: { 'Accept': 'application/json' }
       });
 
       if (!response.ok) throw new Error('Form submission failed');
 
       if (status) {
-        status.textContent = 'Thanks. Your download is starting now.';
+        status.textContent = 'Thanks. Check your email for the download link.';
         status.className = 'sm-download-status sm-download-status--success';
       }
 
-      const downloadLink = document.createElement('a');
-      downloadLink.href = downloadUrl;
-      downloadLink.download = 'SlipMeter-0.1.80-arm64.dmg';
-      document.body.appendChild(downloadLink);
-      downloadLink.click();
-      downloadLink.remove();
       form.reset();
+      if (coupon) coupon.value = '';
     } catch (error) {
       if (status) {
-        status.textContent = error && error.message ? error.message : 'Something went wrong. Please check your details and try again.';
+        status.textContent = 'Something went wrong. Please check your details and try again.';
         status.className = 'sm-download-status sm-download-status--error';
       }
     } finally {

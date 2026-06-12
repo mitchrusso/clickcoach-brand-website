@@ -26,6 +26,116 @@
       "permanent": true
     },
     {
+      "source": "/features",
+      "destination": "/features/",
+      "permanent": true
+    },
+    {
+      "source": "/features/index.html",
+      "destination": "/features/",
+      "permanent": true
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/pricing/index.html",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/for-coaches",
+      "destination": "/for-coaches/",
+      "permanent": true
+    },
+    {
+      "source": "/for-coaches/index.html",
+      "destination": "/for-coaches/",
+      "permanent": true
+    },
+    {
+      "source": "/about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/about/index.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials",
+      "destination": "/testimonials/",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials/index.html",
+      "destination": "/testimonials/",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/contact/index.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/join",
+      "destination": "/join/",
+      "permanent": true
+    },
+    {
+      "source": "/join/index.html",
+      "destination": "/join/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/index.html",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/terms/index.html",
+      "destination": "/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/slipmeter",
+      "destination": "/slipmeter/",
+      "permanent": true
+    },
+    {
+      "source": "/slipmeter/index.html",
+      "destination": "/slipmeter/",
+      "permanent": true
+    },
+    {
+      "source": "/SlipMeter",
+      "destination": "/slipmeter/",
+      "permanent": true
+    },
+    {
+      "source": "/SlipMeter/",
+      "destination": "/slipmeter/",
+      "permanent": true
+    },
+    {
       "source": "/alt-home",
       "destination": "/",
       "permanent": true

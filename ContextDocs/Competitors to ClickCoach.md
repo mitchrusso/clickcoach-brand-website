@@ -1,5 +1,6 @@
 Competitors to ClickCoach
 
+
 [[https://paperbell.com/]{.underline}](https://paperbell.com/)
 
 [[https://www.coaching.com/]{.underline}](https://www.coaching.com/)

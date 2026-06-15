@@ -835,6 +835,253 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   .timeline__row { grid-template-columns: 1fr; }
 }
 
+/* Resources */
+.resources-page .resources-hero {
+  padding-bottom: 56px;
+}
+
+.resources-hero__inner,
+.resource-article-hero__inner {
+  max-width: 820px;
+}
+
+.resources-page .resources-hero h1 {
+  max-width: 900px;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 1.02;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.resource-card {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  border: 1px solid var(--outline);
+  border-radius: var(--r-md);
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.resource-card h2 {
+  margin: 18px 0 12px;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+}
+
+.resource-card h2 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.resource-card p {
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.resource-card__link {
+  margin-top: auto;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.resource-article-hero {
+  padding: 72px 0 40px;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(179, 255, 222, .58), transparent 28%),
+    linear-gradient(135deg, rgba(244, 248, 255, .96), rgba(255, 255, 255, .9));
+}
+
+.resource-back {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.resource-article-hero h1 {
+  margin-top: 18px;
+  max-width: 960px;
+  font-size: clamp(2.25rem, 4.2vw, 3.4rem);
+  line-height: 1.04;
+}
+
+.resource-article-section {
+  padding-top: 56px;
+}
+
+.resource-article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.resource-article h2 {
+  margin-top: 44px;
+  font-size: clamp(1.55rem, 2.5vw, 2.35rem);
+}
+
+.resource-article h3 {
+  margin-top: 32px;
+}
+
+.resource-article p,
+.resource-article li {
+  color: var(--text-muted);
+  font-size: 1.06rem;
+  line-height: 1.78;
+}
+
+.resource-article ul,
+.resource-article ol {
+  margin: 16px 0 24px;
+  padding-left: 1.35rem;
+}
+
+.resource-article li + li {
+  margin-top: 8px;
+}
+
+.resource-faq-list {
+  display: grid;
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.resource-faq {
+  border: 1px solid var(--outline);
+  border-radius: var(--r-md);
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.resource-faq summary {
+  cursor: pointer;
+  padding: 22px 24px;
+  font-family: var(--f-heading);
+  font-size: clamp(1.1rem, 1.4vw, 1.35rem);
+  font-weight: 800;
+  color: var(--text);
+}
+
+.resource-faq p {
+  margin: 0;
+  padding: 0 24px 24px;
+  color: var(--text-muted);
+  font-size: 1.03rem;
+  line-height: 1.7;
+}
+
+.solution-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 56px;
+  align-items: start;
+}
+
+.solution-article {
+  margin: 0;
+}
+
+.solution-hero__actions {
+  margin-top: 28px;
+}
+
+.solution-side-note {
+  position: sticky;
+  top: 104px;
+  padding: 24px;
+  border: 1px solid var(--outline);
+  border-radius: var(--r-md);
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+.solution-side-note h2 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+}
+
+.solution-mini-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.solution-mini-card,
+.solution-link-card {
+  display: grid;
+  gap: 6px;
+  padding: 16px;
+  border: 1px solid var(--outline);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  text-decoration: none;
+}
+
+.solution-mini-card span,
+.solution-link-card span {
+  color: var(--primary);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.solution-mini-card strong,
+.solution-link-card strong {
+  color: var(--text);
+  line-height: 1.25;
+}
+
+.solution-link-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.solution-link-card {
+  min-height: 128px;
+  padding: 18px;
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 1060px) {
+  .solution-link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .solution-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-side-note {
+    position: static;
+  }
+}
+
+@media (max-width: 620px) {
+  .solution-link-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 820px) {
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resource-article-hero h1 {
+    max-width: 100%;
+  }
+}
+
 /* Persona blocks */
 .persona {
   background: var(--surface-elevated); border: 1px solid var(--outline);
@@ -6013,5 +6260,38 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   .sm-form-row {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+}
+
+/* Resources page overrides must come after the broad .eo-page heading scale. */
+.eo-page.resources-page .resources-hero h1 {
+  max-width: 900px;
+  font-size: clamp(2.6rem, 6vw, 4.8rem);
+  line-height: 1.02;
+}
+
+.eo-page.resources-page .resource-article-hero h1 {
+  max-width: 960px;
+  font-size: clamp(2.25rem, 4.2vw, 3.4rem);
+  line-height: 1.04;
+}
+
+@media (max-width: 820px) {
+  .eo-page.resources-page .resource-article-hero h1 {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .eo-page.resources-page .resources-hero h1 {
+    font-size: clamp(2.15rem, 9vw, 3rem);
+  }
+
+  .eo-page.resources-page .resource-article-hero {
+    padding-top: 48px;
+  }
+
+  .eo-page.resources-page .resource-article-hero h1 {
+    font-size: clamp(1.9rem, 7.2vw, 2.45rem);
   }
 }

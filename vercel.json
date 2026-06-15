@@ -126,6 +126,126 @@
       "permanent": true
     },
     {
+      "source": "/coaching-client-portal-software",
+      "destination": "/coaching-client-portal-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-client-portal-software/index.html",
+      "destination": "/coaching-client-portal-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-accountability-software",
+      "destination": "/coaching-accountability-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-accountability-software/index.html",
+      "destination": "/coaching-accountability-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-progress-tracking-software",
+      "destination": "/coaching-progress-tracking-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-progress-tracking-software/index.html",
+      "destination": "/coaching-progress-tracking-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-notes-software",
+      "destination": "/coaching-notes-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-notes-software/index.html",
+      "destination": "/coaching-notes-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-business-management-software",
+      "destination": "/coaching-business-management-software/",
+      "permanent": true
+    },
+    {
+      "source": "/coaching-business-management-software/index.html",
+      "destination": "/coaching-business-management-software/",
+      "permanent": true
+    },
+    {
+      "source": "/resources",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/index.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/faqs",
+      "destination": "/resources/faqs/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/faqs/index.html",
+      "destination": "/resources/faqs/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes",
+      "destination": "/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/index.html",
+      "destination": "/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/why-most-coaching-software-fails-after-the-session",
+      "destination": "/resources/why-most-coaching-software-fails-after-the-session/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/why-most-coaching-software-fails-after-the-session/index.html",
+      "destination": "/resources/why-most-coaching-software-fails-after-the-session/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/hidden-admin-cost-of-a-coaching-business",
+      "destination": "/resources/hidden-admin-cost-of-a-coaching-business/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/hidden-admin-cost-of-a-coaching-business/index.html",
+      "destination": "/resources/hidden-admin-cost-of-a-coaching-business/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/make-coaching-outcomes-visible-to-clients",
+      "destination": "/resources/make-coaching-outcomes-visible-to-clients/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/make-coaching-outcomes-visible-to-clients/index.html",
+      "destination": "/resources/make-coaching-outcomes-visible-to-clients/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/why-coaching-notes-should-become-progress-proof",
+      "destination": "/resources/why-coaching-notes-should-become-progress-proof/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/why-coaching-notes-should-become-progress-proof/index.html",
+      "destination": "/resources/why-coaching-notes-should-become-progress-proof/",
+      "permanent": true
+    },
+    {
       "source": "/SlipMeter",
       "destination": "/slipmeter/",
       "permanent": true
@@ -173,6 +293,106 @@
     {
       "source": "/terms-and-conditions",
       "destination": "/terms/",
+      "permanent": true
+    },
+    {
+      "source": "/discount",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/discount/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/sales",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/sales/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/offer",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/offer/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/free-offer",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/free-offer/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/replay",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/replay/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/access",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/access/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/application",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/application/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/logo",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/logo/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/settings",
+      "destination": "https://new.clickcoach.io/settings",
+      "permanent": true
+    },
+    {
+      "source": "/settings/",
+      "destination": "https://new.clickcoach.io/settings",
       "permanent": true
     }
   ]

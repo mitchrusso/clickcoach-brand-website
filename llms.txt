@@ -13,10 +13,26 @@ Key pages:
 - For coaches, teams, and certification programs: https://clickcoach.io/for-coaches/
 - Founder story: https://clickcoach.io/about/
 - Testimonials and proof: https://clickcoach.io/testimonials/
+- Coaching business resources and articles: https://clickcoach.io/resources/
 - Contact, support, affiliates, and API inquiries: https://clickcoach.io/contact/
 - Join / checkout: https://clickcoach.io/join/
 - Privacy policy: https://clickcoach.io/privacy/
 - Terms of service: https://clickcoach.io/terms/
+
+Solution pages:
+- Coaching client portal software: https://clickcoach.io/coaching-client-portal-software/
+- Coaching accountability software: https://clickcoach.io/coaching-accountability-software/
+- Coaching progress tracking software: https://clickcoach.io/coaching-progress-tracking-software/
+- Coaching notes software: https://clickcoach.io/coaching-notes-software/
+- Coaching business management software: https://clickcoach.io/coaching-business-management-software/
+
+Resource articles:
+- Coaching Software FAQs: https://clickcoach.io/resources/faqs/
+- What I Learned Running a Coaching, Training, and Consulting Business for Tony Robbins and Chet Holmes: https://clickcoach.io/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/
+- Why Most Coaching Software Fails the Moment the Session Ends: https://clickcoach.io/resources/why-most-coaching-software-fails-after-the-session/
+- The Hidden Admin Cost of a Coaching Business: https://clickcoach.io/resources/hidden-admin-cost-of-a-coaching-business/
+- How to Make Coaching Outcomes Visible to Clients: https://clickcoach.io/resources/make-coaching-outcomes-visible-to-clients/
+- Why Coaching Notes Should Become Progress Proof: https://clickcoach.io/resources/why-coaching-notes-should-become-progress-proof/
 
 Core offer:
 - ClickCoach Access is $497 per coach per year.
@@ -35,4 +51,3 @@ Founder:
 
 Support:
 - Email: support@clickcoach.io
-

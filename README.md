@@ -1,5 +1,6 @@
 # ClickCoach Brand Website
 
+
 A 7-page marketing site for **ClickCoach.io** — the coaching operating system. Built via the ClickCampaigns GodMode brand-website pipeline. Fully static HTML/CSS, deploy-ready.
 
 ## What's in here

@@ -394,6 +394,16 @@
       "source": "/settings/",
       "destination": "https://new.clickcoach.io/settings",
       "permanent": true
+    },
+    {
+      "source": "/resources-drafts/:path*",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/word-drafts/:path*",
+      "destination": "/resources/",
+      "permanent": true
     }
   ]
 }

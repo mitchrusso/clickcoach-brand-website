@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /resources-drafts/
+Disallow: /word-drafts/
 Allow: /
 
 Sitemap: https://clickcoach.io/sitemap.xml

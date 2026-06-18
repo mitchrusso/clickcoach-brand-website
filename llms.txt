@@ -20,6 +20,7 @@ Key pages:
 - Terms of service: https://clickcoach.io/terms/
 
 Solution pages:
+- Coaching platform for professional, virtual, personal, and executive coaches: https://clickcoach.io/coaching-platform/
 - Coaching client portal software: https://clickcoach.io/coaching-client-portal-software/
 - Coaching accountability software: https://clickcoach.io/coaching-accountability-software/
 - Coaching progress tracking software: https://clickcoach.io/coaching-progress-tracking-software/
@@ -28,6 +29,7 @@ Solution pages:
 
 Resource articles:
 - Coaching Software FAQs: https://clickcoach.io/resources/faqs/
+- What Is Between-Session Coaching Support for Coaches: https://clickcoach.io/resources/what-is-between-session-coaching-support-for-coaches/
 - What I Learned Running a Coaching, Training, and Consulting Business for Tony Robbins and Chet Holmes: https://clickcoach.io/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/
 - Why Most Coaching Software Fails the Moment the Session Ends: https://clickcoach.io/resources/why-most-coaching-software-fails-after-the-session/
 - The Hidden Admin Cost of a Coaching Business: https://clickcoach.io/resources/hidden-admin-cost-of-a-coaching-business/

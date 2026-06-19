@@ -1,6 +1,7 @@
 # Build Recipe — ClickCoach Brand Website
 
 
+
 This is the **GodMode equivalent of the SaaS workspace's "Recipe" tab**: every ingredient that went into the build, in markdown you can read, edit, and check into git.
 
 ## Index

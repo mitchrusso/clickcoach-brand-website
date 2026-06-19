@@ -1,4 +1,5 @@
 ---
+
 name: ClickCoach Soft Operating System
 inspiration: EmailOctopus homepage visual DNA, translated for ClickCoach
 colors:

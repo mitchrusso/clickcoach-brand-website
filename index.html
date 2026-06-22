@@ -78,30 +78,66 @@
 <meta name="google-site-verification" content="googleb6cb29d17b10958e.html" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" as="style" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+<link rel="preload" href="/images/alt-home-before-after.svg?v=3" as="image" fetchpriority="high" />
 <link rel="stylesheet" href="/styles.css?v=resources-visuals-1" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png" />
-<script src="https://cdn.jsdelivr.net/npm/@mux/mux-player" defer></script>
-<script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
-<script
-    src="https://app.rybbit.io/api/script.js"
-    data-site-id="b96de0375325"
-    defer
-></script>
-<!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '27459395117029374');
-fbq('track', 'PageView');
+(function(){
+  function whenIdle(fn) {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(fn, { timeout: 3500 });
+    } else {
+      setTimeout(fn, 1800);
+    }
+  }
+
+  function loadScript(src, attrs) {
+    var script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    if (attrs) {
+      Object.keys(attrs).forEach(function(key) {
+        if (key === 'dataset') {
+          Object.keys(attrs.dataset).forEach(function(dataKey) {
+            script.dataset[dataKey] = attrs.dataset[dataKey];
+          });
+        } else {
+          script[key] = attrs[key];
+        }
+      });
+    }
+    document.head.appendChild(script);
+    return script;
+  }
+
+  window.addEventListener('load', function() {
+    whenIdle(function() {
+      loadScript('https://cdn.convertbox.com/convertbox/js/embed.js', {
+        id: 'app-convertbox-script',
+        dataset: { uuid: 'cc64bc00-c22e-425f-8f6d-b9a01a50e5f6' }
+      });
+
+      loadScript('https://app.rybbit.io/api/script.js', {
+        dataset: { siteId: 'b96de0375325' }
+      });
+
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '27459395117029374');
+      fbq('track', 'PageView');
+    });
+  }, { once: true });
+})();
 </script>
-<!-- End Meta Pixel Code -->
 </head>
 <body class="eo-home alt-home">
 <!-- Meta Pixel Noscript -->
@@ -160,7 +196,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       <h1>Stop running your coaching practice across nine browser tabs.</h1>
       <p>One login. Sessions, homework, client progress, billing, courses, broadcasts, and AI &mdash; finally in the same place.</p>
       <figure class="alt-home__before-after" aria-label="Before: coach apps cobbled together. After: ClickCoach one login connects sessions, homework, progress, and billing.">
-        <img class="alt-home__before-after-img" src="/images/alt-home-before-after.svg?v=3" width="960" height="560" alt="Before and after: disconnected coach tools versus ClickCoach. Session wrap-up time drops from 20 minutes to 5." loading="eager" decoding="async" />
+        <img class="alt-home__before-after-img" src="/images/alt-home-before-after.svg?v=3" width="960" height="560" alt="Before and after: disconnected coach tools versus ClickCoach. Session wrap-up time drops from 20 minutes to 5." loading="eager" fetchpriority="high" decoding="async" />
       </figure>
       <div class="eo-hero__actions">
         <a class="btn btn-primary btn-lg" href="/join/">Start Risk-Free Trial</a>
@@ -553,11 +589,30 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   const demoTrigger = document.querySelector('[data-demo-video-trigger]');
   const demoModal = document.getElementById('demo-video-modal');
   const demoPlayer = document.querySelector('[data-demo-video-player]');
+  let muxPlayerReady = null;
+
+  function loadMuxPlayer() {
+    if (window.customElements && customElements.get('mux-player')) {
+      return Promise.resolve();
+    }
+    if (muxPlayerReady) return muxPlayerReady;
+    muxPlayerReady = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/@mux/mux-player';
+      script.async = true;
+      script.onload = () => resolve();
+      script.onerror = () => reject();
+      document.head.appendChild(script);
+    });
+    return muxPlayerReady;
+  }
 
   if (demoTrigger && demoModal && demoPlayer) {
     demoTrigger.addEventListener('click', () => {
       demoModal.showModal();
-      if (typeof demoPlayer.play === 'function') demoPlayer.play().catch(() => {});
+      loadMuxPlayer().then(() => {
+        if (typeof demoPlayer.play === 'function') demoPlayer.play().catch(() => {});
+      }).catch(() => {});
     });
 
     demoModal.addEventListener('close', () => {

@@ -15,6 +15,14 @@
       },
     });
   }
+  function whenIdle(fn) {
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(fn, { timeout: 5000 });
+    } else {
+      setTimeout(fn, 2500);
+    }
+  }
+
   const onLoad = function () {
     const script = document.createElement("script");
     script.src = "https://www.chatbase.co/embed.min.js";
@@ -23,8 +31,10 @@
     document.body.appendChild(script);
   };
   if (document.readyState === "complete") {
-    onLoad();
+    whenIdle(onLoad);
   } else {
-    window.addEventListener("load", onLoad);
+    window.addEventListener("load", function () {
+      whenIdle(onLoad);
+    }, { once: true });
   }
 })();

@@ -1,5 +1,6 @@
 # Brand Kit — ClickCoach
 
+
 ## Identity
 - **Brand name:** ClickCoach (ClickCoach.io)
 - **Founder:** Mitch Russo — sold software company for $10M+, ex-CEO of Tony Robbins / Chet Holmes coaching division (50+ coaches), 25 years coaching founders & execs.

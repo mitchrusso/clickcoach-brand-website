@@ -28,6 +28,8 @@ Solution pages:
 - Coaching business management software: https://clickcoach.io/coaching-business-management-software/
 
 Resource articles:
+<!-- BABYLOVEGROWTH_LLMS_START -->
+<!-- BABYLOVEGROWTH_LLMS_END -->
 - Coaching business problem guide: https://clickcoach.io/resources/coaching-business-problems/
 - Why Coaching Referrals and Renewals Feel Harder: https://clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/
 - How Coaches Can Get Better Testimonials and Proof: https://clickcoach.io/resources/how-coaches-can-get-better-testimonials-and-proof/

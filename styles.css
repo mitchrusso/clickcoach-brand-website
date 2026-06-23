@@ -1422,7 +1422,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 .join-price strong {
   font-family: var(--f-heading);
-  font-size: clamp(2.8rem, 6vw, 4.25rem);
+  font-size: clamp(2.8rem, 6vw, 4rem);
   line-height: .9;
   max-width: 100%;
 }
@@ -1434,6 +1434,10 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .join-price span {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: clamp(.9rem, 2.5vw, 1rem);
+  line-height: 1.1;
   white-space: nowrap;
 }
 

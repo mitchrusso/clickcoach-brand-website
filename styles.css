@@ -1223,7 +1223,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .join-hero__copy h1 {
   max-width: 640px;
   margin: 20px 0 18px;
-  font-size: clamp(2.7rem, 4.6vw, 4.6rem);
+  font-size: clamp(2.45rem, 3.9vw, 4.1rem);
   line-height: 1;
   font-weight: 900;
 }
@@ -1712,6 +1712,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   .join-hero__copy .join-lede {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .join-hero__copy h1 {
+    font-size: clamp(2.35rem, 8.2vw, 3.6rem);
+    line-height: 1.05;
   }
 
   .join-trust {

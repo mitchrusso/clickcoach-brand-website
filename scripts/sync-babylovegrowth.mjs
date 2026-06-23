@@ -18,6 +18,8 @@ const apiKey = process.env.BABYLOVE_API_KEY;
 const dryRun = process.argv.includes("--dry-run");
 const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
 const limit = Math.min(Number(limitArg?.split("=")[1] || 50), 50);
+const DETAIL_DELAY_MS = 1500;
+const MAX_API_ATTEMPTS = 5;
 
 if (!apiKey) {
   throw new Error("Missing BABYLOVE_API_KEY environment variable.");
@@ -56,6 +58,19 @@ function formatDate(dateValue) {
   const date = dateValue ? new Date(dateValue) : new Date();
   if (Number.isNaN(date.getTime())) return new Date().toISOString().slice(0, 10);
   return date.toISOString().slice(0, 10);
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function retryDelay(response, attempt) {
+  const retryAfter = response.headers.get("retry-after");
+  const retryAfterSeconds = Number(retryAfter);
+  if (Number.isFinite(retryAfterSeconds) && retryAfterSeconds > 0) {
+    return retryAfterSeconds * 1000;
+  }
+  return Math.min(30000, 2000 * 2 ** attempt);
 }
 
 function normalizeContent(html = "") {
@@ -236,22 +251,34 @@ ${templateParts.footer}`;
 }
 
 async function apiGet(pathname) {
-  const response = await fetch(`${API_BASE}${pathname}`, {
-    headers: {
-      "X-API-Key": apiKey,
-      "Content-Type": "application/json",
-    },
-  });
-  if (!response.ok) {
+  for (let attempt = 0; attempt < MAX_API_ATTEMPTS; attempt += 1) {
+    const response = await fetch(`${API_BASE}${pathname}`, {
+      headers: {
+        "X-API-Key": apiKey,
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (response.ok) return response.json();
+
+    if (response.status === 429 && attempt < MAX_API_ATTEMPTS - 1) {
+      const delay = retryDelay(response, attempt);
+      console.warn(`BabyLoveGrowth API rate limited ${pathname}; retrying in ${delay}ms.`);
+      await sleep(delay);
+      continue;
+    }
+
     throw new Error(`BabyLoveGrowth API ${response.status} for ${pathname}`);
   }
-  return response.json();
+
+  throw new Error(`BabyLoveGrowth API retry limit exceeded for ${pathname}`);
 }
 
 async function fetchArticles() {
   const summaries = await apiGet(`/v1/articles?limit=${limit}&offset=0`);
   const articles = [];
   for (const summary of summaries) {
+    if (articles.length > 0) await sleep(DETAIL_DELAY_MS);
     articles.push(await apiGet(`/v1/articles/${summary.id}`));
   }
   return articles;

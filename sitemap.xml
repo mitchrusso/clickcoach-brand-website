@@ -91,7 +91,49 @@
     <priority>0.6</priority>
   </url>
   <!-- BABYLOVEGROWTH_SITEMAP_START -->
-  <!-- BABYLOVEGROWTH_SITEMAP_END -->
+<url>
+    <loc>https://clickcoach.io/resources/how-to-collect-client-information-professionally/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/what-is-session-preparation-coaching-for-coaches/</loc>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/the-role-of-practice-management-in-starting-coaching/</loc>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/proactive-client-communication-coaching-explained/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+<!-- BABYLOVEGROWTH_SITEMAP_END -->
   <url>
     <loc>https://clickcoach.io/resources/coaching-business-problems/</loc>
     <lastmod>2026-06-18</lastmod>

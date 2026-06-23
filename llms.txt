@@ -29,6 +29,13 @@ Solution pages:
 
 Resource articles:
 <!-- BABYLOVEGROWTH_LLMS_START -->
+- How to Collect Client Information Professionally: https://clickcoach.io/resources/how-to-collect-client-information-professionally/
+- What Is Session Preparation Coaching for Coaches?: https://clickcoach.io/resources/what-is-session-preparation-coaching-for-coaches/
+- The Role of Practice Management in Starting Coaching: https://clickcoach.io/resources/the-role-of-practice-management-in-starting-coaching/
+- Proactive Client Communication Coaching Explained: https://clickcoach.io/resources/proactive-client-communication-coaching-explained/
+- The Real Role of Real-Time Collaboration Coaching: https://clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/
+- What Is a Coaching Practice? Your 2026 Guide: https://clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/
+- How to Track Individual Progress in Group Coaching: https://clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/
 <!-- BABYLOVEGROWTH_LLMS_END -->
 - Coaching business problem guide: https://clickcoach.io/resources/coaching-business-problems/
 - Why Coaching Referrals and Renewals Feel Harder: https://clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/

@@ -246,6 +246,16 @@
       "permanent": true
     },
     {
+      "source": "/resources/branded-client-portals-in-coaching-build-trust-and-results",
+      "destination": "/resources/branded-client-portals-in-coaching-build-trust-and-results/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/branded-client-portals-in-coaching-build-trust-and-results/index.html",
+      "destination": "/resources/branded-client-portals-in-coaching-build-trust-and-results/",
+      "permanent": true
+    },
+    {
       "source": "/SlipMeter",
       "destination": "/slipmeter/",
       "permanent": true

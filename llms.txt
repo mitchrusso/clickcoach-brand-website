@@ -36,6 +36,7 @@ Resource articles:
 - 30-Day Coaching Platform Implementation Plan: https://clickcoach.io/resources/30-day-coaching-platform-implementation-plan/
 - Coaching Software FAQs: https://clickcoach.io/resources/faqs/
 - What Is Between-Session Coaching Support for Coaches: https://clickcoach.io/resources/what-is-between-session-coaching-support-for-coaches/
+- Branded Client Portals in Coaching: https://clickcoach.io/resources/branded-client-portals-in-coaching-build-trust-and-results/
 - What I Learned Running a Coaching, Training, and Consulting Business for Tony Robbins and Chet Holmes: https://clickcoach.io/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/
 - Why Most Coaching Software Fails the Moment the Session Ends: https://clickcoach.io/resources/why-most-coaching-software-fails-after-the-session/
 - The Hidden Admin Cost of a Coaching Business: https://clickcoach.io/resources/hidden-admin-cost-of-a-coaching-business/

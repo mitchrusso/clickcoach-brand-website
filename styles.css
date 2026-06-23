@@ -4888,8 +4888,8 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 /* —— Home (eo-home.alt-home) —— */
 .eo-home.alt-home h1 {
-  font-size: clamp(1.65rem, 3vw, 2.35rem);
-  line-height: 1.14;
+  font-size: clamp(1.45rem, 2.2vw, 1.9rem);
+  line-height: 1.16;
 }
 
 .eo-home.alt-home h2 {

@@ -29,6 +29,7 @@ Solution pages:
 
 Resource articles:
 <!-- BABYLOVEGROWTH_LLMS_START -->
+- How to Write Coaching Agreements for Clients: https://clickcoach.io/resources/how-to-write-coaching-agreements-for-clients/
 - How to Collect Client Information Professionally: https://clickcoach.io/resources/how-to-collect-client-information-professionally/
 - What Is Session Preparation Coaching for Coaches?: https://clickcoach.io/resources/what-is-session-preparation-coaching-for-coaches/
 - The Role of Practice Management in Starting Coaching: https://clickcoach.io/resources/the-role-of-practice-management-in-starting-coaching/

@@ -4701,7 +4701,9 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .alt-about__hero-copy h1 {
-  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-size: clamp(2.05rem, 3.6vw, 3.35rem);
+  line-height: 1.04;
+  max-width: 11ch;
 }
 
 .alt-about__hero-actions {
@@ -4868,6 +4870,13 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 @media (max-width: 900px) {
   .alt-about__hero-grid {
     grid-template-columns: 1fr;
+  }
+
+  .alt-about__hero-copy h1 {
+    max-width: 12ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(2rem, 7.4vw, 3rem);
   }
 
   .alt-about__hero-visual {

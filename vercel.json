@@ -414,6 +414,36 @@
       "source": "/word-drafts/:path*",
       "destination": "/resources/",
       "permanent": true
+    },
+    {
+      "source": "/resources/still-charging-beginner-rates",
+      "destination": "/resources/coachs-blueprint-to-premium-pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/still-charging-beginner-rates/",
+      "destination": "/resources/coachs-blueprint-to-premium-pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/still-charging-beginner-rates/index.html",
+      "destination": "/resources/coachs-blueprint-to-premium-pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/how-to-raise-your-coaching-rates-without-losing-clients",
+      "destination": "/resources/coachs-blueprint-to-premium-pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/how-to-raise-your-coaching-rates-without-losing-clients/",
+      "destination": "/resources/coachs-blueprint-to-premium-pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/resources/how-to-raise-your-coaching-rates-without-losing-clients/index.html",
+      "destination": "/resources/coachs-blueprint-to-premium-pricing/",
+      "permanent": true
     }
   ]
 }

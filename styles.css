@@ -953,7 +953,9 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .jv-hero__copy h1 {
-  max-width: 10ch;
+  max-width: 13ch;
+  font-size: clamp(2.6rem, 5.2vw, 4.9rem);
+  line-height: 1.03;
 }
 
 .jv-hero__actions {
@@ -7158,6 +7160,8 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
   .jv-hero__copy h1 {
     max-width: 12ch;
+    font-size: clamp(2rem, 10vw, 2.6rem);
+    line-height: 1.04;
   }
 
   .jv-hero__actions .btn {

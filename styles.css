@@ -6395,10 +6395,23 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 /* Resources page overrides must come after the broad .eo-page heading scale. */
+.eo-page.resources-page .resources-hero {
+  padding: clamp(48px, 6vw, 88px) 0 10px;
+}
+
 .eo-page.resources-page .resources-hero h1 {
   max-width: 900px;
   font-size: clamp(1.75rem, 3vw, 2.35rem);
   line-height: 1.1;
+}
+
+.eo-page.resources-page .site-search-section {
+  padding: 0;
+  margin-top: -8px;
+}
+
+.eo-page.resources-page .site-search {
+  margin-top: 0;
 }
 
 .eo-page.resources-page .resource-article-hero h1 {

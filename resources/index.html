@@ -122,6 +122,20 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   </div>
 </section>
 
+<section class="section site-search-section" aria-label="Search ClickCoach">
+  <div class="container">
+    <form class="site-search" role="search">
+      <label class="site-search__label" for="site-search-input">Search the ClickCoach site</label>
+      <div class="site-search__field">
+        <input id="site-search-input" type="search" autocomplete="off" placeholder="Search articles, features, pricing, portals, accountability..." aria-describedby="site-search-status" />
+        <button type="button" id="site-search-clear" aria-label="Clear search">Clear</button>
+      </div>
+      <p class="site-search__status" id="site-search-status" aria-live="polite"></p>
+    </form>
+    <div class="resources-grid site-search__results" id="site-search-results" hidden></div>
+  </div>
+</section>
+
 <section class="section section--alt audience-section">
   <div class="container">
     <header class="section-intro u-container-780">
@@ -343,5 +357,6 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
 })();
 </script>
 <script src="/js/chatbase-embed.js" defer></script>
+<script src="/js/site-search.js" defer></script>
 </body>
 </html>

@@ -96,6 +96,16 @@
       "permanent": true
     },
     {
+      "source": "/jv",
+      "destination": "/jv/",
+      "permanent": true
+    },
+    {
+      "source": "/jv/index.html",
+      "destination": "/jv/",
+      "permanent": true
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy/",
       "permanent": true

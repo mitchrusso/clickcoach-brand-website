@@ -55,6 +55,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://clickcoach.io/jv/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/coaching-platform/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>

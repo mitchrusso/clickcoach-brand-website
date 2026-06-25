@@ -837,7 +837,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 /* Resources */
 .resources-page .resources-hero {
-  padding-bottom: 56px;
+  padding-bottom: 40px;
 }
 
 .resources-hero__inner,
@@ -852,16 +852,31 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .site-search-section {
-  padding: 30px 0 42px;
+  padding: 0 0 4px;
+  position: relative;
+  z-index: 2;
 }
 
 .site-search {
+  margin-top: -24px;
   max-width: 920px;
+  padding: 18px;
+  border: 1px solid color-mix(in srgb, var(--primary) 18%, var(--outline));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-elevated) 92%, #ffffff);
+  box-shadow: var(--shadow-soft);
 }
 
 .site-search__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
   display: block;
-  margin-bottom: 12px;
+  margin: 0;
   font-family: var(--f-heading);
   font-size: 1rem;
   font-weight: 800;
@@ -877,41 +892,40 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 
 .site-search__field input {
   width: 100%;
-  min-height: 56px;
-  padding: 0 18px;
-  border: 1px solid var(--outline);
-  border-radius: var(--r-sm);
-  background: var(--surface-elevated);
+  min-height: 52px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
   color: var(--text);
   font: 600 1rem/1.2 var(--f-body);
-  box-shadow: var(--shadow-soft);
+  box-shadow: none;
 }
 
 .site-search__field input:focus {
-  border-color: var(--primary);
-  outline: 3px solid color-mix(in srgb, var(--primary) 18%, transparent);
+  outline: 0;
 }
 
 .site-search__field button {
-  min-height: 56px;
-  padding: 0 20px;
-  border: 1px solid var(--outline);
-  border-radius: var(--r-sm);
-  background: var(--surface-elevated);
+  min-height: 46px;
+  padding: 0 22px;
+  border: 0;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
   color: var(--primary);
   font-weight: 800;
   cursor: pointer;
 }
 
 .site-search__status {
-  min-height: 24px;
-  margin: 10px 0 0;
+  min-height: 0;
+  margin: 8px 18px 0;
   color: var(--text-muted);
   font-weight: 700;
 }
 
 .site-search__results {
-  margin-top: 18px;
+  margin-top: 14px;
 }
 
 .site-search__results[hidden] {
@@ -6826,12 +6840,34 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
     font-size: clamp(1.65rem, 6.5vw, 2.05rem);
   }
 
+  .site-search-section {
+    padding-bottom: 0;
+  }
+
+  .site-search {
+    margin-top: -18px;
+    padding: 14px;
+    border-radius: var(--r-lg);
+  }
+
   .site-search__field {
     grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .site-search__field input {
+    min-height: 48px;
+    padding: 0 12px;
+    background: color-mix(in srgb, var(--surface-elevated) 92%, #ffffff);
   }
 
   .site-search__field button {
     width: 100%;
+    min-height: 44px;
+  }
+
+  .site-search__status {
+    margin: 8px 8px 0;
   }
 
   .eo-page.resources-page .resource-article-hero {

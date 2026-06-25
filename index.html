@@ -82,7 +82,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
 <link rel="preload" href="/images/alt-home-before-after.svg?v=3" as="image" fetchpriority="high" />
-<link rel="stylesheet" href="/styles.css?v=home-headline-3" />
+<link rel="stylesheet" href="/styles.css?v=exit-popup-report-1" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png" />
 <script>
 (function(){
@@ -608,21 +608,29 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   }
 
   if (demoTrigger && demoModal && demoPlayer) {
-    demoTrigger.addEventListener('click', () => {
+    const openDemoVideo = () => {
       demoModal.showModal();
       loadMuxPlayer().then(() => {
         if (typeof demoPlayer.play === 'function') demoPlayer.play().catch(() => {});
       }).catch(() => {});
-    });
+    };
+
+    demoTrigger.addEventListener('click', openDemoVideo);
 
     demoModal.addEventListener('close', () => {
       if (typeof demoPlayer.pause === 'function') demoPlayer.pause();
       if ('currentTime' in demoPlayer) demoPlayer.currentTime = 0;
     });
+
+    const params = new URLSearchParams(window.location.search);
+    if (params.has('watch-demo')) {
+      window.setTimeout(openDemoVideo, 600);
+    }
   }
 })();
 </script>
 <script src="/js/screenshot-lightbox.js"></script>
+<script src="/js/exit-intent-popup.js" defer></script>
 <script src="/js/chatbase-embed.js" defer></script>
 </body>
 </html>

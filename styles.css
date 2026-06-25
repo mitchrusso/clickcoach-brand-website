@@ -2288,6 +2288,116 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   outline-offset: 2px;
 }
 
+.cc-exit-popup {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: var(--r-xl);
+  width: min(92vw, 720px);
+  max-height: calc(100dvh - 28px);
+  overflow: auto;
+  background: transparent;
+  color: var(--text-main);
+  box-shadow: var(--shadow-hover);
+}
+
+.cc-exit-popup::backdrop {
+  background: rgba(12, 12, 13, .62);
+  backdrop-filter: blur(6px);
+}
+
+.cc-exit-popup__shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(36, 99, 235, .22);
+  border-radius: var(--r-xl);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(217, 249, 157, .48), transparent 34%),
+    radial-gradient(circle at 96% 18%, rgba(36, 99, 235, .14), transparent 32%),
+    #fff;
+}
+
+.cc-exit-popup__body {
+  padding: clamp(22px, 4.2vw, 38px);
+}
+
+.cc-exit-popup h2 {
+  max-width: 12ch;
+  margin-top: 12px;
+  font-size: clamp(2rem, 5.8vw, 3.25rem);
+  line-height: .98;
+  letter-spacing: -0.02em;
+}
+
+.cc-exit-popup p {
+  max-width: 46ch;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.cc-exit-popup__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cc-exit-popup__close {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  right: 12px;
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--outline);
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, .88);
+  color: var(--text-main);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cc-exit-popup__video {
+  overflow: hidden;
+  border-radius: var(--r-lg);
+  background: #0B1220;
+}
+
+.cc-exit-popup__video mux-player {
+  display: block;
+  width: 100%;
+}
+
+.cc-exit-popup__form {
+  min-height: 220px;
+  margin-top: 14px;
+}
+
+.cc-exit-popup__form > div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.cc-exit-popup__form [id^="tinyform-"] {
+  max-width: 100%;
+}
+
+.cc-exit-popup__form button {
+  min-width: 170px;
+  border: none !important;
+  border-radius: var(--r-full) !important;
+  background: var(--blue) !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  font-weight: 900 !important;
+  white-space: normal;
+}
+
 .eo-hero__stack-note {
   max-width: 420px;
   margin: 14px auto 0;

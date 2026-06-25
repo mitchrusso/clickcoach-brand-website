@@ -5984,15 +5984,16 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 16px;
-  border: 1px solid rgba(36, 99, 235, .16);
-  border-radius: 28px;
-  background: linear-gradient(145deg, #fff, #f8fbff);
-  box-shadow: 0 28px 80px -42px rgba(15, 23, 42, .52);
+  align-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .sm-product-frame::before {
-  content: "";
+  content: none;
   position: absolute;
   inset: -18px;
   z-index: -1;
@@ -6024,8 +6025,9 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   flex: 1;
   max-height: 640px;
   object-fit: contain;
-  border-radius: 18px;
-  background: #f8fbff;
+  border-radius: 12px;
+  background: transparent;
+  filter: drop-shadow(0 28px 40px rgba(15, 23, 42, .18));
 }
 
 .sm-proof-strip {
@@ -6378,8 +6380,8 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   }
 
   .sm-product-frame {
-    padding: 12px;
-    border-radius: 20px;
+    padding: 0;
+    border-radius: 0;
   }
 
   .sm-info-panel,

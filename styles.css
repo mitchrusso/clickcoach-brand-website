@@ -4113,6 +4113,12 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   margin-right: auto;
 }
 
+.eo-page.jv-page .jv-hero .jv-hero__copy h1 {
+  max-width: 13ch;
+  font-size: clamp(2.4rem, 4.4vw, 4rem);
+  line-height: 1.05;
+}
+
 .eo-page .hero__lede {
   color: #51627A;
   font-size: clamp(1.08rem, .7vw + .92rem, 1.26rem);

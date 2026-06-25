@@ -12,15 +12,15 @@
 <meta property="og:url" content="https://clickcoach.io/slipmeter/" />
 <meta property="og:title" content="SlipMeter for Coaches | ClickCoach" />
 <meta property="og:description" content="Track the client work that happens outside your coaching calls. Free for active ClickCoach subscribers while SlipMeter is in beta." />
-<meta property="og:image" content="https://clickcoach.io/images/og-share.jpg" />
+<meta property="og:image" content="https://clickcoach.io/images/og-one-login-connected.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="ClickCoach coaching platform" />
+<meta property="og:image:alt" content="One login. Everything connected. ClickCoach coaching platform overview" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="SlipMeter for Coaches | ClickCoach" />
 <meta name="twitter:description" content="Track prep, follow-up, admin, and client work from a lightweight Mac timer." />
-<meta name="twitter:image" content="https://clickcoach.io/images/og-share.jpg" />
+<meta name="twitter:image" content="https://clickcoach.io/images/og-one-login-connected.png" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -376,6 +376,43 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   const embed = document.querySelector('.sm-tinyemail-embed');
   const fallback = document.getElementById('slipmeter-download-fallback');
   if (!coupon || !embed) return;
+  const tinyEmailSelector = 'form, iframe, [data-reactroot], input, button, textarea, select';
+
+  const hasTinyEmailRendered = () => !!embed.querySelector(tinyEmailSelector);
+
+  const normalizeTinyEmailUi = () => {
+    embed.querySelectorAll('button, input[type="submit"], [role="button"]').forEach((control) => {
+      if ((control.textContent || control.value || '').trim().toLowerCase() === 'submit') {
+        if ('value' in control) control.value = 'Download SlipMeter';
+        control.textContent = 'Download SlipMeter';
+        control.setAttribute('aria-label', 'Download SlipMeter');
+      }
+    });
+
+    const placeholderMap = new Map([
+      ['First name placeholder', 'First Name'],
+      ['Last name placeholder', 'Last Name'],
+      ['Email address placeholder', 'Email Address'],
+    ]);
+    embed.querySelectorAll('input[placeholder]').forEach((input) => {
+      const replacement = placeholderMap.get(input.getAttribute('placeholder'));
+      if (replacement) input.setAttribute('placeholder', replacement);
+    });
+
+    embed.querySelectorAll('*').forEach((element) => {
+      if (element.childNodes.length === 1 && element.textContent.trim() === 'Form successfully submitted!') {
+        element.textContent = 'Thanks! Please check your email for the SlipMeter download link.';
+      }
+    });
+  };
+
+  const useTinyEmailIfReady = () => {
+    if (!hasTinyEmailRendered()) return false;
+    if (fallback) fallback.hidden = true;
+    normalizeTinyEmailUi();
+    syncCouponField();
+    return true;
+  };
 
   const syncCouponField = () => {
     const form = embed.querySelector('form') || fallback;
@@ -392,8 +429,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   };
 
   const showFallbackIfNeeded = () => {
-    const tinyEmailRendered = !!embed.querySelector('form, iframe, [data-reactroot]');
-    if (!tinyEmailRendered && fallback) {
+    if (!useTinyEmailIfReady() && fallback) {
       fallback.hidden = false;
       syncCouponField();
     }
@@ -401,11 +437,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
 
   coupon.addEventListener('input', syncCouponField);
   const observer = new MutationObserver(() => {
-    if (embed.querySelector('form, iframe, [data-reactroot]')) {
-      if (fallback) fallback.hidden = true;
-      syncCouponField();
-      observer.disconnect();
-    }
+    useTinyEmailIfReady();
   });
   observer.observe(embed, { childList: true, subtree: true });
   syncCouponField();

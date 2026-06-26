@@ -504,6 +504,38 @@ p { margin: 0 0 1em; color: var(--text-main); }
   outline: 2px solid var(--primary);
   outline-offset: 4px;
 }
+.resource-image-expand {
+  position: relative;
+  overflow: hidden;
+  border-radius: inherit;
+}
+.resource-image-expand__icon {
+  align-items: center;
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.2);
+  color: #fff;
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 800;
+  height: 34px;
+  justify-content: center;
+  line-height: 1;
+  opacity: 0.9;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  transition: transform 160ms ease, opacity 160ms ease, background 160ms ease;
+  width: 34px;
+}
+.resource-image-expand:hover .resource-image-expand__icon,
+.resource-image-expand:focus-visible .resource-image-expand__icon {
+  background: var(--primary);
+  opacity: 1;
+  transform: scale(1.05);
+}
 .screenshot-lightbox {
   position: relative;
   margin: auto;
@@ -7134,6 +7166,10 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   object-fit: fill;
   object-position: center;
   padding: 0;
+}
+
+.audience-media-card--workflow .resource-image-expand {
+  height: 100%;
 }
 
 .audience-media-card figcaption {

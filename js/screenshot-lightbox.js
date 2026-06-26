@@ -1,6 +1,22 @@
 (function () {
-  const screenshotDialog = document.getElementById('screenshot-lightbox');
-  if (!screenshotDialog) return;
+  const triggers = document.querySelectorAll('[data-screenshot-expand]');
+  if (!triggers.length) return;
+
+  let screenshotDialog = document.getElementById('screenshot-lightbox');
+
+  if (!screenshotDialog) {
+    screenshotDialog = document.createElement('dialog');
+    screenshotDialog.id = 'screenshot-lightbox';
+    screenshotDialog.className = 'screenshot-lightbox';
+    screenshotDialog.setAttribute('aria-label', 'Expanded screenshot');
+    screenshotDialog.innerHTML = `
+      <form method="dialog">
+        <button type="submit" class="screenshot-lightbox__close" aria-label="Close expanded screenshot">&times;</button>
+      </form>
+      <img class="screenshot-lightbox__img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="Expanded ClickCoach screenshot preview" />
+    `;
+    document.body.appendChild(screenshotDialog);
+  }
 
   const lightboxImg = screenshotDialog.querySelector('.screenshot-lightbox__img');
   let lightboxScrollY = 0;
@@ -24,7 +40,7 @@
     window.scrollTo(0, lightboxScrollY);
   }
 
-  document.querySelectorAll('[data-screenshot-expand]').forEach((trigger) => {
+  triggers.forEach((trigger) => {
     trigger.addEventListener('click', () => {
       if (!lightboxImg) return;
       const sourceImg = trigger.querySelector('img');

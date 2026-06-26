@@ -3,7 +3,8 @@
   const minTimeOnPage = 9000;
   const muxPlaybackId = 'J4MjhbBkhPISfKV32vATXDqKXqhpNBUT367E5eojii4';
   const tinyEmailAccountId = 'e4ea2f69-5822-4136-a02b-d0045cabb18f';
-  const tinyEmailFormId = '0044c477-093f-4d8b-8041-69c2d7c5d1e3';
+  const tinyEmailFormId = 'bac6214f-9de0-4b04-a220-97081cfc39b4';
+  const pricingReportUrl = '/downloads/how-to-raise-your-prices-consistently.pdf';
   let shown = false;
   let ready = false;
   let memorySeen = false;
@@ -76,6 +77,32 @@
     }).catch(() => {});
   }
 
+  function showAssetDelivery(dialog) {
+    if (!dialog) return;
+    const body = dialog.querySelector('.cc-exit-popup__body');
+    if (!body || body.dataset.assetsDelivered === 'true') return;
+    body.dataset.assetsDelivered = 'true';
+    body.innerHTML = `
+      <span class="chip">You are in</span>
+      <h2>Perfect. Here are the video and report.</h2>
+      <p>We captured your request. You can watch the 3-minute ClickCoach demo now, download the rate-raising report, and we will keep the follow-up simple.</p>
+      <div class="cc-exit-popup__asset-actions">
+        <button class="btn btn-lg cc-exit-popup__asset-btn cc-exit-popup__asset-btn--primary" type="button" data-exit-watch>
+          <span aria-hidden="true">▶</span>
+          Watch the video
+        </button>
+        <a class="btn btn-lg cc-exit-popup__asset-btn cc-exit-popup__asset-btn--secondary" href="${pricingReportUrl}" target="_blank" rel="noopener">
+          <span aria-hidden="true">↓</span>
+          Download the report
+        </a>
+      </div>
+      <p class="cc-exit-popup__microcopy">
+        Want the full tour? <a href="/features/">Explore ClickCoach features</a>.
+      </p>
+    `;
+    body.querySelector('[data-exit-watch]').addEventListener('click', () => showVideo(dialog));
+  }
+
   function normalizeTinyEmailDemoForm(container) {
     const placeholderMap = new Map([
       ['First name placeholder', 'First Name'],
@@ -99,11 +126,17 @@
 
     container.querySelectorAll('*').forEach((element) => {
       const message = element.textContent.trim();
+      const normalizedMessage = message.toLowerCase();
       if (
         element.childNodes.length === 1 &&
-        (message === 'Form successfully submitted!' || message === 'Thanks! Please check your email for the SlipMeter download link.')
+        (
+          normalizedMessage.includes('successfully submitted') ||
+          normalizedMessage.includes('form submitted') ||
+          normalizedMessage.includes('thank you') ||
+          normalizedMessage.includes('thanks!')
+        )
       ) {
-        element.textContent = 'Done - check your email for the demo video and the pricing report.';
+        showAssetDelivery(container.closest('.cc-exit-popup'));
       }
     });
   }

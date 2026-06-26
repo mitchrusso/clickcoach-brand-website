@@ -2430,6 +2430,79 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   white-space: normal;
 }
 
+.cc-exit-popup__asset-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.cc-exit-popup__asset-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 15px 22px;
+  border-radius: var(--r-full);
+  text-decoration: none;
+  transform: translateY(0);
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.cc-exit-popup__asset-btn span {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--r-full);
+  font-size: .86rem;
+  line-height: 1;
+}
+
+.cc-exit-popup__asset-btn--primary {
+  border: 0;
+  background: linear-gradient(135deg, #2563EB 0%, #174AE4 58%, #0F2F9F 100%);
+  color: #fff;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, .28);
+}
+
+.cc-exit-popup__asset-btn--primary span {
+  background: rgba(255, 255, 255, .2);
+  color: #fff;
+}
+
+.cc-exit-popup__asset-btn--secondary {
+  border: 1px solid rgba(37, 99, 235, .28);
+  background: rgba(255, 255, 255, .86);
+  color: var(--blue);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, .08);
+}
+
+.cc-exit-popup__asset-btn--secondary span {
+  background: rgba(37, 99, 235, .1);
+}
+
+.cc-exit-popup__asset-btn:hover {
+  transform: translateY(-2px);
+}
+
+.cc-exit-popup__asset-btn:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .28);
+  outline-offset: 3px;
+}
+
+.cc-exit-popup__microcopy {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: .98rem;
+}
+
+.cc-exit-popup__microcopy a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
 .eo-hero__stack-note {
   max-width: 420px;
   margin: 14px auto 0;

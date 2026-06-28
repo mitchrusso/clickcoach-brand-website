@@ -30,6 +30,7 @@ Solution pages:
 
 Resource articles:
 <!-- BABYLOVEGROWTH_LLMS_START -->
+- Progress Reports and Client Retention: A Coach's Guide: https://clickcoach.io/resources/progress-reports-and-client-retention-a-coachs-guide/
 - Coaching Business Organization Checklist for 2026: https://clickcoach.io/resources/coaching-business-organization-checklist-for-2026/
 - How to Write Coaching Agreements for Clients: https://clickcoach.io/resources/how-to-write-coaching-agreements-for-clients/
 - How to Collect Client Information Professionally: https://clickcoach.io/resources/how-to-collect-client-information-professionally/

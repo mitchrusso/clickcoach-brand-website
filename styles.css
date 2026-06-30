@@ -5568,6 +5568,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   padding-bottom: clamp(56px, 7vw, 80px);
 }
 
+.eo-home.alt-home main > section:not(.eo-hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 720px;
+}
+
 .alt-home .eo-hero__inner {
   gap: clamp(28px, 4vw, 40px);
 }

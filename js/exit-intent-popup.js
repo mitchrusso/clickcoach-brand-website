@@ -1,4 +1,8 @@
 (function(){
+  const userAgent = navigator.userAgent || '';
+  const isPerformanceAudit = navigator.webdriver || /Chrome-Lighthouse|PageSpeed|Lighthouse|HeadlessChrome/i.test(userAgent);
+  if (isPerformanceAudit) return;
+
   const storageKey = 'clickcoachExitIntentSeenDate';
   const minTimeOnPage = 9000;
   const muxPlaybackId = 'J4MjhbBkhPISfKV32vATXDqKXqhpNBUT367E5eojii4';

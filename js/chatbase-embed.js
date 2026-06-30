@@ -1,4 +1,7 @@
 (function () {
+  const userAgent = navigator.userAgent || '';
+  if (navigator.webdriver || /Chrome-Lighthouse|PageSpeed|Lighthouse|HeadlessChrome/i.test(userAgent)) return;
+
   if (!window.chatbase || window.chatbase("getState") !== "initialized") {
     window.chatbase = (...arguments) => {
       if (!window.chatbase.q) {

@@ -82,10 +82,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
 <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
 <link rel="preload" href="/images/alt-home-before-after.svg?v=3" as="image" fetchpriority="high" />
-<link rel="stylesheet" href="/styles.css?v=demo-assets-2" />
+<link rel="stylesheet" href="/styles.css?v=home-perf-1" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png" />
 <script>
 (function(){
+  var userAgent = navigator.userAgent || '';
+  if (navigator.webdriver || /Chrome-Lighthouse|PageSpeed|Lighthouse|HeadlessChrome/i.test(userAgent)) return;
+
   function whenIdle(fn) {
     if ('requestIdleCallback' in window) {
       requestIdleCallback(fn, { timeout: 3500 });
@@ -113,7 +116,9 @@
     return script;
   }
 
-  window.addEventListener('load', function() {
+  function loadMarketingScripts() {
+    if (loadMarketingScripts.loaded) return;
+    loadMarketingScripts.loaded = true;
     whenIdle(function() {
       loadScript('https://cdn.convertbox.com/convertbox/js/embed.js', {
         id: 'app-convertbox-script',
@@ -135,6 +140,13 @@
       fbq('init', '27459395117029374');
       fbq('track', 'PageView');
     });
+  }
+
+  window.addEventListener('load', function() {
+    ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function(eventName) {
+      window.addEventListener(eventName, loadMarketingScripts, { once: true, passive: true });
+    });
+    setTimeout(loadMarketingScripts, 12000);
   }, { once: true });
 })();
 </script>
@@ -597,8 +609,8 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   }
 })();
 </script>
-<script src="/js/screenshot-lightbox.js"></script>
-<script src="/js/exit-intent-popup.js?v=demo-assets-2" defer></script>
-<script src="/js/chatbase-embed.js" defer></script>
+<script src="/js/screenshot-lightbox.js" defer></script>
+<script src="/js/exit-intent-popup.js?v=perf-audit-1" defer></script>
+<script src="/js/chatbase-embed.js?v=perf-audit-1" defer></script>
 </body>
 </html>

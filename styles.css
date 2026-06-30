@@ -2419,15 +2419,48 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   max-width: 100%;
 }
 
-.cc-exit-popup__form button {
-  min-width: 170px;
-  border: none !important;
+.cc-exit-popup__form button,
+.cc-exit-popup__form input[type="button"],
+.cc-exit-popup__form input[type="submit"],
+.cc-exit-popup__form [type="submit"] {
+  appearance: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: auto !important;
+  min-width: 220px !important;
+  min-height: 56px !important;
+  padding: 0 30px !important;
+  border: 0 !important;
   border-radius: var(--r-full) !important;
-  background: var(--blue) !important;
+  background: linear-gradient(135deg, #2563EB 0%, #174AE4 58%, #0F2F9F 100%) !important;
   color: #fff !important;
-  box-shadow: none !important;
-  font-weight: 900 !important;
-  white-space: normal;
+  box-shadow: 0 16px 34px rgba(37, 99, 235, .28) !important;
+  font: 900 .92rem/1 var(--font-display) !important;
+  letter-spacing: .01em !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  cursor: pointer !important;
+  transform: translateY(0);
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+.cc-exit-popup__form button:hover,
+.cc-exit-popup__form input[type="button"]:hover,
+.cc-exit-popup__form input[type="submit"]:hover,
+.cc-exit-popup__form [type="submit"]:hover {
+  filter: brightness(1.04);
+  box-shadow: 0 20px 42px rgba(37, 99, 235, .34) !important;
+  transform: translateY(-1px);
+}
+
+.cc-exit-popup__form button:focus-visible,
+.cc-exit-popup__form input[type="button"]:focus-visible,
+.cc-exit-popup__form input[type="submit"]:focus-visible,
+.cc-exit-popup__form [type="submit"]:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, .25) !important;
+  outline-offset: 3px !important;
 }
 
 .cc-exit-popup__asset-actions {

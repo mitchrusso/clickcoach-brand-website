@@ -30,6 +30,7 @@ Solution pages:
 
 Resource articles:
 <!-- BABYLOVEGROWTH_LLMS_START -->
+- Increase Client Engagement Between Sessions: A Coach's Guide: https://clickcoach.io/resources/increase-client-engagement-between-sessions-a-coachs-guide/
 - Top 6 Coachablepros.com Alternatives 2026: https://clickcoach.io/resources/coachablepros-com-alternatives-6/
 - Coaching Session Outcome Documentation Explained: https://clickcoach.io/resources/coaching-session-outcome-documentation-explained/
 - Progress Reports and Client Retention: A Coach's Guide: https://clickcoach.io/resources/progress-reports-and-client-retention-a-coachs-guide/

@@ -2247,11 +2247,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .eo-hero__copy .eo-hero__product-line {
-  max-width: 680px;
-  margin-top: 14px;
+  max-width: 600px;
+  margin-top: 10px;
   color: #51627A;
-  font-size: clamp(.96rem, 1.25vw, 1.08rem);
-  font-weight: 700;
+  font-size: clamp(.82rem, 1vw, .94rem);
+  font-weight: 600;
   line-height: 1.45;
 }
 

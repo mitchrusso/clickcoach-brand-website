@@ -17,6 +17,7 @@ Key pages:
 - Contact, support, affiliates, and API inquiries: https://clickcoach.io/contact/
 - JV Partner Program for 40% commissions, affiliate signup, partner links, stats, swipes, webinar support, and promotion tools: https://clickcoach.io/jv/
 - Join / checkout: https://clickcoach.io/join/
+- SlipMeter for Mac time tracking: https://clickcoach.io/slipmeter/
 - Privacy policy: https://clickcoach.io/privacy/
 - Terms of service: https://clickcoach.io/terms/
 
@@ -60,6 +61,9 @@ Resource articles:
 - Why Coaching Notes Should Become Progress Proof: https://clickcoach.io/resources/why-coaching-notes-should-become-progress-proof/
 - Client Onboarding Steps for Coaches: 2026 Guide: https://clickcoach.io/resources/client-onboarding-steps-for-coaches-2026-guide/
 - The Coach's Blueprint to Premium Pricing: https://clickcoach.io/resources/coachs-blueprint-to-premium-pricing/
+
+Integrations:
+- ClickCoach uses Google Calendar to automatically sync and create coaching session events, keeping coaches and clients aligned on their schedule.
 
 Core offer:
 - ClickCoach Access is $497 per coach per year.

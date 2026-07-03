@@ -256,6 +256,7 @@ p { margin: 0 0 1em; color: var(--text-main); }
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
+  min-width: 208px;
   font-family: var(--f-heading);
   font-weight: 800;
   color: var(--text-main);
@@ -408,6 +409,10 @@ p { margin: 0 0 1em; color: var(--text-main); }
 
   .nav__brand .cc-logo--full {
     max-width: 176px;
+  }
+
+  .nav__brand {
+    min-width: 188px;
   }
 
   .nav__menu {

@@ -394,6 +394,16 @@
       "permanent": true
     },
     {
+      "source": "/go",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/go/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
       "source": "/replay",
       "destination": "/pricing/",
       "permanent": true

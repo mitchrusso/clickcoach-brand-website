@@ -31,6 +31,7 @@ Solution pages:
 
 Resource articles:
 <!-- BABYLOVEGROWTH_LLMS_START -->
+- Client Communication Best Practices for Coaches in 2026: https://www.clickcoach.io/resources/client-communication-best-practices-for-coaches-in-2026/
 - Scale Your Coaching Practice Without Losing Client Experience: https://www.clickcoach.io/resources/scale-coaching-practice-keep-client-experience/
 - Increase Client Engagement Between Sessions: A Coach's Guide: https://www.clickcoach.io/resources/increase-client-engagement-between-sessions-a-coachs-guide/
 - Top 6 Coachablepros.com Alternatives 2026: https://www.clickcoach.io/resources/coachablepros-com-alternatives-6/

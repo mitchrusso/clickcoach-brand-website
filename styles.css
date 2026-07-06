@@ -6997,6 +6997,33 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   width: 100%;
 }
 
+.resource-article p > img {
+  border-radius: 18px;
+  display: block;
+  height: auto;
+  margin: 28px auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+@supports (content-visibility: auto) {
+  .section,
+  .resource-article-section,
+  .feature-section,
+  .eo-page .section {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 900px;
+  }
+
+  .hero,
+  .eo-hero,
+  .resource-article-hero,
+  .site-header {
+    content-visibility: visible;
+    contain-intrinsic-size: auto;
+  }
+}
+
 .resource-visual-grid {
   align-items: start;
   display: grid;

@@ -31,6 +31,7 @@ Solution pages:
 
 Resource articles:
 <!-- BABYLOVEGROWTH_LLMS_START -->
+- Client Data Management Coaching: A 2026 Guide for Coaches: https://www.clickcoach.io/resources/client-data-management-coaching-a-2026-guide-for-coaches/
 - Long-Term Client Relationship Best Practices for Coaches: https://www.clickcoach.io/resources/long-term-client-relationship-best-practices-for-coaches/
 - Client Communication Best Practices for Coaches in 2026: https://www.clickcoach.io/resources/client-communication-best-practices-for-coaches-in-2026/
 - Scale Your Coaching Practice Without Losing Client Experience: https://www.clickcoach.io/resources/scale-coaching-practice-keep-client-experience/

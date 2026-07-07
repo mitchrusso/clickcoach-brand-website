@@ -29,8 +29,23 @@ Solution pages:
 - Coaching notes software: https://www.clickcoach.io/coaching-notes-software/
 - Coaching business management software: https://www.clickcoach.io/coaching-business-management-software/
 
+Coaching software answer pages:
+- Coaching Software Answers: https://www.clickcoach.io/resources/coaching-software-answers/
+- What Software Do Coaches Use to Manage Clients?: https://www.clickcoach.io/resources/what-software-do-coaches-use-to-manage-clients/
+- What Is the Best Client Portal for Coaches?: https://www.clickcoach.io/resources/best-client-portal-for-coaches/
+- How Do Coaches Track Client Progress?: https://www.clickcoach.io/resources/how-do-coaches-track-client-progress/
+- How Do Coaches Keep Clients Accountable Between Sessions?: https://www.clickcoach.io/resources/how-do-coaches-keep-clients-accountable-between-sessions/
+- How Do Coaching Businesses Reduce Admin Work?: https://www.clickcoach.io/resources/how-do-coaching-businesses-reduce-admin-work/
+- What Tools Do Life Coaches Need to Run a Practice?: https://www.clickcoach.io/resources/what-tools-do-life-coaches-need/
+- How Should Coaches Document Session Outcomes?: https://www.clickcoach.io/resources/how-should-coaches-document-session-outcomes/
+- How Do Coaches Prove Client Progress?: https://www.clickcoach.io/resources/how-do-coaches-prove-client-progress/
+- ClickCoach vs Simply.Coach: https://www.clickcoach.io/resources/clickcoach-vs-simply-coach/
+- ClickCoach vs CoachVantage: https://www.clickcoach.io/resources/clickcoach-vs-coachvantage/
+- ClickCoach vs LifeCoachHub: https://www.clickcoach.io/resources/clickcoach-vs-lifecoachhub/
+- Coaching Software vs HR Performance Platforms: https://www.clickcoach.io/resources/coaching-software-vs-hr-performance-platforms/
+
 Resource articles:
-<!-- BABYLOVEGROWTH_LLMS_START -->
+<!-- AUTO_RESOURCE_LLMS_START -->
 - Executive Coaching Progress Tracking: A Practical Guide: https://www.clickcoach.io/resources/executive-coaching-progress-tracking-a-practical-guide/
 - Client Data Management Coaching: A 2026 Guide for Coaches: https://www.clickcoach.io/resources/client-data-management-coaching-a-2026-guide-for-coaches/
 - Long-Term Client Relationship Best Practices for Coaches: https://www.clickcoach.io/resources/long-term-client-relationship-best-practices-for-coaches/
@@ -49,7 +64,7 @@ Resource articles:
 - The Real Role of Real-Time Collaboration Coaching: https://www.clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/
 - What Is a Coaching Practice? Your 2026 Guide: https://www.clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/
 - How to Track Individual Progress in Group Coaching: https://www.clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/
-<!-- BABYLOVEGROWTH_LLMS_END -->
+<!-- AUTO_RESOURCE_LLMS_END -->
 - Coaching business problem guide: https://www.clickcoach.io/resources/coaching-business-problems/
 - Why Coaching Referrals and Renewals Feel Harder: https://www.clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/
 - How Coaches Can Get Better Testimonials and Proof: https://www.clickcoach.io/resources/how-coaches-can-get-better-testimonials-and-proof/

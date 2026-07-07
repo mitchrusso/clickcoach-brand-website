@@ -96,7 +96,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <!-- BABYLOVEGROWTH_SITEMAP_START -->
+  <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
     <loc>https://www.clickcoach.io/resources/executive-coaching-progress-tracking-a-practical-guide/</loc>
     <lastmod>2026-07-07</lastmod>
@@ -205,7 +205,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-<!-- BABYLOVEGROWTH_SITEMAP_END -->
+<!-- AUTO_RESOURCE_SITEMAP_END -->
   <url>
     <loc>https://www.clickcoach.io/resources/coaching-business-problems/</loc>
     <lastmod>2026-06-18</lastmod>
@@ -299,6 +299,84 @@
   <url>
     <loc>https://www.clickcoach.io/resources/coachs-blueprint-to-premium-pricing/</loc>
     <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/coaching-software-answers/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/what-software-do-coaches-use-to-manage-clients/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/best-client-portal-for-coaches/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/how-do-coaches-track-client-progress/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/how-do-coaches-keep-clients-accountable-between-sessions/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/how-do-coaching-businesses-reduce-admin-work/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/what-tools-do-life-coaches-need/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/how-should-coaches-document-session-outcomes/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/how-do-coaches-prove-client-progress/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/clickcoach-vs-simply-coach/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/clickcoach-vs-coachvantage/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/clickcoach-vs-lifecoachhub/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/coaching-software-vs-hr-performance-platforms/</loc>
+    <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

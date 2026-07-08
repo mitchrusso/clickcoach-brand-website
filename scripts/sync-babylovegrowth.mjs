@@ -195,7 +195,7 @@ function buildJsonLd(article, slug, date) {
 function buildPage(article, templateParts) {
   const slug = slugify(article.slug || article.title || String(article.id));
   const date = formatDate(article.created_at);
-  const title = article.title || "Untitled BabyLoveGrowth Article";
+  const title = article.title || "Untitled ClickCoach Resource Article";
   const description = article.meta_description || article.excerpt || title;
   const content = normalizeContent(
     article.content_html || article.content_markdown || "",
@@ -234,7 +234,7 @@ ${templateParts.bodyOpenAndHeader}
 <section class="resource-article-hero">
   <div class="container resource-article-hero__inner">
     <a class="resource-back" href="/resources/">&larr; Resources</a>
-    <span class="chip">BabyLoveGrowth article</span>
+    <span class="chip">Mitch Russo article</span>
     <h1>${escapeHtml(title)}</h1>
     <p class="hero__lede">${escapeHtml(description)}</p>
     <p class="resource-article-meta">By Mitch Russo &middot; Updated ${date}</p>
@@ -298,13 +298,22 @@ async function fetchArticles() {
   return articles;
 }
 
-async function upsertGeneratedBlock(filePath, startMarker, endMarker, content) {
+async function upsertGeneratedBlock(filePath, markerPairs, content) {
   const original = await readFile(filePath, "utf8");
-  if (!original.includes(startMarker) || !original.includes(endMarker)) {
-    throw new Error(`Missing generated block markers in ${filePath}`);
+  const markers = markerPairs.find(
+    ([startMarker, endMarker]) => original.includes(startMarker) && original.includes(endMarker)
+  );
+
+  if (!markers) {
+    const expected = markerPairs
+      .map(([startMarker, endMarker]) => `${startMarker} ... ${endMarker}`)
+      .join(" or ");
+    throw new Error(`Missing generated block markers in ${filePath}. Expected ${expected}`);
   }
+
+  const [startMarker, endMarker] = markers;
   const next = original.replace(
-    new RegExp(`${startMarker}[\\s\\S]*?${endMarker}`),
+    new RegExp(`${escapeRegExp(startMarker)}[\\s\\S]*?${escapeRegExp(endMarker)}`),
     `${startMarker}\n${content.trim()}\n${endMarker}`
   );
   if (next !== original && !dryRun) await writeFile(filePath, next);
@@ -344,7 +353,7 @@ async function main() {
   const cards = synced
     .map(
       (article) => `      <article class="resource-card">
-        <span class="chip">BabyLoveGrowth</span>
+        <span class="chip">Mitch Russo</span>
         <h2><a href="/resources/${article.slug}/">${escapeHtml(article.title)}</a></h2>
         <p>${escapeHtml(article.description)}</p>
         <a class="resource-card__link" href="/resources/${article.slug}/">Read article &rarr;</a>
@@ -369,20 +378,26 @@ async function main() {
 
   await upsertGeneratedBlock(
     path.join(RESOURCE_ROOT, "index.html"),
-    "<!-- BABYLOVEGROWTH_RESOURCES_START -->",
-    "<!-- BABYLOVEGROWTH_RESOURCES_END -->",
+    [
+      ["<!-- AUTO_RESOURCE_RESOURCES_START -->", "<!-- AUTO_RESOURCE_RESOURCES_END -->"],
+      ["<!-- BABYLOVEGROWTH_RESOURCES_START -->", "<!-- BABYLOVEGROWTH_RESOURCES_END -->"],
+    ],
     cards
   );
   await upsertGeneratedBlock(
     path.join(ROOT, "sitemap.xml"),
-    "<!-- BABYLOVEGROWTH_SITEMAP_START -->",
-    "<!-- BABYLOVEGROWTH_SITEMAP_END -->",
+    [
+      ["<!-- AUTO_RESOURCE_SITEMAP_START -->", "<!-- AUTO_RESOURCE_SITEMAP_END -->"],
+      ["<!-- BABYLOVEGROWTH_SITEMAP_START -->", "<!-- BABYLOVEGROWTH_SITEMAP_END -->"],
+    ],
     sitemapUrls
   );
   await upsertGeneratedBlock(
     path.join(ROOT, "llms.txt"),
-    "<!-- BABYLOVEGROWTH_LLMS_START -->",
-    "<!-- BABYLOVEGROWTH_LLMS_END -->",
+    [
+      ["<!-- AUTO_RESOURCE_LLMS_START -->", "<!-- AUTO_RESOURCE_LLMS_END -->"],
+      ["<!-- BABYLOVEGROWTH_LLMS_START -->", "<!-- BABYLOVEGROWTH_LLMS_END -->"],
+    ],
     llmsItems
   );
 

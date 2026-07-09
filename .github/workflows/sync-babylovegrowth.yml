@@ -4,6 +4,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 10 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/sync-babylovegrowth.yml"
+      - "scripts/sync-babylovegrowth.mjs"
 
 permissions:
   contents: write
@@ -11,7 +17,8 @@ permissions:
 jobs:
   sync:
     name: Fetch and publish BabyLoveGrowth articles
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
 
     steps:
       - name: Checkout

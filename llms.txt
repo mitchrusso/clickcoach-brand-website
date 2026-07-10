@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Client Management Mistakes Coaches Make: 2026 Guide: https://www.clickcoach.io/resources/client-management-mistakes-coaches-make-2026-guide/
 - Executive Coaching Progress Tracking: A Practical Guide: https://www.clickcoach.io/resources/executive-coaching-progress-tracking-a-practical-guide/
 - Client Data Management Coaching: A 2026 Guide for Coaches: https://www.clickcoach.io/resources/client-data-management-coaching-a-2026-guide-for-coaches/
 - Long-Term Client Relationship Best Practices for Coaches: https://www.clickcoach.io/resources/long-term-client-relationship-best-practices-for-coaches/

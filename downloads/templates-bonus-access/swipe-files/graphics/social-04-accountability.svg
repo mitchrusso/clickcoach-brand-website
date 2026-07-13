@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="Better client accountability">
+  <rect width="1080" height="1080" fill="#F7FAFF"/>
+  <circle cx="850" cy="155" r="180" fill="#E1F99D" opacity=".65"/>
+  <text x="90" y="185" font-family="Montserrat, Arial, sans-serif" font-size="82" font-weight="900" fill="#0C0C0D">Better client</text>
+  <text x="90" y="280" font-family="Montserrat, Arial, sans-serif" font-size="82" font-weight="900" fill="#2463EB">accountability.</text>
+  <g transform="translate(120 400)" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="34" font-weight="800">
+    <rect width="840" height="95" rx="24" fill="#FFFFFF" stroke="#C9D7F2"/><circle cx="55" cy="48" r="24" fill="#2463EB"/><path d="M43 48l9 10 18-22" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/><text x="105" y="60">Homework is visible</text>
+    <rect y="130" width="840" height="95" rx="24" fill="#FFFFFF" stroke="#C9D7F2"/><circle cx="55" cy="178" r="24" fill="#2463EB"/><path d="M43 178l9 10 18-22" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/><text x="105" y="190">Follow-up is organized</text>
+    <rect y="260" width="840" height="95" rx="24" fill="#FFFFFF" stroke="#C9D7F2"/><circle cx="55" cy="308" r="24" fill="#2463EB"/><path d="M43 308l9 10 18-22" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/><text x="105" y="320">Progress is easier to see</text>
+  </g>
+  <text x="90" y="920" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="34" font-weight="800" fill="#2463EB">[AFFILIATE LINK]</text>
+</svg>

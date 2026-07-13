@@ -7580,3 +7580,209 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
     width: 100%;
   }
 }
+
+.bonus-page .bonus-hero {
+  padding: 84px 0 64px;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(215, 255, 196, .7), transparent 28%),
+    radial-gradient(circle at 88% 12%, rgba(194, 234, 255, .75), transparent 30%),
+    linear-gradient(135deg, #f8fbff 0%, #f3f8ff 52%, #eefdf4 100%);
+}
+
+.bonus-hero__inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+  gap: 42px;
+  align-items: center;
+}
+
+.bonus-hero__copy h1 {
+  max-width: 12ch;
+  margin: 18px 0 22px;
+  font-size: clamp(3rem, 6.8vw, 5.9rem);
+  line-height: .96;
+  letter-spacing: 0;
+}
+
+.bonus-hero__copy .hero__lede {
+  max-width: 720px;
+}
+
+.bonus-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.bonus-hero__panel,
+.bonus-placeholder-panel,
+.bonus-file-card {
+  border: 1px solid rgba(31, 92, 255, .16);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, .88);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, .08);
+}
+
+.bonus-hero__panel {
+  padding: 32px;
+}
+
+.bonus-panel__kicker {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--blue);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.bonus-hero__panel ul,
+.bonus-steps {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.bonus-hero__panel li,
+.bonus-steps li {
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.bonus-file-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.bonus-file-card {
+  display: flex;
+  min-height: 270px;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.bonus-file-card h3 {
+  margin: 18px 0 12px;
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  line-height: 1.12;
+}
+
+.bonus-file-card p {
+  color: var(--muted);
+}
+
+.bonus-file-card .resource-card__link {
+  margin-top: auto;
+}
+
+.bonus-instructions {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.bonus-instructions h2,
+.bonus-graphics h2,
+.bonus-downloads h2 {
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  line-height: 1.02;
+}
+
+.bonus-placeholder-panel {
+  margin-top: 30px;
+  padding: 28px;
+}
+
+.bonus-placeholder-panel h3 {
+  margin: 0 0 18px;
+}
+
+.bonus-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.bonus-placeholder-grid span {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(31, 92, 255, .07);
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.bonus-placeholder-grid code {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.bonus-graphic-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.bonus-graphic-card {
+  overflow: hidden;
+  border: 1px solid rgba(31, 92, 255, .14);
+  border-radius: 22px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  box-shadow: 0 16px 44px rgba(15, 23, 42, .07);
+}
+
+.bonus-graphic-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #f5f8ff;
+}
+
+.bonus-graphic-card span {
+  display: block;
+  padding: 12px 14px 14px;
+  font-weight: 800;
+}
+
+@media (max-width: 1040px) {
+  .bonus-hero__inner,
+  .bonus-instructions {
+    grid-template-columns: 1fr;
+  }
+
+  .bonus-file-grid,
+  .bonus-graphic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .bonus-page .bonus-hero {
+    padding-top: 48px;
+  }
+
+  .bonus-hero__copy h1 {
+    font-size: clamp(2.25rem, 13vw, 3.3rem);
+  }
+
+  .bonus-actions .btn {
+    width: 100%;
+  }
+
+  .bonus-file-grid,
+  .bonus-graphic-grid,
+  .bonus-placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="Free ClickCoach training for coaches">
+  <rect width="1080" height="1080" fill="#F7FAFF"/>
+  <rect x="90" y="100" width="900" height="780" rx="56" fill="#FFFFFF" stroke="#C9D7F2" stroke-width="3"/>
+  <text x="540" y="205" text-anchor="middle" font-family="Plus Jakarta Sans, Arial" font-size="34" font-weight="900" fill="#2463EB">FREE TRAINING FOR COACHES</text>
+  <text x="540" y="335" text-anchor="middle" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#0C0C0D">One Login.</text>
+  <text x="540" y="425" text-anchor="middle" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#2463EB">Better Systems.</text>
+  <text x="540" y="515" text-anchor="middle" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#0C0C0D">More Proof.</text>
+  <rect x="250" y="610" width="580" height="90" rx="45" fill="#2463EB"/>
+  <text x="540" y="668" text-anchor="middle" font-family="Montserrat, Arial" font-size="34" font-weight="900" fill="#FFFFFF">REGISTER: [WEBINAR LINK]</text>
+  <text x="540" y="790" text-anchor="middle" font-family="Plus Jakarta Sans, Arial" font-size="30" font-weight="800" fill="#51627A">Hosted by [PARTNER NAME]</text>
+  <text x="90" y="955" font-family="Plus Jakarta Sans, Arial" font-size="28" font-weight="800" fill="#2463EB">ClickCoach.io</text>
+</svg>

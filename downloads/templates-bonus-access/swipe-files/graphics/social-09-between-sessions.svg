@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="The real coaching work continues between sessions">
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+  <rect x="70" y="70" width="940" height="940" rx="54" fill="#F7FAFF"/>
+  <text x="120" y="190" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#0C0C0D">The work</text>
+  <text x="120" y="280" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#2463EB">between sessions</text>
+  <text x="120" y="370" font-family="Montserrat, Arial" font-size="72" font-weight="900" fill="#0C0C0D">matters.</text>
+  <g font-family="Plus Jakarta Sans, Arial" font-size="30" font-weight="800" fill="#0C0C0D">
+    <rect x="135" y="500" width="260" height="78" rx="22" fill="#EAF2FF"/><text x="265" y="550" text-anchor="middle">Follow-up</text>
+    <rect x="425" y="500" width="260" height="78" rx="22" fill="#E1F99D"/><text x="555" y="550" text-anchor="middle">Homework</text>
+    <rect x="715" y="500" width="220" height="78" rx="22" fill="#FFD6E2"/><text x="825" y="550" text-anchor="middle">Notes</text>
+    <rect x="260" y="625" width="260" height="78" rx="22" fill="#C5FAE8"/><text x="390" y="675" text-anchor="middle">Progress</text>
+    <rect x="555" y="625" width="260" height="78" rx="22" fill="#EEEDFE"/><text x="685" y="675" text-anchor="middle">Reminders</text>
+  </g>
+  <text x="120" y="870" font-family="Plus Jakarta Sans, Arial" font-size="32" font-weight="800" fill="#2463EB">Recommended by [PARTNER NAME]</text>
+</svg>

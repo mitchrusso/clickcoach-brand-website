@@ -165,6 +165,16 @@
       "permanent": true
     },
     {
+      "source": "/templates-bonus-access",
+      "destination": "/templates-bonus-access/",
+      "permanent": true
+    },
+    {
+      "source": "/templates-bonus-access/index.html",
+      "destination": "/templates-bonus-access/",
+      "permanent": true
+    },
+    {
       "source": "/privacy",
       "destination": "/privacy/",
       "permanent": true

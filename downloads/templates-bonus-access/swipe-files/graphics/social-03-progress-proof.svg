@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="Make coaching progress visible">
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+  <rect x="70" y="70" width="940" height="940" rx="52" fill="#F7FAFF"/>
+  <text x="100" y="175" font-family="Montserrat, Arial, sans-serif" font-size="78" font-weight="900" fill="#0C0C0D">Make progress</text>
+  <text x="100" y="265" font-family="Montserrat, Arial, sans-serif" font-size="78" font-weight="900" fill="#2463EB">easier to prove.</text>
+  <g transform="translate(120 380)">
+    <rect width="840" height="360" rx="32" fill="#FFFFFF" stroke="#D7E2F7" stroke-width="3"/>
+    <line x1="90" y1="280" x2="760" y2="280" stroke="#CBD5E1" stroke-width="5"/>
+    <rect x="135" y="165" width="80" height="115" rx="12" fill="#C5FAE8"/>
+    <rect x="275" y="120" width="80" height="160" rx="12" fill="#EAF2FF"/>
+    <rect x="415" y="80" width="80" height="200" rx="12" fill="#E1F99D"/>
+    <rect x="555" y="45" width="80" height="235" rx="12" fill="#2463EB"/>
+    <path d="M150 180 C290 130, 390 95, 600 60" fill="none" stroke="#FD9DE7" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <text x="100" y="860" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#51627A">Notes + follow-up + outcomes in one place.</text>
+  <text x="100" y="930" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="30" font-weight="800" fill="#2463EB">Shared by [PARTNER NAME]</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="What works with three clients breaks with fifteen">
+  <rect width="1080" height="1080" fill="#F7FAFF"/>
+  <text x="85" y="170" font-family="Montserrat, Arial" font-size="76" font-weight="900" fill="#0C0C0D">What works</text>
+  <text x="85" y="260" font-family="Montserrat, Arial" font-size="76" font-weight="900" fill="#0C0C0D">with 3 clients</text>
+  <text x="85" y="350" font-family="Montserrat, Arial" font-size="76" font-weight="900" fill="#2463EB">may break at 15.</text>
+  <g transform="translate(105 470)">
+    <rect width="870" height="210" rx="34" fill="#FFFFFF" stroke="#C9D7F2"/>
+    <circle cx="130" cy="105" r="52" fill="#C5FAE8"/><circle cx="270" cy="105" r="52" fill="#EAF2FF"/><circle cx="410" cy="105" r="52" fill="#E1F99D"/>
+    <text x="585" y="92" font-family="Montserrat, Arial" font-size="42" font-weight="900" fill="#0C0C0D">Scale the system,</text>
+    <text x="585" y="145" font-family="Montserrat, Arial" font-size="42" font-weight="900" fill="#2463EB">not the chaos.</text>
+  </g>
+  <text x="85" y="835" font-family="Plus Jakarta Sans, Arial" font-size="34" font-weight="700" fill="#51627A">ClickCoach helps coaches grow cleaner.</text>
+  <text x="85" y="910" font-family="Plus Jakarta Sans, Arial" font-size="30" font-weight="800" fill="#2463EB">[AFFILIATE LINK]</text>
+</svg>

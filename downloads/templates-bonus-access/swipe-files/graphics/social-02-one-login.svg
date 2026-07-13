@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" role="img" aria-label="One login everything connected">
+  <rect width="1080" height="1080" fill="#F7FAFF"/>
+  <rect x="95" y="120" width="890" height="620" rx="48" fill="#FFFFFF" stroke="#C9D7F2" stroke-width="3"/>
+  <text x="540" y="215" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="58" font-weight="900" fill="#0C0C0D">One login.</text>
+  <text x="540" y="290" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="58" font-weight="900" fill="#2463EB">Everything connected.</text>
+  <g font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="26" font-weight="800" fill="#0C0C0D">
+    <circle cx="285" cy="455" r="78" fill="#E1F99D"/><text x="285" y="465" text-anchor="middle">Sessions</text>
+    <circle cx="540" cy="455" r="78" fill="#C5FAE8"/><text x="540" y="465" text-anchor="middle">Clients</text>
+    <circle cx="795" cy="455" r="78" fill="#FFD6E2"/><text x="795" y="465" text-anchor="middle">Billing</text>
+    <circle cx="410" cy="615" r="78" fill="#EAF2FF"/><text x="410" y="625" text-anchor="middle">Progress</text>
+    <circle cx="670" cy="615" r="78" fill="#EEEDFE"/><text x="670" y="625" text-anchor="middle">AI</text>
+  </g>
+  <text x="90" y="860" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#51627A">Run the business behind the coaching.</text>
+  <text x="90" y="930" font-family="Montserrat, Arial, sans-serif" font-size="46" font-weight="900" fill="#2463EB">[AFFILIATE LINK]</text>
+</svg>

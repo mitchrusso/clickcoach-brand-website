@@ -46,6 +46,8 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- The Role of Recurring Assessments in Coaching Progress: https://www.clickcoach.io/resources/the-role-of-recurring-assessments-in-coaching-progress/
+- The Role of Check-Ins in Client Engagement: 2026 Guide: https://www.clickcoach.io/resources/the-role-of-check-ins-in-client-engagement-2026-guide/
 - Coaching Workflow Bottlenecks Checklist for Coaches: https://www.clickcoach.io/resources/coaching-workflow-bottlenecks-checklist-for-coaches/
 - Client Management Mistakes Coaches Make: 2026 Guide: https://www.clickcoach.io/resources/client-management-mistakes-coaches-make-2026-guide/
 - Executive Coaching Progress Tracking: A Practical Guide: https://www.clickcoach.io/resources/executive-coaching-progress-tracking-a-practical-guide/

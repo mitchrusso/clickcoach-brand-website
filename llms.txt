@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Top 5 Coachmetrix.com Software Alternatives 2026: https://www.clickcoach.io/resources/coachmetrix-com-software-alternatives-5/
 - The Role of Recurring Assessments in Coaching Progress: https://www.clickcoach.io/resources/the-role-of-recurring-assessments-in-coaching-progress/
 - The Role of Check-Ins in Client Engagement: 2026 Guide: https://www.clickcoach.io/resources/the-role-of-check-ins-in-client-engagement-2026-guide/
 - Coaching Workflow Bottlenecks Checklist for Coaches: https://www.clickcoach.io/resources/coaching-workflow-bottlenecks-checklist-for-coaches/

@@ -98,6 +98,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://www.clickcoach.io/resources/what-is-longitudinal-client-progress-data/</loc>
+    <lastmod>2026-07-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.clickcoach.io/resources/role-of-contracts-new-coaching-practice/</loc>
     <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>

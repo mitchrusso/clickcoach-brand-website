@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Client Growth Visualization Tools Explained for 2026: https://www.clickcoach.io/resources/client-growth-visualization-tools-explained/
 - Longitudinal Client Progress Data: A Practitioner's Guide: https://www.clickcoach.io/resources/what-is-longitudinal-client-progress-data/
 - Contracts in Your New Coaching Practice: A Clear Guide: https://www.clickcoach.io/resources/role-of-contracts-new-coaching-practice/
 - Coaching Referral Program Examples That Actually Work: https://www.clickcoach.io/resources/coaching-referral-program-examples-that-actually-work/

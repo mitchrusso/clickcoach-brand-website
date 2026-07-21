@@ -20,10 +20,6 @@ const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
 const limit = Math.min(Number(limitArg?.split("=")[1] || 50), 50);
 const DETAIL_DELAY_MS = 1500;
 const MAX_API_ATTEMPTS = 5;
-const DOFOLLOW_BACKLINK_URLS = new Set([
-  "https://blog.robertsneurotraining.com/blog/team-mental-training-program-components-2026-coach-guide",
-]);
-
 if (!apiKey) {
   throw new Error("Missing BABYLOVE_API_KEY environment variable.");
 }
@@ -98,14 +94,10 @@ function normalizeContent(html = "", heroImageUrl = "") {
   content = content.replace(
     /<a\s+([^>]*href=["']https?:\/\/[^"']+["'][^>]*)>/gi,
     (match, attrs) => {
-      const href = attrs.match(/\bhref=["']([^"']+)["']/i)?.[1] || "";
       const cleaned = attrs
         .replace(/\s+target=["'][^"']*["']/gi, "")
         .replace(/\s+rel=["'][^"']*["']/gi, "");
-      const rel = DOFOLLOW_BACKLINK_URLS.has(href)
-        ? "noopener noreferrer"
-        : "nofollow noopener noreferrer";
-      return `<a ${cleaned} target="_blank" rel="${rel}">`;
+      return `<a ${cleaned} target="_blank" rel="noopener noreferrer">`;
     }
   );
   content = content.replace(

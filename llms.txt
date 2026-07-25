@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Client Information Silos Explained for Coaches: https://www.clickcoach.io/resources/client-information-silos-explained/
 - Client Session History Tracking: A Practical Coach's Guide: https://www.clickcoach.io/resources/what-is-client-session-history-tracking/
 - Client Growth Visualization Tools Explained for 2026: https://www.clickcoach.io/resources/client-growth-visualization-tools-explained/
 - Longitudinal Client Progress Data: A Practitioner's Guide: https://www.clickcoach.io/resources/what-is-longitudinal-client-progress-data/

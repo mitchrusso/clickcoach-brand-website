@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Create a Coaching Intake Process: Template & Steps: https://www.clickcoach.io/resources/create-coaching-intake-process/
 - Client Information Silos Explained for Coaches: https://www.clickcoach.io/resources/client-information-silos-explained/
 - Client Session History Tracking: A Practical Coach's Guide: https://www.clickcoach.io/resources/what-is-client-session-history-tracking/
 - Client Growth Visualization Tools Explained for 2026: https://www.clickcoach.io/resources/client-growth-visualization-tools-explained/

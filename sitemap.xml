@@ -98,6 +98,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://www.clickcoach.io/resources/create-coaching-intake-process/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.clickcoach.io/resources/client-information-silos-explained/</loc>
     <lastmod>2026-07-24</lastmod>
     <changefreq>monthly</changefreq>

@@ -46,6 +46,8 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- The Role of AI in Coaching Admin: A 2026 Playbook: https://www.clickcoach.io/resources/role-of-ai-in-coaching-admin/
+- Digital Resources and Client Engagement for Coaches: https://www.clickcoach.io/resources/role-of-digital-resources-client-engagement/
 - Create a Coaching Intake Process: Template & Steps: https://www.clickcoach.io/resources/create-coaching-intake-process/
 - Client Information Silos Explained for Coaches: https://www.clickcoach.io/resources/client-information-silos-explained/
 - Client Session History Tracking: A Practical Coach's Guide: https://www.clickcoach.io/resources/what-is-client-session-history-tracking/

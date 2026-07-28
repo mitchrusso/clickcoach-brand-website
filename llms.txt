@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Best CoachAutomator.com Alternatives for Coaches in 2026: https://www.clickcoach.io/resources/coachautomatorcom-alternatives/
 - The Role of AI in Coaching Admin: A 2026 Playbook: https://www.clickcoach.io/resources/role-of-ai-in-coaching-admin/
 - Digital Resources and Client Engagement for Coaches: https://www.clickcoach.io/resources/role-of-digital-resources-client-engagement/
 - Create a Coaching Intake Process: Template & Steps: https://www.clickcoach.io/resources/create-coaching-intake-process/

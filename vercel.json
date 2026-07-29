@@ -65,9 +65,19 @@
       "permanent": false
     },
     {
+      "source": "/admin/",
+      "destination": "https://new.clickcoach.io/admin",
+      "permanent": false
+    },
+    {
       "source": "/admin/:path*",
       "destination": "https://new.clickcoach.io/admin/:path*",
       "permanent": false
+    },
+    {
+      "source": "/downloads/SlipMeter-0.1.94-arm64.dmg",
+      "destination": "/slipmeter/",
+      "permanent": true
     },
     {
       "source": "/index.html",
@@ -146,12 +156,17 @@
     },
     {
       "source": "/join",
-      "destination": "/join/",
+      "destination": "/pricing/",
+      "permanent": true
+    },
+    {
+      "source": "/join/",
+      "destination": "/pricing/",
       "permanent": true
     },
     {
       "source": "/join/index.html",
-      "destination": "/join/",
+      "destination": "/pricing/",
       "permanent": true
     },
     {

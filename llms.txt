@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Coaching Touchpoint Frequency: What It Means for Coaches: https://www.clickcoach.io/resources/what-does-coaching-touchpoint-frequency-mean/
 - Hybrid Team Coaching Delivery: A Practical Guide for Coaches: https://www.clickcoach.io/resources/what-is-hybrid-team-coaching-delivery/
 - Coaching Revenue Streams for New Practitioners: https://www.clickcoach.io/resources/coaching-revenue-streams-for-new-practitioners/
 - Client Milestone Tracking Platforms Comparison for Coaches: https://www.clickcoach.io/resources/client-milestone-tracking-platforms-comparison/

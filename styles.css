@@ -6736,24 +6736,40 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   position: sticky;
   top: 104px;
   border: 1px solid rgba(36, 99, 235, .2);
-  border-radius: var(--r-xl);
-  background: #fff;
-  box-shadow: var(--shadow-hover);
-  padding: clamp(24px, 3vw, 32px);
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, .12), transparent 38%),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 28px 80px rgba(15, 23, 42, .14);
+  padding: clamp(24px, 3vw, 34px);
+  overflow: hidden;
 }
 
 .sm-coupon-field {
   min-width: 0;
   margin-top: 22px;
+  padding: 16px;
+  border: 1px solid rgba(37, 99, 235, .12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .78);
 }
 
 .sm-coupon-field input {
   width: 100%;
   min-width: 0;
+  min-height: 52px;
+  border: 1px solid rgba(100, 116, 139, .22);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .06);
 }
 
 .sm-download-form {
   margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(37, 99, 235, .12);
+  border-radius: 22px;
+  background: rgba(248, 251, 255, .9);
 }
 
 .sm-download-form[hidden] {
@@ -6767,6 +6783,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .sm-download-form .field input {
   width: 100%;
   min-width: 0;
+  min-height: 52px;
+  border: 1px solid rgba(100, 116, 139, .22);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .06);
 }
 
 .optional-label {
@@ -6795,7 +6816,14 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 }
 
 .sm-download-form .btn {
-  margin-top: 4px;
+  margin-top: 8px;
+  min-height: 56px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #155dfc 0%, #2563eb 50%, #38bdf8 100%);
+  box-shadow: 0 18px 34px rgba(37, 99, 235, .28);
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0;
 }
 
 .sm-download-form .btn:disabled {
@@ -6823,12 +6851,86 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
 .sm-tinyemail-embed {
   margin-top: 18px;
   min-width: 0;
+  padding: 18px;
+  border: 1px solid rgba(37, 99, 235, .12);
+  border-radius: 22px;
+  background: rgba(248, 251, 255, .9);
+  overflow: hidden;
+}
+
+.sm-tinyemail-embed--empty {
+  display: none !important;
 }
 
 .sm-tinyemail-embed > div,
 .sm-tinyemail-embed iframe,
 .sm-tinyemail-embed form {
-  max-width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.sm-tinyemail-embed [class*="MuiScopedCssBaseline"],
+.sm-tinyemail-embed [class*="MuiBox-root"],
+.sm-tinyemail-embed [class*="MuiFormControl-root"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+
+.sm-tinyemail-embed input {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 52px !important;
+  box-sizing: border-box !important;
+  padding: 0 16px !important;
+  border: 1px solid rgba(100, 116, 139, .22) !important;
+  border-radius: 16px !important;
+  background: #fff !important;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, .06) !important;
+  color: var(--text) !important;
+  font-family: var(--f-body) !important;
+}
+
+.sm-tinyemail-embed input::placeholder {
+  color: #64748b !important;
+  opacity: 1 !important;
+}
+
+.sm-tinyemail-embed [class*="MuiInput-underline"]::before,
+.sm-tinyemail-embed [class*="MuiInput-underline"]::after {
+  display: none !important;
+}
+
+.sm-tinyemail-embed button,
+.sm-tinyemail-embed input[type="submit"],
+.sm-tinyemail-embed [role="button"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  min-height: 58px !important;
+  margin-top: 10px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: linear-gradient(135deg, #155dfc 0%, #2563eb 50%, #38bdf8 100%) !important;
+  box-shadow: 0 18px 34px rgba(37, 99, 235, .28) !important;
+  color: #fff !important;
+  font-family: var(--f-heading) !important;
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.sm-tinyemail-embed button:hover,
+.sm-tinyemail-embed input[type="submit"]:hover,
+.sm-tinyemail-embed [role="button"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 22px 40px rgba(37, 99, 235, .34) !important;
 }
 
 .sm-faq-panel h2 {

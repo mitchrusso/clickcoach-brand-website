@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Social Media Marketing for Coaches: A Client-Getting Playbook: https://www.clickcoach.io/resources/social-media-marketing-for-coaches/
 - What Is Client Self-Reflection in Coaching?: https://www.clickcoach.io/resources/what-is-client-self-reflection-in-coaching/
 - Coaching Touchpoint Frequency: What It Means for Coaches: https://www.clickcoach.io/resources/what-does-coaching-touchpoint-frequency-mean/
 - Hybrid Team Coaching Delivery: A Practical Guide for Coaches: https://www.clickcoach.io/resources/what-is-hybrid-team-coaching-delivery/

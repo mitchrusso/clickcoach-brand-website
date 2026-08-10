@@ -98,6 +98,18 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://www.clickcoach.io/resources/what-does-client-transformation-data-mean/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.clickcoach.io/resources/why-referrals-matter-new-coaching-business/</loc>
+    <lastmod>2026-08-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.clickcoach.io/resources/examples-of-group-homework-assignments/</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>

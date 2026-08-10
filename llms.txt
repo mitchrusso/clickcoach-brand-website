@@ -46,6 +46,8 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Client Transformation Data: What It Means for Coaches: https://www.clickcoach.io/resources/what-does-client-transformation-data-mean/
+- Why Referrals Matter for Your New Coaching Business: https://www.clickcoach.io/resources/why-referrals-matter-new-coaching-business/
 - Group Homework Assignments for Coaches: 12 Ready-to-Use Examples: https://www.clickcoach.io/resources/examples-of-group-homework-assignments/
 - Social Media Marketing for Coaches: A Client-Getting Playbook: https://www.clickcoach.io/resources/social-media-marketing-for-coaches/
 - What Is Client Self-Reflection in Coaching?: https://www.clickcoach.io/resources/what-is-client-self-reflection-in-coaching/

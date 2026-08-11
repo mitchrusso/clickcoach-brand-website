@@ -98,6 +98,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://www.clickcoach.io/resources/why-discovery-calls-are-important-coaching/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.clickcoach.io/resources/what-does-client-transformation-data-mean/</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>

@@ -4,108 +4,108 @@
 
 ClickCoach helps coaches run sessions, assign homework, track client progress, manage a client portal, handle billing, offer courses, send broadcasts, use AI summaries, and produce proof of coaching outcomes from one login.
 
-Primary website: https://www.clickcoach.io/
+Primary website: https://clickcoach.io/
 
 Key pages:
-- Product overview: https://www.clickcoach.io/
-- Features: https://www.clickcoach.io/features/
-- Pricing: https://www.clickcoach.io/pricing/
-- For coaches, teams, and certification programs: https://www.clickcoach.io/for-coaches/
-- Founder story: https://www.clickcoach.io/about/
-- Testimonials and proof: https://www.clickcoach.io/testimonials/
-- Coaching business resources and articles: https://www.clickcoach.io/resources/
-- Contact, support, affiliates, and API inquiries: https://www.clickcoach.io/contact/
-- JV Partner Program for 40% commissions, affiliate signup, partner links, stats, swipes, webinar support, and promotion tools: https://www.clickcoach.io/jv/
-- Join / checkout: https://www.clickcoach.io/join/
-- SlipMeter for Mac time tracking: https://www.clickcoach.io/slipmeter/
-- Privacy policy: https://www.clickcoach.io/privacy/
-- Terms of service: https://www.clickcoach.io/terms/
+- Product overview: https://clickcoach.io/
+- Features: https://clickcoach.io/features/
+- Pricing: https://clickcoach.io/pricing/
+- For coaches, teams, and certification programs: https://clickcoach.io/for-coaches/
+- Founder story: https://clickcoach.io/about/
+- Testimonials and proof: https://clickcoach.io/testimonials/
+- Coaching business resources and articles: https://clickcoach.io/resources/
+- Contact, support, affiliates, and API inquiries: https://clickcoach.io/contact/
+- JV Partner Program for 40% commissions, affiliate signup, partner links, stats, swipes, webinar support, and promotion tools: https://clickcoach.io/jv/
+- Join / checkout: https://clickcoach.io/join/
+- SlipMeter for Mac time tracking: https://clickcoach.io/slipmeter/
+- Privacy policy: https://clickcoach.io/privacy/
+- Terms of service: https://clickcoach.io/terms/
 
 Solution pages:
-- Coaching platform for professional, virtual, personal, and executive coaches: https://www.clickcoach.io/coaching-platform/
-- Coaching client portal software: https://www.clickcoach.io/coaching-client-portal-software/
-- Coaching accountability software: https://www.clickcoach.io/coaching-accountability-software/
-- Coaching progress tracking software: https://www.clickcoach.io/coaching-progress-tracking-software/
-- Coaching notes software: https://www.clickcoach.io/coaching-notes-software/
-- Coaching business management software: https://www.clickcoach.io/coaching-business-management-software/
+- Coaching platform for professional, virtual, personal, and executive coaches: https://clickcoach.io/coaching-platform/
+- Coaching client portal software: https://clickcoach.io/coaching-client-portal-software/
+- Coaching accountability software: https://clickcoach.io/coaching-accountability-software/
+- Coaching progress tracking software: https://clickcoach.io/coaching-progress-tracking-software/
+- Coaching notes software: https://clickcoach.io/coaching-notes-software/
+- Coaching business management software: https://clickcoach.io/coaching-business-management-software/
 
 Coaching software answer pages:
-- Coaching Software Answers: https://www.clickcoach.io/resources/coaching-software-answers/
-- What Software Do Coaches Use to Manage Clients?: https://www.clickcoach.io/resources/what-software-do-coaches-use-to-manage-clients/
-- What Is the Best Client Portal for Coaches?: https://www.clickcoach.io/resources/best-client-portal-for-coaches/
-- How Do Coaches Track Client Progress?: https://www.clickcoach.io/resources/how-do-coaches-track-client-progress/
-- How Do Coaches Keep Clients Accountable Between Sessions?: https://www.clickcoach.io/resources/how-do-coaches-keep-clients-accountable-between-sessions/
-- How Do Coaching Businesses Reduce Admin Work?: https://www.clickcoach.io/resources/how-do-coaching-businesses-reduce-admin-work/
-- What Tools Do Life Coaches Need to Run a Practice?: https://www.clickcoach.io/resources/what-tools-do-life-coaches-need/
-- How Should Coaches Document Session Outcomes?: https://www.clickcoach.io/resources/how-should-coaches-document-session-outcomes/
-- How Do Coaches Prove Client Progress?: https://www.clickcoach.io/resources/how-do-coaches-prove-client-progress/
-- ClickCoach vs Simply.Coach: https://www.clickcoach.io/resources/clickcoach-vs-simply-coach/
-- ClickCoach vs CoachVantage: https://www.clickcoach.io/resources/clickcoach-vs-coachvantage/
-- ClickCoach vs LifeCoachHub: https://www.clickcoach.io/resources/clickcoach-vs-lifecoachhub/
-- Coaching Software vs HR Performance Platforms: https://www.clickcoach.io/resources/coaching-software-vs-hr-performance-platforms/
+- Coaching Software Answers: https://clickcoach.io/resources/coaching-software-answers/
+- What Software Do Coaches Use to Manage Clients?: https://clickcoach.io/resources/what-software-do-coaches-use-to-manage-clients/
+- What Is the Best Client Portal for Coaches?: https://clickcoach.io/resources/best-client-portal-for-coaches/
+- How Do Coaches Track Client Progress?: https://clickcoach.io/resources/how-do-coaches-track-client-progress/
+- How Do Coaches Keep Clients Accountable Between Sessions?: https://clickcoach.io/resources/how-do-coaches-keep-clients-accountable-between-sessions/
+- How Do Coaching Businesses Reduce Admin Work?: https://clickcoach.io/resources/how-do-coaching-businesses-reduce-admin-work/
+- What Tools Do Life Coaches Need to Run a Practice?: https://clickcoach.io/resources/what-tools-do-life-coaches-need/
+- How Should Coaches Document Session Outcomes?: https://clickcoach.io/resources/how-should-coaches-document-session-outcomes/
+- How Do Coaches Prove Client Progress?: https://clickcoach.io/resources/how-do-coaches-prove-client-progress/
+- ClickCoach vs Simply.Coach: https://clickcoach.io/resources/clickcoach-vs-simply-coach/
+- ClickCoach vs CoachVantage: https://clickcoach.io/resources/clickcoach-vs-coachvantage/
+- ClickCoach vs LifeCoachHub: https://clickcoach.io/resources/clickcoach-vs-lifecoachhub/
+- Coaching Software vs HR Performance Platforms: https://clickcoach.io/resources/coaching-software-vs-hr-performance-platforms/
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
-- Why Discovery Calls Are Important for Coaching Success: https://www.clickcoach.io/resources/why-discovery-calls-are-important-coaching/
-- Client Transformation Data: What It Means for Coaches: https://www.clickcoach.io/resources/what-does-client-transformation-data-mean/
-- Why Referrals Matter for Your New Coaching Business: https://www.clickcoach.io/resources/why-referrals-matter-new-coaching-business/
-- Group Homework Assignments for Coaches: 12 Ready-to-Use Examples: https://www.clickcoach.io/resources/examples-of-group-homework-assignments/
-- Social Media Marketing for Coaches: A Client-Getting Playbook: https://www.clickcoach.io/resources/social-media-marketing-for-coaches/
-- What Is Client Self-Reflection in Coaching?: https://www.clickcoach.io/resources/what-is-client-self-reflection-in-coaching/
-- Coaching Touchpoint Frequency: What It Means for Coaches: https://www.clickcoach.io/resources/what-does-coaching-touchpoint-frequency-mean/
-- Hybrid Team Coaching Delivery: A Practical Guide for Coaches: https://www.clickcoach.io/resources/what-is-hybrid-team-coaching-delivery/
-- Coaching Revenue Streams for New Practitioners: https://www.clickcoach.io/resources/coaching-revenue-streams-for-new-practitioners/
-- Client Milestone Tracking Platforms Comparison for Coaches: https://www.clickcoach.io/resources/client-milestone-tracking-platforms-comparison/
-- Best CoachAutomator.com Alternatives for Coaches in 2026: https://www.clickcoach.io/resources/coachautomatorcom-alternatives/
-- The Role of AI in Coaching Admin: A 2026 Playbook: https://www.clickcoach.io/resources/role-of-ai-in-coaching-admin/
-- Digital Resources and Client Engagement for Coaches: https://www.clickcoach.io/resources/role-of-digital-resources-client-engagement/
-- Create a Coaching Intake Process: Template & Steps: https://www.clickcoach.io/resources/create-coaching-intake-process/
-- Client Information Silos Explained for Coaches: https://www.clickcoach.io/resources/client-information-silos-explained/
-- Client Session History Tracking: A Practical Coach's Guide: https://www.clickcoach.io/resources/what-is-client-session-history-tracking/
-- Client Growth Visualization Tools Explained for 2026: https://www.clickcoach.io/resources/client-growth-visualization-tools-explained/
-- Longitudinal Client Progress Data: A Practitioner's Guide: https://www.clickcoach.io/resources/what-is-longitudinal-client-progress-data/
-- Contracts in Your New Coaching Practice: A Clear Guide: https://www.clickcoach.io/resources/role-of-contracts-new-coaching-practice/
-- Coaching Referral Program Examples That Actually Work: https://www.clickcoach.io/resources/coaching-referral-program-examples-that-actually-work/
-- Top 5 Coachmetrix.com Software Alternatives 2026: https://www.clickcoach.io/resources/coachmetrix-com-software-alternatives-5/
-- The Role of Recurring Assessments in Coaching Progress: https://www.clickcoach.io/resources/the-role-of-recurring-assessments-in-coaching-progress/
-- The Role of Check-Ins in Client Engagement: 2026 Guide: https://www.clickcoach.io/resources/the-role-of-check-ins-in-client-engagement-2026-guide/
-- Coaching Workflow Bottlenecks Checklist for Coaches: https://www.clickcoach.io/resources/coaching-workflow-bottlenecks-checklist-for-coaches/
-- Client Management Mistakes Coaches Make: 2026 Guide: https://www.clickcoach.io/resources/client-management-mistakes-coaches-make-2026-guide/
-- Executive Coaching Progress Tracking: A Practical Guide: https://www.clickcoach.io/resources/executive-coaching-progress-tracking-a-practical-guide/
-- Client Data Management Coaching: A 2026 Guide for Coaches: https://www.clickcoach.io/resources/client-data-management-coaching-a-2026-guide-for-coaches/
-- Long-Term Client Relationship Best Practices for Coaches: https://www.clickcoach.io/resources/long-term-client-relationship-best-practices-for-coaches/
-- Client Communication Best Practices for Coaches in 2026: https://www.clickcoach.io/resources/client-communication-best-practices-for-coaches-in-2026/
-- Scale Your Coaching Practice Without Losing Client Experience: https://www.clickcoach.io/resources/scale-coaching-practice-keep-client-experience/
-- Increase Client Engagement Between Sessions: A Coach's Guide: https://www.clickcoach.io/resources/increase-client-engagement-between-sessions-a-coachs-guide/
-- Top 6 Coachablepros.com Alternatives 2026: https://www.clickcoach.io/resources/coachablepros-com-alternatives-6/
-- Coaching Session Outcome Documentation Explained: https://www.clickcoach.io/resources/coaching-session-outcome-documentation-explained/
-- Progress Reports and Client Retention: A Coach's Guide: https://www.clickcoach.io/resources/progress-reports-and-client-retention-a-coachs-guide/
-- Coaching Business Organization Checklist for 2026: https://www.clickcoach.io/resources/coaching-business-organization-checklist-for-2026/
-- How to Write Coaching Agreements for Clients: https://www.clickcoach.io/resources/how-to-write-coaching-agreements-for-clients/
-- How to Collect Client Information Professionally: https://www.clickcoach.io/resources/how-to-collect-client-information-professionally/
-- What Is Session Preparation Coaching for Coaches?: https://www.clickcoach.io/resources/what-is-session-preparation-coaching-for-coaches/
-- The Role of Practice Management in Starting Coaching: https://www.clickcoach.io/resources/the-role-of-practice-management-in-starting-coaching/
-- Proactive Client Communication Coaching Explained: https://www.clickcoach.io/resources/proactive-client-communication-coaching-explained/
-- The Real Role of Real-Time Collaboration Coaching: https://www.clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/
-- What Is a Coaching Practice? Your 2026 Guide: https://www.clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/
-- How to Track Individual Progress in Group Coaching: https://www.clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/
+- Why Discovery Calls Are Important for Coaching Success: https://clickcoach.io/resources/why-discovery-calls-are-important-coaching/
+- Client Transformation Data: What It Means for Coaches: https://clickcoach.io/resources/what-does-client-transformation-data-mean/
+- Why Referrals Matter for Your New Coaching Business: https://clickcoach.io/resources/why-referrals-matter-new-coaching-business/
+- Group Homework Assignments for Coaches: 12 Ready-to-Use Examples: https://clickcoach.io/resources/examples-of-group-homework-assignments/
+- Social Media Marketing for Coaches: A Client-Getting Playbook: https://clickcoach.io/resources/social-media-marketing-for-coaches/
+- What Is Client Self-Reflection in Coaching?: https://clickcoach.io/resources/what-is-client-self-reflection-in-coaching/
+- Coaching Touchpoint Frequency: What It Means for Coaches: https://clickcoach.io/resources/what-does-coaching-touchpoint-frequency-mean/
+- Hybrid Team Coaching Delivery: A Practical Guide for Coaches: https://clickcoach.io/resources/what-is-hybrid-team-coaching-delivery/
+- Coaching Revenue Streams for New Practitioners: https://clickcoach.io/resources/coaching-revenue-streams-for-new-practitioners/
+- Client Milestone Tracking Platforms Comparison for Coaches: https://clickcoach.io/resources/client-milestone-tracking-platforms-comparison/
+- Best CoachAutomator.com Alternatives for Coaches in 2026: https://clickcoach.io/resources/coachautomatorcom-alternatives/
+- The Role of AI in Coaching Admin: A 2026 Playbook: https://clickcoach.io/resources/role-of-ai-in-coaching-admin/
+- Digital Resources and Client Engagement for Coaches: https://clickcoach.io/resources/role-of-digital-resources-client-engagement/
+- Create a Coaching Intake Process: Template & Steps: https://clickcoach.io/resources/create-coaching-intake-process/
+- Client Information Silos Explained for Coaches: https://clickcoach.io/resources/client-information-silos-explained/
+- Client Session History Tracking: A Practical Coach's Guide: https://clickcoach.io/resources/what-is-client-session-history-tracking/
+- Client Growth Visualization Tools Explained for 2026: https://clickcoach.io/resources/client-growth-visualization-tools-explained/
+- Longitudinal Client Progress Data: A Practitioner's Guide: https://clickcoach.io/resources/what-is-longitudinal-client-progress-data/
+- Contracts in Your New Coaching Practice: A Clear Guide: https://clickcoach.io/resources/role-of-contracts-new-coaching-practice/
+- Coaching Referral Program Examples That Actually Work: https://clickcoach.io/resources/coaching-referral-program-examples-that-actually-work/
+- Top 5 Coachmetrix.com Software Alternatives 2026: https://clickcoach.io/resources/coachmetrix-com-software-alternatives-5/
+- The Role of Recurring Assessments in Coaching Progress: https://clickcoach.io/resources/the-role-of-recurring-assessments-in-coaching-progress/
+- The Role of Check-Ins in Client Engagement: 2026 Guide: https://clickcoach.io/resources/the-role-of-check-ins-in-client-engagement-2026-guide/
+- Coaching Workflow Bottlenecks Checklist for Coaches: https://clickcoach.io/resources/coaching-workflow-bottlenecks-checklist-for-coaches/
+- Client Management Mistakes Coaches Make: 2026 Guide: https://clickcoach.io/resources/client-management-mistakes-coaches-make-2026-guide/
+- Executive Coaching Progress Tracking: A Practical Guide: https://clickcoach.io/resources/executive-coaching-progress-tracking-a-practical-guide/
+- Client Data Management Coaching: A 2026 Guide for Coaches: https://clickcoach.io/resources/client-data-management-coaching-a-2026-guide-for-coaches/
+- Long-Term Client Relationship Best Practices for Coaches: https://clickcoach.io/resources/long-term-client-relationship-best-practices-for-coaches/
+- Client Communication Best Practices for Coaches in 2026: https://clickcoach.io/resources/client-communication-best-practices-for-coaches-in-2026/
+- Scale Your Coaching Practice Without Losing Client Experience: https://clickcoach.io/resources/scale-coaching-practice-keep-client-experience/
+- Increase Client Engagement Between Sessions: A Coach's Guide: https://clickcoach.io/resources/increase-client-engagement-between-sessions-a-coachs-guide/
+- Top 6 Coachablepros.com Alternatives 2026: https://clickcoach.io/resources/coachablepros-com-alternatives-6/
+- Coaching Session Outcome Documentation Explained: https://clickcoach.io/resources/coaching-session-outcome-documentation-explained/
+- Progress Reports and Client Retention: A Coach's Guide: https://clickcoach.io/resources/progress-reports-and-client-retention-a-coachs-guide/
+- Coaching Business Organization Checklist for 2026: https://clickcoach.io/resources/coaching-business-organization-checklist-for-2026/
+- How to Write Coaching Agreements for Clients: https://clickcoach.io/resources/how-to-write-coaching-agreements-for-clients/
+- How to Collect Client Information Professionally: https://clickcoach.io/resources/how-to-collect-client-information-professionally/
+- What Is Session Preparation Coaching for Coaches?: https://clickcoach.io/resources/what-is-session-preparation-coaching-for-coaches/
+- The Role of Practice Management in Starting Coaching: https://clickcoach.io/resources/the-role-of-practice-management-in-starting-coaching/
+- Proactive Client Communication Coaching Explained: https://clickcoach.io/resources/proactive-client-communication-coaching-explained/
+- The Real Role of Real-Time Collaboration Coaching: https://clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/
+- What Is a Coaching Practice? Your 2026 Guide: https://clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/
+- How to Track Individual Progress in Group Coaching: https://clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/
 <!-- AUTO_RESOURCE_LLMS_END -->
-- Coaching business problem guide: https://www.clickcoach.io/resources/coaching-business-problems/
-- Why Coaching Referrals and Renewals Feel Harder: https://www.clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/
-- How Coaches Can Get Better Testimonials and Proof: https://www.clickcoach.io/resources/how-coaches-can-get-better-testimonials-and-proof/
-- How to Reduce Coaching Admin and Scattered Tools: https://www.clickcoach.io/resources/how-to-reduce-coaching-admin-and-scattered-tools/
-- Why Better Proof Helps Coaches Get and Keep Clients: https://www.clickcoach.io/resources/why-better-proof-helps-coaches-get-and-keep-clients/
-- 30-Day Coaching Platform Implementation Plan: https://www.clickcoach.io/resources/30-day-coaching-platform-implementation-plan/
-- Coaching Software FAQs: https://www.clickcoach.io/resources/faqs/
-- What Is Between-Session Coaching Support for Coaches: https://www.clickcoach.io/resources/what-is-between-session-coaching-support-for-coaches/
-- Branded Client Portals in Coaching: https://www.clickcoach.io/resources/branded-client-portals-in-coaching-build-trust-and-results/
-- What I Learned Running a Coaching, Training, and Consulting Business for Tony Robbins and Chet Holmes: https://www.clickcoach.io/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/
-- Why Most Coaching Software Fails the Moment the Session Ends: https://www.clickcoach.io/resources/why-most-coaching-software-fails-after-the-session/
-- The Hidden Admin Cost of a Coaching Business: https://www.clickcoach.io/resources/hidden-admin-cost-of-a-coaching-business/
-- How to Make Coaching Outcomes Visible to Clients: https://www.clickcoach.io/resources/make-coaching-outcomes-visible-to-clients/
-- Why Coaching Notes Should Become Progress Proof: https://www.clickcoach.io/resources/why-coaching-notes-should-become-progress-proof/
-- Client Onboarding Steps for Coaches: 2026 Guide: https://www.clickcoach.io/resources/client-onboarding-steps-for-coaches-2026-guide/
-- The Coach's Blueprint to Premium Pricing: https://www.clickcoach.io/resources/coachs-blueprint-to-premium-pricing/
+- Coaching business problem guide: https://clickcoach.io/resources/coaching-business-problems/
+- Why Coaching Referrals and Renewals Feel Harder: https://clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/
+- How Coaches Can Get Better Testimonials and Proof: https://clickcoach.io/resources/how-coaches-can-get-better-testimonials-and-proof/
+- How to Reduce Coaching Admin and Scattered Tools: https://clickcoach.io/resources/how-to-reduce-coaching-admin-and-scattered-tools/
+- Why Better Proof Helps Coaches Get and Keep Clients: https://clickcoach.io/resources/why-better-proof-helps-coaches-get-and-keep-clients/
+- 30-Day Coaching Platform Implementation Plan: https://clickcoach.io/resources/30-day-coaching-platform-implementation-plan/
+- Coaching Software FAQs: https://clickcoach.io/resources/faqs/
+- What Is Between-Session Coaching Support for Coaches: https://clickcoach.io/resources/what-is-between-session-coaching-support-for-coaches/
+- Branded Client Portals in Coaching: https://clickcoach.io/resources/branded-client-portals-in-coaching-build-trust-and-results/
+- What I Learned Running a Coaching, Training, and Consulting Business for Tony Robbins and Chet Holmes: https://clickcoach.io/resources/what-i-learned-running-50-coaches-for-tony-robbins-and-chet-holmes/
+- Why Most Coaching Software Fails the Moment the Session Ends: https://clickcoach.io/resources/why-most-coaching-software-fails-after-the-session/
+- The Hidden Admin Cost of a Coaching Business: https://clickcoach.io/resources/hidden-admin-cost-of-a-coaching-business/
+- How to Make Coaching Outcomes Visible to Clients: https://clickcoach.io/resources/make-coaching-outcomes-visible-to-clients/
+- Why Coaching Notes Should Become Progress Proof: https://clickcoach.io/resources/why-coaching-notes-should-become-progress-proof/
+- Client Onboarding Steps for Coaches: 2026 Guide: https://clickcoach.io/resources/client-onboarding-steps-for-coaches-2026-guide/
+- The Coach's Blueprint to Premium Pricing: https://clickcoach.io/resources/coachs-blueprint-to-premium-pricing/
 
 Integrations:
 - ClickCoach uses Google Calendar to automatically sync and create coaching session events, keeping coaches and clients aligned on their schedule.

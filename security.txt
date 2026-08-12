@@ -1,5 +1,5 @@
 Contact: mailto:support@clickcoach.io
 Preferred-Languages: en
-Canonical: https://www.clickcoach.io/.well-known/security.txt
-Policy: https://www.clickcoach.io/privacy/
+Canonical: https://clickcoach.io/.well-known/security.txt
+Policy: https://clickcoach.io/privacy/
 Expires: 2027-07-06T23:59:59Z

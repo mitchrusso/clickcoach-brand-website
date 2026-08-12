@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const today = "2026-07-07";
-const site = "https://www.clickcoach.io";
+const site = "https://clickcoach.io";
 const root = path.resolve(__dirname, "..");
 
 const nav = (active = "Resources") => `<!-- Meta Pixel Noscript -->

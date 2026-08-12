@@ -5,7 +5,7 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 
 const API_BASE = "https://api.babylovegrowth.ai/api/integrations";
-const SITE_URL = "https://www.clickcoach.io";
+const SITE_URL = "https://clickcoach.io";
 const ROOT = process.cwd();
 const RESOURCE_ROOT = path.join(ROOT, "resources");
 const TEMPLATE_PATH = path.join(

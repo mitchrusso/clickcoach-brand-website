@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Coaching Management Software: 2026 Picks for Coaches: https://clickcoach.io/resources/coaching-management-software/
 - Why Structured Feedback Loops Matter for Team Leaders: https://clickcoach.io/resources/why-structured-feedback-loops-matter/
 - Why Discovery Calls Are Important for Coaching Success: https://clickcoach.io/resources/why-discovery-calls-are-important-coaching/
 - Client Transformation Data: What It Means for Coaches: https://clickcoach.io/resources/what-does-client-transformation-data-mean/

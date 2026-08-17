@@ -90,7 +90,10 @@ function normalizeContent(html = "", heroImageUrl = "") {
   }
   content = content.replace(/\s*tabindex=["']-1["']/gi, "");
   content = content.replace(/\bClickcoach\b/g, "ClickCoach");
-  content = content.replace(/https:\/\/clickcoach\.io\/?/gi, "/features/");
+  content = content.replace(
+    /https:\/\/(?:www\.)?clickcoach\.io(\/?)/gi,
+    (_match, slash) => slash || "/"
+  );
   content = content.replace(
     /<a\s+([^>]*href=["']https?:\/\/[^"']+["'][^>]*)>/gi,
     (match, attrs) => {
@@ -254,7 +257,7 @@ ${heroImage}${content}
         <p>ClickCoach brings notes, homework, accountability, progress tracking, billing, courses, and AI support into one coaching workflow.</p>
       </div>
       <div class="row cta-strip__actions">
-        <a class="btn btn-accent btn-lg" href="/join/">Start Risk-Free Trial</a>
+        <a class="btn btn-accent btn-lg" href="/pricing/">Start Risk-Free Trial</a>
         <a class="btn btn-ghost btn-lg u-text-white" href="/features/">See features &rarr;</a>
       </div>
     </div>

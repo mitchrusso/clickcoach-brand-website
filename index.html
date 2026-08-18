@@ -120,13 +120,14 @@
 }
 </script>
 <meta name="google-site-verification" content="googleb6cb29d17b10958e.html" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" as="style" />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-<noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
+<style>
+@font-face{font-family:Montserrat;font-style:normal;font-weight:500 900;font-display:swap;src:url('/fonts/montserrat-latin.woff2') format('woff2')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:400 700;font-display:swap;src:url('/fonts/plus-jakarta-sans-latin.woff2') format('woff2')}
+</style>
+<link rel="preload" href="/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/images/alt-home-before-after.svg?v=3" as="image" fetchpriority="high" />
-<link rel="stylesheet" href="/styles.css?v=home-perf-1" />
+<link rel="stylesheet" href="/styles-home.min.css?v=home-perf-2" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png?v=2" />
 <script>
 (function(){
@@ -204,7 +205,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
 <header class="nav" id="site-nav">
   <div class="nav__inner">
     <a href="/" class="nav__brand" aria-label="ClickCoach home">
-      <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" />
+      <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach-200.webp" srcset="/images/logo-clickcoach-200.webp 200w, /images/logo-clickcoach-400.webp 400w" sizes="200px" alt="ClickCoach" width="200" height="32" decoding="async" />
     </a>
     <nav class="nav__menu" aria-label="Primary">
       <a href="/features/">Features</a>
@@ -297,7 +298,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
     </header>
     <div class="alt-home__honest-split">
       <figure class="alt-home__honest-visual">
-        <img src="/images/alt-home-coach-home-office.webp?v=1" width="720" height="720" alt="Coach in a home office wearing a headset while reviewing client progress on her laptop" loading="lazy" decoding="async" />
+        <img src="/images/alt-home-coach-home-office-360.webp" srcset="/images/alt-home-coach-home-office-360.webp 360w, /images/alt-home-coach-home-office-560.webp 560w, /images/alt-home-coach-home-office.webp 720w" sizes="(max-width: 720px) 300px, 360px" width="720" height="720" alt="Coach in a home office wearing a headset while reviewing client progress on her laptop" loading="lazy" decoding="async" />
       </figure>
       <ul class="alt-home__honest-cards">
         <li class="alt-home__pain-card alt-home__pain-card--1">
@@ -348,7 +349,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       <figure class="switch-row__media alt-home__session-panel">
         <div class="alt-home__proof-panel">
           <button type="button" class="screenshot-expand switch-shot alt-home__session-shot" data-screenshot-expand aria-label="Expand live session workspace screenshot">
-            <img src="/images/ClickCoach%20Dashboard.webp" alt="ClickCoach live session workspace with notes, homework status, and client progress in one view" width="1463" height="821" loading="lazy" decoding="async" />
+            <img src="/images/clickcoach-dashboard-760.webp" srcset="/images/clickcoach-dashboard-760.webp 760w, /images/ClickCoach%20Dashboard.webp 1463w" sizes="(max-width: 720px) calc(100vw - 48px), 760px" alt="ClickCoach live session workspace with notes, homework status, and client progress in one view" width="1463" height="821" loading="lazy" decoding="async" />
           </button>
           <ul class="alt-home__callouts" aria-hidden="true">
             <li class="alt-home__callout alt-home__callout--notes">Last week's notes</li>
@@ -370,7 +371,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       </div>
       <figure class="switch-row__media">
         <button type="button" class="screenshot-expand switch-shot" data-screenshot-expand aria-label="Expand client progress charts screenshot">
-          <img src="/images/Client%20Progress%20Report.webp" alt="ClickCoach client progress report with metric charts and trends" width="1025" height="922" loading="lazy" decoding="async" />
+          <img src="/images/client-progress-report-680.webp" srcset="/images/client-progress-report-680.webp 680w, /images/Client%20Progress%20Report.webp 1025w" sizes="(max-width: 720px) calc(100vw - 48px), 560px" alt="ClickCoach client progress report with metric charts and trends" width="1025" height="922" loading="lazy" decoding="async" />
         </button>
       </figure>
     </article>
@@ -384,7 +385,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       </div>
       <figure class="switch-row__media switch-row__media--portal">
         <button type="button" class="screenshot-expand switch-shot" data-screenshot-expand aria-label="Expand mobile portal screenshot">
-          <img src="/images/Mobile%20App.webp" alt="ClickCoach mobile client portal on phone" width="750" height="686" loading="lazy" decoding="async" />
+          <img src="/images/mobile-app-680.webp" srcset="/images/mobile-app-680.webp 680w, /images/Mobile%20App.webp 750w" sizes="(max-width: 720px) calc(100vw - 48px), 520px" alt="ClickCoach mobile client portal on phone" width="750" height="686" loading="lazy" decoding="async" />
         </button>
       </figure>
     </article>
@@ -425,7 +426,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       </div>
       <span class="alt-home__replace-arrow" aria-hidden="true">&rarr;</span>
       <div class="alt-home__replace-brand">
-        <img class="cc-logo cc-logo--mark" src="/images/logo-clickcoach-mark.webp?v=2" alt="ClickCoach blue hand tap logo mark" width="225" height="164" decoding="async" />
+        <img class="cc-logo cc-logo--mark" src="/images/logo-clickcoach-mark-64.webp" srcset="/images/logo-clickcoach-mark-64.webp 64w, /images/logo-clickcoach-mark-128.webp 128w, /images/logo-clickcoach-mark.webp 225w" sizes="50px" alt="ClickCoach blue hand tap logo mark" width="225" height="164" loading="lazy" decoding="async" />
         <strong>ClickCoach</strong>
         <span>One login</span>
       </div>
@@ -568,7 +569,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
     <div class="footer__grid">
       <div class="footer__brand">
         <a href="/" class="nav__brand nav__brand--footer" aria-label="ClickCoach home">
-          <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" />
+          <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach-200.webp" srcset="/images/logo-clickcoach-200.webp 200w, /images/logo-clickcoach-400.webp 400w" sizes="200px" alt="ClickCoach" width="200" height="32" loading="lazy" decoding="async" />
         </a>
         <p>The coaching operating system. One login, one mental model, and the proof your coaching has been producing all along.</p>
       </div>

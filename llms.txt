@@ -46,6 +46,8 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- How to Set Measurable Goals With Executive Clients: https://clickcoach.io/resources/set-measurable-goals-executive-clients/
+- Best Books on Coaching for Every Stage of Practice: https://clickcoach.io/resources/books-on-coaching/
 - Group Coaching Program Design: A Practical Launch Playbook: https://clickcoach.io/resources/group-coaching-program/
 - Coaching Management Software: 2026 Picks for Coaches: https://clickcoach.io/resources/coaching-management-software/
 - Why Structured Feedback Loops Matter for Team Leaders: https://clickcoach.io/resources/why-structured-feedback-loops-matter/

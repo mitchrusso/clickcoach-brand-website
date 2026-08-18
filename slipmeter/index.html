@@ -369,6 +369,56 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
 
 <script>
 (function(){
+  const coupon = document.getElementById('slipmeter-coupon');
+  const status = document.querySelector('.sm-coupon-status');
+  const endpoint = 'https://new.clickcoach.io/api/slipmeter/coupons/redeem';
+
+  const fieldValue = (form, selectors) => {
+    const field = form.querySelector(selectors);
+    return field ? String(field.value || '').trim() : '';
+  };
+
+  window.redeemSlipMeterCoupon = async (form) => {
+    const code = coupon ? coupon.value.trim() : '';
+    if (!code) return true;
+
+    if (status) {
+      status.textContent = 'Checking coupon code...';
+      status.className = 'sm-coupon-status';
+    }
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          coupon_code: code,
+          firstName: fieldValue(form, '[name="first_name"], [name="firstName"], [autocomplete="given-name"]'),
+          lastName: fieldValue(form, '[name="last_name"], [name="lastName"], [autocomplete="family-name"]'),
+          email: fieldValue(form, '[name="email"], [type="email"]'),
+          source: 'clickcoach-slipmeter-web'
+        })
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.applied) {
+        throw new Error(result.message || 'That coupon code could not be applied.');
+      }
+      if (status) {
+        status.textContent = result.message || 'Coupon code applied.';
+        status.className = 'sm-coupon-status sm-coupon-status--success';
+      }
+      return true;
+    } catch (error) {
+      if (status) {
+        status.textContent = error.message || 'We could not verify that coupon code. Please check it and try again.';
+        status.className = 'sm-coupon-status sm-coupon-status--error';
+      }
+      return false;
+    }
+  };
+})();
+
+(function(){
   const navEl = document.getElementById('site-nav');
   const togg = document.getElementById('nav-toggle');
   if (togg) togg.addEventListener('click', () => {
@@ -383,6 +433,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   const fallback = document.getElementById('slipmeter-download-fallback');
   if (!coupon || !embed) return;
   const tinyEmailSelector = 'form, iframe, [data-reactroot], input, button, textarea, select';
+  const approvedSubmissions = new WeakSet();
 
   const hasTinyEmailRendered = () => !!embed.querySelector(tinyEmailSelector);
 
@@ -447,6 +498,16 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
   };
 
   coupon.addEventListener('input', syncCouponField);
+  embed.addEventListener('submit', async (event) => {
+    const form = event.target.closest('form');
+    if (!form || approvedSubmissions.has(form) || !coupon.value.trim()) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    const approved = await window.redeemSlipMeterCoupon(form);
+    if (!approved) return;
+    approvedSubmissions.add(form);
+    form.requestSubmit(event.submitter || undefined);
+  }, true);
   const observer = new MutationObserver(() => {
     useTinyEmailIfReady();
   });
@@ -477,6 +538,9 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
     }
 
     try {
+      const couponApproved = await window.redeemSlipMeterCoupon(form);
+      if (!couponApproved) return;
+
       const response = await fetch(form.action, {
         method: 'POST',
         body: new FormData(form),

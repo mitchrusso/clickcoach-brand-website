@@ -6809,6 +6809,10 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   color: #047857;
 }
 
+.sm-coupon-status--error {
+  color: #b91c1c;
+}
+
 .sm-form-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

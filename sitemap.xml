@@ -98,6 +98,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/role-of-shared-progress-visibility-teams/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/set-measurable-goals-executive-clients/</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -376,12 +382,6 @@
   <url>
     <loc>https://clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/</loc>
     <lastmod>2026-06-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/</loc>
-    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

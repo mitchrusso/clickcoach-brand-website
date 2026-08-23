@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- The Role of Shared Progress Visibility in Coaching Teams: https://clickcoach.io/resources/role-of-shared-progress-visibility-teams/
 - How to Set Measurable Goals With Executive Clients: https://clickcoach.io/resources/set-measurable-goals-executive-clients/
 - Best Books on Coaching for Every Stage of Practice: https://clickcoach.io/resources/books-on-coaching/
 - Group Coaching Program Design: A Practical Launch Playbook: https://clickcoach.io/resources/group-coaching-program/
@@ -93,7 +94,6 @@ Resource articles:
 - Proactive Client Communication Coaching Explained: https://clickcoach.io/resources/proactive-client-communication-coaching-explained/
 - The Real Role of Real-Time Collaboration Coaching: https://clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/
 - What Is a Coaching Practice? Your 2026 Guide: https://clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/
-- How to Track Individual Progress in Group Coaching: https://clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/
 <!-- AUTO_RESOURCE_LLMS_END -->
 - Coaching business problem guide: https://clickcoach.io/resources/coaching-business-problems/
 - Why Coaching Referrals and Renewals Feel Harder: https://clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/

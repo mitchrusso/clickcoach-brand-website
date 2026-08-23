@@ -47,8 +47,8 @@ Coaching software answer pages:
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
 - The Role of Shared Progress Visibility in Coaching Teams: https://clickcoach.io/resources/role-of-shared-progress-visibility-teams/
-- How to Set Measurable Goals With Executive Clients: https://clickcoach.io/resources/set-measurable-goals-executive-clients/
 - Best Books on Coaching for Every Stage of Practice: https://clickcoach.io/resources/books-on-coaching/
+- How to Set Measurable Goals With Executive Clients: https://clickcoach.io/resources/set-measurable-goals-executive-clients/
 - Group Coaching Program Design: A Practical Launch Playbook: https://clickcoach.io/resources/group-coaching-program/
 - Coaching Management Software: 2026 Picks for Coaches: https://clickcoach.io/resources/coaching-management-software/
 - Why Structured Feedback Loops Matter for Team Leaders: https://clickcoach.io/resources/why-structured-feedback-loops-matter/
@@ -67,8 +67,8 @@ Resource articles:
 - Digital Resources and Client Engagement for Coaches: https://clickcoach.io/resources/role-of-digital-resources-client-engagement/
 - Create a Coaching Intake Process: Template & Steps: https://clickcoach.io/resources/create-coaching-intake-process/
 - Client Information Silos Explained for Coaches: https://clickcoach.io/resources/client-information-silos-explained/
-- Client Session History Tracking: A Practical Coach's Guide: https://clickcoach.io/resources/what-is-client-session-history-tracking/
 - Client Growth Visualization Tools Explained for 2026: https://clickcoach.io/resources/client-growth-visualization-tools-explained/
+- Client Session History Tracking: A Practical Coach's Guide: https://clickcoach.io/resources/what-is-client-session-history-tracking/
 - Longitudinal Client Progress Data: A Practitioner's Guide: https://clickcoach.io/resources/what-is-longitudinal-client-progress-data/
 - Contracts in Your New Coaching Practice: A Clear Guide: https://clickcoach.io/resources/role-of-contracts-new-coaching-practice/
 - Coaching Referral Program Examples That Actually Work: https://clickcoach.io/resources/coaching-referral-program-examples-that-actually-work/
@@ -94,6 +94,7 @@ Resource articles:
 - Proactive Client Communication Coaching Explained: https://clickcoach.io/resources/proactive-client-communication-coaching-explained/
 - The Real Role of Real-Time Collaboration Coaching: https://clickcoach.io/resources/the-real-role-of-real-time-collaboration-coaching/
 - What Is a Coaching Practice? Your 2026 Guide: https://clickcoach.io/resources/what-is-a-coaching-practice-your-2026-guide/
+- How to Track Individual Progress in Group Coaching: https://clickcoach.io/resources/how-to-track-individual-progress-in-group-coaching/
 <!-- AUTO_RESOURCE_LLMS_END -->
 - Coaching business problem guide: https://clickcoach.io/resources/coaching-business-problems/
 - Why Coaching Referrals and Renewals Feel Harder: https://clickcoach.io/resources/why-coaching-referrals-and-renewals-feel-harder/

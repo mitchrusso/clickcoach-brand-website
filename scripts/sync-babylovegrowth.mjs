@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 
@@ -16,11 +16,12 @@ const TEMPLATE_PATH = path.join(
 
 const apiKey = process.env.BABYLOVE_API_KEY;
 const dryRun = process.argv.includes("--dry-run");
+const reindexOnly = process.argv.includes("--reindex");
 const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
 const limit = Math.min(Number(limitArg?.split("=")[1] || 50), 50);
 const DETAIL_DELAY_MS = 1500;
 const MAX_API_ATTEMPTS = 5;
-if (!apiKey) {
+if (!apiKey && !reindexOnly) {
   throw new Error("Missing BABYLOVE_API_KEY environment variable.");
 }
 
@@ -93,6 +94,10 @@ function normalizeContent(html = "", heroImageUrl = "") {
   content = content.replace(
     /https:\/\/(?:www\.)?clickcoach\.io(\/?)/gi,
     (_match, slash) => slash || "/"
+  );
+  content = content.replace(
+    /href=(["'])\/join\/?\1/gi,
+    (_match, quote) => `href=${quote}/pricing/${quote}`
   );
   content = content.replace(
     /<a\s+([^>]*href=["']https?:\/\/[^"']+["'][^>]*)>/gi,
@@ -266,6 +271,54 @@ ${heroImage}${content}
 ${templateParts.footer}`;
 }
 
+async function collectGeneratedArticles(currentArticles) {
+  const bySlug = new Map(currentArticles.map((article) => [article.slug, article]));
+  const entries = await readdir(RESOURCE_ROOT, { withFileTypes: true });
+
+  for (const entry of entries) {
+    if (!entry.isDirectory() || bySlug.has(entry.name)) continue;
+    const filePath = path.join(RESOURCE_ROOT, entry.name, "index.html");
+    if (!existsSync(filePath)) continue;
+
+    const html = await readFile(filePath, "utf8");
+    const id = html.match(/babylovegrowth:article-id=([^\s>]+)\s*-->/)?.[1];
+    if (!id) continue;
+
+    let articleSchema;
+    for (const match of html.matchAll(
+      /<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi
+    )) {
+      try {
+        const parsed = JSON.parse(match[1]);
+        const graph = Array.isArray(parsed?.["@graph"]) ? parsed["@graph"] : [parsed];
+        articleSchema = graph.find((item) => item?.["@type"] === "Article");
+        if (articleSchema) break;
+      } catch {
+        // Ignore unrelated or malformed structured-data blocks and use HTML fallbacks below.
+      }
+    }
+
+    const title =
+      articleSchema?.headline ||
+      stripTags(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || entry.name);
+    const description =
+      articleSchema?.description ||
+      html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']*)/i)?.[1] ||
+      "";
+    const date = formatDate(
+      articleSchema?.dateModified ||
+        articleSchema?.datePublished ||
+        html.match(/Updated\s+(\d{4}-\d{2}-\d{2})/i)?.[1]
+    );
+
+    bySlug.set(entry.name, { id, title, slug: entry.name, description, date });
+  }
+
+  return [...bySlug.values()].sort(
+    (a, b) => b.date.localeCompare(a.date) || a.title.localeCompare(b.title)
+  );
+}
+
 async function apiGet(pathname) {
   for (let attempt = 0; attempt < MAX_API_ATTEMPTS; attempt += 1) {
     const response = await fetch(`${API_BASE}${pathname}`, {
@@ -324,7 +377,7 @@ async function upsertGeneratedBlock(filePath, markerPairs, content) {
 async function main() {
   const template = await readFile(TEMPLATE_PATH, "utf8");
   const templateParts = extractTemplateParts(template);
-  const articles = await fetchArticles();
+  const articles = reindexOnly ? [] : await fetchArticles();
   const synced = [];
 
   for (const article of articles) {
@@ -352,7 +405,9 @@ async function main() {
     });
   }
 
-  const cards = synced
+  const allGenerated = await collectGeneratedArticles(synced);
+
+  const cards = allGenerated
     .map(
       (article) => `      <article class="resource-card">
         <span class="chip">Mitch Russo</span>
@@ -363,7 +418,7 @@ async function main() {
     )
     .join("\n");
 
-  const sitemapUrls = synced
+  const sitemapUrls = allGenerated
     .map(
       (article) => `  <url>
     <loc>${SITE_URL}/resources/${article.slug}/</loc>
@@ -374,7 +429,7 @@ async function main() {
     )
     .join("\n");
 
-  const llmsItems = synced
+  const llmsItems = allGenerated
     .map((article) => `- ${article.title}: ${SITE_URL}/resources/${article.slug}/`)
     .join("\n");
 
@@ -403,7 +458,9 @@ async function main() {
     llmsItems
   );
 
-  console.log(`Synced ${synced.length} BabyLoveGrowth article(s).`);
+  console.log(
+    `Synced ${synced.length} BabyLoveGrowth article(s); preserved ${allGenerated.length} generated article(s) in site indexes.`
+  );
 }
 
 main().catch((error) => {

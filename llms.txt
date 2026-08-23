@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Differentiate Your Coaching Practice: Make Referrals Inevitable: https://clickcoach.io/resources/differentiate-coaching-practice-competitors/
 - The Role of Shared Progress Visibility in Coaching Teams: https://clickcoach.io/resources/role-of-shared-progress-visibility-teams/
 - Best Books on Coaching for Every Stage of Practice: https://clickcoach.io/resources/books-on-coaching/
 - How to Set Measurable Goals With Executive Clients: https://clickcoach.io/resources/set-measurable-goals-executive-clients/

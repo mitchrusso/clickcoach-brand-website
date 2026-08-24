@@ -98,6 +98,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/white-label-client-portal/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/differentiate-coaching-practice-competitors/</loc>
     <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>

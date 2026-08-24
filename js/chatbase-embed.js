@@ -18,26 +18,25 @@
       },
     });
   }
-  function whenIdle(fn) {
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(fn, { timeout: 5000 });
-    } else {
-      setTimeout(fn, 2500);
-    }
-  }
-
-  const onLoad = function () {
+  let loaded = false;
+  const loadChatbase = function () {
+    if (loaded) return;
+    loaded = true;
     const script = document.createElement("script");
     script.src = "https://www.chatbase.co/embed.min.js";
     script.id = "DtKs1GNJOMerpMgCZfK_6";
     script.domain = "www.chatbase.co";
+    script.async = true;
     document.body.appendChild(script);
   };
-  if (document.readyState === "complete") {
-    whenIdle(onLoad);
-  } else {
-    window.addEventListener("load", function () {
-      whenIdle(onLoad);
-    }, { once: true });
-  }
+
+  const armChatbase = function () {
+    ["pointerdown", "keydown", "touchstart", "scroll"].forEach((eventName) => {
+      window.addEventListener(eventName, loadChatbase, { once: true, passive: true });
+    });
+    setTimeout(loadChatbase, 12000);
+  };
+
+  if (document.readyState === "complete") armChatbase();
+  else window.addEventListener("load", armChatbase, { once: true });
 })();

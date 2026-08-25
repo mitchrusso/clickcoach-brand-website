@@ -16,14 +16,17 @@
     document.head.appendChild(script);
   }
 
+  // ConvertBox owns its own display delay, so load its runtime immediately.
+  // Deferring this script made the configured 8-second trigger start only
+  // after the marketing-loader's 12-second fallback delay.
+  appendScript("https://cdn.convertbox.com/convertbox/js/embed.js", {
+    id: "app-convertbox-script",
+    "data-uuid": "cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",
+  });
+
   function loadMarketingScripts() {
     if (loaded) return;
     loaded = true;
-
-    appendScript("https://cdn.convertbox.com/convertbox/js/embed.js", {
-      id: "app-convertbox-script",
-      "data-uuid": "cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",
-    });
 
     if (includeRybbit) {
       appendScript("https://app.rybbit.io/api/script.js", {

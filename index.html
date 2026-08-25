@@ -191,15 +191,17 @@
     return script;
   }
 
+  // ConvertBox applies its own display timing. Load it immediately so its
+  // configured trigger is measured from page load, not after analytics idle.
+  loadScript('https://cdn.convertbox.com/convertbox/js/embed.js', {
+    id: 'app-convertbox-script',
+    dataset: { uuid: 'cc64bc00-c22e-425f-8f6d-b9a01a50e5f6' }
+  });
+
   function loadMarketingScripts() {
     if (loadMarketingScripts.loaded) return;
     loadMarketingScripts.loaded = true;
     whenIdle(function() {
-      loadScript('https://cdn.convertbox.com/convertbox/js/embed.js', {
-        id: 'app-convertbox-script',
-        dataset: { uuid: 'cc64bc00-c22e-425f-8f6d-b9a01a50e5f6' }
-      });
-
       loadScript('https://app.rybbit.io/api/script.js', {
         dataset: { siteId: 'b96de0375325' }
       });

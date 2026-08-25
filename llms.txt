@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- The Best Coaching CRM for Professional Coaches in 2026: https://clickcoach.io/resources/best-coaching-crm/
 - White Label Client Portal: What to Verify Before You Buy: https://clickcoach.io/resources/white-label-client-portal/
 - Differentiate Your Coaching Practice: Make Referrals Inevitable: https://clickcoach.io/resources/differentiate-coaching-practice-competitors/
 - The Role of Shared Progress Visibility in Coaching Teams: https://clickcoach.io/resources/role-of-shared-progress-visibility-teams/

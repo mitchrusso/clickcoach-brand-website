@@ -2,6 +2,22 @@
    ClickCoach — Azure Stream
    ===================================================================== */
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500 800;
+  font-display: swap;
+  src: url('/fonts/montserrat-latin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/plus-jakarta-sans-latin.woff2') format('woff2');
+}
+
 :root {
   /* Brand */
   --primary: #2463EB;
@@ -835,9 +851,11 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   display: grid; grid-template-columns: 1.4fr repeat(3, 1fr); gap: 40px;
 }
 .footer h3,
-.footer h4 {
+.footer h4,
+.footer__heading {
   color: white; font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
   margin-bottom: 16px;
+  font-weight: 700;
 }
 .footer a { color: #CBD5E1; display: block; padding: 6px 0; font-size: .95rem; }
 @media (hover: hover) and (pointer: fine) {
@@ -5956,7 +5974,7 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   background: #F1F5F9;
   font-size: .82rem;
   font-weight: 700;
-  color: #64748B;
+  color: #526071;
   text-decoration: line-through;
   text-decoration-color: rgba(100, 116, 139, .5);
 }
@@ -7104,6 +7122,13 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   height: auto;
   max-width: 100%;
   width: 100%;
+}
+
+.resource-article p a,
+.resource-article li a {
+  text-decoration: underline;
+  text-decoration-thickness: .08em;
+  text-underline-offset: .16em;
 }
 
 .resource-article p > img {

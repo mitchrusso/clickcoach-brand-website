@@ -67,6 +67,15 @@
       ]
     },
     {
+      "source": "/styles-resources.min.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
       "source": "/downloads/:path*",
       "headers": [
         {
@@ -315,6 +324,16 @@
     {
       "source": "/coaching-business-management-software/index.html",
       "destination": "/coaching-business-management-software/",
+      "permanent": true
+    },
+    {
+      "source": "/group-coaching-software",
+      "destination": "/group-coaching-software/",
+      "permanent": true
+    },
+    {
+      "source": "/group-coaching-software/index.html",
+      "destination": "/group-coaching-software/",
       "permanent": true
     },
     {

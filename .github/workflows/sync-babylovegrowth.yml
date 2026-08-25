@@ -10,6 +10,8 @@ on:
     paths:
       - ".github/workflows/sync-babylovegrowth.yml"
       - "scripts/sync-babylovegrowth.mjs"
+      - "scripts/image-dimensions.mjs"
+      - "data/remote-image-dimensions.json"
 
 permissions:
   contents: write
@@ -36,6 +38,9 @@ jobs:
           BABYLOVE_API_KEY: ${{ secrets.BABYLOVE_API_KEY }}
         run: node scripts/sync-babylovegrowth.mjs
 
+      - name: Verify generated SEO output
+        run: npm test
+
       - name: Commit generated resource updates
         run: |
           if [ -z "$(git status --porcelain)" ]; then
@@ -45,6 +50,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add resources sitemap.xml llms.txt
+          git add resources images/resources sitemap.xml llms.txt data/remote-image-dimensions.json
           git commit -m "Sync BabyLoveGrowth resource articles"
           git push

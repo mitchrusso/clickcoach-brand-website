@@ -31,10 +31,12 @@
   };
 
   const armChatbase = function () {
-    ["pointerdown", "keydown", "touchstart", "scroll"].forEach((eventName) => {
+    ["pointerdown", "keydown", "touchstart"].forEach((eventName) => {
       window.addEventListener(eventName, loadChatbase, { once: true, passive: true });
     });
-    setTimeout(loadChatbase, 12000);
+    // Keep chat available to engaged visitors without downloading the full
+    // third-party widget for quick bounces or passive page reads.
+    setTimeout(loadChatbase, 45000);
   };
 
   if (document.readyState === "complete") armChatbase();

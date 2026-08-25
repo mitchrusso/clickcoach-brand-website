@@ -16,7 +16,6 @@ Key pages:
 - Coaching business resources and articles: https://clickcoach.io/resources/
 - Contact, support, affiliates, and API inquiries: https://clickcoach.io/contact/
 - JV Partner Program for 40% commissions, affiliate signup, partner links, stats, swipes, webinar support, and promotion tools: https://clickcoach.io/jv/
-- Join / checkout: https://clickcoach.io/join/
 - SlipMeter for Mac time tracking: https://clickcoach.io/slipmeter/
 - Privacy policy: https://clickcoach.io/privacy/
 - Terms of service: https://clickcoach.io/terms/
@@ -28,6 +27,7 @@ Solution pages:
 - Coaching progress tracking software: https://clickcoach.io/coaching-progress-tracking-software/
 - Coaching notes software: https://clickcoach.io/coaching-notes-software/
 - Coaching business management software: https://clickcoach.io/coaching-business-management-software/
+- Group coaching software for cohorts and coaching teams: https://clickcoach.io/group-coaching-software/
 
 Coaching software answer pages:
 - Coaching Software Answers: https://clickcoach.io/resources/coaching-software-answers/

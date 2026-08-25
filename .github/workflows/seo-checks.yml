@@ -1,0 +1,37 @@
+name: SEO Regression Checks
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.html"
+      - "styles*.css"
+      - "data/remote-image-dimensions.json"
+      - "scripts/**"
+      - "sitemap.xml"
+      - "llms.txt"
+      - "robots.txt"
+      - "vercel.json"
+      - "package.json"
+
+permissions:
+  contents: read
+
+jobs:
+  seo:
+    name: Validate indexation, metadata, schema, and links
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Run SEO checks
+        run: npm test

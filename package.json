@@ -2,7 +2,7 @@
   "name": "clickcoach-brand-website",
   "private": true,
   "scripts": {
-    "test": "node scripts/test-image-dimensions.mjs && npm run test:seo",
+    "test": "node scripts/test-image-dimensions.mjs && node scripts/test-seo-title.mjs && npm run test:seo",
     "test:seo": "node scripts/check-seo.mjs",
     "seo:matrix": "node scripts/check-seo.mjs --write-matrix"
   }

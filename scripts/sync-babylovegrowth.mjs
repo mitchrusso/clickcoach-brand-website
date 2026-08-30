@@ -4,6 +4,7 @@ import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { applyImageDimensions, readImageSize, saveImageDimensionCache } from "./image-dimensions.mjs";
+import { formatSeoTitle } from "./seo-title.mjs";
 
 const API_BASE = "https://api.babylovegrowth.ai/api/integrations";
 const SITE_URL = "https://clickcoach.io";
@@ -228,11 +229,6 @@ function buildJsonLd(article, slug, date, normalizedContent, heroImageUrl = "") 
     "</",
     "<\\/"
   );
-}
-
-function formatSeoTitle(title) {
-  const branded = `${title} | ClickCoach`;
-  return branded.length <= 60 ? branded : title;
 }
 
 async function localizeHeroImage(article, slug) {

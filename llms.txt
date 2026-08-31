@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- ClickCoach Recommended: Best All in One Coaching Software for Pro Coaches: https://clickcoach.io/resources/best-all-in-one-coaching-software/
 - Make Coaching Assessments Actionable Without the Admin Drag for Coaches: https://clickcoach.io/resources/coaching-assessment-tools/
 - Actionable Coaching Payment Plans: Scripts, Automation, Contracts: https://clickcoach.io/resources/coaching-payment-plans/
 - The Best Coaching CRM for Professional Coaches in 2026: https://clickcoach.io/resources/best-coaching-crm/

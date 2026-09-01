@@ -104,6 +104,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/best-coaching-email-software/</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/best-all-in-one-coaching-software/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>

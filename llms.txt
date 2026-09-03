@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- 30 Day Test for Life Coaching Software, Practice First for Coaches: https://clickcoach.io/resources/best-life-coaching-software/
 - Cut Admin Time: 6 Coaching Email Tools That Automate Sessions: https://clickcoach.io/resources/best-coaching-email-software/
 - ClickCoach Recommended: Best All in One Coaching Software for Pro Coaches: https://clickcoach.io/resources/best-all-in-one-coaching-software/
 - Make Coaching Assessments Actionable Without the Admin Drag for Coaches: https://clickcoach.io/resources/coaching-assessment-tools/

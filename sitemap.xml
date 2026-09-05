@@ -104,6 +104,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/invoice-coaching-clients/</loc>
+    <lastmod>2026-09-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/best-life-coaching-software/</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>

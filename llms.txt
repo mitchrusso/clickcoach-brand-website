@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Coaching Session Agendas Coaches Can Paste for 30/45/60 Minute Calls: https://clickcoach.io/resources/coaching-session-agenda/
 - Coaches' Billing Playbook: Invoice Coaching Clients Without Chasing: https://clickcoach.io/resources/invoice-coaching-clients/
 - 30 Day Test for Life Coaching Software, Practice First for Coaches: https://clickcoach.io/resources/best-life-coaching-software/
 - Cut Admin Time: 6 Coaching Email Tools That Automate Sessions: https://clickcoach.io/resources/best-coaching-email-software/

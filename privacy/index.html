@@ -195,27 +195,27 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       <h2>3. Google User Data</h2>
       <p><strong>Limited Use Disclosure.</strong> ClickCoach's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
       <h3>3.1 Google scopes we request</h3>
-      <p>When a coach connects their Google account, we request the following OAuth scopes:</p>
+      <p>When a coach connects their Google account, ClickCoach requests only the OAuth scopes needed for the Google features the coach chooses to enable:</p>
       <ul>
-        <li><code>https://www.googleapis.com/auth/calendar.events</code> &mdash; view and edit events on the coach's calendars (used for the Google Calendar integration).</li>
-        <li><code>https://www.googleapis.com/auth/drive.file</code> &mdash; view and manage only the specific Google Drive files the coach explicitly opens with ClickCoach or that ClickCoach creates on the coach's behalf (used for the Google Drive integration).</li>
+        <li><code>https://www.googleapis.com/auth/calendar.events</code> &mdash; create, update, and delete ClickCoach session events on the coach's Google Calendar.</li>
+        <li><code>https://www.googleapis.com/auth/calendar.readonly</code> &mdash; read existing calendar events when the coach enables two-way calendar sync, so ClickCoach can display outside events while scheduling and help identify conflicts.</li>
+        <li><code>https://www.googleapis.com/auth/drive.file</code> &mdash; create, upload, list, and manage Google Drive files that the coach creates or opens through ClickCoach.</li>
+        <li><code>https://www.googleapis.com/auth/drive.readonly</code> &mdash; allow the coach to select existing Google Drive files through the Google Picker for broadcast attachments.</li>
       </ul>
       <h3>3.2 How we use Google user data</h3>
       <p>We use data obtained through Google APIs solely to provide user-facing features of ClickCoach.</p>
-      <p><strong>Google Calendar (calendar.events):</strong></p>
+      <p><strong>Google Calendar:</strong></p>
       <ul>
         <li>Display existing calendar events inside ClickCoach so the coach can see their schedule while booking a new coaching session and visually identify conflicts.</li>
         <li>Create events on the coach's primary calendar when a coaching session is scheduled in ClickCoach, including session title, start/end time, description, Zoom link, and the coaching client as an attendee.</li>
         <li>Update events when the coach reschedules or edits a session.</li>
         <li>Delete events when the coach cancels a session.</li>
       </ul>
-      <p><strong>Google Drive (drive.file):</strong></p>
+      <p><strong>Google Drive:</strong></p>
       <ul>
-        <li>Open and display files the coach explicitly selects through the Google Picker so they can be attached to coaching sessions, homework, assignments, or client records inside ClickCoach.</li>
-        <li>Save files that ClickCoach creates on the coach's behalf (such as session reports or completion certificates) to the coach's Drive when the coach chooses to do so.</li>
-        <li>Manage only those specific files the coach picked or ClickCoach created &mdash; including reading metadata, updating contents the coach edits in ClickCoach, and removing files when the coach asks ClickCoach to delete them.</li>
+        <li>Upload and manage files the coach chooses to save to Google Drive through ClickCoach File Storage.</li>
+        <li>Let the coach select existing Google Drive files to attach to broadcast messages.</li>
       </ul>
-      <p>The <code>drive.file</code> scope deliberately does not give ClickCoach access to the rest of the coach's Drive. We can only see files the coach explicitly chooses through Google's file picker or files we created. We cannot browse, search, list, or read any other content in the coach's Drive.</p>
       <h3>3.3 What we do not do with Google user data</h3>
       <ul>
         <li>We do not transfer Google user data to third parties except as necessary to provide or improve user-facing features of ClickCoach, to comply with applicable law, or as part of a merger, acquisition, or sale of assets with user notice.</li>
@@ -223,15 +223,15 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
         <li>We do not allow humans to read Google user data unless we have obtained the user's affirmative agreement for specific messages, it is necessary for security purposes (such as investigating abuse), to comply with applicable law, or for internal operations where the data has been aggregated and anonymized.</li>
         <li>We do not use Google user data to develop, improve, or train generalized AI or machine learning models.</li>
         <li>We do not access, create, modify, or delete calendars other than those events the coach creates or modifies through ClickCoach, and we do not store a long-term copy of the coach's calendar contents on our servers.</li>
-        <li>We do not access any Google Drive files other than those the coach explicitly selects through the Google Picker or that ClickCoach itself created. We do not enumerate, browse, search, or download files outside that scope.</li>
+        <li>We do not access Google Drive files unless the coach creates, uploads, opens, or selects those files through ClickCoach.</li>
       </ul>
       <h3>3.4 Revoking Google access</h3>
       <p>A coach can revoke ClickCoach's access to their Google account at any time by:</p>
       <ul>
-        <li>Disconnecting the integration inside ClickCoach (Settings &rarr; Integrations &rarr; Disconnect Google Calendar or Disconnect Google Drive), or</li>
+        <li>Disconnecting the integration inside ClickCoach (Settings &rarr; Calendar &rarr; Disconnect Google Calendar or Disconnect Google Drive), or</li>
         <li>Visiting <a href="https://myaccount.google.com/permissions">https://myaccount.google.com/permissions</a> and removing ClickCoach.</li>
       </ul>
-      <p>When access is revoked, we delete the stored OAuth tokens within 30 days. Calendar events previously created by ClickCoach remain on the coach's calendar unless deleted through ClickCoach or manually by the coach. Files saved to the coach's Drive by ClickCoach remain in the coach's Drive unless the coach deletes them.</p>
+      <p>When access is revoked, we delete the stored OAuth tokens within 30 days. Calendar events and Drive files previously created by ClickCoach remain in the coach's Google account unless deleted through ClickCoach or manually by the coach.</p>
     </section>
 
     <section id="how-we-use" class="legal-section">
@@ -283,9 +283,9 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
               <td>Coach and coaching client email addresses, email contents (reminders, confirmations, homework, assignments, certificates)</td>
             </tr>
             <tr>
-              <td>Google (Google Calendar API)</td>
-              <td>Calendar synchronization</td>
-              <td>Coaching session event details (see Section 3)</td>
+              <td>Google (Google Calendar API, Google Drive API, Google Picker)</td>
+              <td>Calendar synchronization, Google Drive file storage, and selecting Drive files for broadcast attachments</td>
+              <td>Coaching session event details, selected Drive file metadata, and files the coach chooses to upload or manage through ClickCoach (see Section 3)</td>
             </tr>
             <tr>
               <td>Formspree, Inc.</td>

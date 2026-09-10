@@ -46,6 +46,8 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- U.S. Coaches: Get HIPAA Compliant Coaching Software in 2–4 Weeks: https://clickcoach.io/resources/hipaa-compliant-coaching-software/
+- Systems First: Build ICF Accredited Online Life Coaching in 30–90 Days: https://clickcoach.io/resources/icf-accredited-life-coaching-programs-online/
 - Get Coaches Using Your Mobile Client Portal in 2–4 Weeks: https://clickcoach.io/resources/mobile-client-portal/
 - Coaching Session Agendas Coaches Can Paste for 30/45/60 Minute Calls: https://clickcoach.io/resources/coaching-session-agenda/
 - Coaches' Billing Playbook: Invoice Coaching Clients Without Chasing: https://clickcoach.io/resources/invoice-coaching-clients/

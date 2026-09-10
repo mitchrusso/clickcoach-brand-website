@@ -104,6 +104,18 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/hipaa-compliant-coaching-software/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://clickcoach.io/resources/icf-accredited-life-coaching-programs-online/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/mobile-client-portal/</loc>
     <lastmod>2026-09-08</lastmod>
     <changefreq>monthly</changefreq>

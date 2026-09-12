@@ -104,6 +104,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/best-coaching-scheduler/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/hipaa-compliant-coaching-software/</loc>
     <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>

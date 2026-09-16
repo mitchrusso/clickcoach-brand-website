@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Retain Clients When Switching Coaching Software: A Migration Playbook: https://clickcoach.io/resources/switching-coaching-software/
 - Coaching Analytics for Managers: Measure Impact in Weeks: https://clickcoach.io/resources/coaching-analytics/
 - Executive Coaches: ClickCoach + 5 Billing Software for Sponsor Billing: https://clickcoach.io/resources/best-coaching-billing-software/
 - Coaches' 7 Day Playbook to Find the Best Coaching Scheduler: https://clickcoach.io/resources/best-coaching-scheduler/

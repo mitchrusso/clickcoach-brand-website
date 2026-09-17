@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0F172A" />
+<title>One Week Secure Client File Sharing Setup for | ClickCoach</title>
+<meta name="description" content="Checklist coaches can use to deploy secure client file sharing in one week. Covers client portals, phishing resistant MFA, and exportable audit logs." />
+<link rel="canonical" href="https://clickcoach.io/resources/secure-client-file-sharing/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="ClickCoach" />
+<meta property="og:url" content="https://clickcoach.io/resources/secure-client-file-sharing/" />
+<meta property="og:title" content="One Week Secure Client File Sharing Setup for | ClickCoach" />
+<meta property="og:description" content="Checklist coaches can use to deploy secure client file sharing in one week. Covers client portals, phishing resistant MFA, and exportable audit logs." />
+<meta property="og:image" content="https://clickcoach.io/images/resources/secure-client-file-sharing.jpeg" />
+<meta property="og:image:alt" content="One Week Secure Client File Sharing Setup for Coaches" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="One Week Secure Client File Sharing Setup for | ClickCoach" />
+<meta name="twitter:description" content="Checklist coaches can use to deploy secure client file sharing in one week. Covers client portals, phishing resistant MFA, and exportable audit logs." />
+<meta name="twitter:image" content="https://clickcoach.io/images/resources/secure-client-file-sharing.jpeg" />
+<meta name="twitter:image:alt" content="One Week Secure Client File Sharing Setup for Coaches" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://clickcoach.io/resources/secure-client-file-sharing/#article",
+      "headline": "One Week Secure Client File Sharing Setup for Coaches",
+      "description": "Checklist coaches can use to deploy secure client file sharing in one week. Covers client portals, phishing resistant MFA, and exportable audit logs.",
+      "author": {
+        "@id": "https://clickcoach.io/about/#mitch-russo"
+      },
+      "publisher": {
+        "@id": "https://clickcoach.io/#organization"
+      },
+      "datePublished": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "mainEntityOfPage": {
+        "@id": "https://clickcoach.io/resources/secure-client-file-sharing/#webpage"
+      },
+      "image": "https://clickcoach.io/images/resources/secure-client-file-sharing.jpeg"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://clickcoach.io/resources/secure-client-file-sharing/#webpage",
+      "url": "https://clickcoach.io/resources/secure-client-file-sharing/",
+      "name": "One Week Secure Client File Sharing Setup for Coaches - ClickCoach",
+      "description": "Checklist coaches can use to deploy secure client file sharing in one week. Covers client portals, phishing resistant MFA, and exportable audit logs.",
+      "isPartOf": {
+        "@id": "https://clickcoach.io/#website"
+      },
+      "about": {
+        "@id": "https://clickcoach.io/#software"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://clickcoach.io/resources/secure-client-file-sharing/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How Can I Share Files With Clients Securely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a client-specific portal or a file-sharing service configured for named-recipient access, phishing-resistant MFA, view-only defaults, and automatic expiry. CISA’s configuration baseline recommends capping link lifespans at 30 days or less and restricting sharing to specific people rather than open links."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Is the Safest Way to Share Confidential Files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The safest method combines encryption in transit and at rest with phishing-resistant authentication and an audit trail that logs every access event. A dedicated client portal, like the one built into ClickCoach, applies these settings automatically instead of relying on you to configure them correctly every single time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Peer-to-Peer File Sharing Illegal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Peer-to-peer file sharing is not inherently illegal; it is a technology for transferring files directly between computers without a central server. It becomes illegal when used to distribute copyrighted material without authorization, and it is a poor fit for client files regardless of legality, since it lacks the named-recipient access controls and audit logging that professional file sharing requires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Is the Best Secure File-Sharing Site for a Small Practice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best option depends on your practice size and technical resources, but a client portal or document-request system generally offers the strongest balance of security and ease of use for coaches and consultants. Look for named-recipient invitations, phishing-resistant MFA support, and exportable audit logs before committing to any platform."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why Are Password-Protected Links Not Secure Enough?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A password on a link protects against casual discovery, but it does not verify who is actually opening the file. Authentication strength, not the presence of a password, determines real security, which is why a named-recipient sign-in with MFA outperforms a shared password every time."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://clickcoach.io/resources/secure-client-file-sharing/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://clickcoach.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resources",
+          "item": "https://clickcoach.io/resources/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "One Week Secure Client File Sharing Setup for Coaches",
+          "item": "https://clickcoach.io/resources/secure-client-file-sharing/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/styles-resources.min.css?v=resource-perf-1" />
+<link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png?v=2" />
+<script src="/js/marketing-loader.js?v=convertbox-immediate-1" defer data-rybbit="true"></script>
+<script src="/js/google-analytics.js?v=2" defer></script>
+
+<body class="eo-page resources-page">
+<!-- Meta Pixel Noscript -->
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Noscript -->
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__brand" aria-label="ClickCoach home"><img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" /></a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="/features/">Features</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/for-coaches/">For Coaches</a>
+      <a href="/resources/">Resources</a>
+      <a href="/slipmeter/">SlipMeter</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">🌗</button>
+      <details class="nav__login">
+        <summary class="btn btn-secondary btn-sm nav__login-trigger">Log in <span class="nav__login-caret" aria-hidden="true">&#9662;</span></summary>
+        <div class="nav__login-menu" role="menu">
+          <span class="nav__login-eyebrow">Choose your login</span>
+          <a class="nav__login-item" role="menuitem" href="https://new.clickcoach.io/login"><span class="nav__login-item-body"><span class="nav__login-item-title">ClickCoach 2.0 <span class="nav__login-badge">New</span></span><span class="nav__login-item-sub">The all-new coaching platform</span></span><span class="nav__login-item-arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="nav__login-item" role="menuitem" href="https://app.clickcoach.io/secure-login"><span class="nav__login-item-body"><span class="nav__login-item-title">ClickCoach Legacy</span><span class="nav__login-item-sub">Sign in to the classic dashboard</span></span><span class="nav__login-item-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </details>
+      <a class="btn btn-primary btn-sm" href="/pricing/">Get Started</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">&#9776;</button>
+    </div>
+  </div>
+</header>
+<main>
+<!-- babylovegrowth:article-id=864519 -->
+<section class="resource-article-hero">
+  <div class="container resource-article-hero__inner">
+    <a class="resource-back" href="/resources/">&larr; Resources</a>
+    <span class="chip">Mitch Russo article</span>
+    <h1>One Week Secure Client File Sharing Setup for Coaches</h1>
+    <p class="hero__lede">Checklist coaches can use to deploy secure client file sharing in one week. Covers client portals, phishing resistant MFA, and exportable audit logs.</p>
+    <p class="resource-article-meta">By Mitch Russo &middot; Updated 2026-09-17</p>
+  </div>
+</section>
+<section class="section resource-article-section">
+  <div class="container">
+    <article class="resource-article">
+<figure class="resource-article-media"><img src="/images/resources/secure-client-file-sharing.jpeg" alt="One Week Secure Client File Sharing Setup for Coaches" width="1080" height="720" loading="eager" fetchpriority="high" decoding="async"></figure>
+<p>The right move is a client-specific portal, or a file-sharing service locked down to named recipients with phishing-resistant MFA, expiry dates, and audit logging. Password-protected links and email attachments fail on authentication strength, not on encryption, which is why anyone can forward a link and walk right past your security. The checklist below turns that single recommendation into a procedure you can run this week.</p>
+<hr>
+<blockquote>
+<p><strong>TL;DR:</strong></p>
+<ul>
+<li>Password-protected links and email attachments are insecure because they rely solely on encryption, allowing anyone forwarding the link to access files without proper authentication.</li>
+<li>A secure client portal must guarantee that only intended recipients can access files, with automatic expiry, revocation, and detailed audit logging of all access attempts.</li>
+<li>Phishing-resistant MFA, such as security keys or authenticator apps, is essential for authenticating file access, as SMS-based codes are vulnerable to interception and spoofing attacks.</li>
+<li>Configuring every file with default permissions, expiry dates, and a clear offboarding process prevents lingering access after client engagement ends.</li>
+<li>A small practice can implement secure sharing by classifying file sensitivity, creating client-specific folders, enabling MFA, setting expiry, and conducting monthly access reviews.</li>
+</ul>
+</blockquote>
+<hr>
+<div data-blg-cta="after_tldr" data-blg-cta-layout="split" style="margin:28px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;box-sizing:border-box;"><div style="border-radius:26px;padding:min(22px,3.2vw);background:radial-gradient(circle at 100% 0%,#d8e3fb 0 150px,rgba(255,255,255,0) 151px),radial-gradient(circle at 0% 100%,#d8e3fb 0 130px,rgba(255,255,255,0) 131px),linear-gradient(180deg,#e5ecfd 0%,#f2f6fe 100%);"><div style="background:#ffffff;border-radius:18px;box-shadow:0 12px 34px rgba(0,0,0,0.13);overflow:hidden;"><div style="display:flex;flex-wrap:wrap;background:linear-gradient(104deg,#123378 0%,#0b1f49 33%,#ffffff 33.15%);"><div style="flex:0 0 30%;min-width:150px;padding:30px 10px 30px 26px;color:#ffffff;"><div style="margin:0 0 14px;"><span style="display:inline-block;max-width:100%;box-sizing:border-box;border-radius:999px;padding:6px 13px;font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;line-height:1.3;background:#ffffff;color:#173f95;">ClickCoach</span></div><div style="font-size:12px;opacity:0.75;">clickcoach.io</div></div><div style="flex:1 1 300px;padding:30px 28px 30px 40px;"><div style="font-size:23px;font-weight:800;line-height:1.2;letter-spacing:-0.01em;color:#1f2937;margin:0;">Keep Client Files In One Secure Workspace</div><div style="width:56px;height:6px;border-radius:3px;background:#2463EB;margin:12px 0 14px;"></div><div style="font-size:15px;line-height:1.55;color:#64748b;margin:0 0 22px;">ClickCoach brings client records, session notes, goals, action plans, and branded client portals together for coaches managing sensitive information.</div><a href="/" style="display:inline-flex;align-items:center;gap:9px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;padding:13px 22px 13px 26px;background:#2463EB;color:#ffffff;">Explore ClickCoach<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div></div></div></div></div>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#what-is-secure-client-file-sharing-exactly">What Is Secure Client File Sharing, Exactly?</a></li>
+<li><a href="#what-security-controls-should-you-require-when-sharing-client-files">What Security Controls Should You Require When Sharing Client Files?</a></li>
+<li><a href="#step-by-step-checklist-for-sharing-files-with-clients-securely">Step-by-Step Checklist for Sharing Files With Clients Securely</a></li>
+<li><a href="#portals-secure-links-encrypted-messages-or-data-rooms-what-fits-a-coaching-practice">Portals, Secure Links, Encrypted Messages, or Data Rooms: What Fits a Coaching Practice?</a></li>
+<li><a href="#how-do-you-evaluate-a-secure-file-sharing-tool-before-you-buy">How Do You Evaluate a Secure File-Sharing Tool Before You Buy?</a></li>
+<li><a href="#how-do-you-roll-out-secure-file-sharing-in-a-small-practice">How Do You Roll Out Secure File Sharing in a Small Practice?</a></li>
+<li><a href="#why-secure-file-sharing-changes-how-coaching-actually-works">Why Secure File Sharing Changes How Coaching Actually Works</a></li>
+<li><a href="#clickcoach-one-secure-portal-instead-of-five-disconnected-tools">ClickCoach: One Secure Portal Instead of Five Disconnected Tools</a></li>
+<li><a href="#sources">Sources</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul>
+<h2 id="what-is-secure-client-file-sharing-exactly">What Is Secure Client File Sharing, Exactly?</h2>
+<p>Secure client file sharing means every file a client sends or receives passes through a system with three guarantees: only the intended person can open it, every access attempt gets logged, and access ends automatically when it should. That is a higher bar than “the link has a password” or “the attachment went through Gmail.” A coaching practice moving intake forms, assessment results, or session notes needs a document portal or secure document transfer method that satisfies all three, not just one.</p>
+<p>Most small practices already use <em>some</em> form of encrypted file sharing without realizing its limits. A shared Google Drive link feels secure because Google encrypts data at rest. But if that link has no expiration, no recipient restriction, and no login requirement, you have built a system where security depends entirely on nobody else finding the URL. That is not a control. That is luck.</p>
+<h2 id="what-security-controls-should-you-require-when-sharing-client-files">What Security Controls Should You Require When Sharing Client Files?</h2>
+<p>Four controls separate a real secure document portal from a link that merely looks secure. Skip any one of them and you have a gap, not a system.</p>
+<p><img loading="lazy" decoding="async" fetchpriority="low" src="https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-37976/1789612524596_Four-controls-for-secure-client-file-sharing.jpeg" alt="Four controls for secure client file sharing" width="1280" height="720"></p>
+<p><strong>Encryption in transit and at rest.</strong> Files need to be encrypted while moving between servers and while sitting on a disk somewhere. This is table stakes. <a href="https://csrc.nist.gov/pubs/sp/800/171/r3/final" target="_blank" rel="noopener noreferrer">NIST’s guidance for protecting sensitive nonfederal data</a> lists encryption alongside authentication, authorization, audit logging, and data protection as the core pillars of storage security, not as an optional add-on. If a vendor cannot describe both, in transit and at rest, in plain language, that is a red flag worth noting.</p>
+<p><strong>Authentication, specifically phishing-resistant MFA.</strong> Not all multifactor authentication is equal. <a href="https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication" target="_blank" rel="noopener noreferrer">CISA recommends prioritizing phishing-resistant methods</a> such as FIDO/WebAuthn security keys or authenticator apps over SMS codes, because text messages can be intercepted or spoofed through SIM-swapping attacks. For a coaching practice handling sensitive personal or financial disclosures, this distinction matters more than most vendors admit upfront.</p>
+<p><strong>Authorization and least privilege.</strong> Every file should go to a named person, not a link anyone with the URL can open. Default new shares to view-only. Restrict sharing to specific domains when your client works inside an organization. CISA’s SharePoint and OneDrive configuration baseline recommends exactly this: restrict external sharing to specific people, default to view-only, and cap “Anyone” link lifespans at 30 days or less.</p>
+<p><strong>Expiry, revocation, and audit trails.</strong> Access should have a built-in end date tied to when the engagement wraps up, and you should be able to kill it manually the moment something feels off. Every access event, upload, download, view, and share, needs a timestamped record. <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-209.pdf" target="_blank" rel="noopener noreferrer">NIST SP 800-209 warns that storage-management systems are frequent attack targets</a> and that audit logs themselves need protection from tampering, since a log an attacker can edit is worse than no log at all.</p>
+<p><strong>Pro Tip:</strong> <em>Map your file types to handling rules before you pick a tool. Intake forms and assessment scores probably need view-only access and 90-day expiry. Signed contracts might need download rights and permanent archival. Deciding this on paper first keeps you from configuring every file the same way out of convenience.</em></p>
+<p>None of this requires an IT department. It requires deciding, once, what “named recipient,” “view-only default,” and “30-day expiry” mean for your practice, then applying that decision every time you send a file. A client document portal that has these settings built in removes the decision from every single transfer.</p>
+<h2 id="step-by-step-checklist-for-sharing-files-with-clients-securely">Step-by-Step Checklist for Sharing Files With Clients Securely</h2>
+<p>Copy this into your practice’s operating procedures. Run it the same way every time, and the gaps close on their own.</p>
+<ol>
+<li><strong>Classify the file’s sensitivity.</strong> Decide whether it needs view-only, edit, or download permission before you touch the upload button. A worksheet is different from a signed coaching agreement.</li>
+<li><strong>Create a client-specific folder or document request.</strong> Never reuse a generic shared folder across multiple clients. Each client gets their own space.</li>
+<li><strong>Invite the named client account only.</strong> Use their verified email address, not a generic link that anyone holding the URL could open.</li>
+<li><strong>Enable MFA and push clients toward phishing-resistant methods.</strong> An authenticator app beats an SMS code every time; make that the default recommendation in your onboarding instructions.</li>
+<li><strong>Set expiry and tie revocation to the engagement’s end date.</strong> If the coaching agreement runs six months, the file access should not silently run forever after it.</li>
+<li><strong>Send an access notification over a second channel for anything sensitive.</strong> A quick text or phone call confirming “I just shared your intake packet” catches the rare case where an email got intercepted or landed in spam and a client clicked something they shouldn’t have.</li>
+<li><strong>Confirm receipt and log it.</strong> A simple note in your client record (“confirmed access March 3”) turns an assumption into a documented fact.</li>
+<li><strong>Schedule a periodic audit review.</strong> Once a month, glance at who has access to what. This is the step almost everyone skips, and it is the one that catches lingering access from clients who finished six months ago.</li>
+<li><strong>Archive and revoke access when the engagement ends.</strong> Move final documents to cold storage if you need to retain them, then pull the client’s active access entirely.</li>
+</ol>
+<p>This sequence works whether you are running it manually across a few tools or letting a platform automate steps 2 through 5. The failure pattern to watch for is skipping straight from step 3 to step 6, inviting someone and notifying them, without ever setting an expiry date. That is how practices end up with access lists full of people whose engagements ended a year ago.</p>
+<p>The deeper reason step 8 matters more than it looks: the most common operational failure in file sharing is not a hack. It is an over-permissioned account nobody remembered to close. A client from last spring still has “edit” rights on a folder because revoking access was never built into the offboarding process. Fix that by tying revocation directly to your engagement end date in whatever system tracks your client roster, rather than treating it as a separate task you might forget.</p>
+<h2 id="portals-secure-links-encrypted-messages-or-data-rooms-what-fits-a-coaching-practice">Portals, Secure Links, Encrypted Messages, or Data Rooms: What Fits a Coaching Practice?</h2>
+<p>Every secure file sharing option falls into one of five categories, and each makes a different tradeoff between security, client experience, and setup effort.</p>
+<ul>
+<li><strong>Client portals and document-request systems</strong> give clients one branded login where every file, form, and note lives together. Setup takes longer upfront, but ongoing use is nearly frictionless for both sides, and permissions apply automatically to every new file. This is usually the best balance for a coaching or consulting practice.</li>
+<li><strong>Secure links with named-recipient sign-in</strong> deploy in minutes and work well for a one-off transfer. Check the authentication method carefully. A link that only asks for a password typed once is far weaker than one that requires the recipient to verify their identity through a login.</li>
+<li><strong>Encrypted email or secure messaging</strong> works for small files when both sides already use compatible tools, but it breaks down fast with larger attachments, multiple files, or nontechnical clients who cannot install anything new.</li>
+<li><strong>SFTP, managed file transfer, or NAS setups</strong> give you granular control over storage location and access rules, which matters for practices with strict data residency needs. The tradeoff is real IT overhead: someone has to configure, patch, and monitor the server.</li>
+<li><strong>Data rooms</strong> exist for high-stakes transactions, think mergers or legal discovery, where watermarking, view-tracking down to the page, and heavy audit requirements justify the cost and complexity. Most coaching practices will never need this level of control.</li>
+</ul>
+<p>Solo practitioners and small teams generally get the best return from a client portal or a well-configured secure link service. The setup cost is manageable, and clients do not need any technical background to use it correctly. Larger organizations juggling regulatory requirements across jurisdictions often need SFTP or managed file transfer for the control it gives over where data physically lives, even though it demands more ongoing maintenance.</p>
+<h2 id="how-do-you-evaluate-a-secure-file-sharing-tool-before-you-buy">How Do You Evaluate a Secure File-Sharing Tool Before You Buy?</h2>
+<p>Run every vendor through three checklists before you sign anything. Skipping this step is how practices end up locked into a platform that looked fine in the demo and fell apart on the third real client.</p>
+<p><strong>Security checklist.</strong> Ask exactly what MFA methods the platform supports, and confirm phishing-resistant options are available, not just promised for a future release. Ask how encryption at rest and in transit works, whether audit logs are exportable, and whether those logs are protected against tampering by admin users.</p>
+<p><strong>Usability checklist.</strong> Walk through the invitation flow as if you were a client who has never used the platform. Does the first login require a phone call to your support line, or can a 60-year-old client figure it out unaided? Onboarding friction is a security risk in disguise: CISA’s guidance on authentication notes that recipients who find sign-in confusing will forward links or save files somewhere less secure just to get past the friction.</p>
+<p><strong>Operational checklist.</strong> Confirm you can export your data if you switch platforms later. Check what admin controls exist for offboarding a client in one action rather than five. Ask what happens, procedurally, if a device is lost or an account is compromised.</p>
+<p>Stop the evaluation immediately if you see any of these: a default “Anyone with the link” sharing setting, SMS as the only MFA option, or no audit log at all. Those three gaps show up in a disturbing number of consumer-grade tools marketed to small businesses.</p>
+<p><strong>Pro Tip:</strong> <em>Run a five-step trial before committing: invite a test account, complete the first login yourself, upload a file, download it back, then revoke access and confirm the former recipient is actually locked out. Time each step and write down anywhere you got confused. If you got confused, your least tech-savvy client will get stuck.</em></p>
+<p><img loading="lazy" decoding="async" fetchpriority="low" src="https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-37976/1789612591015_How-Do-You-Evaluate-a-Secure-File-Sharing-Tool-Before-You-Buy-overview-diagram.jpeg" alt="How Do You Evaluate a Secure File-Sharing Tool Before You Buy? — overview diagram" width="1280" height="720"></p>
+<h2 id="how-do-you-roll-out-secure-file-sharing-in-a-small-practice">How Do You Roll Out Secure File Sharing in a Small Practice?</h2>
+<p>You do not need a full IT department to deploy this correctly. You need a two-to-four-week pilot, three defined roles, and a one-page policy.</p>
+<ol>
+<li><strong>Pick two or three pilot clients.</strong> Choose a mix, one comfortable with technology and one who is not, so you see the full range of friction points.</li>
+<li><strong>Configure defaults before inviting anyone.</strong> Named recipients only, view-only permission as the starting point, and expiry set to match the engagement length.</li>
+<li><strong>Run the pilot for two to four weeks.</strong> Track every point of confusion, every support question, and every login failure.</li>
+<li><strong>Assign three roles.</strong> An <strong>admin</strong> manages platform settings and user access. A <strong>reviewer</strong> checks the audit log on a set schedule. An <strong>owner</strong>, usually you, makes final calls on exceptions and permission changes.</li>
+<li><strong>Write a one-page starter policy.</strong> Cover file naming conventions, default expiry length, required MFA type, and how often access gets reviewed. Half a page is enough; the goal is consistency, not paperwork.</li>
+<li><strong>Set your monitoring cadence.</strong> A monthly audit log review catches lingering access before it becomes a liability. Log any incident, even a minor one like a client losing their login, so patterns show up over time.</li>
+<li><strong>Train clients in under five minutes.</strong> A short video or one-page guide showing exactly how to log in and upload beats a lengthy manual nobody reads. Ask pilot clients directly what confused them, then fix that one thing before rolling out to everyone else.</li>
+</ol>
+<p>Once the pilot clears without a support fire drill, expand to your full client roster. The role matrix and policy document you built during the pilot become the reference every new team member or client-facing coach uses going forward.</p>
+<h2 id="why-secure-file-sharing-changes-how-coaching-actually-works">Why Secure File Sharing Changes How Coaching Actually Works</h2>
+<p>Coaching runs on trust, and trust breaks the moment a client wonders whether their assessment results or personal disclosures are floating around in an unsecured inbox. A proper client document portal removes that doubt entirely. Clients see one branded, familiar login. They know exactly where their homework, session notes, and progress records live, and they know an old link cannot resurface six months later.</p>
+<p>The workflows that benefit most are the ones coaches touch every week: uploading a signed coaching agreement, sharing progress-tracking charts before a renewal conversation, or sending homework between sessions. Handle those through a portal with named access and automatic expiry, and you eliminate the quiet administrative risk of scattered attachments and forgotten shared folders. You also gain something less obvious: a searchable, permission-controlled history of every file a client ever touched, which makes it far easier to demonstrate progress when a renewal conversation comes up.</p>
+<p>This is precisely the gap ClickCoach was built to close, centralizing client files, session records, and portal access in one place instead of scattering them across email, a drive folder, and a separate invoicing tool. A secure workflow only holds up if it is easy enough that you and your clients actually use it every time, not just when you remember to.</p>
+<blockquote>
+<p><em>— Mitch Russo</em></p>
+</blockquote>
+<h2 id="clickcoach-one-secure-portal-instead-of-five-disconnected-tools">ClickCoach: One Secure Portal Instead of Five Disconnected Tools</h2>
+<p>Most coaches piece together file sharing from whatever is already open, a Drive folder here, an email attachment there, a password-protected PDF nobody double-checks. ClickCoach replaces that patchwork with one branded <a href="/coaching-client-portal-software/" rel="noopener">client portal</a> where session notes, homework, progress charts, and file storage all live under the same named-access login your client already uses to check their program.</p>
+<p><a href="/pricing/" rel="noopener"><img loading="lazy" decoding="async" fetchpriority="low" src="https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-37976/1786427543014_clickcoach.jpg" alt="ClickCoach" width="1920" height="1080"></a></p>
+<p>Because everything from intake documents to billing sits inside one workspace, you are not managing security settings across four separate apps, you are managing them once. That maps directly onto the checklist above: client-specific access, no generic shared links, and a single place to review who has seen what. The <a href="/coaching-business-management-software/" rel="noopener">broader practice management platform</a> ties that file access to the same client record that holds your session history and action plans, so revoking access at the end of an engagement is one action instead of a scavenger hunt across tools.</p>
+<p>If you want to see whether this fits your practice before committing, run the same two-week pilot outlined earlier: invite two or three clients, watch how the first login and file upload feel from their side, then decide. ClickCoach is priced at <a href="/pricing/" rel="noopener">$497 per year per coach</a> for solo coaches and multi-coach companies alike, with a 30-day money-back guarantee if it is not the right fit.</p>
+<h2 id="sources">Sources</h2>
+<p>The controls in this guide come from a small set of primary sources worth bookmarking. NIST SP 800-171 lays out the core storage-security controls, encryption, authentication, audit logging, that any file-sharing evaluation should reference. NIST SP 800-209 goes deeper into storage architecture and explains why protecting audit logs matters as much as creating them.</p>
+<p>On the authentication side, CISA’s guidance on requiring MFA explains why phishing-resistant methods outperform SMS codes for any account handling sensitive files. The SharePoint and OneDrive configuration baseline from CISA’s SCuBA project gives concrete default settings, named-recipient sharing, view-only defaults, capped link expiry, that translate directly into the policy template covered above. Coaches rolling out a formal client communication plan alongside a new sharing policy may also find value in SEO and positioning guidance for consultants when explaining the change to prospective clients.</p>
+<ul>
+<li><a href="https://csrc.nist.gov/pubs/sp/800/171/r3/final" target="_blank" rel="noopener noreferrer">Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations (NIST SP 800-171, r3)</a></li>
+<li><a href="https://www.cisa.gov/audiences/small-and-medium-businesses/secure-your-business/require-multifactor-authentication" target="_blank" rel="noopener noreferrer">Require multifactor authentication | CISA</a></li>
+<li><a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-209.pdf" target="_blank" rel="noopener noreferrer">Security Guidelines for Storage Infrastructure (NIST SP 800-209)</a></li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="how-can-i-share-files-with-clients-securely">How Can I Share Files With Clients Securely?</h3>
+<p>Use a client-specific portal or a file-sharing service configured for named-recipient access, phishing-resistant MFA, view-only defaults, and automatic expiry. CISA’s configuration baseline recommends capping link lifespans at 30 days or less and restricting sharing to specific people rather than open links.</p>
+<h3 id="what-is-the-safest-way-to-share-confidential-files">What Is the Safest Way to Share Confidential Files?</h3>
+<p>The safest method combines encryption in transit and at rest with phishing-resistant authentication and an audit trail that logs every access event. A dedicated client portal, like the one built into ClickCoach, applies these settings automatically instead of relying on you to configure them correctly every single time.</p>
+<h3 id="is-peer-to-peer-file-sharing-illegal">Is Peer-to-Peer File Sharing Illegal?</h3>
+<p>Peer-to-peer file sharing is not inherently illegal; it is a technology for transferring files directly between computers without a central server. It becomes illegal when used to distribute copyrighted material without authorization, and it is a poor fit for client files regardless of legality, since it lacks the named-recipient access controls and audit logging that professional file sharing requires.</p>
+<h3 id="what-is-the-best-secure-file-sharing-site-for-a-small-practice">What Is the Best Secure File-Sharing Site for a Small Practice?</h3>
+<p>The best option depends on your practice size and technical resources, but a client portal or document-request system generally offers the strongest balance of security and ease of use for coaches and consultants. Look for named-recipient invitations, phishing-resistant MFA support, and exportable audit logs before committing to any platform.</p>
+<h3 id="why-are-password-protected-links-not-secure-enough">Why Are Password-Protected Links Not Secure Enough?</h3>
+<p>A password on a link protects against casual discovery, but it does not verify who is actually opening the file. Authentication strength, not the presence of a password, determines real security, which is why a named-recipient sign-in with MFA outperforms a shared password every time.</p>
+    </article>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="cta-strip cta-strip--centered">
+      <div class="cta-strip__copy">
+        <h2>Turn article ideas into client progress.</h2>
+        <p>ClickCoach brings notes, homework, accountability, progress tracking, billing, courses, and AI support into one coaching workflow.</p>
+      </div>
+      <div class="row cta-strip__actions">
+        <a class="btn btn-accent btn-lg" href="/pricing/">Start Risk-Free Trial</a>
+        <a class="btn btn-ghost btn-lg u-text-white" href="/features/">See features &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="nav__brand nav__brand--footer" aria-label="ClickCoach home">
+          <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" />
+        </a>
+        <p>The coaching operating system. One login, one mental model, and the proof your coaching has been producing all along &mdash; finally visible.</p>
+      </div>
+      <div><p class="footer__heading">Product</p>
+        <a href="/features/">Features</a><a href="/pricing/">Pricing</a><a href="/for-coaches/">For Coaches</a><a href="/slipmeter/">SlipMeter</a><a href="/pricing/">Get Started</a>
+      </div>
+      <div><p class="footer__heading">Company</p>
+        <a href="/about/">About Mitch</a><a href="/testimonials/">Testimonials</a><a href="/contact/">Contact</a><a href="/jv/">JV Partners</a>
+      </div>
+      <div><p class="footer__heading">Resources</p>
+        <a href="/resources/">Articles</a><a href="/resources/faqs/">FAQs</a><a href="/contact/#support">Support</a><a href="/contact/#api">API &amp; integrations</a>
+      </div>
+    </div>
+    <div class="footer__integrations" aria-label="ClickCoach integrations">
+      <strong>Integrations:</strong> ClickCoach uses Google Calendar to automatically sync and create coaching session events, keeping coaches and clients aligned on their schedule.
+    </div>
+    <div class="footer__badge">
+      <a href="https://launchnest.io/p/mitch-russo" target="_blank" rel="noopener">
+        <img src="https://launchnest.io/badge/mitch-russo.svg?variant=featured" alt="Mitch Russo on LaunchNest" width="220" height="56" loading="lazy" decoding="async" />
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Mindful Guidance MR, LLC - ClickCoach.io. Built by Mitch Russo, who ran 50+ coaches for Tony Robbins and Chet Holmes.</span>
+      <span><a href="/privacy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/jv/">JV Partners</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  const root = document.documentElement;
+  const saved = localStorage.getItem('cc-theme');
+  if (saved) root.setAttribute('data-theme', saved);
+  const t = document.getElementById('theme-toggle');
+  if (t) t.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('cc-theme', next);
+  });
+  const navEl = document.getElementById('site-nav');
+  const togg = document.getElementById('nav-toggle');
+  if (togg) togg.addEventListener('click', () => {
+    const open = navEl.classList.toggle('nav--open');
+    togg.setAttribute('aria-expanded', String(open));
+  });
+})();
+</script>
+<script src="/js/screenshot-lightbox.js?v=resource-expand-1" defer></script>
+<script src="/js/exit-intent-popup.js?v=perf-audit-1" defer></script>
+<script src="/js/chatbase-embed.js?v=perf-audit-1" defer></script>
+</body>
+</html>

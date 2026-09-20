@@ -6,7 +6,7 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const SITE_URL = "https://clickcoach.io";
-const EXCLUDED_DIRS = new Set([".git", "node_modules", "resources-drafts", "word-drafts"]);
+const EXCLUDED_DIRS = new Set([".git", ".vercel", "node_modules", "resources-drafts", "word-drafts"]);
 const errors = [];
 
 function decodeHtml(value = "") {
@@ -94,6 +94,38 @@ async function main() {
   for (const file of files) pages.set(routeFor(file), { file, html: await readFile(file, "utf8") });
 
   const vercel = JSON.parse(await readFile(path.join(ROOT, "vercel.json"), "utf8"));
+  if (vercel.trailingSlash !== true) {
+    addError("vercel.json", "must set trailingSlash to true so extensionless page variants redirect to canonical trailing-slash URLs");
+  }
+
+  const indexRedirect = (vercel.redirects || []).find((item) => item.source === "/:path*/index.html");
+  if (!indexRedirect || indexRedirect.destination !== "/:path*/" || indexRedirect.permanent !== true) {
+    addError("vercel.json", "must permanently redirect nested /index.html URLs to canonical directory URLs");
+  }
+
+  for (const source of ["/cdn-cgi/l/email-protection", "/cdn-cgi/l/email-protection/"]) {
+    const cloudflareEmailRedirect = (vercel.redirects || []).find((item) => item.source === source);
+    if (!cloudflareEmailRedirect || cloudflareEmailRedirect.destination !== "/contact/" || cloudflareEmailRedirect.permanent !== true) {
+      addError("vercel.json", `must permanently redirect ${source} to /contact/`);
+    }
+  }
+
+  const retiredArticleRoutes = new Map([
+    ["/white-label-client-portal/", "/resources/white-label-client-portal/"],
+    ["/role-of-shared-progress-visibility-teams/", "/resources/role-of-shared-progress-visibility-teams/"],
+    ["/why-structured-feedback-loops-matter/", "/resources/why-structured-feedback-loops-matter/"],
+  ]);
+  for (const [source, destination] of retiredArticleRoutes) {
+    const redirect = (vercel.redirects || []).find((item) => item.source === source);
+    if (!redirect || redirect.destination !== destination || redirect.permanent !== true) {
+      addError("vercel.json", `must permanently redirect ${source} to ${destination}`);
+    }
+  }
+
+  const contactHtml = pages.get("/contact/")?.html || "";
+  if (!/<form\b[^>]*\baction=["']\/api\/contact\/["']/i.test(contactHtml)) {
+    addError("/contact/", "contact form must post directly to the canonical trailing-slash API route");
+  }
   const redirectMap = new Map((vercel.redirects || []).filter((item) => !item.source.includes(":")) .map((item) => [item.source, item.destination]));
   const redirectSources = new Set(redirectMap.keys());
   const sitemapXml = await readFile(path.join(ROOT, "sitemap.xml"), "utf8");

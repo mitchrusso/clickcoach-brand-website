@@ -1,4 +1,5 @@
 {
+  "trailingSlash": true,
   "headers": [
     {
       "source": "/(.*)",
@@ -87,6 +88,31 @@
   ],
   "redirects": [
     {
+      "source": "/cdn-cgi/l/email-protection",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/cdn-cgi/l/email-protection/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/white-label-client-portal/",
+      "destination": "/resources/white-label-client-portal/",
+      "permanent": true
+    },
+    {
+      "source": "/role-of-shared-progress-visibility-teams/",
+      "destination": "/resources/role-of-shared-progress-visibility-teams/",
+      "permanent": true
+    },
+    {
+      "source": "/why-structured-feedback-loops-matter/",
+      "destination": "/resources/why-structured-feedback-loops-matter/",
+      "permanent": true
+    },
+    {
       "source": "/admin",
       "destination": "https://new.clickcoach.io/admin",
       "permanent": false
@@ -109,6 +135,11 @@
     {
       "source": "/index.html",
       "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/:path*/index.html",
+      "destination": "/:path*/",
       "permanent": true
     },
     {

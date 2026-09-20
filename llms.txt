@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Coaches: Design Coaching Assessments with No Gaps and Ready Templates: https://clickcoach.io/resources/design-coaching-assessments/
 - One Week Secure Client File Sharing Setup for Coaches: https://clickcoach.io/resources/secure-client-file-sharing/
 - Retain Clients When Switching Coaching Software: A Migration Playbook: https://clickcoach.io/resources/switching-coaching-software/
 - Coaching Analytics for Managers: Measure Impact in Weeks: https://clickcoach.io/resources/coaching-analytics/

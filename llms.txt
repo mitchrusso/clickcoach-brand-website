@@ -46,6 +46,8 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Cohort Coaches: ClickCoach Is Our Pick Among Group Coaching Platforms: https://clickcoach.io/resources/best-group-coaching-platforms/
+- 10, 25, 50 Clients: Avoid Budget Surprises in Coaching Software Cost: https://clickcoach.io/resources/coaching-software-cost/
 - Coaches: Design Coaching Assessments with No Gaps and Ready Templates: https://clickcoach.io/resources/design-coaching-assessments/
 - One Week Secure Client File Sharing Setup for Coaches: https://clickcoach.io/resources/secure-client-file-sharing/
 - Retain Clients When Switching Coaching Software: A Migration Playbook: https://clickcoach.io/resources/switching-coaching-software/

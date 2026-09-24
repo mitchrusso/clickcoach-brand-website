@@ -794,6 +794,13 @@ p { margin: 0 0 1em; color: var(--text-main); }
     height: 680px;
   }
 
+  .pricing-checkout-recap__list {
+    height: 210px;
+    overflow-y: auto;
+    padding: 0 12px 12px 0;
+    scrollbar-gutter: stable;
+  }
+
   .pricing-checkout-panel {
     display: grid;
     grid-template-rows: auto minmax(0, 1fr) auto;

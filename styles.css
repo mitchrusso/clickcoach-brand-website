@@ -687,7 +687,7 @@ p { margin: 0 0 1em; color: var(--text-main); }
 /* Pricing checkout */
 .pricing-checkout-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 500px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(24px, 4vw, 48px);
   align-items: start;
 }
@@ -697,23 +697,26 @@ p { margin: 0 0 1em; color: var(--text-main); }
 }
 
 .pricing-checkout-recap__eyebrow {
-  margin: 28px 0 8px;
+  margin: 18px 0 6px;
 }
 
-.pricing-checkout-recap h2 {
+.eo-page .pricing-checkout-recap h2 {
   max-width: 18ch;
   margin: 0;
+  font-size: clamp(1.75rem, 2.6vw, 2.35rem);
+  line-height: 1.08;
 }
 
 .pricing-checkout-recap__list {
-  margin-top: 28px;
+  margin-top: 20px;
+  gap: 8px;
 }
 
 .pricing-checkout-recap__trust {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 28px;
+  margin-top: 20px;
 }
 
 .pricing-checkout-recap__trust span {
@@ -727,12 +730,12 @@ p { margin: 0 0 1em; color: var(--text-main); }
 }
 
 .pricing-checkout-recap__help {
-  margin: 24px 0 0;
+  margin: 16px 0 0;
   color: var(--text-muted);
 }
 
 .pricing-checkout-recap__cta {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .pricing-checkout-recap__help a {
@@ -741,16 +744,43 @@ p { margin: 0 0 1em; color: var(--text-main); }
 
 .pricing-checkout-panel {
   scroll-margin-top: 110px;
+  overflow: hidden;
+  border-color: rgba(36, 99, 235, .14);
+  border-radius: 20px;
+  box-shadow: 0 24px 64px -42px rgba(15, 23, 42, .55);
+}
+
+.eo-page .pricing-checkout-panel .checkout-heading {
+  padding: 20px 20px 4px;
+}
+
+.eo-page .pricing-checkout-panel .checkout-heading h2 {
+  margin-bottom: 5px;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.15;
+}
+
+.eo-page .pricing-checkout-panel .checkout-heading p {
+  margin-bottom: 14px;
+  font-size: .82rem;
+  line-height: 1.4;
 }
 
 .pricing-checkout-widget {
-  min-height: 540px;
+  height: 430px;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  border-block: 1px solid var(--outline);
+  padding: 12px;
 }
 
 .pricing-checkout-widget groovesell-embed {
   display: block;
   width: 100%;
-  min-height: 500px;
+  min-height: 0;
 }
 
 .pricing-checkout-fallback {
@@ -759,6 +789,26 @@ p { margin: 0 0 1em; color: var(--text-main); }
 
 .pricing-plan-options {
   grid-column: 1 / -1;
+}
+
+@media (min-width: 901px) {
+  .pricing-checkout-grid {
+    align-items: stretch;
+  }
+
+  .pricing-checkout-recap,
+  .pricing-checkout-panel {
+    height: 680px;
+  }
+
+  .pricing-checkout-panel {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto auto;
+  }
+
+  .pricing-checkout-widget {
+    height: auto;
+  }
 }
 
 @media (max-width: 900px) {
@@ -779,12 +829,8 @@ p { margin: 0 0 1em; color: var(--text-main); }
   }
 
   .pricing-checkout-widget {
-    min-height: 580px;
-    padding-inline: 12px;
-  }
-
-  .pricing-checkout-widget groovesell-embed {
-    min-height: 540px;
+    height: min(520px, 68vh);
+    padding: 8px;
   }
 }
 

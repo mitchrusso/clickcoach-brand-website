@@ -684,6 +684,110 @@ p { margin: 0 0 1em; color: var(--text-main); }
   font-weight: 700; font-size: .85rem;
 }
 
+/* Pricing checkout */
+.pricing-checkout-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 500px);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+}
+
+.pricing-checkout-recap {
+  min-height: 100%;
+}
+
+.pricing-checkout-recap__eyebrow {
+  margin: 28px 0 8px;
+}
+
+.pricing-checkout-recap h2 {
+  max-width: 18ch;
+  margin: 0;
+}
+
+.pricing-checkout-recap__list {
+  margin-top: 28px;
+}
+
+.pricing-checkout-recap__trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.pricing-checkout-recap__trust span {
+  border-radius: 999px;
+  background: #EAF2FF;
+  color: var(--primary);
+  padding: 8px 12px;
+  font-family: var(--f-heading);
+  font-size: .8rem;
+  font-weight: 800;
+}
+
+.pricing-checkout-recap__help {
+  margin: 24px 0 0;
+  color: var(--text-muted);
+}
+
+.pricing-checkout-recap__cta {
+  margin-top: 24px;
+}
+
+.pricing-checkout-recap__help a {
+  font-weight: 800;
+}
+
+.pricing-checkout-panel {
+  scroll-margin-top: 110px;
+}
+
+.pricing-checkout-widget {
+  min-height: 540px;
+}
+
+.pricing-checkout-widget groovesell-embed {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+}
+
+.pricing-checkout-fallback {
+  padding-bottom: 0;
+}
+
+.pricing-plan-options {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 900px) {
+  .pricing-checkout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-checkout-panel {
+    width: 100%;
+    max-width: 620px;
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .pricing-checkout-recap {
+    padding: 28px 22px;
+  }
+
+  .pricing-checkout-widget {
+    min-height: 580px;
+    padding-inline: 12px;
+  }
+
+  .pricing-checkout-widget groovesell-embed {
+    min-height: 540px;
+  }
+}
+
 /* Label + detail rows (e.g. competitive comparison on /features/) */
 .checklist--compare li {
   display: grid;

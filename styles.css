@@ -734,10 +734,6 @@ p { margin: 0 0 1em; color: var(--text-main); }
   color: var(--text-muted);
 }
 
-.pricing-checkout-recap__cta {
-  margin-top: 18px;
-}
-
 .pricing-checkout-recap__help a {
   font-weight: 800;
 }

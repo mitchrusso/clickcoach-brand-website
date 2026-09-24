@@ -714,7 +714,8 @@ p { margin: 0 0 1em; color: var(--text-main); }
 
 .pricing-checkout-panel {
   scroll-margin-top: 110px;
-  overflow: hidden;
+  align-self: start;
+  overflow: visible;
   border-color: rgba(36, 99, 235, .14);
   border-radius: 20px;
   box-shadow: 0 24px 64px -42px rgba(15, 23, 42, .55);
@@ -739,25 +740,21 @@ p { margin: 0 0 1em; color: var(--text-main); }
 .pricing-checkout-widget {
   position: relative;
   z-index: 1;
-  height: 430px;
-  min-height: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  contain: paint;
-  overscroll-behavior: contain;
-  scrollbar-gutter: stable;
+  height: auto;
+  min-height: 520px;
+  overflow: visible;
   border-block: 1px solid var(--outline);
   padding: 12px;
 }
 
 .eo-page .pricing-checkout-widget {
-  min-height: 0;
+  min-height: 520px;
 }
 
 .pricing-checkout-widget groovesell-embed {
   display: block;
   width: 100%;
-  min-height: 0;
+  min-height: 520px;
 }
 
 .pricing-checkout-fallback {
@@ -784,26 +781,6 @@ p { margin: 0 0 1em; color: var(--text-main); }
   grid-column: 1 / -1;
 }
 
-@media (min-width: 901px) {
-  .pricing-checkout-grid {
-    align-items: stretch;
-  }
-
-  .pricing-checkout-recap,
-  .pricing-checkout-panel {
-    height: 680px;
-  }
-
-  .pricing-checkout-panel {
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr) auto;
-  }
-
-  .pricing-checkout-widget {
-    height: auto;
-  }
-}
-
 @media (max-width: 900px) {
   .pricing-checkout-grid {
     grid-template-columns: 1fr;
@@ -822,7 +799,6 @@ p { margin: 0 0 1em; color: var(--text-main); }
   }
 
   .pricing-checkout-widget {
-    height: min(520px, 68vh);
     padding: 8px;
   }
 }

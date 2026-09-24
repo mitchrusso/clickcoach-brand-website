@@ -767,14 +767,21 @@ p { margin: 0 0 1em; color: var(--text-main); }
 }
 
 .pricing-checkout-widget {
+  position: relative;
+  z-index: 1;
   height: 430px;
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  contain: paint;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
   border-block: 1px solid var(--outline);
   padding: 12px;
+}
+
+.eo-page .pricing-checkout-widget {
+  min-height: 0;
 }
 
 .pricing-checkout-widget groovesell-embed {
@@ -784,7 +791,23 @@ p { margin: 0 0 1em; color: var(--text-main); }
 }
 
 .pricing-checkout-fallback {
-  padding-bottom: 0;
+  padding: 0;
+}
+
+.pricing-checkout-footer {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 8px;
+  padding: 14px 18px 16px;
+  border-top: 1px solid var(--outline);
+  background: #fff;
+}
+
+.pricing-checkout-footer .checkout-legal {
+  margin: 0;
+  padding: 0;
+  background: #fff;
 }
 
 .pricing-plan-options {
@@ -803,7 +826,7 @@ p { margin: 0 0 1em; color: var(--text-main); }
 
   .pricing-checkout-panel {
     display: grid;
-    grid-template-rows: auto minmax(0, 1fr) auto auto;
+    grid-template-rows: auto minmax(0, 1fr) auto;
   }
 
   .pricing-checkout-widget {

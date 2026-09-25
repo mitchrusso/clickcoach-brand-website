@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- 10 Copy Ready Email Templates for Coaches That Cut Admin Time: https://clickcoach.io/resources/coaching-email-templates/
 - Coaches: Price Group Coaching to Earn 3× Your One-on-One Rate: https://clickcoach.io/resources/group-coaching-pricing-models/
 - Cohort Coaches: ClickCoach Is Our Pick Among Group Coaching Platforms: https://clickcoach.io/resources/best-group-coaching-platforms/
 - 10, 25, 50 Clients: Avoid Budget Surprises in Coaching Software Cost: https://clickcoach.io/resources/coaching-software-cost/

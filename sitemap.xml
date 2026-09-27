@@ -104,6 +104,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/build-coaching-curriculum/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/coaching-email-templates/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>

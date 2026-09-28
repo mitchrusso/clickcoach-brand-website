@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Ready to Copy ICF Aligned Coaching Homework Ideas That Get Done: https://clickcoach.io/resources/coaching-homework-ideas/
 - Coaches: Build a Template First, Practice Focused Coaching Curriculum: https://clickcoach.io/resources/build-coaching-curriculum/
 - 10 Copy Ready Email Templates for Coaches That Cut Admin Time: https://clickcoach.io/resources/coaching-email-templates/
 - Coaches: Price Group Coaching to Earn 3× Your One-on-One Rate: https://clickcoach.io/resources/group-coaching-pricing-models/

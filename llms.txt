@@ -47,6 +47,7 @@ Coaching software answer pages:
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
 - $497/yr ClickCoach keeps signed contracts with client records for coaches: https://clickcoach.io/resources/best-coaching-e-sign/
+- Cut Admin Time in 30–90 Days: Best CRM for Business Coaches: https://clickcoach.io/resources/best-crm-for-business-coaches/
 - Ready to Copy ICF Aligned Coaching Homework Ideas That Get Done: https://clickcoach.io/resources/coaching-homework-ideas/
 - Coaches: Build a Template First, Practice Focused Coaching Curriculum: https://clickcoach.io/resources/build-coaching-curriculum/
 - 10 Copy Ready Email Templates for Coaches That Cut Admin Time: https://clickcoach.io/resources/coaching-email-templates/

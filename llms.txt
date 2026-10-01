@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- 3–6 Module Coaching Course Creation Using Backward Design: https://clickcoach.io/resources/coaching-course-creation/
 - $497/yr ClickCoach keeps signed contracts with client records for coaches: https://clickcoach.io/resources/best-coaching-e-sign/
 - Cut Admin Time in 30–90 Days: Best CRM for Business Coaches: https://clickcoach.io/resources/best-crm-for-business-coaches/
 - Ready to Copy ICF Aligned Coaching Homework Ideas That Get Done: https://clickcoach.io/resources/coaching-homework-ideas/

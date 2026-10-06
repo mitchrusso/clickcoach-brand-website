@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Keep Coaches in Control: Coaching Automation That Respects Privacy: https://clickcoach.io/resources/best-coaching-automation/
 - Coach First Demo With ICF and NIST for Coaching Engagement Software: https://clickcoach.io/resources/best-coaching-engagement-software/
 - ICF Aligned Checks for Coaching Session Software: 30–60 Minute Trial: https://clickcoach.io/resources/best-coaching-session-software/
 - Best Coaching Onboarding Software: 7 Essential ICF Ready Features: https://clickcoach.io/resources/best-coaching-onboarding-software/

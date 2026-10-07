@@ -5,10 +5,7 @@ const today = "2026-07-07";
 const site = "https://clickcoach.io";
 const root = path.resolve(__dirname, "..");
 
-const nav = (active = "Resources") => `<!-- Meta Pixel Noscript -->
-<noscript><img height="1" width="1" style="display:none" alt=""
-src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" /></noscript>
-<!-- End Meta Pixel Noscript -->
+const nav = (active = "Resources") => `
 <header class="nav" id="site-nav">
   <div class="nav__inner">
     <a href="/" class="nav__brand" aria-label="ClickCoach home"><img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" /></a>
@@ -62,6 +59,7 @@ const footer = `<footer class="footer">
       <span><a href="/privacy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/jv/">JV Partners</a></span>
     </div>
   </div>
+<nav data-privacy-links aria-label="Privacy and accessibility" style="display:flex;flex-wrap:wrap;gap:16px;padding:16px;background:#fff;color:#182338"><a style="color:#182338" href="/privacy/#privacy-choices">Your Privacy Choices / Do Not Sell or Share</a><a style="color:#182338" href="/privacy/#your-rights">Request or delete my data</a><a style="color:#182338" href="/privacy/#accessibility">Accessibility</a></nav>
 </footer>
 <script>
 (function(){
@@ -118,22 +116,8 @@ ${JSON.stringify(schema, null, 2)}
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/styles.css?v=demo-assets-2" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png?v=2" />
-<script type="text/javascript">!function(e,t){(e=t.createElement("script")).src="https://cdn.convertbox.com/convertbox/js/embed.js",e.id="app-convertbox-script",e.async=true,e.dataset.uuid="cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",document.getElementsByTagName("head")[0].appendChild(e)}(window,document);</script>
-<script src="https://app.rybbit.io/api/script.js" data-site-id="b96de0375325" defer></script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '27459395117029374');
-fbq('track', 'PageView');
-</script>
-<!-- End Meta Pixel Code -->
+<script src="/js/marketing-loader.js?v=consent-20261007" defer data-rybbit="true"></script>
+<script src="/js/google-analytics.js?v=consent-20261007" defer></script>
 </head>`;
 
 const answers = [

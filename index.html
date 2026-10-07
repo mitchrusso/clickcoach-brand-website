@@ -159,80 +159,12 @@
 <link rel="preload" href="/images/alt-home-before-after.svg?v=3" as="image" fetchpriority="high" />
 <link rel="stylesheet" href="/styles-home.min.css?v=home-perf-3" />
 <link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png?v=2" />
-<script>
-(function(){
-  var userAgent = navigator.userAgent || '';
-  if (navigator.webdriver || /Chrome-Lighthouse|PageSpeed|Lighthouse|HeadlessChrome/i.test(userAgent)) return;
-
-  function whenIdle(fn) {
-    if ('requestIdleCallback' in window) {
-      requestIdleCallback(fn, { timeout: 3500 });
-    } else {
-      setTimeout(fn, 1800);
-    }
-  }
-
-  function loadScript(src, attrs) {
-    var script = document.createElement('script');
-    script.src = src;
-    script.async = true;
-    if (attrs) {
-      Object.keys(attrs).forEach(function(key) {
-        if (key === 'dataset') {
-          Object.keys(attrs.dataset).forEach(function(dataKey) {
-            script.dataset[dataKey] = attrs.dataset[dataKey];
-          });
-        } else {
-          script[key] = attrs[key];
-        }
-      });
-    }
-    document.head.appendChild(script);
-    return script;
-  }
-
-  // ConvertBox applies its own display timing. Load it immediately so its
-  // configured trigger is measured from page load, not after analytics idle.
-  loadScript('https://cdn.convertbox.com/convertbox/js/embed.js', {
-    id: 'app-convertbox-script',
-    dataset: { uuid: 'cc64bc00-c22e-425f-8f6d-b9a01a50e5f6' }
-  });
-
-  function loadMarketingScripts() {
-    if (loadMarketingScripts.loaded) return;
-    loadMarketingScripts.loaded = true;
-    whenIdle(function() {
-      loadScript('https://app.rybbit.io/api/script.js', {
-        dataset: { siteId: 'b96de0375325' }
-      });
-
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '27459395117029374');
-      fbq('track', 'PageView');
-    });
-  }
-
-  window.addEventListener('load', function() {
-    ['pointerdown', 'keydown', 'touchstart', 'scroll'].forEach(function(eventName) {
-      window.addEventListener(eventName, loadMarketingScripts, { once: true, passive: true });
-    });
-    setTimeout(loadMarketingScripts, 12000);
-  }, { once: true });
-})();
-</script>
-<script src="/js/google-analytics.js?v=2" defer></script>
+<script src="/js/marketing-loader.js?v=consent-20261007" defer data-rybbit="true"></script>
+<script src="/js/google-analytics.js?v=consent-20261007" defer></script>
 </head>
 <body class="eo-home alt-home">
 <!-- Meta Pixel Noscript -->
-<noscript><img height="1" width="1" style="display:none" alt=""
-src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" /></noscript>
+
 <!-- End Meta Pixel Noscript -->
 
 <header class="nav" id="site-nav">
@@ -642,6 +574,7 @@ src="https://www.facebook.com/tr?id=27459395117029374&ev=PageView&noscript=1" />
       <span><a href="/privacy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/jv/">JV Partners</a></span>
     </div>
   </div>
+<nav data-privacy-links aria-label="Privacy and accessibility" style="display:flex;flex-wrap:wrap;gap:16px;padding:16px;background:#fff;color:#182338"><a style="color:#182338" href="/privacy/#privacy-choices">Your Privacy Choices / Do Not Sell or Share</a><a style="color:#182338" href="/privacy/#your-rights">Request or delete my data</a><a style="color:#182338" href="/privacy/#accessibility">Accessibility</a></nav>
 </footer>
 
 <script>

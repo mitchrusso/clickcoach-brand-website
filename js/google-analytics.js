@@ -4,6 +4,7 @@
   window.clickCoachAnalyticsLoaded = true;
   var id = "G-Z5M6NT3QFL";
   var key = "clickcoach-analytics-consent-v1";
+  var marketingKey = "clickcoach-marketing-consent-v1";
   var started = false;
   var choice;
   try { choice = localStorage.getItem(key); } catch (_) {}
@@ -35,22 +36,28 @@
     document.head.appendChild(script);
   }
 
-  function save(value) {
+  function save(value, marketing) {
+    var previousMarketing;
+    try {
+      previousMarketing = localStorage.getItem(marketingKey);
+      localStorage.setItem(marketingKey, marketing || "declined");
+    } catch (_) {}
     try { localStorage.setItem(key, value); } catch (_) {}
     if (value === "accepted") start();
     else {
       window["ga-disable-" + id] = true;
       document.cookie.split(";").forEach(function (cookie) {
         var name = cookie.split("=")[0].trim();
-        if (!/^_ga(?:_|$)/.test(name)) return;
+        if (!/^(_ga(?:_|$)|_fbp$|_fbc$)/.test(name)) return;
         ["", ";domain=" + location.hostname, ";domain=.clickcoach.io"].forEach(function (domain) {
           document.cookie = name + "=;max-age=0;path=/" + domain;
         });
       });
     }
     dialog.close();
+    window.dispatchEvent(new Event("clickcoach:consent"));
     // Reload when changing a prior choice so the loaded tag is fully removed.
-    if (choice && choice !== value) location.reload();
+    if ((choice && choice !== value) || (previousMarketing === "accepted" && marketing !== "accepted")) location.reload();
     choice = value;
   }
 
@@ -61,23 +68,33 @@
   var dialog = document.createElement("dialog");
   dialog.className = "cc-analytics-dialog";
   dialog.setAttribute("aria-labelledby", "cc-analytics-title");
-  dialog.innerHTML = '<h2 id="cc-analytics-title">Website analytics</h2><p>May we use Google Analytics cookies to understand visits to ClickCoach? You can decline and still use the website. <a href="/privacy/#cookies">Privacy policy</a></p><div class="cc-analytics-actions"><button type="button">Decline</button><button type="button">Accept analytics</button></div>';
+  dialog.innerHTML = '<h2 id="cc-analytics-title">Your Privacy Choices</h2><p>Optional analytics uses Google Analytics. Optional marketing uses Meta Pixel for advertising, Rybbit for visit measurement, and ConvertBox for offers. Nothing in these categories loads before consent. Declining does not prevent use of the website. <a href="/privacy/#cookies">Privacy policy</a></p><div class="cc-analytics-actions"><button type="button">Decline all</button><button type="button">Analytics only</button><button type="button">Accept analytics and marketing</button></div>';
   document.body.appendChild(dialog);
   var buttons = dialog.querySelectorAll("button");
   if (blocked) {
-    dialog.querySelector("p").textContent = "Google Analytics is off because your browser sends a Do Not Track or Global Privacy Control preference. We respect that preference, even if you previously accepted analytics.";
+    dialog.querySelector("p").textContent = "Optional analytics and marketing are off because your browser sends a Do Not Track or Global Privacy Control preference. We respect that preference, even if you previously accepted tracking.";
     buttons[0].textContent = "Close";
     buttons[1].hidden = true;
+    buttons[2].hidden = true;
     buttons[0].addEventListener("click", function () { dialog.close(); });
   } else {
     buttons[0].addEventListener("click", function () { save("declined"); });
     buttons[1].addEventListener("click", function () { save("accepted"); });
+    buttons[2].addEventListener("click", function () { save("accepted", "accepted"); });
   }
   var settings = document.createElement("button");
   settings.type = "button";
   settings.className = "cc-analytics-settings";
-  settings.textContent = "Analytics preferences";
+  settings.textContent = "Your Privacy Choices";
+  settings.style.cssText = "color:#182338;background:#fff;border:1px solid #64748b;border-radius:4px;min-height:44px";
   settings.addEventListener("click", function () { dialog.show(); });
   (document.querySelector(".footer__bottom") || document.body).appendChild(settings);
+  if (location.hash === "#privacy-choices") dialog.show();
+  window.addEventListener("hashchange", function () {
+    if (location.hash === "#privacy-choices") dialog.show();
+  });
+  window.addEventListener("storage", function (event) {
+    if (event.key === key || event.key === marketingKey || event.key === null) location.reload();
+  });
   if (!choice && !blocked) dialog.show();
 })();

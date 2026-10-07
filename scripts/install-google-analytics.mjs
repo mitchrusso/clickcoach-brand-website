@@ -2,7 +2,7 @@ import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 
 const root = process.cwd();
-const include = '<script src="/js/google-analytics.js?v=2" defer></script>';
+const include = '<script src="/js/google-analytics.js?v=consent-20261007" defer></script>';
 let count = 0;
 async function visit(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {

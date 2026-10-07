@@ -16,17 +16,18 @@
     document.head.appendChild(script);
   }
 
-  // ConvertBox owns its own display delay, so load its runtime immediately.
-  // Deferring this script made the configured 8-second trigger start only
-  // after the marketing-loader's 12-second fallback delay.
-  appendScript("https://cdn.convertbox.com/convertbox/js/embed.js", {
-    id: "app-convertbox-script",
-    "data-uuid": "cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",
-  });
-
   function loadMarketingScripts() {
     if (loaded) return;
+    if (!/^(www\.)?clickcoach\.io$/.test(location.hostname)) return;
+    if (navigator.globalPrivacyControl === true || navigator.doNotTrack === "1") return;
+    try {
+      if (localStorage.getItem("clickcoach-marketing-consent-v1") !== "accepted") return;
+    } catch (_) { return; }
     loaded = true;
+    appendScript("https://cdn.convertbox.com/convertbox/js/embed.js", {
+      id: "app-convertbox-script",
+      "data-uuid": "cc64bc00-c22e-425f-8f6d-b9a01a50e5f6",
+    });
 
     if (includeRybbit) {
       appendScript("https://app.rybbit.io/api/script.js", {
@@ -49,22 +50,6 @@
     window.fbq("track", "PageView");
   }
 
-  function scheduleLoad() {
-    if ("requestIdleCallback" in window) {
-      window.requestIdleCallback(loadMarketingScripts, { timeout: 2000 });
-    } else {
-      window.setTimeout(loadMarketingScripts, 200);
-    }
-  }
-
-  window.addEventListener(
-    "load",
-    function () {
-      ["pointerdown", "keydown", "touchstart", "scroll"].forEach(function (eventName) {
-        window.addEventListener(eventName, scheduleLoad, { once: true, passive: true });
-      });
-      window.setTimeout(scheduleLoad, 12000);
-    },
-    { once: true }
-  );
+  window.addEventListener("clickcoach:consent", loadMarketingScripts);
+  loadMarketingScripts();
 })();

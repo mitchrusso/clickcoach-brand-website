@@ -104,6 +104,12 @@
   </url>
   <!-- AUTO_RESOURCE_SITEMAP_START -->
 <url>
+    <loc>https://clickcoach.io/resources/best-team-coaching-platform/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://clickcoach.io/resources/best-coaching-pipeline-software/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>

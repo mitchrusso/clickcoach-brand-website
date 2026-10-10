@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- One Login, Four Tasks: Best Team Coaching Platform for L&D: https://clickcoach.io/resources/best-team-coaching-platform/
 - ICF Aligned Coaching Software: Require AI Opt Outs and Progress Charts: https://clickcoach.io/resources/best-coaching-pipeline-software/
 - Keep Coaches in Control: Coaching Automation That Respects Privacy: https://clickcoach.io/resources/best-coaching-automation/
 - Coach First Demo With ICF and NIST for Coaching Engagement Software: https://clickcoach.io/resources/best-coaching-engagement-software/

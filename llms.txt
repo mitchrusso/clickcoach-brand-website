@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- Wellness Coaching Software: Progress and Privacy Before Features: https://clickcoach.io/resources/best-wellness-coaching-software/
 - Best AI Coaching Tools: 4 Models, One Fit for Your Practice: https://clickcoach.io/resources/best-ai-coaching-tools/
 - Best Leadership Coaching Software: 5 Coach First Checks Before Buying: https://clickcoach.io/resources/best-leadership-coaching-software/
 - One Login, Four Tasks: Best Team Coaching Platform for L&D: https://clickcoach.io/resources/best-team-coaching-platform/

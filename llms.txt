@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- How to Convert Coaching Leads Into Paying Clients: https://clickcoach.io/resources/convert-coaching-leads/
 - Best Client Coaching App for Coaches: Test It With a Real Client: https://clickcoach.io/resources/best-client-coaching-app/
 - Wellness Coaching Software: Progress and Privacy Before Features: https://clickcoach.io/resources/best-wellness-coaching-software/
 - Best AI Coaching Tools: 4 Models, One Fit for Your Practice: https://clickcoach.io/resources/best-ai-coaching-tools/

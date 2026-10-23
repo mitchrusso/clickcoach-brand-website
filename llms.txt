@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- How to Send Coaching Newsletters Clients Read: https://clickcoach.io/resources/send-coaching-newsletters/
 - Client Portal Engagement: How Coaches Get Clients to Log In: https://clickcoach.io/resources/client-portal-engagement/
 - How to Build a Coaching Client Portal Your Clients Will Use: https://clickcoach.io/resources/build-coaching-client-portal/
 - Best Coaching Program Software in 2026: How to Choose: https://clickcoach.io/resources/best-coaching-program-software/

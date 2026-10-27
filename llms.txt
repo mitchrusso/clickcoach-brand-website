@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- How to Schedule Recurring Coaching Sessions That Hold: https://clickcoach.io/resources/schedule-recurring-coaching-sessions/
 - How to Automate Coaching Billing: A Practical Setup Guide: https://clickcoach.io/resources/automate-coaching-billing/
 - How to Send Coaching Newsletters Clients Read: https://clickcoach.io/resources/send-coaching-newsletters/
 - Client Portal Engagement: How Coaches Get Clients to Log In: https://clickcoach.io/resources/client-portal-engagement/

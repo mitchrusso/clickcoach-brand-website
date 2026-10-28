@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0F172A" />
+<title>How to Migrate Coaching Data Without Losing | ClickCoach</title>
+<meta name="description" content="A step-by-step plan to migrate coaching data: what to move, how to check your export, test before inviting clients, and keep a rollback if something fails." />
+<link rel="canonical" href="https://clickcoach.io/resources/migrate-coaching-data/" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="ClickCoach" />
+<meta property="og:url" content="https://clickcoach.io/resources/migrate-coaching-data/" />
+<meta property="og:title" content="How to Migrate Coaching Data Without Losing | ClickCoach" />
+<meta property="og:description" content="A step-by-step plan to migrate coaching data: what to move, how to check your export, test before inviting clients, and keep a rollback if something fails." />
+<meta property="og:image" content="https://clickcoach.io/images/resources/migrate-coaching-data.jpeg" />
+<meta property="og:image:alt" content="How to Migrate Coaching Data Without Losing Client Records" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How to Migrate Coaching Data Without Losing | ClickCoach" />
+<meta name="twitter:description" content="A step-by-step plan to migrate coaching data: what to move, how to check your export, test before inviting clients, and keep a rollback if something fails." />
+<meta name="twitter:image" content="https://clickcoach.io/images/resources/migrate-coaching-data.jpeg" />
+<meta name="twitter:image:alt" content="How to Migrate Coaching Data Without Losing Client Records" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://clickcoach.io/resources/migrate-coaching-data/#article",
+      "headline": "How to Migrate Coaching Data Without Losing Client Records",
+      "description": "A step-by-step plan to migrate coaching data: what to move, how to check your export, test before inviting clients, and keep a rollback if something fails.",
+      "author": {
+        "@id": "https://clickcoach.io/about/#mitch-russo"
+      },
+      "publisher": {
+        "@id": "https://clickcoach.io/#organization"
+      },
+      "datePublished": "2026-10-28",
+      "dateModified": "2026-10-28",
+      "mainEntityOfPage": {
+        "@id": "https://clickcoach.io/resources/migrate-coaching-data/#webpage"
+      },
+      "image": "https://clickcoach.io/images/resources/migrate-coaching-data.jpeg"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://clickcoach.io/resources/migrate-coaching-data/#webpage",
+      "url": "https://clickcoach.io/resources/migrate-coaching-data/",
+      "name": "How to Migrate Coaching Data Without Losing Client Records - ClickCoach",
+      "description": "A step-by-step plan to migrate coaching data: what to move, how to check your export, test before inviting clients, and keep a rollback if something fails.",
+      "isPartOf": {
+        "@id": "https://clickcoach.io/#website"
+      },
+      "about": {
+        "@id": "https://clickcoach.io/#software"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://clickcoach.io/resources/migrate-coaching-data/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to migrate coaching data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a solo coach with a few dozen clients, the preparation, cleanup and testing usually fit into two to four weeks of part-time effort. The time depends mostly on how messy your records are and how many tools you are combining. Plan more time if you have multiple coaches, group programs or years of attachments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to move all my old session notes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Move notes for active clients so you can see their full journey, and archive the rest in a secure export. If a former client returns, you can retrieve their history from the archive and add what you need."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I migrate if my old tool has no export button?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often yes, but it takes more manual work. Ask the vendor for a data export, check whether the tool offers reports you can download, and save notes and files in bulk where you can. For small practices, entering a handful of active clients by hand can be more reliable than a messy automated import."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should I cancel the old system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only after the new system has passed your acceptance tests, processed at least one real billing cycle and run long enough that you trust it. Before cancelling, confirm you have a complete archive, with real attachment files rather than links that die when your account closes."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://clickcoach.io/resources/migrate-coaching-data/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://clickcoach.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Resources",
+          "item": "https://clickcoach.io/resources/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Migrate Coaching Data Without Losing Client Records",
+          "item": "https://clickcoach.io/resources/migrate-coaching-data/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/styles-resources.min.css?v=resource-perf-1" />
+<link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png?v=2" />
+<script src="/js/marketing-loader.js?v=consent-20261007" defer data-rybbit="true"></script>
+<script src="/js/google-analytics.js?v=consent-20261007" defer></script>
+
+<body class="eo-page resources-page">
+<!-- Meta Pixel Noscript -->
+
+<!-- End Meta Pixel Noscript -->
+<header class="nav" id="site-nav">
+  <div class="nav__inner">
+    <a href="/" class="nav__brand" aria-label="ClickCoach home"><img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" /></a>
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="/features/">Features</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/for-coaches/">For Coaches</a>
+      <a href="/resources/">Resources</a>
+      <a href="/slipmeter/">SlipMeter</a>
+    </nav>
+    <div class="nav__cta">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" type="button">🌗</button>
+      <details class="nav__login">
+        <summary class="btn btn-secondary btn-sm nav__login-trigger">Log in <span class="nav__login-caret" aria-hidden="true">&#9662;</span></summary>
+        <div class="nav__login-menu" role="menu">
+          <span class="nav__login-eyebrow">Choose your login</span>
+          <a class="nav__login-item" role="menuitem" href="https://new.clickcoach.io/login"><span class="nav__login-item-body"><span class="nav__login-item-title">ClickCoach 2.0 <span class="nav__login-badge">New</span></span><span class="nav__login-item-sub">The all-new coaching platform</span></span><span class="nav__login-item-arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="nav__login-item" role="menuitem" href="https://app.clickcoach.io/secure-login"><span class="nav__login-item-body"><span class="nav__login-item-title">ClickCoach Legacy</span><span class="nav__login-item-sub">Sign in to the classic dashboard</span></span><span class="nav__login-item-arrow" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </details>
+      <a class="btn btn-primary btn-sm" href="/pricing/">Get Started</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">&#9776;</button>
+    </div>
+  </div>
+</header>
+<main>
+<!-- babylovegrowth:article-id=1022757 -->
+<section class="resource-article-hero">
+  <div class="container resource-article-hero__inner">
+    <a class="resource-back" href="/resources/">&larr; Resources</a>
+    <span class="chip">Mitch Russo article</span>
+    <h1>How to Migrate Coaching Data Without Losing Client Records</h1>
+    <p class="hero__lede">A step-by-step plan to migrate coaching data: what to move, how to check your export, test before inviting clients, and keep a rollback if something fails.</p>
+    <p class="resource-article-meta">By Mitch Russo &middot; Updated 2026-10-28</p>
+  </div>
+</section>
+<section class="section resource-article-section">
+  <div class="container">
+    <article class="resource-article">
+<figure class="resource-article-media"><img src="/images/resources/migrate-coaching-data.jpeg" alt="How to Migrate Coaching Data Without Losing Client Records" width="1280" height="720" loading="eager" fetchpriority="high" decoding="async"></figure>
+<p>To migrate coaching data safely, treat the move as a short project with five parts: decide what moves, export and check it, clean and map it, test it before any client sees it, and keep your old system intact until the new one has proven itself. Do that, and you can switch tools in a couple of weeks without losing a session note, a goal or an invoice.</p>
+<p>This guide is written for working coaches, not IT departments. It gives you a checklist you can copy, the tests worth running, and a rollback plan for the day something does not match.</p>
+<div data-blg-cta="after_tldr" data-blg-cta-layout="split" style="margin:28px 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;box-sizing:border-box;"><div style="border-radius:26px;padding:min(22px,3.2vw);background:radial-gradient(circle at 100% 0%,#d8e3fb 0 150px,rgba(255,255,255,0) 151px),radial-gradient(circle at 0% 100%,#d8e3fb 0 130px,rgba(255,255,255,0) 131px),linear-gradient(180deg,#e5ecfd 0%,#f2f6fe 100%);"><div style="background:#ffffff;border-radius:18px;box-shadow:0 12px 34px rgba(0,0,0,0.13);overflow:hidden;"><div style="display:flex;flex-wrap:wrap;"><div style="flex:1 0 36%;min-width:220px;box-sizing:border-box;padding:30px 76px 30px 26px;color:#ffffff;background:linear-gradient(104deg,#123378 0%,#0b1f49 82%,rgba(0,0,0,0) 82.15%);"><div style="margin:0 0 14px;"><span style="display:inline-block;max-width:100%;box-sizing:border-box;border-radius:999px;padding:6px 13px;font-size:12px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;line-height:1.3;background:#ffffff;color:#173f95;">ClickCoach</span></div><div style="font-size:12px;opacity:0.75;">clickcoach.io</div></div><div style="flex:999 1 300px;min-width:0;padding:30px 28px;"><div style="font-size:23px;font-weight:800;line-height:1.2;letter-spacing:-0.01em;color:#1f2937;margin:0;">Keep Client Records Together</div><div style="width:56px;height:6px;border-radius:3px;background:#2463EB;margin:12px 0 14px;"></div><div style="font-size:15px;line-height:1.55;color:#64748b;margin:0 0 22px;">ClickCoach brings client records, session notes, goals, action plans, progress tracking, and billing into one secure workspace for coaching practices.</div><a href="/" style="display:inline-flex;align-items:center;gap:9px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;padding:13px 22px 13px 26px;background:#2463EB;color:#ffffff;">Explore ClickCoach<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" style="display:block;flex:0 0 auto;"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a></div></div></div></div></div>
+<h2 id="tldr">TL;DR</h2>
+<ul>
+<li>Move what you need to run active clients and prove their progress: contacts, goals, action plans, recent session notes, agreements and billing. Archive the rest in a read-only export.</li>
+<li>Verify the export before you trust it: record counts, private and archived items, dates, currencies and real attachment files.</li>
+<li>Clean and map fields on paper first. Duplicates, inconsistent formats and unmapped fields cause most of the pain.</li>
+<li>Test with a few real clients’ data and the right permissions before you invite anyone. Switch in waves, not all at once.</li>
+<li>Keep your old tool and a full backup untouched until a set number of weeks have passed without a problem.</li>
+</ul>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#what-data-should-you-migrate-and-what-can-stay-in-an-archive">What data should you migrate, and what can stay in an archive?</a></li>
+<li><a href="#back-up-first-and-keep-it-separate">Back up first, and keep it separate</a></li>
+<li><a href="#how-do-you-check-that-an-export-is-complete-and-usable">How do you check that an export is complete and usable?</a></li>
+<li><a href="#clean-and-map-your-records-before-you-import">Clean and map your records before you import</a></li>
+<li><a href="#protect-client-information-during-the-transfer">Protect client information during the transfer</a></li>
+<li><a href="#what-tests-should-pass-before-you-invite-clients">What tests should pass before you invite clients?</a></li>
+<li><a href="#how-do-you-switch-an-active-practice-with-minimal-disruption">How do you switch an active practice with minimal disruption?</a></li>
+<li><a href="#what-does-a-practical-rollback-plan-look-like">What does a practical rollback plan look like?</a></li>
+<li><a href="#our-perspective-migration-is-the-best-time-to-simplify">Our perspective: migration is the best time to simplify</a></li>
+<li><a href="#moving-to-one-workspace">Moving to one workspace</a></li>
+<li><a href="#a-final-pre-launch-checklist">A final pre-launch checklist</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#sources">Sources</a></li>
+</ul>
+<h2 id="what-data-should-you-migrate-and-what-can-stay-in-an-archive">What data should you migrate, and what can stay in an archive?</h2>
+<p>The common mistake is trying to move everything. A coaching practice accumulates years of notes, emails, files and invoices, and not all of it earns a place in the new system.</p>
+<p>Sort your records into three groups.</p>
+<p><strong>Move: needed to run the practice this quarter.</strong></p>
+<ul>
+<li>Client and prospect contact details, with tags or stages</li>
+<li>Active goals, action plans and current homework</li>
+<li>Session history for active clients (at least the recent notes and any that show a baseline)</li>
+<li>Assessment results you will compare against later</li>
+<li>Signed agreements and their renewal dates</li>
+<li>Active subscriptions, packages and open invoices</li>
+<li>Templates you actually reuse: intake forms, homework, session structures</li>
+</ul>
+<p><strong>Archive: needed for reference, not for daily work.</strong></p>
+<ul>
+<li>Notes and files for past clients</li>
+<li>Closed invoices and payment history</li>
+<li>Old email threads and call recordings</li>
+<li>Retired programs and outdated templates</li>
+</ul>
+<p><strong>Delete or ignore: duplicates, test records, abandoned leads.</strong></p>
+<p>Your archive should be a complete export stored somewhere secure, in a format you can open without the old tool. If a former client asks for their records or a dispute arises, you can answer from the archive without paying for two platforms.</p>
+<h3 id="a-quick-way-to-decide">A quick way to decide</h3>
+<p>Ask of each record type: “Will I open this in the next 90 days to coach, bill or show progress?” If yes, migrate it. If it only matters for the record, archive it. Write the decision in a simple inventory table before you touch any export.</p>
+<div class="resource-table-wrap">
+<table>
+<thead>
+<tr>
+<th>Record type</th>
+<th>Where it lives now</th>
+<th>Migrate, archive or delete</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Active client contacts</td>
+<td></td>
+<td>Migrate</td>
+<td>You</td>
+</tr>
+<tr>
+<td>Session notes, active clients</td>
+<td></td>
+<td>Migrate</td>
+<td>You</td>
+</tr>
+<tr>
+<td>Session notes, past clients</td>
+<td></td>
+<td>Archive</td>
+<td>You</td>
+</tr>
+<tr>
+<td>Signed agreements</td>
+<td></td>
+<td>Migrate (active), archive (past)</td>
+<td>You</td>
+</tr>
+<tr>
+<td>Invoices and subscriptions</td>
+<td></td>
+<td>Migrate open items, archive closed</td>
+<td>You or bookkeeper</td>
+</tr>
+<tr>
+<td>Assessments and scores</td>
+<td></td>
+<td>Migrate</td>
+<td>You</td>
+</tr>
+<tr>
+<td>Files and attachments</td>
+<td></td>
+<td>Migrate current, archive the rest</td>
+<td>You</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="back-up-first-and-keep-it-separate">Back up first, and keep it separate</h2>
+<p>Before you change anything, take a full backup of everything in the old system. This is your rollback point. Store one copy somewhere outside the old tool and outside the new one, such as an encrypted drive or a secured cloud folder you control.</p>
+<p>Client files hold sensitive information about people’s work, finances and personal lives, so treat the backup with the same care as the live system. Use a strong password or encryption, limit who can open it, and do not leave export files sitting in your downloads folder or in email attachments.</p>
+<p>Label the backup with the date and the tool it came from. You will want to know later exactly which version of the truth it holds.</p>
+<h2 id="how-do-you-check-that-an-export-is-complete-and-usable">How do you check that an export is complete and usable?</h2>
+<p>An export file that downloads is not the same as an export that works. Before you build anything on it, check it against the original.</p>
+<p>The verification points that matter most are these: private and archived records are present, totals match, timestamps and currencies are accurate, and attachments are actual files rather than temporary links, according to <a href="https://editorialge.com/saas-data-migration/" target="_blank" rel="noopener noreferrer">this guide to switching SaaS tools</a>. Turn that into a checklist for a coaching practice.</p>
+<ol>
+<li><strong>Count records.</strong> Compare the number of clients, sessions, notes, invoices and files in the old system with the export. Write both numbers down.</li>
+<li><strong>Check the hidden ones.</strong> Look for archived clients, private notes and inactive prospects. Many tools leave these out of default exports.</li>
+<li><strong>Spot-check five clients.</strong> Pick a long-term client, a new one, one with many attachments, one with a payment issue and one archived. Compare their full record line by line.</li>
+<li><strong>Check dates and time zones.</strong> A session logged at 11 p.m. should not appear on the next day. Confirm the date format is consistent.</li>
+<li><strong>Check money.</strong> Totals of paid invoices should match by month. Confirm the currency on each line, especially if you have international clients.</li>
+<li><strong>Open the attachments.</strong> Click ten files in the export. If you find links that point back to the old tool, download the actual files now, because those links can stop working when you cancel.</li>
+<li><strong>Look for lost structure.</strong> Exports often flatten things. Check whether goals are still linked to action plans, and whether notes are still tied to the correct session.</li>
+</ol>
+<p>One point from the same guide is worth remembering: a legal right to export your data gives you access to it, but does not guarantee you will get a full copy of the old system’s logic, permissions or reports in the new one. Plan to rebuild your dashboards and automations, not expect them to arrive.</p>
+<h2 id="clean-and-map-your-records-before-you-import">Clean and map your records before you import</h2>
+<p>Importing messy data into a clean system gives you a messy system. Spend a few hours on cleanup while the old tool is still the source of truth.</p>
+<p>Standard data-cleaning practice before a move includes <a href="https://softabase.com/guides/crm-data-migration-best-practices" target="_blank" rel="noopener noreferrer">deduplicating records, standardizing formats and verifying email and phone accuracy</a>. For a coaching practice, that looks like this:</p>
+<ul>
+<li><strong>Merge duplicates.</strong> The same client entered twice as “Jon” and “Jonathan” will split their history in two.</li>
+<li><strong>Standardize names and formats.</strong> Pick one format for phone numbers, dates and company names.</li>
+<li><strong>Fix emails.</strong> A mistyped address means a client never receives their portal invitation.</li>
+<li><strong>Normalize labels.</strong> If you have “Exec,” “Executive” and “executive coaching” as client types, choose one.</li>
+<li><strong>Remove dead weight.</strong> Delete test records and leads that went cold years ago, or move them to the archive.</li>
+</ul>
+<h3 id="build-a-field-map">Build a field map</h3>
+<p>Field mapping means documenting how each piece of source data translates to a field in the destination, including how you handle missing values and how you consolidate multiple picklist options into fewer ones, as the <a href="https://softabase.com/guides/crm-data-migration-best-practices" target="_blank" rel="noopener noreferrer">same guide explains</a>. A simple spreadsheet is enough.</p>
+<div class="resource-table-wrap">
+<table>
+<thead>
+<tr>
+<th>Old field</th>
+<th>New field</th>
+<th>Rule</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full name</td>
+<td>First name, Last name</td>
+<td>Split on first space</td>
+<td>Check double-barrelled names by hand</td>
+</tr>
+<tr>
+<td>Program type</td>
+<td>Program</td>
+<td>Merge “Exec” and “Executive”</td>
+<td></td>
+</tr>
+<tr>
+<td>Session notes (text)</td>
+<td>Session notes</td>
+<td>Copy as is</td>
+<td>Keep original date</td>
+</tr>
+<tr>
+<td>Goal status</td>
+<td>Goal status</td>
+<td>Map “In progress” and “Active” to one value</td>
+<td></td>
+</tr>
+<tr>
+<td>Package balance</td>
+<td>Package or subscription</td>
+<td>Enter manually for active clients</td>
+<td>Too few to automate</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For any field with no home in the new system, decide in advance: store it in a notes field, attach it as a file, or leave it in the archive. Never let an import silently drop it.</p>
+<p>Session notes deserve special attention, because they are the heart of your client history. If you want structured notes going forward, see how <a href="/coaching-notes-software/" rel="noopener">coaching notes software</a> organizes them. For history, keep the original wording and dates. Do not reformat old notes to match a new template.</p>
+<h2 id="protect-client-information-during-the-transfer">Protect client information during the transfer</h2>
+<p>Coaching records are confidential. A migration creates several moments where that confidentiality can slip: export files on your laptop, files sent to a helper, and test accounts with real data.</p>
+<p>Some practical rules:</p>
+<ul>
+<li>Do the work on a device you control, with a screen lock and disk encryption.</li>
+<li>Do not email exports, even to yourself. Use a secure transfer or a shared folder with access limits.</li>
+<li>If an assistant or bookkeeper helps, give them only the data they need and remove their access afterward.</li>
+<li>Confirm in writing how the new vendor stores and protects data, and who can see it.</li>
+<li>Delete working copies of export files when the migration is accepted. Keep only the dated archive.</li>
+<li>Check your coaching agreements and privacy policy. If they describe where client data is stored, update them for the new system.</li>
+</ul>
+<p>If you have clients in the EU or California, rules such as GDPR and the CCPA give individuals a right to data portability, which is <a href="https://www.newamerica.org/insights/data-portability-act-more-user-control-more-competition/" target="_blank" rel="noopener noreferrer">summarized by New America</a>. Ask a privacy attorney about your specific obligations before you change how you hold their data.</p>
+<h2 id="what-tests-should-pass-before-you-invite-clients">What tests should pass before you invite clients?</h2>
+<p>Do not invite a single client until you have tested the new system with real, migrated data. Large software projects treat this as a go-live gate: Microsoft’s implementation guidance says testing should cover in-scope requirements and edge cases, user acceptance testing with migrated data and correct security roles, and <a href="https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-go-live-checklist" target="_blank" rel="noopener noreferrer">performance testing for peak loads and search</a>. You do not need a QA team, but the logic scales down to one person.</p>
+<p>Run this acceptance test with three to five migrated clients:</p>
+<ol>
+<li><strong>Find them.</strong> Search by name, email and program. Do they come up quickly?</li>
+<li><strong>Read the history.</strong> Open their session notes in date order. Are any missing or out of sequence?</li>
+<li><strong>Check goals and homework.</strong> Are active goals, action plans and open assignments present and linked to the right client?</li>
+<li><strong>Check billing.</strong> Does each client’s plan, next charge date and balance match your records?</li>
+<li><strong>Test permissions.</strong> Log in as a client, or use a preview, and confirm they see only their own information. If you have other coaches, confirm each sees only the clients they should.</li>
+<li><strong>Test the client experience.</strong> Walk through the invitation, login, and a completed homework item the way a client would. A <a href="/coaching-client-portal-software/" rel="noopener">coaching client portal</a> should feel simple on a phone, not only on your desktop.</li>
+<li><strong>Test edge cases.</strong> Include a client with special characters in their name, one with a long note history, and one with a paused subscription.</li>
+<li><strong>Send yourself the emails.</strong> Check that invitations, reminders and receipts carry your branding and the right sender address.</li>
+</ol>
+<p>Write down each failure and fix it before moving on. If the same failure appears in two clients, fix the mapping and re-import, rather than patching records by hand.</p>
+<h2 id="how-do-you-switch-an-active-practice-with-minimal-disruption">How do you switch an active practice with minimal disruption?</h2>
+<p>A coaching practice never pauses, so avoid a single cut-over day. Move in waves.</p>
+<p><img loading="lazy" decoding="async" fetchpriority="low" src="https://media.babylovegrowth.ai/blog-images/organization-37976/1793061956330_Three-stages-of-coaching-data-migration.jpeg" alt="Three stages of coaching data migration" width="1280" height="720"></p>
+<p><strong>Week 1: preparation.</strong> Back up, inventory, clean and map. Tell no clients yet.</p>
+<p><strong>Week 2: pilot.</strong> Import and test with a few clients. Choose ones who are patient and comfortable with technology. Run at least one real session in the new system.</p>
+<p><strong>Week 3: main wave.</strong> Import the remaining active clients. Send one clear message: what is changing, what they need to do (usually accept an invitation and log in), and who to contact if something fails. Keep it to a few short paragraphs and one button.</p>
+<p><strong>Week 4: wrap-up.</strong> Move leftover prospects, close the open items in the old system and run your final record counts.</p>
+<p>A few habits make the switch smoother:</p>
+<ul>
+<li>Avoid switching during your busiest week, a contract renewal window or a group program kickoff.</li>
+<li>Freeze changes in the old system after the final export. If you must add a note during the move, record it in one place and enter it afterward.</li>
+<li>Re-run your record counts after import and compare to the original numbers you wrote down.</li>
+<li>Keep billing continuous. Do not cancel subscriptions in the old system until the new one has processed at least one real charge. Be careful not to double-bill anyone.</li>
+<li>Ask pilot clients what felt confusing, and fix it before the main wave.</li>
+</ul>
+<p>If you coach groups or teams, pilot with one cohort first, and confirm that participation records and shared materials moved correctly.</p>
+<h2 id="what-does-a-practical-rollback-plan-look-like">What does a practical rollback plan look like?</h2>
+<p>Rollback sounds dramatic, but for a small practice it is a short list. The aim is that if the new system fails an important test, you can keep coaching from the old one without panic.</p>
+<ol>
+<li><strong>Keep the old system active.</strong> Do not cancel it until the new one has run cleanly for a period you decide in advance, such as a full billing cycle.</li>
+<li><strong>Keep the dated backup untouched.</strong> Work only from copies.</li>
+<li><strong>Define triggers.</strong> Write down what would make you pause: missing session history for active clients, wrong billing amounts, a client seeing another client’s data. Any one of these means stop.</li>
+<li><strong>Log changes made in the new system.</strong> If you roll back, you need to know which notes or invoices were created after the move.</li>
+<li><strong>Decide who you will tell.</strong> Prepare a short holding message for clients in case the switch is delayed.</li>
+</ol>
+<p>The point of defining the triggers in advance is to avoid making that judgment while stressed.</p>
+<h2 id="our-perspective-migration-is-the-best-time-to-simplify">Our perspective: migration is the best time to simplify</h2>
+<p>We built ClickCoach after seeing how many coaches run their practice across a calendar, a document folder, a billing tool, a spreadsheet for goals and an email platform. Each tool holds a piece of the client story, and none of them show the whole thing.</p>
+<p>That is why we think a migration is less about moving files and more about deciding what your operating workflow should be. Before you import anything, ask what you need to see for each client: where they started, what they committed to, what they did between sessions, and what changed. Those four things are the backbone of renewal conversations, and your data should be organized to answer them.</p>
+<p>Our advice is to migrate less and structure it better. A clean set of active clients, with goals, action plans and a baseline assessment, is more useful than ten years of unsorted notes. Keep the old material in a secure archive and bring over only what supports the next conversation.</p>
+<p>Finally, test the client side as hard as your own. A portal clients do not use, however complete the data, does nothing for accountability.</p>
+<blockquote>
+<p><em>— Mitch Russo</em></p>
+</blockquote>
+<h2 id="moving-to-one-workspace">Moving to one workspace</h2>
+<p>If your records are currently spread across several apps, ClickCoach brings client records, session notes, goals, action plans, homework, progress tracking, billing and branded client portals into one workspace. You can read how the pieces fit together on our <a href="/coaching-business-management-software/" rel="noopener">coaching business management software</a> page, or see how <a href="/coaching-accountability-software/" rel="noopener">accountability between sessions</a> works.</p>
+<p><a href="/pricing/" rel="noopener"><img loading="lazy" decoding="async" fetchpriority="low" src="https://csuxjmfbwmkxiegfpljm.supabase.co/storage/v1/object/public/blog-images/organization-37976/1786427543014_clickcoach.jpg" alt="ClickCoach" width="1920" height="1080"></a></p>
+<p>Pricing is one published plan: $497 per year per coach, paid annually, with a 30-day money-back guarantee. You can see the details on the <a href="/pricing/" rel="noopener">pricing page</a>. ClickCoach is practice management software, not a coaching directory, a certification provider or an email tool, so it fits best if your goal is to run sessions and show client progress in one place.</p>
+<h2 id="a-final-pre-launch-checklist">A final pre-launch checklist</h2>
+<p>Print this and tick each line before you tell clients the new system is live.</p>
+<ul>
+<li>[ ] Full backup of the old system, dated and stored securely</li>
+<li>[ ] Inventory of what moves, what is archived, what is deleted</li>
+<li>[ ] Record counts recorded for clients, sessions, notes, invoices and files</li>
+<li>[ ] Duplicates merged, formats standardized, emails checked</li>
+<li>[ ] Field map completed, with a decision for every unmapped field</li>
+<li>[ ] Attachments downloaded as real files</li>
+<li>[ ] Acceptance test passed with three to five clients</li>
+<li>[ ] Permissions and client-view tested</li>
+<li>[ ] Billing tested with one real charge, no double billing</li>
+<li>[ ] Rollback triggers written down</li>
+<li>[ ] Client announcement drafted</li>
+<li>[ ] Working export copies deleted after acceptance</li>
+</ul>
+<h2 id="faq">FAQ</h2>
+<h3 id="how-long-does-it-take-to-migrate-coaching-data">How long does it take to migrate coaching data?</h3>
+<p>For a solo coach with a few dozen clients, the preparation, cleanup and testing usually fit into two to four weeks of part-time effort. The time depends mostly on how messy your records are and how many tools you are combining. Plan more time if you have multiple coaches, group programs or years of attachments.</p>
+<h3 id="do-i-need-to-move-all-my-old-session-notes">Do I need to move all my old session notes?</h3>
+<p>No. Move notes for active clients so you can see their full journey, and archive the rest in a secure export. If a former client returns, you can retrieve their history from the archive and add what you need.</p>
+<h3 id="can-i-migrate-if-my-old-tool-has-no-export-button">Can I migrate if my old tool has no export button?</h3>
+<p>Often yes, but it takes more manual work. Ask the vendor for a data export, check whether the tool offers reports you can download, and save notes and files in bulk where you can. For small practices, entering a handful of active clients by hand can be more reliable than a messy automated import.</p>
+<h3 id="when-should-i-cancel-the-old-system">When should I cancel the old system?</h3>
+<p>Only after the new system has passed your acceptance tests, processed at least one real billing cycle and run long enough that you trust it. Before cancelling, confirm you have a complete archive, with real attachment files rather than links that die when your account closes.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://editorialge.com/saas-data-migration/" target="_blank" rel="noopener noreferrer">SaaS Data Migration: Switch Tools Without Losing Data</a></li>
+<li><a href="https://softabase.com/guides/crm-data-migration-best-practices" target="_blank" rel="noopener noreferrer">CRM Data Migration Best Practices: Avoiding Common Mistakes</a></li>
+<li><a href="https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/prepare-go-live-checklist" target="_blank" rel="noopener noreferrer">Use the go-live checklist to make sure your solution is ready</a></li>
+<li><a href="https://www.newamerica.org/insights/data-portability-act-more-user-control-more-competition/" target="_blank" rel="noopener noreferrer">The Data Portability Act: More User Control, More Competition</a></li>
+</ul>
+    </article>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="cta-strip cta-strip--centered">
+      <div class="cta-strip__copy">
+        <h2>Turn article ideas into client progress.</h2>
+        <p>ClickCoach brings notes, homework, accountability, progress tracking, billing, courses, and AI support into one coaching workflow.</p>
+      </div>
+      <div class="row cta-strip__actions">
+        <a class="btn btn-accent btn-lg" href="/pricing/">Start Risk-Free Trial</a>
+        <a class="btn btn-ghost btn-lg u-text-white" href="/features/">See features &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="nav__brand nav__brand--footer" aria-label="ClickCoach home">
+          <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" />
+        </a>
+        <p>The coaching operating system. One login, one mental model, and the proof your coaching has been producing all along &mdash; finally visible.</p>
+      </div>
+      <div><p class="footer__heading">Product</p>
+        <a href="/features/">Features</a><a href="/pricing/">Pricing</a><a href="/for-coaches/">For Coaches</a><a href="/slipmeter/">SlipMeter</a><a href="/pricing/">Get Started</a>
+      </div>
+      <div><p class="footer__heading">Company</p>
+        <a href="/about/">About Mitch</a><a href="/testimonials/">Testimonials</a><a href="/contact/">Contact</a><a href="/jv/">JV Partners</a>
+      </div>
+      <div><p class="footer__heading">Resources</p>
+        <a href="/resources/">Articles</a><a href="/resources/faqs/">FAQs</a><a href="/contact/#support">Support</a><a href="/contact/#api">API &amp; integrations</a>
+      </div>
+    </div>
+    <div class="footer__integrations" aria-label="ClickCoach integrations">
+      <strong>Integrations:</strong> ClickCoach uses Google Calendar to automatically sync and create coaching session events, keeping coaches and clients aligned on their schedule.
+    </div>
+    <div class="footer__badge">
+      <a href="https://launchnest.io/p/mitch-russo" target="_blank" rel="noopener">
+        <img src="https://launchnest.io/badge/mitch-russo.svg?variant=featured" alt="Mitch Russo on LaunchNest" width="220" height="56" loading="lazy" decoding="async" />
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Mindful Guidance MR, LLC - ClickCoach.io. Built by Mitch Russo, who ran 50+ coaches for Tony Robbins and Chet Holmes.</span>
+      <span><a href="/privacy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/jv/">JV Partners</a></span>
+    </div>
+  </div>
+<nav data-privacy-links aria-label="Privacy and accessibility" style="display:flex;flex-wrap:wrap;gap:16px;padding:16px;background:#fff;color:#182338"><a style="color:#182338" href="/privacy/#privacy-choices">Your Privacy Choices / Do Not Sell or Share</a><a style="color:#182338" href="/privacy/#your-rights">Request or delete my data</a><a style="color:#182338" href="/privacy/#accessibility">Accessibility</a></nav>
+</footer>
+<script>
+(function(){
+  const root = document.documentElement;
+  const saved = localStorage.getItem('cc-theme');
+  if (saved) root.setAttribute('data-theme', saved);
+  const t = document.getElementById('theme-toggle');
+  if (t) t.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('cc-theme', next);
+  });
+  const navEl = document.getElementById('site-nav');
+  const togg = document.getElementById('nav-toggle');
+  if (togg) togg.addEventListener('click', () => {
+    const open = navEl.classList.toggle('nav--open');
+    togg.setAttribute('aria-expanded', String(open));
+  });
+})();
+</script>
+<script src="/js/screenshot-lightbox.js?v=resource-expand-1" defer></script>
+<script src="/js/exit-intent-popup.js?v=perf-audit-1" defer></script>
+<script src="/js/chatbase-embed.js?v=perf-audit-1" defer></script>
+</body>
+</html>

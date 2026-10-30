@@ -46,6 +46,7 @@ Coaching software answer pages:
 
 Resource articles:
 <!-- AUTO_RESOURCE_LLMS_START -->
+- How to Secure Client Data in Your Coaching Practice: https://clickcoach.io/resources/secure-client-data-coaching/
 - No-Show Fees for Coaching: Policy, Wording and Amounts: https://clickcoach.io/resources/no-show-fees-coaching/
 - How to Migrate Coaching Data Without Losing Client Records: https://clickcoach.io/resources/migrate-coaching-data/
 - How to Schedule Recurring Coaching Sessions That Hold: https://clickcoach.io/resources/schedule-recurring-coaching-sessions/

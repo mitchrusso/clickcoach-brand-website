@@ -33,5 +33,8 @@ jobs:
         with:
           node-version: 22
 
+      - name: Normalize generated privacy controls
+        run: node scripts/migrate-privacy-controls.mjs
+
       - name: Run SEO checks
         run: npm test

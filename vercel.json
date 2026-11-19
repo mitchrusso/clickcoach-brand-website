@@ -327,12 +327,17 @@
     },
     {
       "source": "/slipmeter",
-      "destination": "/slipmeter/",
+      "destination": "https://slipmeter.app/",
+      "permanent": true
+    },
+    {
+      "source": "/slipmeter/",
+      "destination": "https://slipmeter.app/",
       "permanent": true
     },
     {
       "source": "/slipmeter/index.html",
-      "destination": "/slipmeter/",
+      "destination": "https://slipmeter.app/",
       "permanent": true
     },
     {

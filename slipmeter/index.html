@@ -1,545 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="theme-color" content="#F7FAFF" />
-<title>SlipMeter for Coaches: Track Prep, Client Work and Admin</title>
-<meta name="description" content="SlipMeter is a lightweight Mac timer for coaches who need to track prep, follow-up, admin, and client work outside live coaching sessions." />
-<link rel="canonical" href="https://clickcoach.io/slipmeter/" />
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="ClickCoach" />
-<meta property="og:url" content="https://clickcoach.io/slipmeter/" />
-<meta property="og:title" content="SlipMeter for Coaches: Track Prep, Client Work and Admin" />
-<meta property="og:description" content="Track the client work that happens outside your coaching calls. Free for active ClickCoach subscribers." />
-<meta property="og:image" content="https://clickcoach.io/images/og-one-login-connected.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="One login. Everything connected. ClickCoach coaching platform overview" />
-<meta property="og:locale" content="en_US" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="SlipMeter for Coaches: Track Prep, Client Work and Admin" />
-<meta name="twitter:description" content="Track prep, follow-up, admin, and client work from a lightweight Mac timer." />
-<meta name="twitter:image" content="https://clickcoach.io/images/og-one-login-connected.png" />
-<meta name="twitter:image:alt" content="One login. Everything connected. ClickCoach coaching platform overview" />
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://clickcoach.io/slipmeter/#webpage",
-      "url": "https://clickcoach.io/slipmeter/",
-      "name": "SlipMeter for Coaches",
-      "description": "SlipMeter is a lightweight Mac timer for coaches who need to track prep, follow-up, admin, and client work outside live coaching sessions.",
-      "isPartOf": {
-        "@id": "https://clickcoach.io/#website"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "@id": "https://clickcoach.io/slipmeter/#software",
-      "name": "SlipMeter",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "macOS",
-      "url": "https://clickcoach.io/slipmeter/",
-      "downloadUrl": "https://clickcoach.io/downloads/SlipMeter-0.1.97-arm64.dmg",
-      "description": "SlipMeter tracks client-related time from a small Mac timer and can connect to ClickCoach for subscriber client and activity data.",
-      "publisher": {
-        "@id": "https://clickcoach.io/#organization"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7faff" />
+  <title>SlipMeter for Mac | Time Tracking Built for Coaches</title>
+  <meta name="description" content="SlipMeter is the lightweight Mac timer for coaching work. Track prep, follow-up, sessions, admin, outcomes, and client time without leaving your desktop." />
+  <link rel="canonical" href="https://clickcoach.io/slipmeter/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SlipMeter by ClickCoach" />
+  <meta property="og:url" content="https://clickcoach.io/slipmeter/" />
+  <meta property="og:title" content="SlipMeter for Mac | Time Tracking Built for Coaches" />
+  <meta property="og:description" content="Capture every minute of coaching work, from preparation to follow-up, in one unobtrusive Mac timer." />
+  <meta property="og:image" content="https://clickcoach.io/images/slipmeter-app-preview.png" />
+  <meta property="og:image:alt" content="SlipMeter Mac app with client, activity, reporting, and ClickCoach sync controls" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SlipMeter for Mac" />
+  <meta name="twitter:description" content="The lightweight time tracker built around the way coaches work." />
+  <meta name="twitter:image" content="https://clickcoach.io/images/slipmeter-app-preview.png" />
+  <meta name="twitter:image:alt" content="SlipMeter Mac app with client, activity, reporting, and ClickCoach sync controls" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://clickcoach.io/slipmeter/#software",
+        "name": "SlipMeter",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "macOS",
+        "softwareVersion": "0.1.97",
+        "url": "https://clickcoach.io/slipmeter/",
+        "downloadUrl": "https://clickcoach.io/downloads/SlipMeter-0.1.97-arm64.dmg",
+        "description": "A lightweight Mac timer for tracking coaching sessions, preparation, follow-up, client support, administration, outcomes, and billable or non-billable work.",
+        "publisher": {"@type": "Organization", "name": "ClickCoach", "url": "https://clickcoach.io/"},
+        "offers": [
+          {"@type": "Offer", "name": "ClickCoach subscriber access", "price": "0", "priceCurrency": "USD"},
+          {"@type": "Offer", "name": "Standalone annual plan", "price": "29.99", "priceCurrency": "USD"}
+        ]
       },
-      "offers": {
-        "@type": "Offer",
-        "price": "29.99",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
+      {
+        "@type": "FAQPage",
+        "@id": "https://clickcoach.io/slipmeter/#faq",
+        "mainEntity": [
+          {"@type": "Question", "name": "Can I use SlipMeter without ClickCoach?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. SlipMeter works as a standalone Mac app with local clients, activities, slips, reports, and exports."}},
+          {"@type": "Question", "name": "What happens when I connect ClickCoach?", "acceptedAnswer": {"@type": "Answer", "text": "SlipMeter can use eligible ClickCoach clients and activities. Saved slips can sync back to ClickCoach for centralized reporting and later operational workflows."}},
+          {"@type": "Question", "name": "What happens if I close the app while a timer is running?", "acceptedAnswer": {"@type": "Answer", "text": "SlipMeter warns you before closing. The current elapsed time is stopped and the slip is saved so active work is not silently lost."}},
+          {"@type": "Question", "name": "Can a team combine SlipMeter records?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Standalone users can export records for consolidation, while ClickCoach organizations can centralize eligible slips and report across participating team members."}}
+        ]
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://clickcoach.io/slipmeter/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Can I use SlipMeter if I am not a ClickCoach subscriber?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. SlipMeter can run as a standalone Mac app. You can add your own clients, activities, rounding preferences, and local time records without needing a ClickCoach subscription."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What kind of coaching work should I track with SlipMeter?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "SlipMeter is designed for the work that happens around coaching sessions, including prep, follow-up, client support, homework review, admin, research, program design, and billable or non-billable client work."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does SlipMeter cost for standalone users?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Standalone users can start with a 30-day trial. After the trial, SlipMeter is planned at $29.99 per year."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does SlipMeter replace my coaching platform or CRM?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. SlipMeter is a lightweight timer and reporting tool for coach-client work. It is meant to help you capture time clearly, not replace your scheduling, CRM, billing, or full coaching platform."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I separate billable, non-billable, and included time?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. SlipMeter is built around slips that can be marked as billable, non-billable, internal/admin, or included at no charge so you can see where your time is actually going."
-          }
-        }
-      ]
-    }
-  ]
-}
-</script>
-<meta name="google-site-verification" content="googleb6cb29d17b10958e.html" />
-<link rel="stylesheet" href="/styles.css?v=slipmeter-release-form-1" />
-<link rel="icon" type="image/png" href="/images/logo-clickcoach-mark.png?v=2" />
-<script src="/js/marketing-loader.js?v=consent-20261007" defer data-rybbit="true"></script>
-<script src="/js/google-analytics.js?v=consent-20261007" defer></script>
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/styles.css?v=slipmeter-site-2" />
+  <link rel="stylesheet" href="/slipmeter/site.css?v=slipmeter-site-2" />
+  <link rel="stylesheet" href="/slipmeter/site-overrides.css?v=slipmeter-site-2" />
+  <link rel="icon" type="image/svg+xml" href="/images/slipmeter-stopwatch-icon.svg" />
+  <script src="/js/marketing-loader.js?v=consent-20261007" defer data-rybbit="true"></script>
+  <script src="/js/google-analytics.js?v=consent-20261007" defer></script>
 </head>
-<body class="eo-page slipmeter-page">
-<!-- Meta Pixel Noscript -->
+<body class="slipmeter-site">
+  <a class="sm-skip" href="#main">Skip to content</a>
 
-<!-- End Meta Pixel Noscript -->
-
-<header class="nav" id="site-nav">
-  <div class="nav__inner">
-    <a href="/" class="nav__brand" aria-label="ClickCoach home"><img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" /></a>
-    <nav class="nav__menu" aria-label="Primary">
-      <a href="/features/">Features</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/for-coaches/">For Coaches</a>
-      <a href="/resources/">Resources</a>
-      <a href="/slipmeter/">SlipMeter</a>
-    </nav>
-    <div class="nav__cta">
-      <a class="btn btn-secondary btn-sm" href="https://new.clickcoach.io/login">Log in</a>
-      <a class="btn btn-primary btn-sm" href="/pricing/">Get Started</a>
-      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">&#9776;</button>
-    </div>
-  </div>
-</header>
-
-<main>
-  <section class="sm-hero">
-    <div class="container sm-hero__grid">
-      <div class="sm-hero__copy">
-        <div class="sm-brand-chip">
-          <img src="/images/slipmeter-stopwatch-icon.svg" alt="SlipMeter stopwatch icon" width="30" height="30" decoding="async" />
-          <span>SlipMeter</span>
-        </div>
-        <h1>Track the work that happens between coaching sessions.</h1>
-        <p class="hero__lede">You are a coach, but you are not always coaching. SlipMeter helps you capture the prep, follow-up, admin, planning, and client work that normally disappears into the day.</p>
-        <div class="sm-hero__actions">
-          <a class="btn btn-primary btn-lg" href="#checkout">Download SlipMeter</a>
-          <a class="btn btn-secondary btn-lg" href="#how-it-works">See how it works</a>
-        </div>
-        <p class="hero__meta">
-          <span>Free for active ClickCoach subscribers</span>
-          <span>Standalone plan: $29.99/year after trial</span>
-          <span>Mac release</span>
-        </p>
-      </div>
-      <div class="sm-product-frame" aria-label="SlipMeter app preview">
-        <img src="/images/slipmeter-app-preview.png" alt="SlipMeter Mac app showing the timer, client and activity selectors, ClickCoach sync, slips, reports, and outcomes." width="491" height="851" loading="eager" decoding="async" />
-      </div>
-    </div>
-  </section>
-
-  <section class="section sm-proof-strip">
-    <div class="container sm-proof-grid">
-      <div>
-        <p class="eyebrow">The hidden leak</p>
-        <h2>Most coaching work never makes it into the record.</h2>
-      </div>
-      <div class="sm-proof-media">
-        <img src="/images/slipmeter-mini-timer.svg" alt="Compact SlipMeter mini timer for tracking coaching work" width="376" height="190" loading="lazy" decoding="async" />
-        <p>Client prep, quick research, proposal follow-up, reviewing homework, internal admin, and support messages all take time. SlipMeter gives that work a simple place to land, without forcing you back into a full dashboard every time you do five minutes of client work.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="how-it-works">
-    <div class="container">
-      <div class="center u-center-60ch">
-        <p class="eyebrow">How it works</p>
-        <h2>A tiny timer with useful coaching context.</h2>
-        <img class="sm-how-timer" src="/images/slipmeter-pause-timer.png" alt="SlipMeter mini timer showing elapsed time, a Pause button, and add control" width="300" height="76" loading="lazy" decoding="async" />
-        <p class="muted">SlipMeter is built to stay light, fast, and out of the way.</p>
-      </div>
-      <div class="grid grid-4 sm-step-grid">
-        <div class="sm-step-card">
-          <span>1</span>
-          <h3>Choose a client</h3>
-          <p>Select from your ClickCoach clients or add local clients if you use SlipMeter independently.</p>
-        </div>
-        <div class="sm-step-card">
-          <span>2</span>
-          <h3>Pick the activity</h3>
-          <p>Track prep, follow-up, admin, client session work, program design, or your own activity list.</p>
-        </div>
-        <div class="sm-step-card">
-          <span>3</span>
-          <h3>Save the slip</h3>
-          <p>Mark work as billable, non-billable, internal/admin, or included at no charge.</p>
-        </div>
-        <div class="sm-step-card">
-          <span>4</span>
-          <h3>Report on it</h3>
-          <p>Review detailed slips, summaries by client, and the time patterns that shape your week.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="checkout">
-    <div class="container sm-split">
-      <div>
-        <p class="eyebrow">For ClickCoach subscribers</p>
-        <h2>SlipMeter can connect to your coaching database.</h2>
-        <p>When a subscriber signs in with ClickCoach, SlipMeter can use their client list, activities, and coaching context so the timer feels native instead of separate.</p>
-        <ul class="checklist">
-          <li>Uses your existing ClickCoach username and password</li>
-          <li>Reads ClickCoach clients when access is enabled</li>
-          <li>Saves slips in a way that can support future reporting and billing workflows</li>
-          <li>Included free for active ClickCoach subscribers</li>
-        </ul>
-      </div>
-      <aside class="sm-download-card" aria-label="Download SlipMeter">
-        <div class="sm-checkout-card__head">
-          <img src="/images/slipmeter-stopwatch-icon.svg" alt="SlipMeter stopwatch icon" width="42" height="42" decoding="async" />
-          <div>
-            <strong>SlipMeter</strong>
-            <span>Mac time tracking for coaches</span>
-          </div>
-        </div>
-        <p class="muted">Enter your details and download the Mac installer.</p>
-        <div class="field sm-coupon-field">
-          <label for="slipmeter-coupon">Coupon Code <span class="optional-label">optional</span></label>
-          <input id="slipmeter-coupon" type="text" name="coupon_code" autocomplete="off" placeholder="Enter code if you have one" />
-          <p class="sm-coupon-status">Have a code? Enter it here before submitting the download form.</p>
-        </div>
-        <div class="sm-tinyemail-embed sm-tinyemail-embed--empty">
-          <script src="https://app.tinyemail.com/static/js/TinyFormRenderer.js" data-ia1="e4ea2f69-5822-4136-a02b-d0045cabb18f" data-if2="4a38044d-1fc0-454c-8e1d-b146e3466812"></script>
-        </div>
-        <form id="slipmeter-download-fallback" class="sm-download-form" action="https://formspree.io/f/mvzylaqk" method="POST">
-          <input type="hidden" name="_subject" value="SlipMeter download request" />
-          <input type="hidden" name="download" value="SlipMeter-0.1.97-arm64.dmg" />
-          <input type="hidden" name="coupon_code" value="" />
-          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="contact-form-honeypot" aria-hidden="true" />
-          <div class="sm-form-row">
-            <div class="field">
-              <label for="slipmeter-first-name">First Name</label>
-              <input id="slipmeter-first-name" type="text" name="first_name" autocomplete="given-name" required />
-            </div>
-            <div class="field">
-              <label for="slipmeter-last-name">Last Name</label>
-              <input id="slipmeter-last-name" type="text" name="last_name" autocomplete="family-name" required />
-            </div>
-          </div>
-          <div class="field">
-            <label for="slipmeter-email">Email</label>
-            <input id="slipmeter-email" type="email" name="email" autocomplete="email" required />
-          </div>
-          <button class="btn btn-primary btn-lg u-full-width" type="submit">Download SlipMeter</button>
-          <p id="slipmeter-download-status" class="sm-download-status" role="status" aria-live="polite"></p>
-        </form>
-        <p class="sm-checkout-note">Standalone users can start with a 30-day trial. Active ClickCoach subscribers receive SlipMeter at no additional charge.</p>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section" id="faqs">
-    <div class="container sm-download-grid">
-      <div class="sm-info-panel">
-        <span class="chip chip--mint">Standalone friendly</span>
-        <h3>Not a ClickCoach subscriber?</h3>
-        <p>SlipMeter can still run on its own. Add your own clients, activities, rounding preferences, and local data directly inside the app.</p>
-        <div class="sm-price-mini">
-          <strong>$29.99</strong>
-          <span>/ year after the trial</span>
-        </div>
-      </div>
-      <div class="sm-faq-panel">
-        <p class="eyebrow">Frequently asked questions</p>
-        <h2>Top questions from coaches using SlipMeter without ClickCoach.</h2>
-        <details class="faq" open>
-          <summary>Can I use SlipMeter if I am not a ClickCoach subscriber?</summary>
-          <p>Yes. SlipMeter can run as a standalone Mac app. You can add your own clients, activities, rounding preferences, and local time records without needing a ClickCoach subscription.</p>
-        </details>
-        <details class="faq">
-          <summary>What kind of coaching work should I track with SlipMeter?</summary>
-          <p>SlipMeter is designed for the work that happens around coaching sessions, including prep, follow-up, client support, homework review, admin, research, program design, and billable or non-billable client work.</p>
-        </details>
-        <details class="faq">
-          <summary>How much does SlipMeter cost for standalone users?</summary>
-          <p>Standalone users can start with a 30-day trial. After the trial, SlipMeter is planned at $29.99 per year.</p>
-        </details>
-        <details class="faq">
-          <summary>Does SlipMeter replace my coaching platform or CRM?</summary>
-          <p>No. SlipMeter is a lightweight timer and reporting tool for coach-client work. It is meant to help you capture time clearly, not replace your scheduling, CRM, billing, or full coaching platform.</p>
-        </details>
-        <details class="faq">
-          <summary>Can I separate billable, non-billable, and included time?</summary>
-          <p>Yes. SlipMeter is built around slips that can be marked as billable, non-billable, internal/admin, or included at no charge so you can see where your time is actually going.</p>
-        </details>
-        <details class="faq">
-          <summary>If I have multiple team members using SlipMeter, can we consolidate that data?</summary>
-          <p>Absolutely. Every SlipMeter app has full export capabilities, so you can combine team data in a spreadsheet or database, create reports, or upload it directly into ClickCoach. ClickCoach also includes a full SlipMeter reporting dashboard, giving your coaching business one place to review and work with the combined data.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__grid">
-      <div class="footer__brand">
-        <a href="/" class="nav__brand nav__brand--footer" aria-label="ClickCoach home">
-          <img class="cc-logo cc-logo--full" src="/images/logo-clickcoach.webp?v=2" alt="ClickCoach" width="200" height="32" decoding="async" />
-        </a>
-        <p>The coaching operating system. One login, one mental model, and the proof your coaching has been producing all along, finally visible.</p>
-      </div>
-      <div><p class="footer__heading">Product</p><a href="/features/">Features</a><a href="/pricing/">Pricing</a><a href="/for-coaches/">For Coaches</a><a href="/slipmeter/">SlipMeter</a><a href="/pricing/">Get Started</a></div>
-      <div><p class="footer__heading">Company</p><a href="/about/">About Mitch</a><a href="/testimonials/">Testimonials</a><a href="/contact/">Contact</a><a href="/jv/">JV Partners</a></div>
-      <div><p class="footer__heading">Resources</p><a href="/resources/">Articles</a><a href="/resources/faqs/">FAQs</a><a href="/contact/#support">Support</a><a href="/contact/#api">API &amp; integrations</a></div>
-    </div>
-    <div class="footer__integrations" aria-label="ClickCoach integrations">
-      <strong>Integrations:</strong> ClickCoach uses Google Calendar to automatically sync and create coaching session events, keeping coaches and clients aligned on their schedule.
-    </div>
-    <div class="footer__badge">
-      <a href="https://launchnest.io/p/mitch-russo" target="_blank" rel="noopener">
-        <img src="https://launchnest.io/badge/mitch-russo.svg?variant=featured" alt="Mitch Russo on LaunchNest" width="220" height="56" loading="lazy" decoding="async" />
+  <header class="sm-nav" id="site-nav">
+    <div class="sm-shell sm-nav__inner">
+      <a class="sm-logo" href="#top" aria-label="SlipMeter home">
+        <img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="36" height="36" />
+        <span>SlipMeter</span><small>by ClickCoach</small>
       </a>
+      <nav class="sm-nav__links" id="sm-nav-links" aria-label="SlipMeter navigation">
+        <a href="#how-it-works">How it works</a><a href="#features">Features</a><a href="#clickcoach">ClickCoach</a><a href="#pricing">Pricing</a><a href="#faq">FAQs</a>
+      </nav>
+      <div class="sm-nav__actions">
+        <a class="sm-text-link" href="https://new.clickcoach.io/login">Sign in</a>
+        <a class="sm-button sm-button--primary sm-button--compact" href="#download">Download for Mac</a>
+        <button class="sm-menu" id="sm-menu" type="button" aria-controls="sm-nav-links" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button>
+      </div>
     </div>
-    <div class="footer__bottom">
-      <span>&copy; 2026 Mindful Guidance MR, LLC - ClickCoach.io. Built by Mitch Russo, who ran 50+ coaches for Tony Robbins and Chet Holmes.</span>
-      <span><a href="/privacy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/jv/">JV Partners</a></span>
-    </div>
-  </div>
-<nav data-privacy-links aria-label="Privacy and accessibility" style="display:flex;flex-wrap:wrap;gap:16px;padding:16px;background:#fff;color:#182338"><a style="color:#182338" href="/privacy/#privacy-choices">Your Privacy Choices / Do Not Sell or Share</a><a style="color:#182338" href="/privacy/#your-rights">Request or delete my data</a><a style="color:#182338" href="/privacy/#accessibility">Accessibility</a></nav>
-</footer>
+  </header>
 
-<script>
-(function(){
-  const coupon = document.getElementById('slipmeter-coupon');
-  const status = document.querySelector('.sm-coupon-status');
-  const endpoint = 'https://new.clickcoach.io/api/slipmeter/coupons/redeem';
+  <main id="main">
+    <section class="sm-hero" id="top">
+      <div class="sm-hero__wash" aria-hidden="true"></div>
+      <div class="sm-shell sm-hero__inner">
+        <p class="sm-kicker"><span>Mac desktop app</span> Built for the work between sessions</p>
+        <h1>Every minute of coaching work.<br /><em>Finally accounted for.</em></h1>
+        <p class="sm-hero__lede">SlipMeter is a small, movable timer that captures preparation, client calls, follow-up, program design, and admin without interrupting the work itself.</p>
+        <div class="sm-hero__actions"><a class="sm-button sm-button--primary" href="#download">Download SlipMeter</a><a class="sm-button sm-button--quiet" href="#how-it-works">See how it works</a></div>
+        <div class="sm-assurance" aria-label="Product highlights"><span>30-day standalone trial</span><span>Free with active ClickCoach</span><span>Apple-notarized Mac app</span></div>
+        <div class="sm-hero__product">
+          <div class="sm-product-halo" aria-hidden="true"></div>
+          <img class="sm-hero__app" src="/images/slipmeter-app-preview.png" alt="SlipMeter app showing client and activity selection, a timer, reports, outcomes, and ClickCoach sync" width="491" height="851" fetchpriority="high" />
+          <div class="sm-float sm-float--left"><strong>One click to start</strong><span>Client and activity stay attached.</span></div>
+          <div class="sm-float sm-float--right"><strong>Ready for reporting</strong><span>Save notes, outcomes, and classifications.</span></div>
+        </div>
+      </div>
+    </section>
 
-  const fieldValue = (form, selectors) => {
-    const field = form.querySelector(selectors);
-    return field ? String(field.value || '').trim() : '';
-  };
+    <section class="sm-trust" aria-label="SlipMeter benefits"><div class="sm-shell sm-trust__grid"><p><strong>Unobtrusive by design.</strong> Mini and micro views stay out of your way.</p><p><strong>Built for real coaching work.</strong> Track billable, included, and internal time.</p><p><strong>Useful beyond the timer.</strong> Export, report, consolidate, and invoice with cleaner records.</p></div></section>
 
-  window.redeemSlipMeterCoupon = async (form) => {
-    const code = coupon ? coupon.value.trim() : '';
-    if (!code) return true;
+    <section class="sm-section" id="how-it-works"><div class="sm-shell">
+      <div class="sm-section-heading"><p class="sm-eyebrow">How it works</p><h2>Start fast. Stay focused. Save the full story.</h2><p>SlipMeter turns the tiny moments around client work into structured records without making timekeeping feel like another job.</p></div>
+      <div class="sm-workflow">
+        <article><span class="sm-workflow__mark">Client</span><h3>Choose who the work is for</h3><p>Search your ClickCoach client list or use clients stored locally in standalone mode.</p></article>
+        <article><span class="sm-workflow__mark">Activity</span><h3>Name the kind of work</h3><p>Use client sessions, prep, follow-up, research, program design, admin, or your own activities.</p></article>
+        <article><span class="sm-workflow__mark">Slip</span><h3>Capture context while it is fresh</h3><p>Add a comment, classify the time, record an outcome, and save a complete slip.</p></article>
+        <article><span class="sm-workflow__mark">Report</span><h3>Turn time into useful evidence</h3><p>Review work by client, activity, coach, billing status, or date and export it for other systems.</p></article>
+      </div>
+    </div></section>
 
-    if (status) {
-      status.textContent = 'Checking coupon code...';
-      status.className = 'sm-coupon-status';
-    }
+    <section class="sm-section sm-section--ink" id="features"><div class="sm-shell sm-feature-stage">
+      <div class="sm-feature-stage__copy"><p class="sm-eyebrow sm-eyebrow--light">Three views, one timer</p><h2>As small as you need it. As complete as the work requires.</h2><p>The floating timer can remain fully open while you document a slip, collapse to a compact working view, or shrink to a narrow micro timer when screen space matters.</p><ul class="sm-list"><li>Move the timer anywhere on your desktop</li><li>Pause, resume, stop, and edit elapsed time</li><li>Switch clients with a save-and-reset safeguard</li><li>Recover the state of active and pending slips</li></ul></div>
+      <div class="sm-feature-stage__visual"><img src="/images/slipmeter-mini-timer.svg" alt="SlipMeter compact timer with client and activity controls" width="376" height="190" loading="lazy" /><img class="sm-feature-stage__bar" src="/images/slipmeter-pause-timer.png" alt="SlipMeter micro timer with elapsed time and pause control" width="300" height="76" loading="lazy" /></div>
+    </div></section>
 
-    try {
-      const response = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          code,
-          couponCode: code,
-          coupon_code: code,
-          firstName: fieldValue(form, '[name="first_name"], [name="firstName"], [autocomplete="given-name"]'),
-          lastName: fieldValue(form, '[name="last_name"], [name="lastName"], [autocomplete="family-name"]'),
-          email: fieldValue(form, '[name="email"], [type="email"]'),
-          source: 'clickcoach-slipmeter-web'
-        })
-      });
-      const result = await response.json().catch(() => ({}));
-      if (!response.ok || !result.applied) {
-        throw new Error(result.message || 'That coupon code could not be applied.');
-      }
-      if (status) {
-        status.textContent = result.message || 'Coupon code applied.';
-        status.className = 'sm-coupon-status sm-coupon-status--success';
-      }
-      return true;
-    } catch (error) {
-      if (status) {
-        status.textContent = error.message || 'We could not verify that coupon code. Please check it and try again.';
-        status.className = 'sm-coupon-status sm-coupon-status--error';
-      }
-      return false;
-    }
-  };
-})();
+    <section class="sm-section" aria-labelledby="complete-record-heading"><div class="sm-shell sm-record">
+      <div class="sm-record__intro"><p class="sm-eyebrow">More than elapsed time</p><h2 id="complete-record-heading">A complete slip can answer more than “how long?”</h2><p>Each record can carry the information that makes the time understandable later, whether you are reviewing your own week or consolidating work across a team.</p></div>
+      <div class="sm-record__grid"><div><strong>Comments</strong><span>Keep the reason, context, or work product with the slip.</span></div><div><strong>Billing status</strong><span>Separate billable, non-billable, included, and internal work.</span></div><div><strong>Session outcomes</strong><span>Record progress, commitments, energy, and follow-up needs.</span></div><div><strong>Team identity</strong><span>Preserve coach, workspace, and device context for consolidation.</span></div><div><strong>Rounding</strong><span>Apply consistent time increments that match your operating rules.</span></div><div><strong>Export-ready data</strong><span>Move detailed records into CSV, PDF, spreadsheets, and reporting workflows.</span></div></div>
+    </div></section>
 
-(function(){
-  const navEl = document.getElementById('site-nav');
-  const togg = document.getElementById('nav-toggle');
-  if (togg) togg.addEventListener('click', () => {
-    const open = navEl.classList.toggle('nav--open');
-    togg.setAttribute('aria-expanded', String(open));
-  });
-})();
+    <section class="sm-section sm-section--blue" id="clickcoach"><div class="sm-shell sm-connection">
+      <div class="sm-connection__copy"><p class="sm-eyebrow sm-eyebrow--light">Connected when you want it</p><h2>SlipMeter becomes more powerful with ClickCoach.</h2><p>Sign in with your ClickCoach account to use your live client list and activities. Eligible saved slips can flow back to ClickCoach so reporting, productivity analysis, invoicing preparation, and client context can live in one place.</p><div class="sm-connection__actions"><a class="sm-button sm-button--white" href="https://new.clickcoach.io/login">Open ClickCoach</a><a class="sm-link-light" href="https://clickcoach.io/features/">Explore ClickCoach features</a></div></div>
+      <div class="sm-connection__flow" aria-label="SlipMeter and ClickCoach connection"><div class="sm-flow-node"><img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="40" height="40" /><strong>SlipMeter</strong><span>Capture work on each Mac</span></div><div class="sm-flow-line"><span></span></div><div class="sm-flow-node"><img src="/images/logo-clickcoach-mark-128.webp" alt="" width="42" height="42" /><strong>ClickCoach</strong><span>Consolidate eligible slips</span></div></div>
+    </div></section>
 
-(function(){
-  const coupon = document.getElementById('slipmeter-coupon');
-  const embed = document.querySelector('.sm-tinyemail-embed');
-  const fallback = document.getElementById('slipmeter-download-fallback');
-  if (!coupon || !embed) return;
-  const tinyEmailSelector = 'form, iframe, [data-reactroot], input, button, textarea, select';
-  const approvedSubmissions = new WeakSet();
+    <section class="sm-section" id="pricing"><div class="sm-shell">
+      <div class="sm-section-heading"><p class="sm-eyebrow">Simple access</p><h2>Use SlipMeter with ClickCoach or on its own.</h2><p>Both paths include the same focused desktop timer. The difference is where your client data and saved slips live.</p></div>
+      <div class="sm-pricing">
+        <article class="sm-price sm-price--featured"><p class="sm-price__label">ClickCoach subscribers</p><h3>Included</h3><p class="sm-price__amount"><strong>$0</strong><span>additional cost</span></p><ul class="sm-list sm-list--dark"><li>Connect to ClickCoach clients and activities</li><li>Sync eligible slips to ClickCoach</li><li>Centralized reporting for teams</li><li>Access remains available while your subscription is active</li></ul><a class="sm-button sm-button--primary" href="#download">Get SlipMeter</a></article>
+        <article class="sm-price"><p class="sm-price__label">Standalone</p><h3>Independent</h3><p class="sm-price__amount"><strong>$29.99</strong><span>per year after trial</span></p><ul class="sm-list sm-list--dark"><li>30-day trial</li><li>Local clients and activities</li><li>Detailed slips, reports, and exports</li><li>No ClickCoach subscription required</li></ul><a class="sm-button sm-button--outline" href="#download">Start the trial</a></article>
+      </div>
+      <p class="sm-team-note"><strong>Running SlipMeter across a coaching organization?</strong> ClickCoach team access supports consolidated slip reporting. <a href="mailto:support@clickcoach.io?subject=SlipMeter%20team%20access">Talk with us about your team</a>.</p>
+    </div></section>
 
-  const hasTinyEmailRendered = () => !!embed.querySelector(tinyEmailSelector);
+    <section class="sm-section sm-download" id="download"><div class="sm-shell sm-download__grid">
+      <div class="sm-download__copy"><p class="sm-eyebrow">Download for Mac</p><h2>Put your time back in the picture.</h2><p>Register with your name and email to receive the latest SlipMeter installer and product updates. Have a promotional code? Apply it before you submit.</p><div class="sm-requirements"><div><strong>Current release</strong><span>SlipMeter 0.1.97</span></div><div><strong>Platform</strong><span>Apple silicon Mac</span></div><div><strong>Security</strong><span>Signed and Apple-notarized</span></div></div><p class="sm-download__support">Need help installing or connecting? <a href="mailto:support@clickcoach.io?subject=SlipMeter%20support">support@clickcoach.io</a></p></div>
+      <aside class="sm-download-card" aria-label="Register and download SlipMeter">
+        <div class="sm-download-card__head"><img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="48" height="48" /><div><strong>Get SlipMeter</strong><span>Registration takes less than a minute.</span></div></div>
+        <div class="sm-field sm-coupon-field"><label for="slipmeter-coupon">Coupon code <span>optional</span></label><input id="slipmeter-coupon" type="text" name="coupon_code" autocomplete="off" placeholder="Enter your code" /><p class="sm-coupon-status">Coupon usage is recorded when your registration is submitted.</p></div>
+        <div class="sm-tinyemail-embed sm-tinyemail-embed--empty"><script src="https://app.tinyemail.com/static/js/TinyFormRenderer.js" data-ia1="e4ea2f69-5822-4136-a02b-d0045cabb18f" data-if2="4a38044d-1fc0-454c-8e1d-b146e3466812"></script></div>
+        <form id="slipmeter-download-fallback" class="sm-download-form" action="https://formspree.io/f/mvzylaqk" method="POST">
+          <input type="hidden" name="_subject" value="SlipMeter download request" /><input type="hidden" name="download" value="SlipMeter-0.1.97-arm64.dmg" /><input type="hidden" name="coupon_code" value="" /><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="sm-honeypot" aria-hidden="true" />
+          <div class="sm-form-row"><div class="sm-field"><label for="slipmeter-first-name">First name</label><input id="slipmeter-first-name" type="text" name="first_name" autocomplete="given-name" required /></div><div class="sm-field"><label for="slipmeter-last-name">Last name</label><input id="slipmeter-last-name" type="text" name="last_name" autocomplete="family-name" required /></div></div>
+          <div class="sm-field"><label for="slipmeter-email">Email address</label><input id="slipmeter-email" type="email" name="email" autocomplete="email" required /></div>
+          <button class="sm-button sm-button--primary sm-button--full" type="submit">Register and download</button><p id="slipmeter-download-status" class="sm-download-status" role="status" aria-live="polite"></p>
+        </form>
+        <div class="sm-download-ready" id="slipmeter-download-ready" hidden><strong>Your download is ready.</strong><p>Open the installer, drag SlipMeter to Applications, and sign in or start your standalone trial.</p><a class="sm-button sm-button--primary sm-button--full" href="/downloads/SlipMeter-0.1.97-arm64.dmg" download>Download SlipMeter 0.1.97</a></div>
+        <p class="sm-existing">Already registered? <a href="/downloads/SlipMeter-0.1.97-arm64.dmg" download>Download the latest installer</a>.</p><p class="sm-form-legal">By registering, you agree to receive essential SlipMeter delivery and product emails. You can unsubscribe from marketing messages at any time.</p>
+      </aside>
+    </div></section>
 
-  const normalizeTinyEmailUi = () => {
-    embed.querySelectorAll('button, input[type="submit"], [role="button"]').forEach((control) => {
-      const controlText = (control.textContent || control.value || '').trim().toLowerCase();
-      if (controlText === 'submit') {
-        if ('value' in control) control.value = 'Download SlipMeter';
-        control.textContent = 'Download SlipMeter';
-        control.setAttribute('aria-label', 'Download SlipMeter');
-      }
-      if (controlText === 'submit' || controlText === 'download slipmeter') {
-        control.classList.add('sm-download-button');
-      }
-    });
+    <section class="sm-section" id="faq"><div class="sm-shell sm-faq-layout">
+      <div class="sm-faq-layout__intro"><p class="sm-eyebrow">Questions, answered</p><h2>What coaches want to know before they start.</h2><p>SlipMeter is deliberately simple to begin with, but it can support much more disciplined reporting as your practice grows.</p><a href="mailto:support@clickcoach.io?subject=SlipMeter%20question">Ask a different question</a></div>
+      <div class="sm-faqs">
+        <details open><summary>Can I use SlipMeter without ClickCoach?</summary><p>Yes. Standalone mode lets you create local clients and activities, save slips, run reports, and export your data without a ClickCoach account.</p></details>
+        <details><summary>What happens when I connect ClickCoach?</summary><p>SlipMeter can use eligible ClickCoach clients and activities. Saved slips can sync back to ClickCoach for centralized reporting and later operational workflows.</p></details>
+        <details><summary>What happens if I close the app while a timer is running?</summary><p>SlipMeter warns you before closing. The current elapsed time is stopped and the slip is saved so active work is not silently lost.</p></details>
+        <details><summary>Can I correct a time entry?</summary><p>Yes. You can edit elapsed time before saving, and use the slips view to review record status and make supported corrections.</p></details>
+        <details><summary>Can a team combine SlipMeter records?</summary><p>Yes. Standalone users can export records for consolidation, while ClickCoach organizations can centralize eligible slips and report across participating team members.</p></details>
+        <details><summary>Does SlipMeter work on Windows?</summary><p>The current public release is for Apple silicon Macs. Windows is not supported by this release.</p></details>
+        <details><summary>Is the Mac app safe to install?</summary><p>The distributed Mac installer is code-signed and notarized through Apple. macOS can verify the developer signature before installation.</p></details>
+      </div>
+    </div></section>
 
-    const placeholderMap = new Map([
-      ['First name placeholder', 'First Name'],
-      ['Last name placeholder', 'Last Name'],
-      ['Email address placeholder', 'Email Address'],
-    ]);
-    embed.querySelectorAll('input[placeholder]').forEach((input) => {
-      const replacement = placeholderMap.get(input.getAttribute('placeholder'));
-      if (replacement) input.setAttribute('placeholder', replacement);
-    });
+    <section class="sm-final"><div class="sm-shell sm-final__inner"><img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="64" height="64" loading="lazy" /><p class="sm-eyebrow">SlipMeter</p><h2>Stop guessing where the day went.</h2><p>Capture the work, preserve the context, and give every client minute a useful place to land.</p><a class="sm-button sm-button--primary" href="#download">Download for Mac</a></div></section>
+  </main>
 
-    embed.querySelectorAll('*').forEach((element) => {
-      if (element.childNodes.length === 1 && element.textContent.trim() === 'Form successfully submitted!') {
-        element.textContent = 'Thanks! Please check your email for the SlipMeter download link.';
-      }
-    });
-  };
-
-  const useTinyEmailIfReady = () => {
-    if (!hasTinyEmailRendered()) return false;
-    embed.classList.remove('sm-tinyemail-embed--empty');
-    if (fallback) fallback.hidden = true;
-    normalizeTinyEmailUi();
-    syncCouponField();
-    return true;
-  };
-
-  const syncCouponField = () => {
-    const form = embed.querySelector('form') || fallback;
-    if (!form) return false;
-    let hiddenCoupon = form.querySelector('input[name="coupon_code"]');
-    if (!hiddenCoupon) {
-      hiddenCoupon = document.createElement('input');
-      hiddenCoupon.type = 'hidden';
-      hiddenCoupon.name = 'coupon_code';
-      form.appendChild(hiddenCoupon);
-    }
-    hiddenCoupon.value = coupon.value.trim();
-    return true;
-  };
-
-  const showFallbackIfNeeded = () => {
-    if (!useTinyEmailIfReady() && fallback) {
-      fallback.hidden = false;
-      syncCouponField();
-    }
-  };
-
-  coupon.addEventListener('input', syncCouponField);
-  embed.addEventListener('submit', async (event) => {
-    const form = event.target.closest('form');
-    if (!form || approvedSubmissions.has(form) || !coupon.value.trim()) return;
-    event.preventDefault();
-    event.stopImmediatePropagation();
-    const approved = await window.redeemSlipMeterCoupon(form);
-    if (!approved) return;
-    approvedSubmissions.add(form);
-    form.requestSubmit(event.submitter || undefined);
-  }, true);
-  const observer = new MutationObserver(() => {
-    useTinyEmailIfReady();
-  });
-  observer.observe(embed, { childList: true, subtree: true });
-  syncCouponField();
-  window.setTimeout(showFallbackIfNeeded, 2500);
-})();
-
-(function(){
-  const form = document.getElementById('slipmeter-download-fallback');
-  if (!form) return;
-
-  const button = form.querySelector('button[type="submit"]');
-  const status = document.getElementById('slipmeter-download-status');
-  const coupon = document.getElementById('slipmeter-coupon');
-
-  form.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    const hiddenCoupon = form.querySelector('input[name="coupon_code"]');
-    if (hiddenCoupon && coupon) hiddenCoupon.value = coupon.value.trim();
-    if (button) {
-      button.disabled = true;
-      button.textContent = 'Preparing download...';
-    }
-    if (status) {
-      status.textContent = '';
-      status.className = 'sm-download-status';
-    }
-
-    try {
-      const couponApproved = await window.redeemSlipMeterCoupon(form);
-      if (!couponApproved) return;
-
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (!response.ok) throw new Error('Form submission failed');
-
-      if (status) {
-        status.textContent = 'Thanks. Check your email for the download link.';
-        status.className = 'sm-download-status sm-download-status--success';
-      }
-
-      form.reset();
-      if (coupon) coupon.value = '';
-    } catch (error) {
-      if (status) {
-        status.textContent = 'Something went wrong. Please check your details and try again.';
-        status.className = 'sm-download-status sm-download-status--error';
-      }
-    } finally {
-      if (button) {
-        button.disabled = false;
-        button.textContent = 'Download SlipMeter';
-      }
-    }
-  });
-})();
-</script>
-<script src="/js/exit-intent-popup.js?v=perf-audit-1" defer></script>
-<script src="/js/chatbase-embed.js?v=perf-audit-1" defer></script>
+  <footer class="sm-footer"><div class="sm-shell sm-footer__top"><a class="sm-logo sm-logo--footer" href="#top" aria-label="SlipMeter home"><img src="/images/slipmeter-stopwatch-icon.svg" alt="" width="34" height="34" /><span>SlipMeter</span><small>by ClickCoach</small></a><nav aria-label="Footer navigation"><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQs</a><a href="https://clickcoach.io/">ClickCoach</a><a href="mailto:support@clickcoach.io">Support</a></nav></div><div class="sm-shell sm-footer__bottom"><span>&copy; 2026 Mindful Guidance MR, LLC. All rights reserved.</span><span><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></span></div><nav class="sm-shell sm-privacy" data-privacy-links aria-label="Privacy and accessibility"><a href="/privacy/#privacy-choices">Your Privacy Choices / Do Not Sell or Share</a><a href="/privacy/#your-rights">Request or delete my data</a><a href="/privacy/#accessibility">Accessibility</a></nav></footer>
+  <script src="/slipmeter/site.js?v=slipmeter-site-2" defer></script>
 </body>
 </html>

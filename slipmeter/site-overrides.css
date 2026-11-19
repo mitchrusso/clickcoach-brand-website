@@ -1,0 +1,20 @@
+.sm-hero { padding-top: clamp(46px, 5vw, 66px); }
+.sm-kicker { margin-bottom: 18px; }
+.sm-hero h1 {
+  max-width: 1120px;
+  margin-bottom: 18px;
+  font-size: clamp(2.55rem, 5.1vw, 4.4rem);
+}
+.sm-hero__product { margin-top: 30px; }
+
+@media (max-width: 680px) {
+  .sm-hero { padding-top: 30px; }
+  .sm-kicker { gap: 6px; margin-bottom: 14px; }
+  .sm-hero h1 { font-size: 2.55rem; line-height: 1.04; }
+  .sm-hero__lede { font-size: 1rem; line-height: 1.5; }
+  .sm-hero__actions { margin-top: 22px; }
+  .sm-hero__actions .sm-button--quiet { display: none; }
+  .sm-assurance { gap: 5px; margin-top: 18px; font-size: .78rem; }
+  .sm-hero__product { height: 190px; margin-top: 22px; overflow: hidden; }
+  .sm-hero__app { width: 225px; }
+}

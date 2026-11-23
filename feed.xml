@@ -5,8 +5,24 @@
     <link>https://clickcoach.io/resources/</link>
     <description>Practical guides for professional coaches on client progress, accountability, practice management, and coaching software.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 12:00:00 GMT</lastBuildDate>
     <atom:link href="https://clickcoach.io/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coaching Boundary Check: Set the Response Channel Before the Week Begins</title>
+      <link>https://clickcoach.io/resources/coaching-boundary-check-set-the-response-channel-before-the-week-begins/</link>
+      <guid isPermaLink="true">https://clickcoach.io/resources/coaching-boundary-check-set-the-response-channel-before-the-week-begins/</guid>
+      <description>Use a practical six-step coaching client communication boundaries workflow with evidence checks, cautions, and a reusable review checklist.</description>
+      <dc:creator>Mitch Russo</dc:creator>
+      <pubDate>Wed, 18 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Coaching Privacy Check: Set a Clear Retention Rule Before You Collect Notes</title>
+      <link>https://clickcoach.io/resources/coaching-privacy-check-set-a-clear-retention-rule-before-you-collect-notes/</link>
+      <guid isPermaLink="true">https://clickcoach.io/resources/coaching-privacy-check-set-a-clear-retention-rule-before-you-collect-notes/</guid>
+      <description>Use a practical six-step coaching client data retention workflow with evidence checks, cautions, and a reusable review checklist.</description>
+      <dc:creator>Mitch Russo</dc:creator>
+      <pubDate>Tue, 17 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
     <item>
       <title>Between-Session Check-In: Use Reminders Without Creating More Admin</title>
       <link>https://clickcoach.io/resources/between-session-check-in-use-reminders-without-creating-more-admin/</link>
@@ -190,22 +206,6 @@
       <description>Compare four AI coaching models and choose the right fit for your practice. ClickCoach helps draft homework, automate follow up, and track client progress.</description>
       <dc:creator>Mitch Russo</dc:creator>
       <pubDate>Mon, 12 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>Best Leadership Coaching Software: 5 Coach First Checks Before Buying</title>
-      <link>https://clickcoach.io/resources/best-leadership-coaching-software/</link>
-      <guid isPermaLink="true">https://clickcoach.io/resources/best-leadership-coaching-software/</guid>
-      <description>Compare coach owned practice tools with enterprise platforms, then test session workflows, client portals, billing, and progress tracking before you choose.</description>
-      <dc:creator>Mitch Russo</dc:creator>
-      <pubDate>Sun, 11 Oct 2026 12:00:00 GMT</pubDate>
-    </item>
-    <item>
-      <title>One Login, Four Tasks: Best Team Coaching Platform for L&amp;D</title>
-      <link>https://clickcoach.io/resources/best-team-coaching-platform/</link>
-      <guid isPermaLink="true">https://clickcoach.io/resources/best-team-coaching-platform/</guid>
-      <description>Compare team coaching platform categories and see why ClickCoach suits L&amp;D teams needing sessions, progress tracking, branded portals, and billing.</description>
-      <dc:creator>Mitch Russo</dc:creator>
-      <pubDate>Sat, 10 Oct 2026 12:00:00 GMT</pubDate>
     </item>
   </channel>
 </rss>

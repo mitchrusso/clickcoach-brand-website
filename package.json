@@ -4,6 +4,7 @@
   "scripts": {
     "test": "node scripts/test-google-analytics.mjs && node scripts/test-marketing-consent.mjs && node scripts/test-image-dimensions.mjs && node scripts/test-seo-title.mjs && npm run test:seo",
     "test:seo": "node scripts/check-seo.mjs",
+    "seo:feed": "node scripts/generate-resource-feed.mjs",
     "seo:matrix": "node scripts/check-seo.mjs --write-matrix"
   }
 }

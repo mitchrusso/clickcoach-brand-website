@@ -23,20 +23,23 @@ jobs:
         with:
           node-version: 22
 
-      - name: Normalize generated privacy controls
-        run: node scripts/migrate-privacy-controls.mjs
-
-      - name: Commit generated privacy fixes
+      - name: Normalize generated resources and discovery files
         run: |
-          if git diff --quiet -- '*.html'; then
-            echo "Generated pages already include privacy controls."
+          node scripts/repair-generated-resources.mjs
+          node scripts/migrate-privacy-controls.mjs
+          node scripts/generate-resource-feed.mjs
+
+      - name: Commit generated resource fixes
+        run: |
+          if git diff --quiet -- 'resources/**/*.html' 'data/remote-image-dimensions.json' 'feed.xml'; then
+            echo "Generated resources and discovery files are current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -- '*.html'
-          git commit -m "Normalize generated privacy controls [skip ci]"
+          git add -- 'resources/**/*.html' 'data/remote-image-dimensions.json' 'feed.xml'
+          git commit -m "Normalize generated SEO resources [skip ci]"
           git push origin HEAD:main
 
       - name: Trigger Vercel deploy hook

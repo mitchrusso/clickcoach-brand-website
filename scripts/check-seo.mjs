@@ -271,7 +271,32 @@ async function main() {
     }
   }
 
+  const feed = await readFile(path.join(ROOT, "feed.xml"), "utf8");
+  if (!/<rss\b[^>]*version=["']2\.0["']/i.test(feed)) addError("feed.xml", "must be a valid RSS 2.0 feed");
+  if (!new RegExp(`<atom:link\\s+href=["']${SITE_URL.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\/feed\\.xml["']\\s+rel=["']self["']`, "i").test(feed)) {
+    addError("feed.xml", "is missing its canonical atom:self link");
+  }
+  const feedItems = [...feed.matchAll(/<item>([\s\S]*?)<\/item>/gi)];
+  if (!feedItems.length || feedItems.length > 25) addError("feed.xml", `contains ${feedItems.length} items; expected 1 to 25`);
+  for (const item of feedItems) {
+    const link = item[1].match(/<link>([^<]+)<\/link>/i)?.[1] || "";
+    const route = link ? new URL(link).pathname : "";
+    if (!link.startsWith(`${SITE_URL}/resources/`)) addError("feed.xml", `contains a non-resource item link: ${link || "missing link"}`);
+    else if (!knownRoutes.has(route)) addError("feed.xml", `references missing route ${route}`);
+    else if (!sitemapRoutes.has(route)) addError("feed.xml", `references a route outside the sitemap: ${route}`);
+    if (!/<title>[^<]+<\/title>/i.test(item[1])) addError("feed.xml", `item ${route || "unknown"} is missing a title`);
+    if (!/<description>[^<]+<\/description>/i.test(item[1])) addError("feed.xml", `item ${route || "unknown"} is missing a description`);
+    if (!/<pubDate>[^<]+<\/pubDate>/i.test(item[1])) addError("feed.xml", `item ${route || "unknown"} is missing a publication date`);
+  }
+  for (const route of ["/", "/resources/"]) {
+    const html = pages.get(route)?.html || "";
+    if (!/<link\b[^>]*rel=["']alternate["'][^>]*type=["']application\/rss\+xml["'][^>]*href=["']https:\/\/clickcoach\.io\/feed\.xml["']/i.test(html)) {
+      addError(route, "is missing RSS feed autodiscovery metadata");
+    }
+  }
+
   const llms = await readFile(path.join(ROOT, "llms.txt"), "utf8");
+  knownRoutes.add("/feed.xml");
   for (const match of llms.matchAll(/https:\/\/clickcoach\.io([^\s)]+)/g)) {
     const route = new URL(`${SITE_URL}${match[1]}`).pathname;
     if (!knownRoutes.has(route)) addError("llms.txt", `references missing route ${route}`);

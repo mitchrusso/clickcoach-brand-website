@@ -42,8 +42,13 @@ function extractFaqs(html = "") {
 }
 
 function formatSeoTitle(title) {
-  const branded = `${title} | ClickCoach`;
-  return branded.length <= 60 ? branded : title;
+  if (title.length <= 60) return title;
+  const suffix = " | ClickCoach";
+  const available = 60 - suffix.length;
+  const candidate = title.slice(0, available + 1);
+  const wordBoundary = candidate.lastIndexOf(" ");
+  const shortened = candidate.slice(0, wordBoundary > 24 ? wordBoundary : available).trim();
+  return `${shortened}${suffix}`;
 }
 
 function normalizeArticleBody(body, heroImageUrl) {
@@ -61,6 +66,13 @@ function normalizeArticleBody(body, heroImageUrl) {
     );
   }
   content = content.replace(/<img\b([^>]*)>/gi, (_match, attributes) => {
+    if (
+      /\bloading=["'][^"']+["']/i.test(attributes) &&
+      /\bdecoding=["'][^"']+["']/i.test(attributes) &&
+      /\bfetchpriority=["'][^"']+["']/i.test(attributes)
+    ) {
+      return `<img${attributes}>`;
+    }
     const cleaned = attributes
       .replace(/\s+loading=["'][^"']*["']/gi, "")
       .replace(/\s+decoding=["'][^"']*["']/gi, "")
@@ -92,7 +104,9 @@ async function main() {
 
     const title = stripTags(html.match(/<section class="resource-article-hero">[\s\S]*?<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]);
     if (!title) throw new Error(`Missing generated article title in ${filePath}`);
-    const seoTitle = formatSeoTitle(title);
+    const currentSeoTitle = stripTags(html.match(/<title>([\s\S]*?)<\/title>/i)?.[1]);
+    const shouldUpdateSeoTitle = currentSeoTitle.length < 25 || currentSeoTitle.length > 65;
+    const seoTitle = shouldUpdateSeoTitle ? formatSeoTitle(title) : currentSeoTitle;
     const articleMatch = html.match(/(<article class="resource-article">)([\s\S]*?)(<\/article>)/i);
     if (!articleMatch) throw new Error(`Missing article body in ${filePath}`);
     const heroImageUrl = articleMatch[2].match(/<figure class="resource-article-media">[\s\S]*?<img[^>]+src=["']([^"']+)/i)?.[1] || "";
@@ -101,7 +115,14 @@ async function main() {
     );
     let optimizedArticleBody = articleBody.replace(
       /(<figure class="resource-article-media">[\s\S]*?<img\b)([^>]*)(>)/i,
-      (_match, opening, attributes, closing) => {
+      (match, opening, attributes, closing) => {
+        if (
+          /\bloading=["']eager["']/i.test(attributes) &&
+          /\bdecoding=["']async["']/i.test(attributes) &&
+          /\bfetchpriority=["']high["']/i.test(attributes)
+        ) {
+          return match;
+        }
         const cleaned = attributes
           .replace(/\s+loading=["'][^"']*["']/gi, "")
           .replace(/\s+decoding=["'][^"']*["']/gi, "")
@@ -117,9 +138,11 @@ async function main() {
     }
     let next = html.replace(articleMatch[0], `${articleMatch[1]}\n${optimizedArticleBody}\n    ${articleMatch[3]}`);
 
-    next = next.replace(/<title>[\s\S]*?<\/title>/i, `<title>${seoTitle}</title>`);
-    next = next.replace(/(<meta property="og:title" content=")[^"]*(" \/>)/i, `$1${seoTitle}$2`);
-    next = next.replace(/(<meta name="twitter:title" content=")[^"]*(" \/>)/i, `$1${seoTitle}$2`);
+    if (shouldUpdateSeoTitle) {
+      next = next.replace(/<title>[\s\S]*?<\/title>/i, `<title>${seoTitle}</title>`);
+      next = next.replace(/(<meta property="og:title" content=")[^"]*(" \/>)/i, `$1${seoTitle}$2`);
+      next = next.replace(/(<meta name="twitter:title" content=")[^"]*(" \/>)/i, `$1${seoTitle}$2`);
+    }
     if (!/<meta property="og:image:alt"/i.test(next)) {
       next = next.replace(/(<meta property="og:image"[^>]*>)/i, `$1\n<meta property="og:image:alt" content="${title}" />`);
     }

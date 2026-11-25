@@ -8924,6 +8924,92 @@ details.faq p { color: var(--text-muted); margin-top: 12px; }
   color: #fff;
 }
 
+/* The overview page closes with the same light, editorial rhythm as the rest of the page. */
+.product-close--overview {
+  position: relative;
+  overflow: hidden;
+  border-block: 1px solid #dbe5f4;
+  background: #eef5ff;
+}
+
+.product-close--overview::after {
+  content: "";
+  position: absolute;
+  right: max(4vw, 32px);
+  bottom: -86px;
+  width: 240px;
+  height: 240px;
+  border: 42px solid rgba(36, 99, 235, .08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.product-close--overview .product-close__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.product-close--overview h2 {
+  color: var(--text-main);
+}
+
+.product-close--overview p {
+  color: var(--text-muted);
+}
+
+.product-close--overview .eyebrow {
+  color: var(--primary);
+}
+
+.product-close--overview .btn-secondary {
+  border-color: var(--primary);
+  background: #fff;
+  color: var(--primary);
+}
+
+.eo-page .footer.footer--overview {
+  width: 100%;
+  margin: 0;
+  padding: clamp(48px, 6vw, 68px) 0 0;
+  overflow: visible;
+  border-top: 0;
+  border-radius: 0;
+  background: #f9fbff;
+  box-shadow: none;
+  color: #52627a;
+}
+
+.footer--overview .footer__grid {
+  gap: clamp(28px, 4vw, 56px);
+}
+
+.footer--overview .footer__heading {
+  color: var(--text-main);
+}
+
+.footer--overview .footer__brand p,
+.footer--overview a,
+.footer--overview .footer__bottom {
+  color: #52627a;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer--overview a:hover {
+    color: var(--primary);
+  }
+}
+
+.eo-page .footer--overview .footer__bottom {
+  margin-top: 36px;
+  padding: 22px 0;
+  border-top: 1px solid #dbe5f4;
+  color: #64748b;
+}
+
+.footer--overview [data-privacy-links] {
+  border-top: 1px solid #e6edf7;
+}
+
 .feature-detail-hero {
   padding: clamp(58px, 7vw, 96px) 0;
   background: #eef3fe;
